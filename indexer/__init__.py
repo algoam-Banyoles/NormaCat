@@ -1,0 +1,1 @@
+"""NormaCat indexer — ChromaDB + SQLite."""

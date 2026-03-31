@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "font": "Ministeri de Transports, Mobilitat i Agenda Urbana (MITMA) — Ferroviari",
+    "url_base": "https://www.boe.es",
+    "data_scraping": "2026-03-17",
+    "total_documents": 8,
+    "versio": "1.0"
+  },
+  "documents": [
+    {
+      "codi": "RD-2387-2004",
+      "titol": "Reglament del Sector Ferroviari",
+      "any_publicacio": 2004,
+      "estat": "VIGENT",
+      "font": "MITMA-F",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-740",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Desenvolupa la Llei 39/2003 del Sector Ferroviari"
+    },
+    {
+      "codi": "RD-354-2006",
+      "titol": "RD 354/2006 condicions tècniques de seguretat ferroviària",
+      "any_publicacio": 2006,
+      "estat": "VIGENT",
+      "font": "MITMA-F",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2006-5388",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": ""
+    },
+    {
+      "codi": "RD-810-2007",
+      "titol": "RD 810/2007 circulació ferroviària",
+      "any_publicacio": 2007,
+      "estat": "VIGENT",
+      "font": "MITMA-F",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-12422",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": ""
+    },
+    {
+      "codi": "RD-664-2015",
+      "titol": "RD 664/2015 certificats de seguretat ferroviaris",
+      "any_publicacio": 2015,
+      "estat": "VIGENT",
+      "font": "MITMA-F",
+      "url_fitxa": null,
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": ""
+    },
+    {
+      "codi": "LEI-39-2003",
+      "titol": "Llei 39/2003 del Sector Ferroviari",
+      "any_publicacio": 2003,
+      "estat": "VIGENT",
+      "font": "MITMA-F",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-22239",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": ""
+    },
+    {
+      "codi": "RD-256-2021",
+      "titol": "RD 256/2021 condicions tècniques ADIF",
+      "any_publicacio": 2021,
+      "estat": "VIGENT",
+      "font": "MITMA-F",
+      "url_fitxa": null,
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": ""
+    },
+    {
+      "codi": "OM-FOM-233-2006",
+      "titol": "Ordre FOM/233/2006 requisits tècnics ferroviaris",
+      "any_publicacio": 2006,
+      "estat": "VIGENT",
+      "font": "MITMA-F",
+      "url_fitxa": null,
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": ""
+    },
+    {
+      "codi": "RD-1247-1995",
+      "titol": "RD 1247/1995 normes tècniques ferroviàries (RENFE)",
+      "any_publicacio": 1995,
+      "estat": "HISTORICA",
+      "font": "MITMA-F",
+      "url_fitxa": null,
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Derogat per RD 2387/2004 i normativa ETI"
+    }
+  ]
+}

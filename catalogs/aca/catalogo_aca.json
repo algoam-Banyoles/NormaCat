@@ -1,0 +1,2023 @@
+{
+  "metadata": {
+    "font": "Agència Catalana de l'Aigua",
+    "url_base": "https://aca.gencat.cat",
+    "data_scraping": "2026-03-17",
+    "total_documents": 145,
+    "versio": "1.0"
+  },
+  "documents": [
+    {
+      "id": "cartografia-de-les-inundacions-del-temporal-gloria",
+      "codi": "ACA-DOC-001",
+      "titol": "Cartografia de les inundacions del temporal Glòria",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/32-cartografia-inundacions-gloria.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/32-cartografia-inundacions-gloria.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "els-peixos-als-embassaments-i-estanys-de-les-conques-interne",
+      "codi": "ACA-DOC-002",
+      "titol": "Els peixos als embassaments i estanys de les conques internes de Catalunya 2018",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/30-peixos-embassaments-CI-CAT-2018.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/30-peixos-embassaments-CI-CAT-2018.pdf",
+      "any_publicacio": 2018,
+      "temes": [
+        "preses"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "aigua-i-canvi-climatic",
+      "codi": "ACA-DOC-003",
+      "titol": "Aigua i canvi climàtic",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/01_aigua_canvi_climatic_2009.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/01_aigua_canvi_climatic_2009.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "pla-de-xoc-per-al-seguiment-de-limpacte-ambiental-al-besos-d",
+      "codi": "ACA-DOC-004",
+      "titol": "Pla de xoc per al seguiment de l'impacte ambiental al Besòs (desembre de 2019)",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/28_Doc_Besos_ImpacteAmbiental_122019.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/28_Doc_Besos_ImpacteAmbiental_122019.pdf",
+      "any_publicacio": 2019,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "prova-demostrativa-de-reutilitzacio-daigua-regenerada-a-lera",
+      "codi": "ACA-DOC-005",
+      "titol": "Prova demostrativa de reutilització d'aigua regenerada a l'ERA de Prat de Llobregat",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/35-prova-reutilitzacio-ERA-Prat-Llobregat.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/35-prova-reutilitzacio-ERA-Prat-Llobregat.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "fenomens-naturals-a-les-platges-escumes-i-mucilags",
+      "codi": "ACA-DOC-006",
+      "titol": "Fenòmens naturals a les platges: escumes i mucílags",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/02_Platges_escumes_mucilags.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/02_Platges_escumes_mucilags.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "fenomens-naturals-a-les-platges-les-meduses",
+      "codi": "ACA-DOC-007",
+      "titol": "Fenòmens naturals a les platges: les meduses",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/26_Fulleto_Meduses.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/26_Fulleto_Meduses.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "guia-tecnica-alliberament-i-mesura-dels-cabals-de-mantenimen",
+      "codi": "ACA-DOC-008",
+      "titol": "Guia tècnica: Alliberament i mesura dels cabals de manteniment (2023)",
+      "tipus": "guia",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laigua/proteccio-i-conservacio/cabals-de-manteniment/",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/03-guies/26-Guia-cabals-alliberament-mesures.pdf",
+      "any_publicacio": 2023,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "estimacio-de-la-disponibilitat-de-pagament-i-costos-dimplant",
+      "codi": "ACA-DOC-009",
+      "titol": "Estimació de la disponibilitat de pagament i costos d'implantació de cabals ecològics al Ter superior (2008)",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laigua/proteccio-i-conservacio/cabals-de-manteniment/",
+      "url_document": "https://aca.gencat.cat/web/.content/20_Aigua/09_proteccio_i_conservacio/07_cabals_manteniments/03_beneficis_socials_derivats_proteccio_cabals_riu_ter.pdf",
+      "any_publicacio": 2008,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "validacio-biologica-del-regim-de-cabals-de-manteniment-en-de",
+      "codi": "ACA-DOC-010",
+      "titol": "Validació biològica del règim de cabals de manteniment en deu trams fluvials (2006)",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laigua/proteccio-i-conservacio/cabals-de-manteniment/",
+      "url_document": "https://aca.gencat.cat/web/.content/20_Aigua/09_proteccio_i_conservacio/07_cabals_manteniments/02_validacio_cabals_CIC_complet.pdf",
+      "any_publicacio": 2006,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "pla-sectorial-de-cabals-de-manteniment-memoria-tecnica-2005",
+      "codi": "ACA-DOC-011",
+      "titol": "Pla sectorial de cabals de manteniment: Memòria tècnica (2005)",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laigua/proteccio-i-conservacio/cabals-de-manteniment/",
+      "url_document": "https://aca.gencat.cat/web/.content/20_Aigua/09_proteccio_i_conservacio/07_cabals_manteniments/01_pla_sectorial_cabals_de_manteniment_cic.pdf",
+      "any_publicacio": 2005,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "fenomens-naturals-a-les-platges-proliferacions-de-fitoplanct",
+      "codi": "ACA-DOC-012",
+      "titol": "Fenòmens naturals a les platges: proliferacions de fitoplàncton",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/25_Fulleto_Proliferacions_Fitoplancton.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "fenomens-naturals-a-les-platges-restes-de-vegetals-marins",
+      "codi": "ACA-DOC-013",
+      "titol": "Fenòmens naturals a les platges: restes de vegetals marins",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/03_Platges_restes_vegetals.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "els-peixos-de-catalunya",
+      "codi": "ACA-DOC-014",
+      "titol": "Els peixos de Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/04_peixos_connectivitat_2014.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "deteccio-de-substancies-prioritaries-i-preferents-en-aigua-s",
+      "codi": "ACA-DOC-015",
+      "titol": "Detecció de substàncies prioritàries i preferents en aigua, sediments i peixos als rius de Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/24_DeteccioSubstanciesAigua_Sedim_Peixos.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "la-gestio-dels-biosolids-a-catalunya",
+      "codi": "ACA-DOC-016",
+      "titol": "La Gestió dels Biosòlids a Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/10_gestio_biosolids_a_catalunya.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ponencies-iv-jornada-tecnica-de-gestio-edar",
+      "codi": "ACA-DOC-017",
+      "titol": "Ponències IV jornada tècnica de gestió EDAR",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/01_ponencia_gestio_EDAR_2009.pdf",
+      "any_publicacio": null,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "estimacio-i-prognosi-de-la-demanda-daigua-a-catalunya-bases-",
+      "codi": "ACA-DOC-018",
+      "titol": "Estimació i prognosi de la demanda d'aigua a Catalunya. Bases tècniques",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/11_bases_tecniques_v3.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "estudi-per-al-foment-de-la-innovacio-lestalvi-i-la-reutilitz",
+      "codi": "ACA-DOC-019",
+      "titol": "Estudi per al foment de la innovació, l'estalvi i la reutilització aplicats a l'ús de l'aigua a les indústries de Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=2&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/12_reutilitzacio_industria.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "informe-de-les-afeccions-piezometriques",
+      "codi": "ACA-DOC-020",
+      "titol": "Informe de les afeccions piezomètriques",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=4&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/20_Afeccions_piezometriques_sequera_2016.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "informe-de-lestat-quantitatiu-de-les-masses-daigua-subterran",
+      "codi": "ACA-DOC-021",
+      "titol": "Informe de l'estat quantitatiu de les masses d'aigua subterrànies",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=4&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/22_Estat_quantitatiu_masses_subterranies_2016.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "estudis-i-informes-tecnics",
+      "codi": "ACA-DOC-022",
+      "titol": "Estudis i informes tècnics",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=1&googleoff=1",
+      "url_document": null,
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "la-barrera-hidraulica-contra-la-intrusio-marina-i-la-recarre",
+      "codi": "ACA-DOC-023",
+      "titol": "La barrera hidràulica contra la intrusió marina i la recàrrega artificial",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=3&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/13_barrera_cat.pdf",
+      "any_publicacio": null,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "clasificacion-de-la-calidad-de-las-aguas-de-bano-2025",
+      "codi": "ACA-DOC-024",
+      "titol": "Clasificación de la calidad de las aguas de baño 2025",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=3&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/39-balanc-bany-2025.pdf",
+      "any_publicacio": 2025,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "classificacio-de-la-qualitat-de-les-aigues-de-bany-2024",
+      "codi": "ACA-DOC-025",
+      "titol": "Classificació de la qualitat de les aigües de bany 2024",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/laca/publicacions/estudis-i-informes-tecnics/index.html?page02e28203-3d8a-11e8-b921-005056924a59=3&googleoff=1",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/07-estudis-informes/38-balanc-bany-2024.pdf",
+      "any_publicacio": 2024,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "normes-de-redaccio-de-projectes-estructura-i-continguts-maig",
+      "codi": "ACA-DOC-026",
+      "titol": "Normes de redacció de projectes: estructura i continguts. Maig 2025",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/normes-redaccio-projectes.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/normes-redaccio-projectes.pdf",
+      "any_publicacio": 2025,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "normes-de-redaccio-de-la-documentacio-dobra-executada-maig-2",
+      "codi": "ACA-DOC-027",
+      "titol": "Normes de redacció de la documentació d’obra executada. Maig 2025",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/normes-redaccio-obra-executada.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/normes-redaccio-obra-executada.pdf",
+      "any_publicacio": 2025,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "model-de-dades-sig-complet-actualitzat-3022026",
+      "codi": "ACA-DOC-028",
+      "titol": "Model de dades SIG complet (Actualitzat: 3/02/2026)",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/Models-dades-SIG.zip",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/Models-dades-SIG.zip",
+      "any_publicacio": 2026,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "normes-de-disseny-corporatiu-de-projectes-dels-documents-a-l",
+      "codi": "ACA-DOC-029",
+      "titol": "Normes de disseny corporatiu de projectes dels documents a lliurar",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/normes_disseny_projectes.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/normes_disseny_projectes.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "plantilles-de-portades-i-caixetins-per-al-disseny-de-project",
+      "codi": "ACA-DOC-030",
+      "titol": "Plantilles de portades i caixetins per al disseny de projectes",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/plantilles-disseny-projectes.zip",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/plantilles-disseny-projectes.zip",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "projectes-de-gestio-conservacio-i-recuperacio-despais-fluvia",
+      "codi": "ACA-DOC-031",
+      "titol": "Projectes de gestió, conservació i recuperació d’espais fluvials",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/contingut_projectes.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/D_Perfil_del_contractant/normes-de-redaccio-de-projectes/contingut_projectes.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "pla-de-gestio-del-districte-de-conca-fluvial-de-catalunya-i-",
+      "codi": "ACA-PLA-001",
+      "titol": "Pla de gestió del districte de conca fluvial de Catalunya i el seu Programa de mesures",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-gestio/",
+      "url_document": null,
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "directiva",
+      "codi": "ACA-PLA-002",
+      "titol": "Directiva",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/dma_2000_60_ce.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "1-validacio-de-la-xarxa-de-punts-de-referencia-dels-rius-de-",
+      "codi": "ACA-PLA-003",
+      "titol": "1. Validació de la xarxa de punts de referència dels rius de Catalunya.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/01_Xarxa_referencia_2010.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "2-regionalitzacio-i-tipificacio-del-sistema-fluvial-de-les-c",
+      "codi": "ACA-PLA-004",
+      "titol": "2. Regionalització i tipificació del sistema fluvial de les conques internes de Catalunya per a la futura implantació de la Directiva marc de l'aigua (2000/60/CE).",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/02_regio_sintesi.pdf",
+      "any_publicacio": 2000,
+      "temes": [
+        "dma"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "3-analisi-de-viabilitat-i-proposta-dindicadors-fitobentonics",
+      "codi": "ACA-PLA-005",
+      "titol": "3. Anàlisi de viabilitat i proposta d'indicadors fitobentònics de la qualitat de l'aigua per als cursos fluvials de Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/03_informe_final_diatomees.pdf",
+      "any_publicacio": null,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "4-desenvolupament-dun-index-dintegritat-biotica-ibicat-basat",
+      "codi": "ACA-PLA-006",
+      "titol": "4. Desenvolupament d'un índex d'integritat biòtica (IBICAT) basat en l'ús dels peixos com a indicadors de la qualitat ambiental dels rius a Catalunya.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/04_informe_final_ibicat.pdf",
+      "any_publicacio": null,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "5-ajust-de-lindex-dintegritat-biotica-ibicat-basat-en-lus-de",
+      "codi": "ACA-PLA-007",
+      "titol": "5. Ajust de l'índex d'integritat biòtica (IBICAT) basat en l'ús dels peixos com a indicadors de la qualitat ambiental als rius de Catalunya (any 2010).",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/05_IBICAT2_Informe2010.pdf",
+      "any_publicacio": 2010,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "6-desenvolupament-dun-index-integral-de-qualitat-ecologica-i",
+      "codi": "ACA-PLA-008",
+      "titol": "6. Desenvolupament d'un índex integral de qualitat ecològica i regionalització ambiental dels sistemes lacustres de Catalunya.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/06_llacs.pdf",
+      "any_publicacio": null,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "7-caracteritzacio-regionalitzacio-i-elaboracio-deines-destab",
+      "codi": "ACA-PLA-009",
+      "titol": "7. Caracterització, regionalització i elaboració d'eines d'establiment de l'estat ecològic de les zones humides de Catalunya.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/07_zones_humides.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "8-avaluacio-de-lestat-ecologic-de-les-zones-humides-i-ajust-",
+      "codi": "ACA-PLA-010",
+      "titol": "8. Avaluació de l'estat ecològic de les zones humides i ajust dels indicadors de qualitat. Índexs QAELS, ECELS i EQAT.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/08_Indicadors_Zones-Humides_2010.pdf",
+      "any_publicacio": null,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "9-caracteritzacio-i-propostes-destudi-dels-embassaments-cata",
+      "codi": "ACA-PLA-011",
+      "titol": "9. Caracterització i propostes d'estudi dels embassaments catalans segons la Directiva 2000/60/CE del Parlament Europeu.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-de-seguiment-i-control/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/40_Programa_seguiment_i_control/llistat-pdfs/09_embassaments.pdf",
+      "any_publicacio": 2000,
+      "temes": [
+        "preses"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "gestio-del-risc-dinundacio",
+      "codi": "ACA-PLA-012",
+      "titol": "Gestió del risc d'inundació",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/gestio-del-risc-dinundacions/",
+      "url_document": null,
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llistat-dactuacions-de-sanejament-en-alta-incloses-en-el-pgs",
+      "codi": "ACA-PLA-013",
+      "titol": "Llistat d'actuacions de sanejament en alta incloses en el PGSAC 2022-2033",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-sanejament-alta/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/60_programa_sanejament_alta/actuacions-mesures-pgsac.xlsx",
+      "any_publicacio": 2022,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "programa-de-gestio-especific-dels-sistemes-publics-de-saneja",
+      "codi": "ACA-PLA-014",
+      "titol": "Programa de gestió específic dels sistemes públics de sanejament en alta de Catalunya 2022-2033 (PGSAC 2022-2033)",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-sanejament-alta/",
+      "url_document": "https://info.aca.gencat.cat/ca/aca/informacio/geco/plans-programes/PGSAC/03.PGSAC-aprovat-ca.pdf",
+      "any_publicacio": 2022,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "documents-de-la-fase-dinformacio-publica",
+      "codi": "ACA-PLA-015",
+      "titol": "Documents de la fase d'informació pública",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-sanejament-alta/",
+      "url_document": "https://info.aca.gencat.cat/ca/aca/informacio/geco/plans-programes/PGSAC/01.PGSAC-fase-informacio-publica.zip",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "documents-fase-sollicitud-de-dictamens",
+      "codi": "ACA-PLA-016",
+      "titol": "Documents fase sol·licitud de dictàmens",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/programa-sanejament-alta/",
+      "url_document": "https://info.aca.gencat.cat/ca/aca/informacio/geco/plans-programes/PGSAC/02.PGSAC-fase-solicitud-dictamens.zip",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "pla-especial-de-sequera---versio-actualitzada-arran-de-les-m",
+      "codi": "ACA-PLA-017",
+      "titol": "Pla especial de sequera - Versió actualitzada arran de les modificacions dels Acords de Govern 16/1/2024 del Pla especial d’actuació en situació d’alerta i eventual sequera (PES), aprovat mitjançant l’acord GOV 1/2020, de 8 de gener, (DOGC núm. 8039 de 10 de gener de 2020 - 11,9MB) i del Decret Llei 4/2024 de 16 d'abril, pel qual s'adopten mesures urgents per pal·liar els efectes de la sequera en l'àmbit del districte de conca fluvial de Catalunya (DOGC num. 9144 de 17 d'abril del 2024) (pdf-5,62MB)",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/30_Pla_sequera/documents-PES/PES-consolidat-abril-2024.pdf",
+      "any_publicacio": 2024,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llistats-dels-annexos-3-4-i-5-del-pla-de-sequera",
+      "codi": "ACA-PLA-018",
+      "titol": "Llistats dels annexos 3, 4 i 5 del Pla de sequera",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/30_Pla_sequera/documents-PES/PES-annexos-3-4-5.xlsx",
+      "any_publicacio": null,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "memoria-tecnica-pdf---832mb",
+      "codi": "ACA-PLA-019",
+      "titol": "Memòria tècnica (pdf - 8,32MB)",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/30_Pla_sequera/documents-PES/PES_MemoriaTecnica.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "memoria-economica-pdf---150-mb",
+      "codi": "ACA-PLA-020",
+      "titol": "Memòria econòmica (pdf - 1,50 MB)",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/30_Pla_sequera/documents-PES/PES_MemoriaEconomica.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "informe-de-sostenibilitat-ambiental-pdf---5mb",
+      "codi": "ACA-PLA-021",
+      "titol": "Informe de sostenibilitat ambiental (pdf - 5MB)",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/30_Pla_sequera/documents-PES/PES_InformeSostenibilitatAmbiental.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "memoria-ambiental-pdf---151mb",
+      "codi": "ACA-PLA-022",
+      "titol": "Memòria ambiental (pdf - 1,51MB)",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/30_Pla_sequera/documents-PES/PES_MemoriaAmbiental.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-de-lorgan-ambiental-pdf",
+      "codi": "ACA-PLA-023",
+      "titol": "Resolució de l’òrgan ambiental (pdf)",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/30_Plans_i_programes/30_Pla_sequera/documents-PES/PES_ResolucioAmbiental.pdf",
+      "any_publicacio": null,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "recomanacions-per-a-municipis-per-a-la-redaccio-de-plans-dem",
+      "codi": "ACA-PLA-024",
+      "titol": "Recomanacions per a municipis per a la redacció de Plans d'emergència en situació de sequera - 2020",
+      "tipus": "guia",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/03-guies/19_Recomanacions_RedaccioPlansSequera_Municipis_2020.pdf",
+      "any_publicacio": 2020,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "recomanacions-per-a-la-redaccio-de-plans-demergencia-en-situ",
+      "codi": "ACA-PLA-025",
+      "titol": "Recomanacions per a la redacció de Plans d'emergència en situació de sequera per a ens gestors d'abastament d'aigua en alta - 2020",
+      "tipus": "guia",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/pla-de-sequera/",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/03-guies/20-Recomanacions-RedaccioPlansSequera-EnsAbastamAlta.pdf",
+      "any_publicacio": 2020,
+      "temes": [
+        "sequera",
+        "abastament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "planificacio-daltres-ambit-hidrologics",
+      "codi": "ACA-PLA-026",
+      "titol": "Planificació d'altres àmbit hidrològics",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/ca/plans-i-programes/planificacio-daltres-ambit-hidrologics/",
+      "url_document": null,
+      "any_publicacio": null,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-legislatiu-32003-de-4-de-novembre-pel-qual-saprova-el",
+      "codi": "ACA-NOR-001",
+      "titol": "Decret legislatiu 3/2003, de 4 de novembre pel qual s’aprova el text refós de la legislació en matèria d’aigües de Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=312716",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=312716",
+      "any_publicacio": 2003,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-llei-72024-de-2-de-juliol-pel-qual-sadopten-mesures-u",
+      "codi": "ACA-NOR-002",
+      "titol": "DECRET LLEI 7/2024, de 2 de juliol, pel qual s'adopten mesures urgents en matèries de finançament dels sistemes públics de sanejament i de regeneració d'aigües residuals, i de serveis socials.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=989388",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=989388",
+      "any_publicacio": 2024,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-legislatiu-12001-de-20-de-juliol-pel-qual-sapro",
+      "codi": "ACA-NOR-003",
+      "titol": "Reial decret legislatiu 1/2001, de 20 de juliol, pel qual s’aprova el text refós de la Llei d’aigües",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/eli/es/rdlg/2001/07/20/1/con",
+      "url_document": "https://www.boe.es/eli/es/rdlg/2001/07/20/1/con",
+      "any_publicacio": 2001,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-8491986-d11-dabril-pel-qual-saprova-el-reglamen",
+      "codi": "ACA-NOR-004",
+      "titol": "Reial decret 849/1986, d’11 d’abril pel qual s’aprova el reglament del domini públic hidràulic.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/eli/es/rd/1986/04/11/849",
+      "url_document": "https://www.boe.es/eli/es/rd/1986/04/11/849",
+      "any_publicacio": 1986,
+      "temes": [
+        "hidrologia",
+        "dph"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-8172015-d11-de-setembre-per-la-qual-sestableixe",
+      "codi": "ACA-NOR-005",
+      "titol": "Reial decret 817/2015, d’11 de setembre, per la qual s’estableixen els criteris de seguiment i avaluació de l’estat de les aigües superficials i les normes de qualitat ambiental",
+      "tipus": "criteri",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/eli/es/rd/2015/09/11/817/con",
+      "url_document": "https://www.boe.es/eli/es/rd/2015/09/11/817/con",
+      "any_publicacio": 2015,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-aaa17602016-de-28-doctubre-per-la-qual-es-regula-lestr",
+      "codi": "ACA-NOR-006",
+      "titol": "Ordre AAA/1760/2016, de 28 d’octubre, per la qual es regula l’estructura informàtica del Registre d’aigües i de la Base Central de l’Aigua",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/eli/es/o/2016/10/28/aaa1760",
+      "url_document": "https://www.boe.es/eli/es/o/2016/10/28/aaa1760",
+      "any_publicacio": 2016,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-administratiu-entre-espanya-i-franca-sobre-la-gestio-d",
+      "codi": "ACA-NOR-007",
+      "titol": "Acord administratiu entre Espanya i França sobre la gestió de l’aigua signat a Toulouse el 15 de febrer de 2006",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://aca.gencat.cat/web/.content/10_ACA/I_Normativa/02-normativa-substantiva/acord_gestio_aigua.pdf",
+      "url_document": "https://aca.gencat.cat/web/.content/10_ACA/I_Normativa/02-normativa-substantiva/acord_gestio_aigua.pdf",
+      "any_publicacio": 2006,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-9032010-de-9-de-juliol-davaluacio-i-gestio-de-r",
+      "codi": "ACA-NOR-008",
+      "titol": "Reial decret 903/2010, de 9 de juliol, d'avaluació i gestió de riscos d'inundació",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/eli/es/rd/2010/07/09/903",
+      "url_document": "https://www.boe.es/eli/es/rd/2010/07/09/903",
+      "any_publicacio": 2010,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decisio-de-la-comissio-2013480ue-de-20-de-setembre-de-2013-p",
+      "codi": "ACA-NOR-009",
+      "titol": "Decisió de la Comissió 2013/480/UE, de 20 de setembre de 2013, per la qual es fixen, de conformitat amb la directiva 2000/60/CE, del parlament Europeu i del consell, els valors de les classificacions dels sistemes de seguiment dels Estats membres",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/doue/2013/266/L00001-00047.pdf",
+      "url_document": "https://www.boe.es/doue/2013/266/L00001-00047.pdf",
+      "any_publicacio": 2013,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "directiva-200760ce-del-parlament-europeu-i-del-consell-de-23",
+      "codi": "ACA-NOR-010",
+      "titol": "Directiva 2007/60/CE del Parlament Europeu i del Consell, de 23 d'octubre de 2007, relativa a l'avaluació i gestió dels riscos d'inundació.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2007-82010",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2007-82010",
+      "any_publicacio": 2007,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov802019-de-4-de-juny-pel-qual-saprova-el-programa-de",
+      "codi": "ACA-NOR-011",
+      "titol": "Acord GOV/80/2019, de 4 de juny, pel qual s’aprova el Programa de seguiment i control del Districte de conca fluvial de Catalunya per al període 2019–2024",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=851149",
+      "url_document": "https://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=851149",
+      "any_publicacio": 2019,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov512023-de-14-de-marc-pel-qual-saprova-el-programa-d",
+      "codi": "ACA-NOR-012",
+      "titol": "ACORD GOV/51/2023, de 14 de març, pel qual s'aprova el Programa de mesures de l'àmbit hidrològic del Pla de gestió del risc d'inundació del districte de conca fluvial de Catalunya per al període 2022-2027",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=954820",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=954820",
+      "any_publicacio": 2023,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-mah24652006-de-13-de-juliol-pel-qual-es-fa-public-",
+      "codi": "ACA-NOR-013",
+      "titol": "Resolució MAH/2465/2006, de 13 de juliol, pel qual es fa públic l’Acord de Govern de 4 de juliol de 2006, pel qual s’aprova el Pla sectorial dels cabals de manteniment de les conques internes de Catalunya.",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=405673",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=405673",
+      "any_publicacio": 2006,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov12020-de-8-de-gener-pel-qual-saprova-el-pla-especia",
+      "codi": "ACA-NOR-014",
+      "titol": "Acord GOV/1/2020, de 8 de gener, pel qual s’aprova el Pla especial d’actuació en situació d’alerta i eventual sequera",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=865417",
+      "url_document": "https://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=865417",
+      "any_publicacio": 2020,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov1912023-de-19-de-setembre-pel-qual-es-modifica-punt",
+      "codi": "ACA-NOR-015",
+      "titol": "Acord Gov/191/2023, de 19 de setembre, pel qual es modifica puntualment el Pla especial d’actuació en situació d’alerta i eventual sequera, aprovat per Acord GOV/1/2020, de 8 de gener.",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=968735",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=968735",
+      "any_publicacio": 2023,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov172024-de-16-de-gener-pel-qual-sestableix-el-regim-",
+      "codi": "ACA-NOR-016",
+      "titol": "Acord Gov/17/2024, de 16 de gener, pel qual s’estableix el règim de cabals mínims circulants en situació d’emergència per sequera en determinats trams fluvials del districte de conca fluvial de Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=976251",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=976251",
+      "any_publicacio": 2024,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov182024-de-16-de-gener-pel-qual-sintrodueix-una-modi",
+      "codi": "ACA-NOR-017",
+      "titol": "Acord Gov/18/2024, de 16 de gener, pel qual s'introdueix una modificació puntual al Pla especial d'actuació en situació d'alerta i eventual sequera, aprovat per l'Acord GOV/1/2020, de 8 de gener",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=976273",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=976273",
+      "any_publicacio": 2024,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-llei-12023-de-28-de-febrer-pel-qual-sestableixen-mesu",
+      "codi": "ACA-NOR-018",
+      "titol": "Decret Llei 1/2023, de 28 de febrer, pel qual s'estableixen mesures extraordinàries i urgents per fer front a la situació de sequera excepcional en l'àmbit del districte de conca fluvial de Catalunya.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=953578",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=953578",
+      "any_publicacio": 2023,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov632023-de-21-de-marc-pel-qual-saprova-el-programa-d",
+      "codi": "ACA-NOR-019",
+      "titol": "Acord Gov/63/2023, de 21 de març, pel qual s'aprova el Programa de gestió específic dels sistemes públics de sanejament en alta de Catalunya 2022-2033, i es declaren d'interès prioritari de la Generalitat les obres i actuacions hidràuliques previstes en aquest Programa.",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=955496",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=955496",
+      "any_publicacio": 2023,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-912023-de-16-de-maig-pel-qual-saprova-el-pla-de-gesti",
+      "codi": "ACA-NOR-020",
+      "titol": "DECRET 91/2023, de 16 de maig, pel qual s'aprova el Pla de gestió del districte de conca fluvial de Catalunya per al període 2022-2027",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=960619",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=960619",
+      "any_publicacio": 2023,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov1082023-de-16-de-maig-pel-qual-saprova-el-programa-",
+      "codi": "ACA-NOR-021",
+      "titol": "ACORD GOV/108/2023, de 16 de maig, pel qual s'aprova el Programa de mesures del Pla de gestió del districte de conca fluvial de Catalunya per al període 2022-2027",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=960599",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=960599",
+      "any_publicacio": 2023,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-6902023-de-18-de-juliol-pel-qual-saprova-el-pla",
+      "codi": "ACA-NOR-022",
+      "titol": "Reial decret 690/2023, de 18 de juliol, pel qual s'aprova el Pla de gestió del districte de conca fluvial de Catalunya",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-16875",
+      "url_document": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-16875",
+      "any_publicacio": 2023,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov1912024-de-27-dagost-pel-qual-saprova-lestrategia-d",
+      "codi": "ACA-NOR-024",
+      "titol": "ACORD GOV/191/2024, de 27 d'agost, pel qual s'aprova l'Estratègia de la gestió de l'aigua i es determinen les mesures i actuacions per assolir la seguretat hídrica.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=993564",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=993564",
+      "any_publicacio": 2024,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-ter39382024-de-6-de-novembre-per-la-qual-es-fa-pub",
+      "codi": "ACA-NOR-025",
+      "titol": "RESOLUCIÓ TER/3938/2024, de 6 de novembre, per la qual es fa públic l'Acord del Consell d'Administració de l'Agència Catalana de l'Aigua pel qual s'aprova el Programa de seguiment i control del districte de conca fluvial de Catalunya per al període 2025-2030",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=998925",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=998925",
+      "any_publicacio": 2024,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-3802006-de-10-doctubre-pel-qual-saprova-el-reglament-",
+      "codi": "ACA-NOR-026",
+      "titol": "Decret 380/2006, de 10 d’octubre, pel qual s’aprova el reglament de la planificació hidrològica.",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=426757&language=ca_ES&textWords=Decret%2520380%2F2006&mode=single",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=426757&language=ca_ES&textWords=Decret%2520380%2F2006&mode=single",
+      "any_publicacio": 2006,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-282022-de-15-de-febrer-pel-qual-es-delimita-lambit-te",
+      "codi": "ACA-NOR-027",
+      "titol": "DECRET 28/2022, de 15 de febrer, pel qual es delimita l'àmbit territorial del Districte de Conca Hidrogràfica o Fluvial de Catalunya.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=920465",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=920465",
+      "any_publicacio": 2022,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-llei-42024-de-16-dabril-pel-qual-sadopten-mesures-urg",
+      "codi": "ACA-NOR-029",
+      "titol": "DECRET LLEI 4/2024, de 16 d'abril, pel qual s'adopten mesures urgents per pal·liar els efectes de la sequera en l'àmbit del districte de conca fluvial de Catalunya.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=983471",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=983471",
+      "any_publicacio": 2024,
+      "temes": [
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-352023-de-24-de-gener-pel-qual-saprova-la-revis",
+      "codi": "ACA-NOR-030",
+      "titol": "Reial Decret 35/2023, de 24 de gener, pel qual s'aprova la revisió dels plans hidrològics de les demarcacions hidrogràfiques del Cantàbric Occidental, Guadalquivir, Ceuta, Melilla, Segura i Xúquer, i de la part espanyola de les demarcacions hidrogràfiques del Cantàbric Oriental, Miño-Sil, Duero, Tajo, Guadiana i Ebre",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?lang=es&id=BOE-A-2023-3511&tn=1&p=",
+      "url_document": "https://www.boe.es/buscar/act.php?lang=es&id=BOE-A-2023-3511&tn=1&p=",
+      "any_publicacio": 2023,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-mam6982007-de-21-de-marc-pel-qual-saproven-els-plans-e",
+      "codi": "ACA-NOR-031",
+      "titol": "Ordre MAM/698/2007, de 21 de març, pel qual s’aproven els plans especials en situació d’alerta i eventual sequera en els àmbits dels plans hidrològics de les conques intercomunitàries",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-6228",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-6228",
+      "any_publicacio": 2007,
+      "temes": [
+        "hidrologia",
+        "sequera"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-9072007-de-6-de-juliol-pel-qual-saprova-el-regl",
+      "codi": "ACA-NOR-032",
+      "titol": "Reial decret 907/2007, de 6 de juliol, pel qual s’aprova el Reglament de la planificació hidrològica",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://boe.es/buscar/doc.php?id=BOE-A-2007-13182",
+      "url_document": "https://boe.es/buscar/doc.php?id=BOE-A-2007-13182",
+      "any_publicacio": 2007,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-arm26562008-de-10-de-setembre-per-la-qual-saprova-la-i",
+      "codi": "ACA-NOR-033",
+      "titol": "Ordre ARM/2656/2008, de 10 de setembre, per la qual s’aprova la instrucció de la planificació hidrològica",
+      "tipus": "instruccio",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2008-15340",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2008-15340",
+      "any_publicacio": 2008,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-102001-de-5-de-juliol-del-pla-hidrologic-nacional",
+      "codi": "ACA-NOR-035",
+      "titol": "Llei 10/2001, de 5 de juliol, del Pla hidrològic nacional",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2001-13042",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2001-13042",
+      "any_publicacio": 2001,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-1982015-de-23-de-marc-pel-qual-es-desplega-lart",
+      "codi": "ACA-NOR-036",
+      "titol": "Reial Decret 198/2015, de 23 de març, pel qual es desplega l'article 112 bis del text refós de la Llei d'Aigües i es regula el cànon per utilització de les aigües continentals per a la producció d'energia elèctrica a les demarcacions intercomunitàries.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-3182",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-3182",
+      "any_publicacio": 2015,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-llei-111995-de-28-de-desembre-pel-qual-sestable",
+      "codi": "ACA-NOR-037",
+      "titol": "Reial decret Llei 11/1995, de 28 de desembre, pel qual s’estableixen les normes aplicables al tractament de les aigües residuals urbanes",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://boe.es/buscar/doc.php?id=BOE-A-1995-27963",
+      "url_document": "https://boe.es/buscar/doc.php?id=BOE-A-1995-27963",
+      "any_publicacio": 1995,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-5091996-de-15-de-marc-de-desplegament-del-reial",
+      "codi": "ACA-NOR-038",
+      "titol": "Reial decret 509/1996, de 15 de març de desplegament del Reial decret llei 11/1995, de 28 de desembre",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-1996-7159",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-1996-7159",
+      "any_publicacio": 1996,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-16202007-de-7-de-desembre-pel-qual-sestableix-e",
+      "codi": "ACA-NOR-039",
+      "titol": "Reial decret 1620/2007, de 7 de desembre, pel qual s’estableix el règim jurídic de la reutilització de les aigües depurades",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-21092",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-21092",
+      "any_publicacio": 2007,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-mam9852006-de-23-de-marc-per-la-qual-es-desenvolupa-el",
+      "codi": "ACA-NOR-040",
+      "titol": "Ordre MAM/985/2006, de 23 de març, per la qual es desenvolupa el règim jurídic de les entitats col·laboradores de l’administració hidràulica en matèria de control i vigilància de la qualitat de les aigües i de gestió dels abocaments al domini públic hidràulic",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2006-6087",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2006-6087",
+      "any_publicacio": 2006,
+      "temes": [
+        "hidrologia",
+        "drenatge",
+        "qualitat-aigues",
+        "dph"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-arm13122009-de-20-de-maig-per-la-qual-es-regulen-els-s",
+      "codi": "ACA-NOR-041",
+      "titol": "Ordre ARM/1312/2009, de 20 de maig, per la qual es regulen els sistemes per a realitzar el control efectiu dels volums d’aigua utilitzats pels aprofitaments d’aigua del domini públic hidràulic, dels retorns a l’esmentat domini públic hidràulic i dels abocaments al mateix.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2009-8731",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2009-8731",
+      "any_publicacio": 2009,
+      "temes": [
+        "hidrologia",
+        "drenatge",
+        "dph"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-aaa20562014-de-27-doctubre-pel-qual-saproven-els-model",
+      "codi": "ACA-NOR-042",
+      "titol": "Ordre AAA/2056/2014, de 27 d’octubre, pel qual s’aproven els models oficials de sol·licitud i declaració d’abocament",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://boe.es/diario_boe/txt.php?id=BOE-A-2014-11411",
+      "url_document": "https://boe.es/diario_boe/txt.php?id=BOE-A-2014-11411",
+      "any_publicacio": 2014,
+      "temes": [
+        "drenatge"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-apm1302018-de-25-de-gener-per-la-qual-es-determinen-le",
+      "codi": "ACA-NOR-043",
+      "titol": "Ordre APM/130/2018, de 25 de gener, per la qual es determinen les especificacions tècniques pel enviament de la informació al Cens Nacional d'Abocaments.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-2251",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-2251",
+      "any_publicacio": 2018,
+      "temes": [
+        "drenatge"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-1302003-de-13-de-maig-pel-qual-saprova-el-reglament-d",
+      "codi": "ACA-NOR-044",
+      "titol": "Decret 130/2003, de 13 de maig, pel qual s’aprova el Reglament dels serveis públics de sanejament",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?documentId=322238&action=fitxa",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?documentId=322238&action=fitxa",
+      "any_publicacio": 2003,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-mah1222004-de-13-dabril-per-la-qual-saproven-els-model",
+      "codi": "ACA-NOR-045",
+      "titol": "Ordre MAH/122/2004, de 13 d’abril, per la qual s’aproven els models de declaració d’abocament",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=335081",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=335081",
+      "any_publicacio": 2004,
+      "temes": [
+        "drenatge"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-mah2852007-de-7-de-febrer-per-la-qual-es-dona-publ",
+      "codi": "ACA-NOR-046",
+      "titol": "Resolució MAH/285/2007, de 7 de febrer, per la qual es dona publicitat a l’Acord del Consell d’Administració de l’Agència Catalana de l’Aigua d’1 d’abril de 2004, de fixació de criteris en relació amb la vigilància i control de la qualitat de les aigües marines litorals i dels paràmetres i límits dels abocaments Terra-mar",
+      "tipus": "criteri",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=433406",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=433406",
+      "any_publicacio": 2007,
+      "temes": [
+        "drenatge",
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-6702013-de-6-de-setembre-pel-qual-es-modifica-e",
+      "codi": "ACA-NOR-047",
+      "titol": "Reial decret 670/2013, de 6 de setembre, pel qual es modifica el Reglament del Domini Públic Hidràulic aprovat pel Reial decret 849/1986, d'11 d'abril, en matèria de registre d'aigües i criteris de valoració de danys al domini públic hidràulic.",
+      "tipus": "criteri",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?lang=es&id=BOE-A-2013-9775",
+      "url_document": "https://www.boe.es/buscar/doc.php?lang=es&id=BOE-A-2013-9775",
+      "any_publicacio": 2013,
+      "temes": [
+        "hidrologia",
+        "dph"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-acc17712024-de-13-de-maig-per-la-qual-es-revisa-la",
+      "codi": "ACA-NOR-048",
+      "titol": "RESOLUCIÓ ACC/1771/2024, de 13 de maig, per la qual es revisa la declaració de les zones sensibles del districte de conca fluvial de Catalunya i de les zones costaneres",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=986358",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=986358",
+      "any_publicacio": 2024,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-ter42442024-de-23-de-novembre-de-la-direccio-de-la",
+      "codi": "ACA-NOR-049",
+      "titol": "RESOLUCIÓ TER/4244/2024, de 23 de novembre, de la Direcció de l'Agència Catalana de l'Aigua, per la qual s'aprova l'Inventari de sistemes públics de sanejament que han d'elaborar plans integrals de gestió dels sistemes de sanejament (PIGSS).",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1000751",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1000751",
+      "any_publicacio": 2024,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-13101990-de-29-doctubre-pel-qual-es-regula-la-u",
+      "codi": "ACA-NOR-050",
+      "titol": "Reial decret 1310/1990, de 29 d’octubre, pel qual es regula la utilització dels llots de depuradora al sector agrari",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-1990-26490",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-1990-26490",
+      "any_publicacio": 1990,
+      "temes": [
+        "sanejament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov132015-de-3-de-febrer-pel-qual-es-revisen-i-amplien",
+      "codi": "ACA-NOR-051",
+      "titol": "Acord GOV/13/2015, de 3 de febrer, pel qual es revisen i amplien les zones vulnerables a la contaminació per nitrats procedents de fonts agràries",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=684097",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=684097",
+      "any_publicacio": 2015,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-1532019-de-3-de-juliol-de-gestio-de-la-fertilitzacio-",
+      "codi": "ACA-NOR-052",
+      "titol": "Decret 153/2019, de 3 de juliol, de gestió de la fertilització del sòl i de les dejeccions ramaderes i d'aprovació del programa d'actuació a les zones vulnerables en relació amb la contaminació per nitrats que procedeixen de fonts agràries",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=853461",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=853461",
+      "any_publicacio": 2019,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-tes802021-de-9-dabril-per-la-qual-es-revisen-les-zones",
+      "codi": "ACA-NOR-053",
+      "titol": "ORDRE TES/80/2021, de 9 d'abril, per la qual es revisen les zones vulnerables en relació amb la contaminació per nitrats procedents de fonts agràries i s'apliquen les mesures del programa d'actuació a les zones vulnerables.",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=898075",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=898075",
+      "any_publicacio": 2021,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-472022-de-18-de-gener-sobre-proteccio-de-les-ai",
+      "codi": "ACA-NOR-054",
+      "titol": "Reial Decret 47/2022, de 18 de gener, sobre protecció de les aigües contra la contaminació difosa produïda pels nitrats procedents de fonts agràries.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-860",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-860",
+      "any_publicacio": 2022,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-de-9-de-maig-de-2022-de-la-direccion-general-del-a",
+      "codi": "ACA-NOR-055",
+      "titol": "Resolució de 9 de maig de 2022, de la Dirección General del Agua, per la que es publiquen els mapes de les aigües afectades por la contaminació difusa",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-8372",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-8372",
+      "any_publicacio": 2022,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-15142009-de-2-doctubre-pel-qual-es-regula-la-pr",
+      "codi": "ACA-NOR-056",
+      "titol": "Reial decret 1514/2009, de 2 d’octubre, pel qual es regula la protecció de els aigües subterrànies contra la contaminació i el deteriorament",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-16772",
+      "url_document": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-16772",
+      "any_publicacio": 2009,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "edicte-de-31-doctubre-de-2000-pel-qual-es-dona-publicitat-a-",
+      "codi": "ACA-NOR-057",
+      "titol": "Edicte de 31 d'octubre de 2000, pel qual es dóna publicitat a l'Acord de 5 d'octubre de 2000, pel qual s'estableix, a l'empara de l'article 53 de la Llei 29/1985, de 2 d'agost, d'aigües, el règim d'explotació de l'aqüífer al·luvial de la Tordera",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=265520",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=265520",
+      "any_publicacio": 2000,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "edicte-de-14-de-gener-de-2003-pel-qual-es-dona-publicitat-a-",
+      "codi": "ACA-NOR-058",
+      "titol": "Edicte de 14 de gener de 2003, pel qual es dóna publicitat a l'Acord de 12 de desembre de 2002",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=309895",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=309895",
+      "any_publicacio": 2003,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "edicte-de-26-de-setembre-de-2003",
+      "codi": "ACA-NOR-059",
+      "titol": "EDICTE de 26 de setembre de 2003",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&mode=single&documentId=322743&language=ca_ES",
+      "url_document": "https://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&mode=single&documentId=322743&language=ca_ES",
+      "any_publicacio": 2003,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "edicte-de-3-de-marc-de-2004-pel-qual-es-dona-publicitat-a-la",
+      "codi": "ACA-NOR-060",
+      "titol": "Edicte de 3 de març de 2004, pel qual es dóna publicitat a l'Acord de 26 de febrer de 2004 del Consell d'Administració de l'Agència Catalana de l'Aigua",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=338123",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=338123",
+      "any_publicacio": 2004,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "edicte-de-10-de-desembre-de-2004-pel-qual-es-dona-publicitat",
+      "codi": "ACA-NOR-061",
+      "titol": "Edicte de 10 de desembre de 2004, pel qual es dóna publicitat a l'Acord de 2 de desembre de 2004 del Consell d'Administració de l'Agència Catalana de l'Aigua",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=357207",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=357207",
+      "any_publicacio": 2004,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "edicte-de-10-doctubre-de-2006-pel-qual-es-dona-publicitat-a-",
+      "codi": "ACA-NOR-062",
+      "titol": "Edicte de 10 d'octubre de 2006, pel qual es dóna publicitat a l'Acord de 14 de setembre de 2006 del Consell d'Administració de l'Agència Catalana de l'Aigua",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=458166",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=458166",
+      "any_publicacio": 2006,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "edicte-de-28-de-desembre-de-2006-pel-qual-es-dona-publicitat",
+      "codi": "ACA-NOR-063",
+      "titol": "Edicte de 28 de desembre de 2006, pel qual es dóna publicitat a l'Acord d'11 de desembre de 2006 del Consell d'Administració de l'Agència Catalana de l'Aigua, pel qual s'aprova el Pla d'ordenació d'extraccions de l'aqüífer Carme-Capellades",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=393053",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=393053",
+      "any_publicacio": 2006,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-de-31-de-gener-de-1995-de-la-secretaria-destat-din",
+      "codi": "ACA-NOR-064",
+      "titol": "Resolució de 31 de gener de 1995, de la Secretaria d’Estat d’interior, per la qual es disposa la publicació de l’Acord del Consell de Ministres pel qual s’aprova la Directriu Bàsica de planificació de Protecció Civil front el risc d’inundacions",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-1995-3865",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-1995-3865",
+      "any_publicacio": 1995,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "ordre-tes3412013-de-16-de-desembre-per-la-qual-es-crea-i-sor",
+      "codi": "ACA-NOR-065",
+      "titol": "Ordre TES/341/2013, de 16 de desembre, per la qual es crea i s’organitza el registre des seguretat de preses i embassaments",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=651851",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=651851",
+      "any_publicacio": 2013,
+      "temes": [
+        "preses"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "resolucio-tes25432014-de-3-de-novembre-per-la-qual-es-classi",
+      "codi": "ACA-NOR-066",
+      "titol": "Resolució TES/2543/2014, de 3 de novembre, per la qual es classifiquen els embassaments i els trams de riu del districte de conca fluvial de Catalunya a efectes de navegació i s’estableixen limitacions als espais navegables i de bany",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=675016",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=675016",
+      "any_publicacio": 2014,
+      "temes": [
+        "preses"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-2642021-de-13-dabril-pel-que-saproven-les-norme",
+      "codi": "ACA-NOR-067",
+      "titol": "Reial Decret 264/2021, de 13 d'abril, pel que s'aproven les normes tècniques de seguretat per a preses i els seus embassaments",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-5867",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-5867",
+      "any_publicacio": 2021,
+      "temes": [
+        "preses"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "orden-ted2252025-de-24-de-febrero-por-la-que-se-establecen-l",
+      "codi": "ACA-NOR-068",
+      "titol": "Orden TED/225/2025, de 24 de febrero, por la que se establecen los procedimientos administrativos derivados de las normas técnicas de seguridad para las presas y sus embalses aprobadas por el Real Decreto 264/2021, de 13 de abril.",
+      "tipus": "instruccio",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4691",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4691",
+      "any_publicacio": 2025,
+      "temes": [
+        "preses"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-32023-de-10-de-gener-pel-que-sestableixen-els-c",
+      "codi": "ACA-NOR-069",
+      "titol": "Reial Decret 3/2023, de 10 de gener, pel que s'estableixen els criteris tècnico-sanitaris de la qualitat de l'aigua de consum, el seu control i subministrament",
+      "tipus": "criteri",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-628",
+      "url_document": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-628",
+      "any_publicacio": 2023,
+      "temes": [
+        "qualitat-aigues",
+        "abastament"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "directiva-ue-20202184-del-parlament-europeu-i-del-consell-de",
+      "codi": "ACA-NOR-070",
+      "titol": "DIRECTIVA (UE) 2020/2184 DEL PARLAMENT EUROPEU I DEL CONSELL de 16 de desembre de 2020 relativa a la qualitat de les aigües destinades al consum humà",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2020-81947",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2020-81947",
+      "any_publicacio": 2020,
+      "temes": [
+        "qualitat-aigues"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-262023-de-17-de-gener-pel-qual-saprova-la-revis",
+      "codi": "ACA-NOR-071",
+      "titol": "Reial decret 26/2023, de 17 de gener, pel qual s'aprova la revisió i actualització dels plans de gestió del risc d'inundació de les demarcacions hidrogràfiques del Cantàbric Occidental, Guadalquivir, Segura, Xúquer i de la part espanyola de les demarcacions hidrogràfiques del Miño-Sil, Duero, Tajo, Guadiana, Ebre, Ceuta i Melilla",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-1380",
+      "url_document": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-1380",
+      "any_publicacio": 2023,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-9032010-de-9-de-juliol-davaluacio-i-gestio-dels",
+      "codi": "ACA-NOR-072",
+      "titol": "Reial decret 903/2010, de 9 de juliol, d’avaluació i gestió dels riscos d’inundació",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-11184",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-11184",
+      "any_publicacio": 2010,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "acord-gov1182017-d1-dagost-pel-qual-saprova-el-programa-de-m",
+      "codi": "ACA-NOR-073",
+      "titol": "Acord GOV/118/2017, d’1 d’agost, pel qual s’aprova el Programa de mesures de l’àmbit hidrològic del Pla de gestió del risc d’inundació del districte de conca fluvial de Catalunya",
+      "tipus": "pla",
+      "estat": "VIGENT",
+      "url_fitxa": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=794536",
+      "url_document": "http://dogc.gencat.cat/ca/pdogc_canals_interns/pdogc_resultats_fitxa/?action=fitxa&documentId=794536",
+      "any_publicacio": 2017,
+      "temes": [
+        "hidrologia"
+      ],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-952000-de-22-de-febrer-pel-qual-sestableixen-les-norm",
+      "codi": "ACA-NOR-074",
+      "titol": "Decret 95/2000, de 22 de febrer, pel qual s’estableixen les normes sanitàries aplicables a piscines d’ús públic",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=232053&language=ca_ES&textWords=Decret%252095%2F2000&mode=single",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=232053&language=ca_ES&textWords=Decret%252095%2F2000&mode=single",
+      "any_publicacio": 2000,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-32009-del-10-de-marc-de-regularitzacio-i-millora-durban",
+      "codi": "ACA-NOR-075",
+      "titol": "Llei 3/2009, del 10 de març, de regularització i millora d’urbanitzacions amb dèficits urbanístics",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=513575&language=ca_ES&textWords=Llei%25203%2F2009&mode=single",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=513575&language=ca_ES&textWords=Llei%25203%2F2009&mode=single",
+      "any_publicacio": 2009,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-202009-de-4-de-desembre-de-prevencio-i-control-ambienta",
+      "codi": "ACA-NOR-076",
+      "titol": "Llei 20/2009, de 4 de desembre, de prevenció i control ambiental de les activitats",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=503653&language=ca_ES&textWords=Llei%252020%2F2009&mode=single",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=503653&language=ca_ES&textWords=Llei%252020%2F2009&mode=single",
+      "any_publicacio": 2009,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-legislatiu-12010-de-3-dagost-pel-qual-saprova-el-text",
+      "codi": "ACA-NOR-077",
+      "titol": "Decret legislatiu 1/2010, de 3 d’agost pel qual s’aprova el text refós de la Llei d’urbanisme",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=546114&language=ca_ES&textWords=Decret%2520legislatiu%25201%2F2010%2C%2520&mode=single",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=546114&language=ca_ES&textWords=Decret%2520legislatiu%25201%2F2010%2C%2520&mode=single",
+      "any_publicacio": 2010,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "decret-602015-de-28-dabril-sobre-entitats-collaboradores-en-",
+      "codi": "ACA-NOR-078",
+      "titol": "Decret 60/2015, de 28 d’abril, sobre entitats col·laboradores en matèria de medi ambient",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=692396&language=ca_ES&textWords=Decret%252060%2F2015&mode=single",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=692396&language=ca_ES&textWords=Decret%252060%2F2015&mode=single",
+      "any_publicacio": 2015,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-82020-del-30-de-juliol-de-proteccio-i-ordenacio-del-lit",
+      "codi": "ACA-NOR-079",
+      "titol": "Llei 8/2020, del 30 de juliol, de protecció i ordenació del litoral.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=879475",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=879475",
+      "any_publicacio": 2020,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-72020-del-2-de-juliol-de-lagencia-de-la-natura-de-catal",
+      "codi": "ACA-NOR-080",
+      "titol": "Llei 7/2020, del 2 de juliol, de l'Agència de la Natura de Catalunya",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=877327",
+      "url_document": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=877327",
+      "any_publicacio": 2020,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-162017-de-l1-dagost-del-canvi-climatic",
+      "codi": "ACA-NOR-081",
+      "titol": "Llei 16/2017, de l'1 d'agost, del canvi climàtic",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=794493",
+      "url_document": "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=794493",
+      "any_publicacio": 2017,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-221988-de-28-de-juliol-de-costes",
+      "codi": "ACA-NOR-082",
+      "titol": "Llei 22/1988, de 28 de juliol, de Costes",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-18762",
+      "url_document": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-18762",
+      "any_publicacio": 1988,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-262007-de-23-doctubre-de-responsabilitat-ambiental",
+      "codi": "ACA-NOR-083",
+      "titol": "Llei 26/2007, de 23 d’octubre, de responsabilitat ambiental",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-18475",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-18475",
+      "any_publicacio": 2007,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-212013-de-9-de-desembre-davaluacio-ambiental",
+      "codi": "ACA-NOR-084",
+      "titol": "Llei 21/2013, de 9 de desembre d’avaluació ambiental",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://boe.es/buscar/act.php?id=BOE-A-2013-12913",
+      "url_document": "http://boe.es/buscar/act.php?id=BOE-A-2013-12913",
+      "any_publicacio": 2013,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-legislatiu-22011-de-5-de-setembre-pel-qual-sapr",
+      "codi": "ACA-NOR-085",
+      "titol": "Reial decret legislatiu 2/2011, de 5 de setembre, pel qual s’aprova el text refós de la Llei de Ports de l’estat i de la marina mercant",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=775949&language=ca_ES&textWords=Reial%2520decret%2520legislatiu%25201%2F2016&mode=single",
+      "url_document": "http://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_resultats_fitxa/?action=fitxa&documentId=775949&language=ca_ES&textWords=Reial%2520decret%2520legislatiu%25201%2F2016&mode=single",
+      "any_publicacio": 2011,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-5152013-de-5-de-juliol-pel-qual-es-regulen-els-",
+      "codi": "ACA-NOR-086",
+      "titol": "Reial decret 515/2013, de 5 de juliol, pel qual es regulen els criteris i el procediment per determinar i repercutir les responsabilitats per incompliment del Dret de la Unió Europea",
+      "tipus": "criteri",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-7385",
+      "url_document": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-7385",
+      "any_publicacio": 2013,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-72021-de-20-de-maig-sobre-canvi-climatic-i-transicio-en",
+      "codi": "ACA-NOR-087",
+      "titol": "Llei 7/2021, de 20 de maig, sobre canvi climàtic i transició energètica",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://boe.es/buscar/act.php?id=BOE-A-2021-8447",
+      "url_document": "https://boe.es/buscar/act.php?id=BOE-A-2021-8447",
+      "any_publicacio": 2021,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-6462020-de-7-de-juliol-pel-qual-es-regula-lelim",
+      "codi": "ACA-NOR-088",
+      "titol": "Reial decret 646/2020, de 7 de juliol, pel qual es regula l'eliminació de residus mitjançant dipòsit en abocador",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/eli/es/rd/2020/07/07/646",
+      "url_document": "https://www.boe.es/eli/es/rd/2020/07/07/646",
+      "any_publicacio": 2020,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-20902008-de-22-de-desembre-pel-qual-saprova-el-",
+      "codi": "ACA-NOR-089",
+      "titol": "Reial decret 2090/2008, de 22 de desembre, pel qual s’aprova el Reglament de desplegament parcial de la Llei 26/2007, de 23 d’octubre, de responsabilitat mediambiental",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-20680",
+      "url_document": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-20680",
+      "any_publicacio": 2008,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "reial-decret-8762014-de-10-doctubre-pel-qual-saprova-el-regl",
+      "codi": "ACA-NOR-090",
+      "titol": "Reial decret 876/2014, de 10 d’octubre, pel qual s’aprova el Reglament general de costes",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/eli/es/rd/2014/10/10/876",
+      "url_document": "https://www.boe.es/eli/es/rd/2014/10/10/876",
+      "any_publicacio": 2014,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    },
+    {
+      "id": "llei-272006-de-18-de-juliol-per-la-que-es-regulen-els-drets-",
+      "codi": "ACA-NOR-091",
+      "titol": "Llei 27/2006, de 18 de juliol, per la que es regulen els drets d’accés a la informació, de participació pública i d’accés a la justícia en matèria de medi ambient.",
+      "tipus": "altre",
+      "estat": "VIGENT",
+      "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13010",
+      "url_document": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13010",
+      "any_publicacio": 2006,
+      "temes": [],
+      "font": "ACA",
+      "observacions": ""
+    }
+  ]
+}

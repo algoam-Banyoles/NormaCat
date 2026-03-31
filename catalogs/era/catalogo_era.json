@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "font": "European Union Agency for Railways (ERA) / CENELEC",
+    "url_base": "https://www.era.europa.eu",
+    "data_scraping": "2026-03-17",
+    "total_documents": 14,
+    "versio": "1.0",
+    "source": "static fallback"
+  },
+  "documents": [
+    {
+      "codi": "ETI-INF-HS",
+      "titol": "ETI Infraestructura - Alta Velocitat",
+      "reglament": "EU 1299/2014",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 1299/2014"
+    },
+    {
+      "codi": "ETI-INF-CC",
+      "titol": "ETI Infraestructura - Xarxa Convencional",
+      "reglament": "EU 1299/2014",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 1299/2014"
+    },
+    {
+      "codi": "ETI-ENE",
+      "titol": "ETI Energia",
+      "reglament": "EU 1301/2014",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 1301/2014"
+    },
+    {
+      "codi": "ETI-CCS",
+      "titol": "ETI Control-Comandament i Senyalització",
+      "reglament": "EU 2016/919",
+      "any_publicacio": 2016,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 2016/919"
+    },
+    {
+      "codi": "ETI-WAG",
+      "titol": "ETI Material Rodant - Vagons",
+      "reglament": "EU 321/2013",
+      "any_publicacio": 2013,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 321/2013"
+    },
+    {
+      "codi": "ETI-LOC-PAS",
+      "titol": "ETI Material Rodant - Locomotores i Tren Passatgers",
+      "reglament": "EU 1302/2014",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 1302/2014"
+    },
+    {
+      "codi": "ETI-NOI",
+      "titol": "ETI Persones amb Mobilitat Reduïda",
+      "reglament": "EU 1300/2014",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 1300/2014"
+    },
+    {
+      "codi": "ETI-OPE",
+      "titol": "ETI Explotació i Gestió del Trànsit",
+      "reglament": "EU 2015/995",
+      "any_publicacio": 2015,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 2015/995"
+    },
+    {
+      "codi": "ETI-TAF",
+      "titol": "ETI Aplicacions Telemàtiques Mercaderies",
+      "reglament": "EU 1305/2014",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 1305/2014"
+    },
+    {
+      "codi": "ETI-TAP",
+      "titol": "ETI Aplicacions Telemàtiques Passatgers",
+      "reglament": "EU 454/2011",
+      "any_publicacio": 2011,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 454/2011"
+    },
+    {
+      "codi": "ETI-SRT",
+      "titol": "ETI Seguretat en Túnels Ferroviaris",
+      "reglament": "EU 1303/2014",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: EU 1303/2014"
+    },
+    {
+      "codi": "ETI-RAM-STR",
+      "titol": "EN 50126 RAMS - Especificació i Demostració",
+      "reglament": "CENELEC EN 50126-1",
+      "any_publicacio": 2017,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: CENELEC EN 50126-1"
+    },
+    {
+      "codi": "ETI-SW-SEC",
+      "titol": "EN 50128 Software per a sistemes ferroviaris",
+      "reglament": "CENELEC EN 50128",
+      "any_publicacio": 2011,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: CENELEC EN 50128"
+    },
+    {
+      "codi": "ETI-SEC-SIS",
+      "titol": "EN 50129 Aprovació seguretat sistemes electrònics",
+      "reglament": "CENELEC EN 50129",
+      "any_publicacio": 2018,
+      "estat": "VIGENT",
+      "font": "ERA/CENELEC",
+      "url_fitxa": "https://www.era.europa.eu/domains/technical-standards-ims/technical-specifications-interoperability_en",
+      "url_document": null,
+      "temes": [
+        "ferroviari"
+      ],
+      "observacions": "Reglament: CENELEC EN 50129"
+    }
+  ]
+}
