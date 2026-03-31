@@ -19,6 +19,7 @@ import re
 import sys
 import time
 from datetime import datetime
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 import requests
@@ -26,11 +27,16 @@ from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from config import PROJECT_ROOT, CATALOGS_DIR
+
 # ─── Constants ────────────────────────────────────────────────────────────────
 BASE_URL   = "https://aca.gencat.cat"
-OUTPUT_DIR = "normativa_aca"
 DELAY      = 1.0    # seconds between requests
 TIMEOUT    = 30     # seconds per request
+
+# Paths de sortida NormaCat
+ACA_CATALOG_DIR   = CATALOGS_DIR / "aca"
+ACA_DOWNLOADS_DIR = PROJECT_ROOT / "downloads" / "aca"
 
 SECTIONS = [
     {
@@ -460,7 +466,15 @@ def download_pdf(url: str, dest_dir: str, filename: str,
 
 # ─── Main catalog builder ─────────────────────────────────────────────────────
 
-def build_catalog(output_dir: str = OUTPUT_DIR, download: bool = False) -> tuple[list[dict], dict]:
+def build_catalog(catalog_dir=None, downloads_dir=None, download: bool = False) -> tuple[list[dict], dict]:
+    if catalog_dir is None:
+        catalog_dir = ACA_CATALOG_DIR
+    if downloads_dir is None:
+        downloads_dir = ACA_DOWNLOADS_DIR
+    catalog_dir = Path(catalog_dir)
+    downloads_dir = Path(downloads_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
+
     session    = _make_session()
     visited    = set()
     all_docs   = []
@@ -502,8 +516,8 @@ def build_catalog(output_dir: str = OUTPUT_DIR, download: bool = False) -> tuple
             seen_urls.add(key)
             unique_docs.append(doc)
 
-    # ── Optional PDF download ─────────────────────────────────────────────────
-    pdf_dir        = os.path.join(output_dir, "pdfs")
+    # ── Descàrrega opcional de PDFs ─────────────────────────────────────────
+    pdf_dir        = downloads_dir / "pdfs"
     downloaded_cnt = 0
     if download:
         print("\n  Descarregant PDFs directes...", flush=True)
@@ -514,9 +528,9 @@ def build_catalog(output_dir: str = OUTPUT_DIR, download: bool = False) -> tuple
             slug     = (doc.get("id") or "doc")[:60]
             ext      = os.path.splitext(urlparse(url_d).path)[1] or ".pdf"
             filename = f"{slug}{ext}"
-            ok = download_pdf(url_d, pdf_dir, filename, session)
+            ok = download_pdf(url_d, str(pdf_dir), filename, session)
             if ok:
-                doc["url_local"] = os.path.join("normativa_aca", "pdfs", filename)
+                doc["url_local"] = str(pdf_dir / filename)
                 downloaded_cnt  += 1
             time.sleep(0.5)
 
@@ -530,20 +544,18 @@ def build_catalog(output_dir: str = OUTPUT_DIR, download: bool = False) -> tuple
     }
     catalog = {"metadata": meta, "documents": unique_docs}
 
-    # ── Save JSON ────────────────────────────────────────────────────────────
-    catalog_dir = os.path.join(output_dir, "_catalogo")
-    os.makedirs(catalog_dir, exist_ok=True)
-    json_path = os.path.join(catalog_dir, "catalogo_aca.json")
+    # ── Desar JSON ────────────────────────────────────────────────────────────
+    json_path = catalog_dir / "catalogo_aca.json"
     with open(json_path, "w", encoding="utf-8") as fh:
         json.dump(catalog, fh, ensure_ascii=False, indent=2)
 
-    # ── Save resum ───────────────────────────────────────────────────────────
+    # ── Desar resum ──────────────────────────────────────────────────────────
     _save_resum(unique_docs, catalog_dir)
 
     return unique_docs, meta
 
 
-def _save_resum(docs: list[dict], catalog_dir: str) -> None:
+def _save_resum(docs: list[dict], catalog_dir: Path) -> None:
     tipus_counts: dict[str, int] = {}
     temes_counts: dict[str, int] = {}
     pdfs_directes = 0
@@ -568,7 +580,7 @@ def _save_resum(docs: list[dict], catalog_dir: str) -> None:
         f"PDFs directes trobats: {pdfs_directes}",
     ]
 
-    txt_path = os.path.join(catalog_dir, "resum_aca.txt")
+    txt_path = catalog_dir / "resum_aca.txt"
     with open(txt_path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
 
@@ -586,7 +598,6 @@ if __name__ == "__main__":
     args    = sys.argv[1:]
     do_dl   = "--download" in args
     do_dbg  = "--debug"    in args
-    out_dir = next((a for a in args if not a.startswith("--")), OUTPUT_DIR)
 
     if do_dbg:
         debug_page(SECTIONS[0]["url"])
@@ -594,20 +605,20 @@ if __name__ == "__main__":
 
     print("=" * 55)
     print(" ACA Scraper — Agència Catalana de l'Aigua")
-    print(f" Destí: {os.path.join(out_dir, '_catalogo', 'catalogo_aca.json')}")
+    print(f" Catàleg: {ACA_CATALOG_DIR / 'catalogo_aca.json'}")
     if do_dl:
-        print(" Mode: scraping + descàrrega de PDFs")
+        print(f" Descàrregues: {ACA_DOWNLOADS_DIR / 'pdfs'}")
     print("=" * 55)
 
-    docs, meta = build_catalog(out_dir, download=do_dl)
+    docs, meta = build_catalog(download=do_dl)
 
     direct_pdfs  = sum(1 for d in docs if d.get("url_document") and _is_doc_url(d["url_document"]))
     downloaded   = sum(1 for d in docs if d.get("url_local"))
 
     print()
-    print("[OK] ACA scraping complete")
-    print(f"[DOC] Documents found: {meta['total_documents']}")
-    print(f"[DOC] Direct PDFs detected: {direct_pdfs}")
+    print("[OK] Scraping ACA completat")
+    print(f"[DOC] Documents trobats: {meta['total_documents']}")
+    print(f"[DOC] PDFs directes detectats: {direct_pdfs}")
     if do_dl:
-        print(f"[OK] PDFs downloaded: {downloaded}  (to {os.path.join(out_dir, 'pdfs')})")
-    print(f"[OK] Catalog saved to {os.path.join(out_dir, '_catalogo', 'catalogo_aca.json')}")
+        print(f"[OK] PDFs descarregats: {downloaded}  (a {ACA_DOWNLOADS_DIR / 'pdfs'})")
+    print(f"[OK] Catàleg desat a {ACA_CATALOG_DIR / 'catalogo_aca.json'}")

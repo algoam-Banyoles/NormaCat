@@ -22,6 +22,9 @@ import json
 import os
 import sys
 import time
+from pathlib import Path
+
+from config import PROJECT_ROOT, CATALOGS_DIR, DATA_DIR
 
 # UTF-8 on Windows consoles
 if hasattr(sys.stdout, "reconfigure"):
@@ -37,9 +40,8 @@ from urllib3.util.retry import Retry
 
 API_BASE     = "https://boe.es/datosabiertos/api"
 BOE_BASE     = "https://www.boe.es"
-OUTPUT_DIR   = "normativa_boe"
-CATALOG_DIR  = os.path.join(OUTPUT_DIR, "_catalogo")
-CATALOG_PATH = os.path.join(CATALOG_DIR, "catalogo_boe.json")
+BOE_CATALOG_DIR  = CATALOGS_DIR / "boe"
+BOE_CATALOG_PATH = BOE_CATALOG_DIR / "catalogo_boe.json"
 
 DELAY        = 1.0      # seconds between requests
 PAGE_SIZE    = 50
@@ -245,9 +247,10 @@ def _build_entry(meta: dict, categoria: str) -> dict:
     }
 
 
-def _save_incremental(catalog: list[dict], path: str) -> None:
+def _save_incremental(catalog: list[dict], path: Path) -> None:
     """Write catalog to JSON (incremental save after each batch)."""
-    os.makedirs(os.path.dirname(path), exist_ok=True)
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=2)
 
@@ -355,14 +358,17 @@ def search_thematic(
 
 # ─── Merge into normativa_annexes.json ────────────────────────────────────────
 
-def merge_into_annexes(catalog: list[dict], annexes_path: str = "normativa_annexes.json") -> None:
+def merge_into_annexes(catalog: list[dict], annexes_path=None) -> None:
     """Add newly discovered DEROGADA entries to normativa_annexes.json."""
-    if not os.path.exists(annexes_path):
+    if annexes_path is None:
+        annexes_path = DATA_DIR / "normativa_annexes.json"
+    annexes_path = Path(annexes_path)
+    if not annexes_path.exists():
         print(f"  [INFO] {annexes_path} no trobat, omitint merge")
         return
 
     import shutil
-    backup = annexes_path + ".bak"
+    backup = annexes_path.with_suffix(".json.bak")
     shutil.copy2(annexes_path, backup)
 
     with open(annexes_path, encoding="utf-8") as f:
@@ -402,11 +408,12 @@ def merge_into_annexes(catalog: list[dict], annexes_path: str = "normativa_annex
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
-def main(output_dir: str = OUTPUT_DIR) -> None:
-    global CATALOG_PATH, CATALOG_DIR
-    if output_dir != OUTPUT_DIR:
-        CATALOG_DIR  = os.path.join(output_dir, "_catalogo")
-        CATALOG_PATH = os.path.join(CATALOG_DIR, "catalogo_boe.json")
+def main(catalog_dir=None) -> None:
+    if catalog_dir is None:
+        catalog_dir = BOE_CATALOG_DIR
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
+    catalog_path = catalog_dir / "catalogo_boe.json"
 
     print("=== BOE Catalog Builder (OpenData API) ===")
 
@@ -436,7 +443,7 @@ def main(output_dir: str = OUTPUT_DIR) -> None:
             print(f"  [WARNING] {doc_id} -> no result / ja existent")
         time.sleep(DELAY)
 
-    _save_incremental(catalog, CATALOG_PATH)
+    _save_incremental(catalog, catalog_path)
 
     # 2) Thematic searches
     print("\n[2/3] Cerca tematica")
@@ -444,7 +451,7 @@ def main(output_dir: str = OUTPUT_DIR) -> None:
         print(f"\n  Buscant: {query_term} ({categoria})...")
         n_new = search_thematic(
             session, query_term, categoria,
-            catalog, seen_ids, CATALOG_PATH,
+            catalog, seen_ids, catalog_path,
         )
         print(f"  -> {n_new} noves entrades")
         time.sleep(DELAY)
@@ -471,7 +478,7 @@ def main(output_dir: str = OUTPUT_DIR) -> None:
 
     if enriched:
         print(f"  {enriched} entrades enriquides amb derogada_per")
-        _save_incremental(catalog, CATALOG_PATH)
+        _save_incremental(catalog, catalog_path)
 
     # Summary table
     def _count(cat: str, estat: str) -> int:
@@ -495,12 +502,11 @@ def main(output_dir: str = OUTPUT_DIR) -> None:
     print(f"{'='*55}")
     print(f"  Total:       {len(catalog):,}  "
           f"({total_vigent} vigents | {total_derog} derogades | {total_pend} pendents)")
-    print(f"  Cataleg:     {CATALOG_PATH}")
+    print(f"  Cataleg:     {catalog_path}")
 
     print("\n[Extra] Sincronitzant derogades amb normativa_annexes.json...")
     merge_into_annexes(catalog)
 
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else OUTPUT_DIR
-    main(out)
+    main()

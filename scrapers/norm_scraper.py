@@ -24,16 +24,22 @@ import sys
 import time
 import unicodedata
 from datetime import datetime
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
+from config import PROJECT_ROOT, CATALOGS_DIR
+
 # ─── Constants ────────────────────────────────────────────────────────────────
 BASE_URL   = "https://www.transportes.gob.es/carreteras/normativa-tecnica"
 CDN_BASE   = "https://cdn.transportes.gob.es"
-OUTPUT_DIR = "normativa_dgc"
 DELAY      = 1.0   # seconds between sub-page requests
+
+# Paths de sortida NormaCat
+DGC_CATALOG_DIR = CATALOGS_DIR / "dgc"
+DGC_DOWNLOADS_DIR = PROJECT_ROOT / "downloads" / "dgc"
 
 CATEGORIES = [
     ("01_Cuestiones_generales",      "normativa-general-carreteras"),
@@ -177,37 +183,38 @@ def get_documents_from_subpage(url: str) -> list:
 
 
 # ─── Function 3: download_pdf ─────────────────────────────────────────────────
-def download_pdf(url: str, dest_path: str) -> bool:
+def download_pdf(url: str, dest_path) -> bool:
     """
-    Download a PDF from the CDN.
-    Returns True if downloaded now, False if already existed or failed.
+    Descarrega un PDF des del CDN.
+    Retorna True si s'ha descarregat ara, False si ja existia o ha fallat.
     """
-    if os.path.exists(dest_path):
+    dest_path = Path(dest_path)
+    if dest_path.exists():
         return False
 
-    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
 
     try:
         resp = SESSION.get(url, timeout=60, stream=True, allow_redirects=True)
         if resp.status_code != 200:
-            print(f"    ✗ HTTP {resp.status_code}: {os.path.basename(dest_path)}")
+            print(f"    ✗ HTTP {resp.status_code}: {dest_path.name}")
             return False
 
         content = resp.content
 
         if not content.startswith(b"%PDF"):
-            print(f"    ✗ No és PDF vàlid: {os.path.basename(dest_path)}")
+            print(f"    ✗ No és PDF vàlid: {dest_path.name}")
             return False
 
         with open(dest_path, "wb") as f:
             f.write(content)
 
         size_kb = len(content) / 1024
-        print(f"    ↓ {os.path.basename(dest_path)} ({size_kb:.0f} KB)")
+        print(f"    ↓ {dest_path.name} ({size_kb:.0f} KB)")
         return True
 
     except Exception as exc:
-        print(f"    ✗ Error descarregant {os.path.basename(dest_path)}: {exc}")
+        print(f"    ✗ Error descarregant {dest_path.name}: {exc}")
         return False
 
 
@@ -231,13 +238,13 @@ def sanitize_filename(title: str, url: str) -> str:
 
 
 # ─── Catalog persistence ──────────────────────────────────────────────────────
-def load_existing_catalog(output_dir: str) -> dict:
+def load_existing_catalog(catalog_dir) -> dict:
     """
-    Load existing catalog and return as dict keyed by url_original.
-    Returns {} if catalog does not exist yet.
+    Carrega el catàleg existent i retorna un dict indexat per url_original.
+    Retorna {} si el catàleg encara no existeix.
     """
-    catalog_path = os.path.join(output_dir, "_catalogo", "catalogo_completo.json")
-    if not os.path.exists(catalog_path):
+    catalog_path = Path(catalog_dir) / "catalogo_completo.json"
+    if not catalog_path.exists():
         return {}
     try:
         with open(catalog_path, encoding="utf-8") as f:
@@ -248,32 +255,32 @@ def load_existing_catalog(output_dir: str) -> dict:
         return {}
 
 
-def _save_catalog(catalog: list, output_dir: str) -> None:
-    """Persist catalog as JSON + CSV."""
-    catalog_dir = os.path.join(output_dir, "_catalogo")
-    os.makedirs(catalog_dir, exist_ok=True)
+def _save_catalog(catalog: list, catalog_dir) -> None:
+    """Desa el catàleg com a JSON + CSV."""
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
 
-    json_path = os.path.join(catalog_dir, "catalogo_completo.json")
+    json_path = catalog_dir / "catalogo_completo.json"
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=2)
 
     if catalog:
-        # Union of all keys found in any entry
+        # Unió de totes les claus trobades en qualsevol entrada
         fieldnames = list(dict.fromkeys(k for entry in catalog for k in entry))
-        csv_path = os.path.join(catalog_dir, "catalogo_completo.csv")
+        csv_path = catalog_dir / "catalogo_completo.csv"
         with open(csv_path, "w", encoding="utf-8-sig", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
             writer.writeheader()
             writer.writerows(catalog)
 
 
-def _save_sync_log(changes: dict, output_dir: str) -> str:
-    """Save a dated sync log JSON and return its path."""
-    catalog_dir = os.path.join(output_dir, "_catalogo")
-    os.makedirs(catalog_dir, exist_ok=True)
+def _save_sync_log(changes: dict, catalog_dir) -> str:
+    """Desa un log de sincronització amb data i retorna el seu camí."""
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
 
     today = datetime.now().strftime("%Y%m%d")
-    log_path = os.path.join(catalog_dir, f"sync_{today}.json")
+    log_path = catalog_dir / f"sync_{today}.json"
 
     log = {
         "data":            datetime.now().isoformat()[:10],
@@ -333,19 +340,28 @@ def scrape_category(category_slug: str, folder_name: str) -> list:
 
 
 # ─── Function 5: scrape_all ───────────────────────────────────────────────────
-def scrape_all(output_dir: str) -> list:
+def scrape_all(catalog_dir=None, downloads_dir=None) -> list:
     """
-    Incremental sync orchestration.
-    Compares current website state with stored catalog.
-    Downloads only new or status-changed documents.
-    Never deletes files; marks removed documents as RETIRAT.
-    Returns the final merged catalog list.
+    Orquestració de sincronització incremental.
+    Compara l'estat actual del lloc web amb el catàleg emmagatzemat.
+    Descarrega només documents nous o amb estat canviat.
+    Mai esborra fitxers; marca els documents eliminats com a RETIRAT.
+    Retorna la llista final del catàleg fusionat.
     """
+    if catalog_dir is None:
+        catalog_dir = DGC_CATALOG_DIR
+    if downloads_dir is None:
+        downloads_dir = DGC_DOWNLOADS_DIR
+    catalog_dir = Path(catalog_dir)
+    downloads_dir = Path(downloads_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
+    downloads_dir.mkdir(parents=True, exist_ok=True)
+
     today = datetime.now().isoformat()[:10]
 
-    # ── Load existing catalog ─────────────────────────────────────────────────
+    # ── Carregar catàleg existent ─────────────────────────────────────────────
     print("Carregant catàleg existent...")
-    existing = load_existing_catalog(output_dir)
+    existing = load_existing_catalog(catalog_dir)
     print(f"  {len(existing)} documents al catàleg existent")
 
     # ── Scrape all categories (metadata only) ─────────────────────────────────
@@ -383,16 +399,16 @@ def scrape_all(output_dir: str) -> list:
                 updated["estat_legal_anterior"] = old_estat
                 updated["data_canvi"]           = today
 
-                # Move file to new folder if the type changed
+                # Moure fitxer a la nova carpeta si el tipus ha canviat
                 old_path = old.get("fitxer_local", "")
-                if old_path and os.path.exists(old_path):
-                    new_folder = os.path.join(output_dir, web_doc["categoria"], web_doc["tipus"])
-                    os.makedirs(new_folder, exist_ok=True)
-                    new_path = os.path.join(new_folder, os.path.basename(old_path))
-                    if old_path != new_path:
+                if old_path and Path(old_path).exists():
+                    new_folder = downloads_dir / web_doc["categoria"] / web_doc["tipus"]
+                    new_folder.mkdir(parents=True, exist_ok=True)
+                    new_path = new_folder / Path(old_path).name
+                    if str(old_path) != str(new_path):
                         try:
-                            shutil.move(old_path, new_path)
-                            updated["fitxer_local"] = new_path
+                            shutil.move(str(old_path), str(new_path))
+                            updated["fitxer_local"] = str(new_path)
                             print(f"    Fitxer mogut a: {web_doc['tipus']}/")
                         except Exception as exc:
                             print(f"    [!] No s'ha pogut moure el fitxer: {exc}")
@@ -422,13 +438,13 @@ def scrape_all(output_dir: str) -> list:
     downloaded_count = 0
     for doc in to_download:
         existing_path = doc.get("fitxer_local", "")
-        if existing_path and os.path.exists(existing_path):
-            continue  # already moved or previously downloaded
+        if existing_path and Path(existing_path).exists():
+            continue  # ja mogut o descarregat anteriorment
 
-        dest_folder = os.path.join(output_dir, doc["categoria"], doc["tipus"])
+        dest_folder = downloads_dir / doc["categoria"] / doc["tipus"]
         filename    = sanitize_filename(doc["titol"], doc["url_original"])
-        dest_path   = os.path.join(dest_folder, filename)
-        doc["fitxer_local"] = dest_path
+        dest_path   = dest_folder / filename
+        doc["fitxer_local"] = str(dest_path)
 
         ok = download_pdf(doc["url_original"], dest_path)
         doc["descarregat"] = ok
@@ -437,8 +453,8 @@ def scrape_all(output_dir: str) -> list:
         time.sleep(0.3)
 
     # ── Persist catalog and log ───────────────────────────────────────────────
-    _save_catalog(final_catalog, output_dir)
-    log_path = _save_sync_log(changes, output_dir)
+    _save_catalog(final_catalog, catalog_dir)
+    log_path = _save_sync_log(changes, catalog_dir)
 
     # ── Summary ───────────────────────────────────────────────────────────────
     print(f"\n{'─' * 55}")
@@ -456,11 +472,11 @@ def scrape_all(output_dir: str) -> list:
     return final_catalog
 
 
-# ─── Entry point ──────────────────────────────────────────────────────────────
+# ─── Punt d'entrada ──────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else OUTPUT_DIR
     print("=" * 55)
     print(" Scraper Normativa Tècnica DGC (sincronització incremental)")
-    print(f" Destí: {out}/")
+    print(f" Catàleg: {DGC_CATALOG_DIR}")
+    print(f" Descàrregues: {DGC_DOWNLOADS_DIR}")
     print("=" * 55)
-    scrape_all(out)
+    scrape_all()

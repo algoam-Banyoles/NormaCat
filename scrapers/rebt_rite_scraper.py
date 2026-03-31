@@ -17,6 +17,7 @@ import shutil
 import sys
 import time
 from datetime import datetime
+from pathlib import Path
 
 # UTF-8 on Windows
 if hasattr(sys.stdout, "reconfigure"):
@@ -37,11 +38,15 @@ except ImportError:
     print("[ERROR] No s'ha pogut importar boe_scraper.py. Assegura't que existeix a scrapers/.")
     sys.exit(1)
 
+# Importa configuració central
+sys.path.insert(0, str(Path(_SCRAPERS_DIR).parent))
+from config import PROJECT_ROOT, CATALOGS_DIR
+
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
-PROJECT_ROOT = os.path.dirname(_SCRAPERS_DIR)
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "normativa_rebt_rite")
+REBT_CATALOG_DIR = CATALOGS_DIR / "industria"  # comparteix amb indústria
+REBT_DOWNLOADS_DIR = PROJECT_ROOT / "downloads" / "rebt_rite"
 DELAY = 1.5
 
 # ─── Registry: BOE documents ─────────────────────────────────────────────────
@@ -232,8 +237,9 @@ UNE_ELECTRIC = [
 # ─── PDF download ─────────────────────────────────────────────────────────────
 
 def _download_pdf(session, url, dest_path):
-    """Download PDF if not already on disk."""
-    if os.path.exists(dest_path):
+    """Descarrega PDF si no existeix ja al disc."""
+    dest_path = Path(dest_path)
+    if dest_path.exists():
         return True
     try:
         r = session.get(url, timeout=60, stream=True)
@@ -242,25 +248,26 @@ def _download_pdf(session, url, dest_path):
         ct = r.headers.get("Content-Type", "")
         if "pdf" not in ct.lower() and "octet" not in ct.lower():
             return False
-        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
         with open(dest_path, "wb") as f:
             for chunk in r.iter_content(8192):
                 f.write(chunk)
         return True
     except Exception as e:
-        print(f"    [WARN] Download failed: {e}")
+        print(f"    [WARN] Descàrrega fallida: {e}")
         return False
 
 
 # ─── Merge into normativa_annexes.json ────────────────────────────────────────
 
 def merge_into_annexes(catalog, annexes_path):
-    """Update normativa_annexes.json with electrical norms."""
-    if not os.path.exists(annexes_path):
+    """Actualitza normativa_annexes.json amb normes elèctriques."""
+    annexes_path = Path(annexes_path)
+    if not annexes_path.exists():
         print(f"  [INFO] {annexes_path} no trobat, omitint merge")
         return
 
-    backup = annexes_path + ".bak"
+    backup = annexes_path.with_suffix(".json.bak")
     shutil.copy2(annexes_path, backup)
 
     with open(annexes_path, encoding="utf-8") as f:
@@ -334,18 +341,18 @@ def _fix_rite_rebt(annexes):
 
 # ─── Save catalog ─────────────────────────────────────────────────────────────
 
-def save_catalog(catalog, output_dir):
-    """Save the catalog JSON."""
-    cat_dir = os.path.join(output_dir, "_catalogo")
-    os.makedirs(cat_dir, exist_ok=True)
+def save_catalog(catalog, catalog_dir):
+    """Desa el catàleg JSON."""
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
 
-    cat_path = os.path.join(cat_dir, "catalogo_rebt_rite.json")
+    cat_path = catalog_dir / "catalogo_rebt_rite.json"
     with open(cat_path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=2)
-    print(f"  Cataleg desat: {cat_path} ({len(catalog)} entrades)")
+    print(f"  Catàleg desat: {cat_path} ({len(catalog)} entrades)")
 
-    # Sync log
-    sync_path = os.path.join(cat_dir, f"sync_{datetime.now().strftime('%Y%m%d')}.json")
+    # Registre de sincronització
+    sync_path = catalog_dir / f"sync_{datetime.now().strftime('%Y%m%d')}.json"
     with open(sync_path, "w", encoding="utf-8") as f:
         json.dump({
             "data": datetime.now().isoformat(timespec="seconds"),
@@ -357,15 +364,20 @@ def save_catalog(catalog, output_dir):
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
-def main(output_dir=OUTPUT_DIR):
+def main(catalog_dir=None, downloads_dir=None):
+    catalog_dir = Path(catalog_dir) if catalog_dir else REBT_CATALOG_DIR
+    downloads_dir = Path(downloads_dir) if downloads_dir else REBT_DOWNLOADS_DIR
+
     print("=== REBT/RITE/RAT Catalog Builder ===")
     print(f"  Registre: {len(REGISTRY)} documents BOE + {len(UNE_ELECTRIC)} UNE")
+    print(f"  Catàleg: {catalog_dir}")
+    print(f"  Descàrregues: {downloads_dir}")
 
     session = make_session()
     catalog = []
     n_pdfs = 0
 
-    # Phase 1: Fetch BOE metadata
+    # Fase 1: Metadades BOE
     print(f"\n--- Fase 1: Metadades BOE ({len(REGISTRY)} documents) ---")
     for idx, (boe_id, reg) in enumerate(REGISTRY.items(), 1):
         print(f"  [{idx}/{len(REGISTRY)}] {boe_id}", end="")
@@ -376,7 +388,7 @@ def main(output_dir=OUTPUT_DIR):
             entry = None
 
         if entry:
-            # Enrich with registry data
+            # Enriqueix amb dades del registre
             entry["domain"] = reg["domain"]
             entry["codi_local"] = reg["codi"]
             entry["estat_esperat"] = reg["estat_esperat"]
@@ -387,33 +399,33 @@ def main(output_dir=OUTPUT_DIR):
             if reg.get("derogada_per"):
                 entry["derogada_per"] = reg["derogada_per"]
 
-            # Verify estat
+            # Verifica estat
             api_estat = entry.get("estat", "PENDENT")
             if reg["estat_esperat"] == "DEROGADA" and api_estat != "DEROGADA":
                 print(f" AVIS: esperat DEROGADA, API diu {api_estat}")
             elif reg["estat_esperat"] == "VIGENT" and api_estat == "DEROGADA":
                 print(f" AVIS: esperat VIGENT, API diu DEROGADA!")
 
-            # Force expected estat (registry is authoritative)
+            # Forcem l'estat esperat (el registre es autoritatiu)
             entry["estat"] = reg["estat_esperat"]
 
             catalog.append(entry)
 
-            # Download PDF
+            # Descarrega PDF
             pdf_url = entry.get("url_pdf", "")
             if pdf_url:
-                domain_dir = os.path.join(output_dir, reg["domain"])
+                domain_dir = downloads_dir / reg["domain"]
                 pdf_name = f"{boe_id}.pdf"
-                pdf_path = os.path.join(domain_dir, pdf_name)
+                pdf_path = domain_dir / pdf_name
                 if _download_pdf(session, pdf_url, pdf_path):
                     n_pdfs += 1
-                    entry["pdf_local"] = pdf_path
+                    entry["pdf_local"] = str(pdf_path)
 
             title = entry.get("text", "")[:55]
             print(f" -> {entry['estat']}: {title}")
         else:
             print(f" -> NO TROBAT (API no ha retornat dades)")
-            # Add from registry anyway
+            # Afegeix des del registre igualment
             catalog.append({
                 "id": boe_id,
                 "codi": reg["codi"],
@@ -429,7 +441,7 @@ def main(output_dir=OUTPUT_DIR):
 
         time.sleep(DELAY)
 
-    # Phase 2: Add UNE entries
+    # Fase 2: Afegir entrades UNE
     print(f"\n--- Fase 2: UNE ({len(UNE_ELECTRIC)} normes) ---")
     for une in UNE_ELECTRIC:
         catalog.append({
@@ -441,20 +453,18 @@ def main(output_dir=OUTPUT_DIR):
             "observacions": une.get("observacions", ""),
             "font": "Registre intern",
         })
-    print(f"  Afegides {len(UNE_ELECTRIC)} normes UNE al cataleg")
+    print(f"  Afegides {len(UNE_ELECTRIC)} normes UNE al catàleg")
 
-    # Phase 3: Save catalog
-    print(f"\n--- Fase 3: Desar cataleg ---")
-    save_catalog(catalog, output_dir)
+    # Fase 3: Desar catàleg
+    print(f"\n--- Fase 3: Desar catàleg ---")
+    save_catalog(catalog, catalog_dir)
 
-    # Phase 4: Merge into normativa_annexes.json
+    # Fase 4: Actualitzar normativa_annexes.json
     print(f"\n--- Fase 4: Actualitzar normativa_annexes.json ---")
-    annexes_path = os.path.join(PROJECT_ROOT, "normativa_annexes.json")
-    if not os.path.exists(annexes_path):
-        annexes_path = os.path.join(PROJECT_ROOT, "data", "normativa_annexes.json")
+    annexes_path = PROJECT_ROOT / "data" / "normativa_annexes.json"
     merge_into_annexes(catalog, annexes_path)
 
-    # Summary
+    # Resum
     domains = {}
     for e in catalog:
         d = e.get("domain", "?")
@@ -478,7 +488,7 @@ def main(output_dir=OUTPUT_DIR):
     print(f"  {'TOTAL':<15} {sum(v['vigent'] for v in domains.values()):>7} "
           f"{sum(v['derogada'] for v in domains.values()):>8}")
     print(f"  PDFs descarregats: {n_pdfs}")
-    print(f"  Cataleg: {len(catalog)} entrades")
+    print(f"  Catàleg: {len(catalog)} entrades")
     print(f"{'='*50}")
 
 

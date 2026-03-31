@@ -15,9 +15,12 @@ import json
 import os
 import sys
 from datetime import datetime
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+
+from config import PROJECT_ROOT, CATALOGS_DIR
 
 BASE_URL   = "https://www.era.europa.eu"
 TARGET_URL = (
@@ -25,7 +28,7 @@ TARGET_URL = (
     + "/domains/technical-standards-ims"
     + "/technical-specifications-interoperability_en"
 )
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_catalogo")
+ERA_CATALOG_DIR = CATALOGS_DIR / "era"
 HEADERS    = {"User-Agent": "Mozilla/5.0 (compatible; ProjectChecker/1.0)"}
 TIMEOUT    = 30
 
@@ -111,14 +114,17 @@ def _try_scrape() -> list[dict]:
     return docs
 
 
-def build_catalog() -> list[dict]:
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+def build_catalog(catalog_dir=None) -> list[dict]:
+    if catalog_dir is None:
+        catalog_dir = ERA_CATALOG_DIR
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
 
-    print("  Attempting live scrape of ERA...", flush=True)
+    print("  Intentant scraping en viu de l'ERA...", flush=True)
     live = _try_scrape()
     raw_list = live if live else _STATIC_ETIS
     source = "live" if live else "static fallback"
-    print(f"  Source: {source} ({len(raw_list)} entries)", flush=True)
+    print(f"  Font: {source} ({len(raw_list)} entrades)", flush=True)
 
     docs = [_build_doc(r) for r in raw_list]
 
@@ -134,8 +140,8 @@ def build_catalog() -> list[dict]:
         "documents": docs,
     }
 
-    out = os.path.join(OUTPUT_DIR, "catalogo_era.json")
-    with open(out, "w", encoding="utf-8") as fh:
+    out_path = catalog_dir / "catalogo_era.json"
+    with open(out_path, "w", encoding="utf-8") as fh:
         json.dump(catalog, fh, ensure_ascii=False, indent=2)
 
     return docs
@@ -150,6 +156,6 @@ if __name__ == "__main__":
     docs = build_catalog()
 
     print()
-    print("[OK] ERA catalog complete")
+    print("[OK] Catàleg ERA complet")
     print(f"[DOC] ETIs catalogades: {len(docs)}")
-    print(f"[OK] Saved to {os.path.join(OUTPUT_DIR, 'catalogo_era.json')}")
+    print(f"[OK] Desat a {ERA_CATALOG_DIR / 'catalogo_era.json'}")

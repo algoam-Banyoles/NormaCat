@@ -1,15 +1,15 @@
 """
-pjcat_scraper.py — Fetch normativa from Portal Juridic Catalunya (PJCAT)
-using the official ELI (European Legislation Identifier) API.
+pjcat_scraper.py — Obté normativa del Portal Jurídic de Catalunya (PJCAT)
+usant l'API oficial ELI (European Legislation Identifier).
 
 ELI base: https://portaljuridic.gencat.cat/eli/
-Strategy:
-  1. Fetch all PRIORITY_DOCS directly by documentId URL
-  2. Fetch ELI listing pages for relevant rang+year ranges
-  3. Parse HTML to extract document metadata
-  4. Merge derogades into normativa_annexes.json
+Estratègia:
+  1. Obtenir tots els PRIORITY_DOCS directament per documentId URL
+  2. Obtenir pàgines de llistat ELI per rangs rellevants rang+any
+  3. Parsejar HTML per extreure metadades dels documents
+  4. Fusionar derogades a data/normativa_annexes.json
 
-Output: normativa_pjcat/_catalogo/catalogo_pjcat.json
+Sortida: catalogs/pjcat/catalogo_pjcat.json
 """
 
 from __future__ import annotations
@@ -20,6 +20,7 @@ import os
 import re
 import sys
 import time
+from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -31,16 +32,17 @@ from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from config import PROJECT_ROOT, CATALOGS_DIR
+
 # ─── Constants ────────────────────────────────────────────────────────────────
 
 BASE_URL    = "https://portaljuridic.gencat.cat"
 ELI_BASE    = f"{BASE_URL}/eli"
-OUTPUT_DIR  = "normativa_pjcat"
-CATALOG_DIR = os.path.join(OUTPUT_DIR, "_catalogo")
-CATALOG_PATH = os.path.join(CATALOG_DIR, "catalogo_pjcat.json")
-ANNEXES_PATH = "normativa_annexes.json"
 DELAY       = 2.0
 MAX_RETRIES = 3
+
+PJCAT_CATALOG_DIR = CATALOGS_DIR / "pjcat"
+ANNEXES_PATH = PROJECT_ROOT / "data" / "normativa_annexes.json"
 
 HEADERS = {
     "User-Agent":      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -49,7 +51,7 @@ HEADERS = {
     "Referer":         "https://portaljuridic.gencat.cat/",
 }
 
-# ─── Priority documents (fetch directly by documentId) ────────────────────────
+# ─── Documents prioritaris (obtinguts directament per documentId) ────────────
 # URL: https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId={id}
 
 PRIORITY_DOCS = [
@@ -173,9 +175,9 @@ PRIORITY_DOCS = [
     },
 ]
 
-# ─── ELI listing ranges to discover additional docs ───────────────────────────
-# Each entry: (rang_path, categoria, years_range)
-# rang_path: part of ELI URL after /eli/es-ct/
+# ─── Rangs ELI per descobrir documents addicionals ───────────────────────────
+# Cada entrada: (rang_path, categoria, years_range)
+# rang_path: part de la URL ELI després de /eli/es-ct/
 
 ELI_RANGES = [
     # Decrets legislatius catalans (tots)
@@ -186,7 +188,7 @@ ELI_RANGES = [
     ("l", "contractes", range(1985, 2026)),
 ]
 
-# Keywords per classificar normes trobades per ELI listing
+# Paraules clau per classificar normes trobades per llistat ELI
 KEYWORD_MAP = {
     "carreteres_cat":   ["carretera", "viari", "autopista", "transit", "infraestructura"],
     "contractes":       ["contracte", "licitacio", "concurs", "adjudicacio", "obra publica"],
@@ -198,7 +200,7 @@ KEYWORD_MAP = {
 }
 
 
-# ─── Session ──────────────────────────────────────────────────────────────────
+# ─── Sessió ──────────────────────────────────────────────────────────────────
 
 def make_session() -> requests.Session:
     session = requests.Session()
@@ -228,9 +230,10 @@ def _get_html(session: requests.Session, url: str) -> BeautifulSoup | None:
         return None
 
 
-def _save(catalog: list[dict]) -> None:
-    os.makedirs(CATALOG_DIR, exist_ok=True)
-    with open(CATALOG_PATH, "w", encoding="utf-8") as f:
+def _save(catalog: list[dict], catalog_dir: Path) -> None:
+    catalog_dir.mkdir(parents=True, exist_ok=True)
+    catalog_path = catalog_dir / "catalogo_pjcat.json"
+    with open(catalog_path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=2)
 
 
@@ -243,24 +246,24 @@ def _guess_categoria(text: str) -> str:
 
 
 def _detect_estat_from_html(soup: BeautifulSoup) -> str:
-    """Try to detect vigency status from the document page HTML."""
+    """Intenta detectar l'estat de vigència des de l'HTML del document."""
     text = soup.get_text(" ", strip=True).lower()
     if "derogat" in text or "derogada" in text or "deixa de tenir vigencia" in text:
         return "DEROGADA"
     if "vigent" in text or "en vigor" in text:
         return "VIGENT"
-    return "VIGENT"  # default: assume vigent if can't determine
+    return "VIGENT"  # per defecte: assumim vigent si no es pot determinar
 
 
 def _extract_dogc(soup: BeautifulSoup) -> str:
-    """Extract DOGC number from page."""
+    """Extreu el número de DOGC de la pàgina."""
     text = soup.get_text(" ", strip=True)
     m = re.search(r"DOGC\s+n[uu]m\.?\s*(\d+)", text, re.IGNORECASE)
     return m.group(1) if m else ""
 
 
 def _extract_date(soup: BeautifulSoup) -> str:
-    """Extract publication date."""
+    """Extreu la data de publicació."""
     text = soup.get_text(" ", strip=True)
     m = re.search(r"(\d{1,2})\s+de\s+(\w+)\s+de\s+(\d{4})", text)
     if m:
@@ -268,15 +271,15 @@ def _extract_date(soup: BeautifulSoup) -> str:
     return ""
 
 
-# ─── Fetch single document by documentId ──────────────────────────────────────
+# ─── Obtenir document individual per documentId ──────────────────────────────
 
 def fetch_by_document_id(
     session: requests.Session,
     doc: dict,
 ) -> dict:
     """
-    Fetch a document page from PJCAT and enrich the metadata dict.
-    Returns the enriched doc dict.
+    Obté una pàgina de document de PJCAT i enriqueix el dict de metadades.
+    Retorna el dict enriquit.
     """
     url = f"{BASE_URL}/ca/document-del-pjur/?documentId={doc['documentId']}"
     entry = {
@@ -299,7 +302,7 @@ def fetch_by_document_id(
     soup = _get_html(session, url)
     if soup:
         entry["fetch_ok"] = True
-        # Try to get real title from page
+        # Intentar obtenir el títol real de la pàgina
         h1 = soup.find("h1")
         if h1 and h1.get_text(strip=True):
             real_title = h1.get_text(strip=True)
@@ -307,14 +310,14 @@ def fetch_by_document_id(
                 entry["text"] = real_title[:300]
         entry["dogc_num"] = _extract_dogc(soup)
         entry["data"]     = _extract_date(soup)
-        # Only override estat if not hardcoded as DEROGADA
+        # Només sobreescriure estat si no està fixat com a DEROGADA
         if entry["estat"] != "DEROGADA":
             entry["estat"] = _detect_estat_from_html(soup)
 
     return entry
 
 
-# ─── ELI listing fetch ────────────────────────────────────────────────────────
+# ─── Obtenció de llistat ELI ────────────────────────────────────────────────
 
 def fetch_eli_listing(
     session:   requests.Session,
@@ -325,9 +328,9 @@ def fetch_eli_listing(
     catalog:   list[dict],
 ) -> int:
     """
-    Fetch the ELI listing for a given rang and year.
+    Obté el llistat ELI per un rang i any donats.
     URL: /eli/es-ct/{rang}/{year}/
-    Returns number of new entries added.
+    Retorna el nombre de noves entrades afegides.
     """
     url = f"{ELI_BASE}/es-ct/{rang}/{year}/"
     soup = _get_html(session, url)
@@ -335,10 +338,10 @@ def fetch_eli_listing(
         return 0
 
     added = 0
-    # Look for links to individual norm pages
+    # Cercar links a pàgines de normes individuals
     for a in soup.find_all("a", href=True):
         href = a["href"]
-        # Match ELI norm URLs: /eli/es-ct/{rang}/{year}/{month}/{day}/{num}
+        # Coincidir URLs ELI de normes: /eli/es-ct/{rang}/{year}/{month}/{day}/{num}
         m = re.match(
             r"/eli/es-ct/[a-z]+/\d{4}/\d{2}/\d{2}/[\w-]+",
             href
@@ -371,7 +374,7 @@ def fetch_eli_listing(
             "dogc_num":     "",
             "url_pjcat":    f"{BASE_URL}{href}",
             "derogada_per": "",
-            "observacions": "Descobert via ELI listing",
+            "observacions": "Descobert via llistat ELI",
             "font":         "Portal Juridic Catalunya (ELI)",
             "fetch_ok":     True,
         }
@@ -381,17 +384,17 @@ def fetch_eli_listing(
     return added
 
 
-# ─── Merge into normativa_annexes.json ────────────────────────────────────────
+# ─── Fusionar amb normativa_annexes.json ────────────────────────────────────
 
-def merge_into_annexes(catalog: list[dict]) -> None:
-    if not os.path.exists(ANNEXES_PATH):
-        print(f"  [INFO] {ANNEXES_PATH} no trobat, omitint merge")
+def merge_into_annexes(catalog: list[dict], annexes_path: Path) -> None:
+    if not annexes_path.exists():
+        print(f"  [INFO] {annexes_path} no trobat, omitint merge")
         return
 
     import shutil
-    shutil.copy2(ANNEXES_PATH, ANNEXES_PATH + ".bak")
+    shutil.copy2(annexes_path, str(annexes_path) + ".bak")
 
-    with open(ANNEXES_PATH, encoding="utf-8") as f:
+    with open(annexes_path, encoding="utf-8") as f:
         annexes = json.load(f)
 
     existing = annexes.get("normativa_derogada", [])
@@ -418,7 +421,7 @@ def merge_into_annexes(catalog: list[dict]) -> None:
         print(f"    + DEROGADA: {codi} — {entry.get('text', '')[:55]}")
 
     annexes["normativa_derogada"] = existing
-    with open(ANNEXES_PATH, "w", encoding="utf-8") as f:
+    with open(annexes_path, "w", encoding="utf-8") as f:
         json.dump(annexes, f, ensure_ascii=False, indent=2)
 
     print(f"  normativa_annexes.json actualitzat: +{added} entrades derogades")
@@ -426,18 +429,23 @@ def merge_into_annexes(catalog: list[dict]) -> None:
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
-def main() -> None:
-    print("=== Portal Juridic Catalunya — Catalog Builder (ELI) ===")
-    print(f"  Output: {CATALOG_PATH}\n")
+def main(catalog_dir: Path = None) -> None:
+    if catalog_dir is None:
+        catalog_dir = PJCAT_CATALOG_DIR
+
+    catalog_path = catalog_dir / "catalogo_pjcat.json"
+
+    print("=== Portal Juridic Catalunya — Constructor de catàleg (ELI) ===")
+    print(f"  Sortida: {catalog_path}\n")
 
     session  = make_session()
     catalog: list[dict] = []
     seen_ids: set[str]  = set()
 
-    # 1) Priority documents
+    # 1) Documents prioritaris
     print(f"[1/3] Prioritat: {len(PRIORITY_DOCS)} documents directes")
     for doc in PRIORITY_DOCS:
-        print(f"  Fetching {doc['codi']} (id={doc['documentId']})...", end=" ", flush=True)
+        print(f"  Obtenint {doc['codi']} (id={doc['documentId']})...", end=" ", flush=True)
         entry = fetch_by_document_id(session, doc)
         doc_id = entry["id"]
         if doc_id not in seen_ids:
@@ -447,11 +455,11 @@ def main() -> None:
             print(f"{status} -> {entry['estat']}: {entry['text'][:60]}")
         else:
             print("SKIP (duplicat)")
-        _save(catalog)
+        _save(catalog, catalog_dir)
         time.sleep(DELAY)
 
-    # 2) ELI listing discovery (recent years, prioritat carreteres i contractes)
-    print(f"\n[2/3] ELI listing — descoberta automatica")
+    # 2) Descoberta per llistat ELI (anys recents, prioritat carreteres i contractes)
+    print(f"\n[2/3] Llistat ELI — descoberta automàtica")
     ELI_DISCOVERY = [
         ("dl", "carreteres_cat", range(2000, 2026)),  # Decrets legislatius
         ("d",  "carreteres_cat", range(2015, 2026)),  # Decrets recents
@@ -463,11 +471,11 @@ def main() -> None:
             if n > 0:
                 print(f"    /eli/es-ct/{rang}/{year}/ -> {n} noves")
                 count_rang += n
-                _save(catalog)
+                _save(catalog, catalog_dir)
             time.sleep(DELAY)
         print(f"  Rang '{rang}' ({categoria}): {count_rang} descobertes")
 
-    # 3) Summary
+    # 3) Resum
     total   = len(catalog)
     vigents = sum(1 for e in catalog if e["estat"] == "VIGENT")
     derog   = sum(1 for e in catalog if e["estat"] == "DEROGADA")
@@ -478,11 +486,11 @@ def main() -> None:
     print(f"  Vigents:               {vigents}")
     print(f"  Derogades:             {derog}")
     print(f"  Pendent/altre:         {altre}")
-    print(f"  Cataleg guardat:       {CATALOG_PATH}")
+    print(f"  Catàleg guardat:       {catalog_path}")
     print(f"{'='*55}")
 
     print("\n[Extra] Sincronitzant derogades amb normativa_annexes.json...")
-    merge_into_annexes(catalog)
+    merge_into_annexes(catalog, ANNEXES_PATH)
 
 
 if __name__ == "__main__":

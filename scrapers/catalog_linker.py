@@ -21,17 +21,23 @@ import re
 import shutil
 from datetime import datetime
 from difflib import SequenceMatcher
+from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Importa configuració central
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from config import PROJECT_ROOT, CATALOGS_DIR
 
-# ── Source definitions ─────────────────────────────────────────
+BASE_DIR = str(PROJECT_ROOT)
+
+# ── Definicions de fonts ─────────────────────────────────────────
 
 SOURCES = {
     "dgc": {
         "label": "DGC",
-        "catalog": os.path.join("normativa_dgc", "_catalogo", "catalogo_completo.json"),
-        "pdf_dirs": ["normativa_dgc"],
+        "catalog": str(CATALOGS_DIR / "dgc" / "catalogo_completo.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "dgc")],
         "path_field": "fitxer_local",
         "id_field": "titol",
         "code_fields": ["titol"],
@@ -39,18 +45,18 @@ SOURCES = {
     },
     "adif": {
         "label": "ADIF",
-        "catalog": os.path.join("normativa_adif", "_catalogo", "catalogo_adif_complet.json"),
-        "pdf_dirs": ["normativa_adif"],
-        "path_field": None,  # nested in fitxers[]
+        "catalog": str(CATALOGS_DIR / "adif" / "catalogo_adif.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "adif")],
+        "path_field": None,  # imbricat a fitxers[]
         "id_field": "codigo",
         "code_fields": ["codigo", "titulo"],
         "url_field": None,
-        "nested_pdf": True,  # special handling
+        "nested_pdf": True,  # tractament especial
     },
     "boe": {
         "label": "BOE",
-        "catalog": os.path.join("normativa_boe", "_catalogo", "catalogo_boe.json"),
-        "pdf_dirs": ["normativa_boe"],
+        "catalog": str(CATALOGS_DIR / "boe" / "catalogo_boe.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "boe")],
         "path_field": "path_local",
         "id_field": "id",
         "code_fields": ["id", "codi"],
@@ -58,8 +64,8 @@ SOURCES = {
     },
     "cte": {
         "label": "CTE",
-        "catalog": os.path.join("normativa_cte", "_catalogo", "catalogo_cte.json"),
-        "pdf_dirs": ["normativa_cte"],
+        "catalog": str(CATALOGS_DIR / "cte" / "catalogo_cte.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "cte")],
         "path_field": "path_local",
         "id_field": "codi",
         "code_fields": ["codi"],
@@ -67,8 +73,8 @@ SOURCES = {
     },
     "territori": {
         "label": "Territori",
-        "catalog": os.path.join("normativa_territori", "_catalogo", "catalogo_territori.json"),
-        "pdf_dirs": ["normativa_territori"],
+        "catalog": str(CATALOGS_DIR / "territori" / "catalogo_territori.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "territori")],
         "path_field": "path_local",
         "id_field": "codi",
         "code_fields": ["codi", "id"],
@@ -76,8 +82,8 @@ SOURCES = {
     },
     "industria": {
         "label": "Industria",
-        "catalog": os.path.join("normativa_industria", "_catalogo", "catalogo_industria.json"),
-        "pdf_dirs": ["normativa_industria"],
+        "catalog": str(CATALOGS_DIR / "industria" / "catalogo_industria.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "industria")],
         "path_field": "path_local",
         "id_field": "boe_id",
         "code_fields": ["boe_id"],
@@ -85,8 +91,8 @@ SOURCES = {
     },
     "pjcat": {
         "label": "PJCAT",
-        "catalog": os.path.join("normativa_pjcat", "_catalogo", "catalogo_pjcat.json"),
-        "pdf_dirs": ["normativa_pjcat"],
+        "catalog": str(CATALOGS_DIR / "pjcat" / "catalogo_pjcat.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "pjcat")],
         "path_field": "path_local",
         "id_field": "id",
         "code_fields": ["id", "codi"],
@@ -279,19 +285,21 @@ def _match_entries(
 
 # ── Main linking function ─────────────────────────────────────
 
-def link_all(base_dir: str = None, dry_run: bool = False) -> dict:
-    """Link all catalog entries to their PDF files.
+def link_all(base_dir=None, dry_run: bool = False) -> dict:
+    """Vincula totes les entrades del catàleg als seus fitxers PDF.
 
     Args:
-        base_dir: project root directory (defaults to parent of scrapers/)
-        dry_run: if True, report only — don't modify JSONs
+        base_dir: directori arrel del projecte (per defecte PROJECT_ROOT)
+        dry_run: si True, només informa -- no modifica JSONs
 
     Returns:
-        Report dict with stats per source.
+        Diccionari d'informe amb estadístiques per font.
     """
     global BASE_DIR
     if base_dir:
-        BASE_DIR = base_dir
+        BASE_DIR = str(base_dir)
+    else:
+        BASE_DIR = str(PROJECT_ROOT)
 
     report = {"data": datetime.now().strftime("%Y-%m-%d"), "sources": {}}
     print("=== Catalog Linker ===")
@@ -396,23 +404,25 @@ def link_all(base_dir: str = None, dry_run: bool = False) -> dict:
             "missing_pdfs": missing[:50],
         }
 
-    # Save report
-    report_dir = os.path.join(BASE_DIR, "data")
-    os.makedirs(report_dir, exist_ok=True)
-    report_path = os.path.join(report_dir, "link_report.json")
+    # Desa l'informe
+    report_path = PROJECT_ROOT / "data" / "link_report.json"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
-    print(f"\n  Report: {report_path}")
+    print(f"\n  Informe: {report_path}")
 
     return report
 
 
 # ── CLI ────────────────────────────────────────────────────────
 
+main = link_all
+
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Link normativa catalogs to PDF files")
-    parser.add_argument("--dry-run", action="store_true", help="Report only, don't modify JSONs")
-    parser.add_argument("--base-dir", default=None, help="Project root directory")
+    parser = argparse.ArgumentParser(description="Vincula catàlegs normatius als fitxers PDF")
+    parser.add_argument("--dry-run", action="store_true", help="Només informa, no modifica JSONs")
+    parser.add_argument("--base-dir", default=None, help="Directori arrel del projecte")
     args = parser.parse_args()
 
-    link_all(base_dir=args.base_dir or BASE_DIR, dry_run=args.dry_run)
+    link_all(base_dir=args.base_dir, dry_run=args.dry_run)

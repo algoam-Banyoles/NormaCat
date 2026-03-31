@@ -14,15 +14,17 @@ import json
 import os
 import sys
 from datetime import datetime
+from pathlib import Path
 
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from config import PROJECT_ROOT, CATALOGS_DIR
+
 # ─── Constants ────────────────────────────────────────────────────────────────
-OUTPUT_DIR   = "normativa_cte"
-CATALOG_PATH = os.path.join(OUTPUT_DIR, "_catalogo", "catalogo_cte.json")
-BASE_URL     = "https://www.codigotecnico.org"
+CTE_CATALOG_DIR = CATALOGS_DIR / "cte"
+BASE_URL        = "https://www.codigotecnico.org"
 PDF_BASE     = BASE_URL + "/pdf/Documentos"
 
 # ─── Document catalog (static, verified pattern) ──────────────────────────────
@@ -248,8 +250,13 @@ def verify_documents(session: requests.Session, docs: list) -> list:
 
 # ─── Catalog builder ──────────────────────────────────────────────────────────
 
-def build_catalog(output_dir: str = OUTPUT_DIR) -> list:
+def build_catalog(catalog_dir=None) -> list:
     """Build and save the CTE catalog. Returns list of document entries."""
+    if catalog_dir is None:
+        catalog_dir = CTE_CATALOG_DIR
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
+
     session = _make_session()
 
     docs = [dict(d) for d in DOCUMENTS]   # shallow copy
@@ -286,9 +293,7 @@ def build_catalog(output_dir: str = OUTPUT_DIR) -> list:
         "documents": catalog_docs,
     }
 
-    catalog_dir = os.path.join(output_dir, "_catalogo")
-    os.makedirs(catalog_dir, exist_ok=True)
-    out_path = os.path.join(catalog_dir, "catalogo_cte.json")
+    out_path = catalog_dir / "catalogo_cte.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=2)
 
@@ -298,17 +303,14 @@ def build_catalog(output_dir: str = OUTPUT_DIR) -> list:
 # ─── Entry point ──────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    import sys
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-
-    out_dir = sys.argv[1] if len(sys.argv) > 1 else OUTPUT_DIR
 
     print("=" * 55)
     print(" CTE Scraper — Codi Tècnic de l'Edificació")
-    print(f" Destí: {os.path.join(out_dir, '_catalogo', 'catalogo_cte.json')}")
+    print(f" Destí: {CTE_CATALOG_DIR / 'catalogo_cte.json'}")
     print("=" * 55)
 
-    docs, meta, out_path = build_catalog(out_dir)
+    docs, meta, out_path = build_catalog()
 
     print(f"\n{'=' * 55}")
     print(f"  Total documents:   {meta['total']}")

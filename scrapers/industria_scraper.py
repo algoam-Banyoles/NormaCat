@@ -4,10 +4,10 @@ Scraper del portal Ministerio de Industria – Calidad Industrial.
 
 Descobreix totes les subpàgines de la secció de legislació, extreu
 els links al BOE, resol la URL del PDF i construeix un catàleg JSON
-incremental a normativa_industria/_catalogo/catalogo_industria.json.
+incremental a catalogs/industria/catalogo_industria.json.
 
 Ús:
-    python industria_scraper.py [output_dir]
+    python industria_scraper.py
 """
 
 import json
@@ -16,17 +16,22 @@ import re
 import sys
 import time
 from datetime import date
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
+from config import PROJECT_ROOT, CATALOGS_DIR
+
 # ── Configuració ───────────────────────────────────────────────────────────────
 
 BASE_INDUSTRIA = "https://industria.gob.es/Calidad-Industrial/"
 BASE_BOE       = "https://www.boe.es"
-OUTPUT_DIR     = "normativa_industria"
 DELAY          = 1.5  # segons entre peticions
+
+INDUSTRIA_CATALOG_DIR = CATALOGS_DIR / "industria"
+INDUSTRIA_DOWNLOADS_DIR = PROJECT_ROOT / "downloads" / "industria"
 
 SECTION_INDEXES = [
     "https://industria.gob.es/Calidad-Industrial/legislaciongeneral/Paginas/index.aspx",
@@ -278,7 +283,7 @@ def resolve_pdf_url(session: requests.Session, norm: dict) -> str | None:
 
 # ── 4. Descàrrega de PDF ───────────────────────────────────────────────────────
 
-def download_pdf(session: requests.Session, norm: dict, output_dir: str) -> bool:
+def download_pdf(session: requests.Session, norm: dict, downloads_dir: Path) -> bool:
     """
     Descarrega el PDF de la norma. Retorna True si ha reeixit.
     Mai sobreescriu fitxers existents.
@@ -286,13 +291,13 @@ def download_pdf(session: requests.Session, norm: dict, output_dir: str) -> bool
     if not norm.get("url_pdf"):
         return False
 
-    dest_dir = os.path.join(output_dir, norm["seccio"])
-    os.makedirs(dest_dir, exist_ok=True)
+    dest_dir = downloads_dir / norm["seccio"]
+    dest_dir.mkdir(parents=True, exist_ok=True)
     filename  = norm["boe_id"] + ".pdf"
-    dest_path = os.path.join(dest_dir, filename)
+    dest_path = dest_dir / filename
 
-    if os.path.exists(dest_path):
-        norm["path_local"]      = dest_path.replace("\\", "/")
+    if dest_path.exists():
+        norm["path_local"]      = str(dest_path).replace("\\", "/")
         norm["pdf_descarregat"] = True
         return True
 
@@ -306,7 +311,7 @@ def download_pdf(session: requests.Session, norm: dict, output_dir: str) -> bool
             return False
         with open(dest_path, "wb") as fh:
             fh.write(content)
-        norm["path_local"]      = dest_path.replace("\\", "/")
+        norm["path_local"]      = str(dest_path).replace("\\", "/")
         norm["pdf_descarregat"] = True
         return True
     except requests.RequestException as exc:
@@ -316,32 +321,32 @@ def download_pdf(session: requests.Session, norm: dict, output_dir: str) -> bool
 
 # ── 5. Catàleg incremental ────────────────────────────────────────────────────
 
-def _catalog_path(output_dir: str) -> str:
-    return os.path.join(output_dir, "_catalogo", "catalogo_industria.json")
+def _catalog_path(catalog_dir: Path) -> Path:
+    return catalog_dir / "catalogo_industria.json"
 
 
-def load_catalog(output_dir: str) -> dict[str, dict]:
+def load_catalog(catalog_dir: Path) -> dict[str, dict]:
     """Carrega el catàleg existent. Retorna dict {boe_id: entry}."""
-    path = _catalog_path(output_dir)
-    if not os.path.exists(path):
+    path = _catalog_path(catalog_dir)
+    if not path.exists():
         return {}
     with open(path, encoding="utf-8") as fh:
         entries = json.load(fh)
     return {e["boe_id"]: e for e in entries}
 
 
-def save_catalog(catalog: dict[str, dict], output_dir: str) -> None:
-    path = _catalog_path(output_dir)
-    os.makedirs(os.path.dirname(path), exist_ok=True)
+def save_catalog(catalog: dict[str, dict], catalog_dir: Path) -> None:
+    path = _catalog_path(catalog_dir)
+    path.parent.mkdir(parents=True, exist_ok=True)
     entries = sorted(catalog.values(), key=lambda e: e["boe_id"])
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(entries, fh, ensure_ascii=False, indent=2)
 
 
-def _save_sync_log(log: dict, output_dir: str) -> str:
+def _save_sync_log(log: dict, catalog_dir: Path) -> Path:
     log_name = f"sync_{date.today().strftime('%Y%m%d')}.json"
-    log_path = os.path.join(output_dir, "_catalogo", log_name)
-    os.makedirs(os.path.dirname(log_path), exist_ok=True)
+    log_path = catalog_dir / log_name
+    log_path.parent.mkdir(parents=True, exist_ok=True)
     with open(log_path, "w", encoding="utf-8") as fh:
         json.dump(log, fh, ensure_ascii=False, indent=2)
     return log_path
@@ -349,9 +354,14 @@ def _save_sync_log(log: dict, output_dir: str) -> str:
 
 # ── 6. Orquestrador principal ─────────────────────────────────────────────────
 
-def scrape_all(output_dir: str = OUTPUT_DIR) -> None:
+def scrape_all(catalog_dir: Path = None, downloads_dir: Path = None) -> None:
+    if catalog_dir is None:
+        catalog_dir = INDUSTRIA_CATALOG_DIR
+    if downloads_dir is None:
+        downloads_dir = INDUSTRIA_DOWNLOADS_DIR
+
     session = _make_session()
-    catalog = load_catalog(output_dir)
+    catalog = load_catalog(catalog_dir)
 
     log = {
         "data":        str(date.today()),
@@ -424,7 +434,7 @@ def scrape_all(output_dir: str = OUTPUT_DIR) -> None:
 
         # Descarrega si tenim URL
         if norm.get("url_pdf"):
-            ok = download_pdf(session, norm, output_dir)
+            ok = download_pdf(session, norm, downloads_dir)
             if ok:
                 pdfs_ok  += 1
                 if is_new:
@@ -443,8 +453,8 @@ def scrape_all(output_dir: str = OUTPUT_DIR) -> None:
 
     # ── Desa catàleg i log ────────────────────────────────────────────────────
     log["total"] = len(catalog)
-    save_catalog(catalog, output_dir)
-    log_path = _save_sync_log(log, output_dir)
+    save_catalog(catalog, catalog_dir)
+    log_path = _save_sync_log(log, catalog_dir)
 
     print()
     print(f"Subpàgines descobertes: {len(subpages)}")
@@ -457,5 +467,4 @@ def scrape_all(output_dir: str = OUTPUT_DIR) -> None:
 # ── Entry point ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else OUTPUT_DIR
-    scrape_all(out)
+    scrape_all()

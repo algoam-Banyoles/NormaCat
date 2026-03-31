@@ -14,9 +14,14 @@ import os
 import re
 import sys
 import time
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+
+# Importa configuració central
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from config import PROJECT_ROOT, CATALOGS_DIR
 
 try:
     from curl_cffi import requests as cffi_requests
@@ -26,8 +31,8 @@ except ImportError:
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
-CATALOG_PATH = os.path.join("normativa_pjcat", "_catalogo", "catalogo_pjcat.json")
-PDF_DIR      = os.path.join("normativa_pjcat", "pdfs")
+CATALOG_PATH = CATALOGS_DIR / "pjcat" / "catalogo_pjcat.json"
+PDF_DIR      = PROJECT_ROOT / "downloads" / "pjcat" / "pdfs"
 BASE_BOE     = "https://www.boe.es"
 BASE_PJCAT   = "https://portaljuridic.gencat.cat"
 BASE_DOGC    = "https://portaldogc.gencat.cat"
@@ -109,11 +114,12 @@ def _head_ok(session, url: str) -> bool:
         return False
 
 
-def _download_pdf(url: str, dest: str, session) -> bool:
+def _download_pdf(url: str, dest, session) -> bool:
+    dest = Path(dest)
     def _save(content: bytes) -> bool:
         if content[:4] != b"%PDF":
             return False
-        os.makedirs(os.path.dirname(dest), exist_ok=True)
+        dest.parent.mkdir(parents=True, exist_ok=True)
         with open(dest, "wb") as fh:
             fh.write(content)
         return True
@@ -381,19 +387,22 @@ def _resolve_by_codi_boe(codi: str, session) -> str | None:
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
-def resolve_pjcat_pdfs() -> None:
+def resolve_pjcat_pdfs(catalog_path=None, pdf_dir=None) -> None:
+    catalog_path = Path(catalog_path) if catalog_path else CATALOG_PATH
+    pdf_dir = Path(pdf_dir) if pdf_dir else PDF_DIR
+
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-    if not os.path.exists(CATALOG_PATH):
-        print(f"ERROR: {CATALOG_PATH} not found")
+    if not catalog_path.exists():
+        print(f"ERROR: {catalog_path} no trobat")
         sys.exit(1)
 
-    with open(CATALOG_PATH, encoding="utf-8") as fh:
+    with open(catalog_path, encoding="utf-8") as fh:
         catalog = json.load(fh)
 
     session = _make_session()
-    os.makedirs(PDF_DIR, exist_ok=True)
+    pdf_dir.mkdir(parents=True, exist_ok=True)
 
     pending = [e for e in catalog if not e.get("pdf_descarregat")]
     print(f"Entrades pendents: {len(pending)}")
@@ -416,22 +425,22 @@ def resolve_pjcat_pdfs() -> None:
             is_boe  = True
             pdf_url = _resolve_boe_eli(eli_path, session)
             if pdf_url:
-                print(f"    → BOE ELI OK: {pdf_url[-60:]}")
+                print(f"    -> BOE ELI OK: {pdf_url[-60:]}")
             else:
-                print(f"    → BOE ELI fallat, intent per codi...")
+                print(f"    -> BOE ELI fallat, intent per codi...")
                 pdf_url = _resolve_by_codi_boe(codi, session)
                 if pdf_url:
-                    print(f"    → Codi BOE OK: {pdf_url[-60:]}")
+                    print(f"    -> Codi BOE OK: {pdf_url[-60:]}")
 
         elif eli_path.startswith("/eli/es-ct/"):
             pdf_url = _resolve_pjcat_eli(eli_path, session)
             if pdf_url:
-                print(f"    → PJCAT/DOGC OK: {pdf_url[-60:]}")
+                print(f"    -> PJCAT/DOGC OK: {pdf_url[-60:]}")
             else:
-                print(f"    → PJCAT fallat, intent per codi al BOE...")
+                print(f"    -> PJCAT fallat, intent per codi al BOE...")
                 pdf_url = _resolve_by_codi_boe(codi, session)
                 if pdf_url:
-                    print(f"    → Codi BOE fallback OK: {pdf_url[-60:]}")
+                    print(f"    -> Codi BOE fallback OK: {pdf_url[-60:]}")
 
         elif eli_path:
             # ELI desconeguda, intenta directament
@@ -449,10 +458,10 @@ def resolve_pjcat_pdfs() -> None:
             if codi and not pdf_url:
                 pdf_url = _resolve_by_codi_boe(codi, session)
                 if pdf_url:
-                    print(f"    → Última oportunitat BOE OK: {pdf_url[-60:]}")
+                    print(f"    -> Ultima oportunitat BOE OK: {pdf_url[-60:]}")
 
         if not pdf_url:
-            print(f"    → NO PDF RESOLT")
+            print(f"    -> NO PDF RESOLT")
             no_resolt += 1
             continue
 
@@ -460,11 +469,11 @@ def resolve_pjcat_pdfs() -> None:
 
         # Descarrega
         safe_id = re.sub(r"[^\w\-.]", "_", entry_id)
-        dest = os.path.join(PDF_DIR, safe_id + ".pdf")
-        if os.path.exists(dest) and os.path.getsize(dest) > 1000:
-            entry["path_local"]      = dest.replace("\\", "/")
+        dest = pdf_dir / (safe_id + ".pdf")
+        if dest.exists() and dest.stat().st_size > 1000:
+            entry["path_local"]      = str(dest).replace("\\", "/")
             entry["pdf_descarregat"] = True
-            print(f"    → Ja existia localment")
+            print(f"    -> Ja existia localment")
             if is_boe:
                 boe_ok += 1
             else:
@@ -474,24 +483,27 @@ def resolve_pjcat_pdfs() -> None:
         time.sleep(DELAY)
         ok = _download_pdf(pdf_url, dest, session)
         if ok:
-            entry["path_local"]      = dest.replace("\\", "/")
+            entry["path_local"]      = str(dest).replace("\\", "/")
             entry["pdf_descarregat"] = True
-            print(f"    → Descarregat OK")
+            print(f"    -> Descarregat OK")
             if is_boe:
                 boe_ok += 1
             else:
                 dogc_ok += 1
         else:
             entry["pdf_descarregat"] = False
-            print(f"    → Error en descàrrega: {pdf_url}")
+            print(f"    -> Error en descarrega: {pdf_url}")
             no_resolt += 1
 
-    # Desa catàleg actualitzat
-    with open(CATALOG_PATH, "w", encoding="utf-8") as fh:
+    # Desa cataleg actualitzat
+    with open(catalog_path, "w", encoding="utf-8") as fh:
         json.dump(catalog, fh, ensure_ascii=False, indent=2)
 
     print()
     print(f"BOE resolts: {boe_ok} | DOGC resolts: {dogc_ok} | No resolts: {no_resolt}")
+
+
+main = resolve_pjcat_pdfs
 
 
 if __name__ == "__main__":
