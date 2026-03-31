@@ -449,7 +449,7 @@ def download_pdf(url: str, dest_dir: str, filename: str,
                 for chunk in r.iter_content(chunk_size=8192):
                     fh.write(chunk)
             size_kb = os.path.getsize(filepath) // 1024
-            print(f"  ✅ {filename} ({size_kb} KB)", flush=True)
+            print(f"  [OK] {filename} ({size_kb} KB)", flush=True)
             return True
         print(f"  [WARN] {r.status_code} / {ctype}: {url}", flush=True)
         return False
@@ -575,6 +575,11 @@ def _save_resum(docs: list[dict], catalog_dir: str) -> None:
 
 # ─── Entry point ──────────────────────────────────────────────────────────────
 
+# Alies per compatibilitat amb cli.py i update_all.py
+main = build_catalog
+scrape_all = build_catalog
+
+
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -600,9 +605,9 @@ if __name__ == "__main__":
     downloaded   = sum(1 for d in docs if d.get("url_local"))
 
     print()
-    print("✅ ACA scraping complete")
-    print(f"📄 Documents found: {meta['total_documents']}")
-    print(f"🔗 Direct PDFs detected: {direct_pdfs}")
+    print("[OK] ACA scraping complete")
+    print(f"[DOC] Documents found: {meta['total_documents']}")
+    print(f"[DOC] Direct PDFs detected: {direct_pdfs}")
     if do_dl:
-        print(f"💾 PDFs downloaded: {downloaded}  (to {os.path.join(out_dir, 'pdfs')})")
-    print(f"💾 Catalog saved to {os.path.join(out_dir, '_catalogo', 'catalogo_aca.json')}")
+        print(f"[OK] PDFs downloaded: {downloaded}  (to {os.path.join(out_dir, 'pdfs')})")
+    print(f"[OK] Catalog saved to {os.path.join(out_dir, '_catalogo', 'catalogo_aca.json')}")

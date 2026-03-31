@@ -150,6 +150,6 @@ if __name__ == "__main__":
     docs = build_catalog()
 
     print()
-    print("✅ ERA catalog complete")
-    print(f"📄 ETIs catalogades: {len(docs)}")
-    print(f"💾 Saved to {os.path.join(OUTPUT_DIR, 'catalogo_era.json')}")
+    print("[OK] ERA catalog complete")
+    print(f"[DOC] ETIs catalogades: {len(docs)}")
+    print(f"[OK] Saved to {os.path.join(OUTPUT_DIR, 'catalogo_era.json')}")

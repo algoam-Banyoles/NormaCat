@@ -25,15 +25,21 @@ import sys
 import time
 import unicodedata
 from datetime import datetime
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
 
+from config import PROJECT_ROOT, CATALOGS_DIR
+
 # ─── Constants ────────────────────────────────────────────────────────────────
 BASE_URL              = "https://normativatecnica.adif.es/ntw"
-OUTPUT_DIR            = "normativa_adif"
 DELAY                 = 1.5
 SESSION_REFRESH_EVERY = 200  # refresh CSRF token every N documents
+
+# Paths de sortida NormaCat
+ADIF_CATALOG_DIR   = CATALOGS_DIR / "adif"
+ADIF_DOWNLOADS_DIR = PROJECT_ROOT / "downloads" / "adif"
 
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -73,17 +79,19 @@ def parse_ubicacion(ubicacion: str) -> tuple:
 
 # ─── Catalog persistence ──────────────────────────────────────────────────────
 
-def load_existing_adif_catalog(output_dir: str) -> dict:
+def load_existing_adif_catalog(catalog_dir=None) -> dict:
     """
     Load existing ADIF catalog keyed by object_id.
     Returns {} if no catalog exists yet.
     Uses catalogo_adif_complet.json (the full run output) when available,
     falling back to catalogo_adif.json (raw metadata only).
     """
-    catalog_dir = os.path.join(output_dir, "_catalogo")
+    if catalog_dir is None:
+        catalog_dir = ADIF_CATALOG_DIR
+    catalog_dir = Path(catalog_dir)
     for filename in ("catalogo_adif_complet.json", "catalogo_adif.json"):
-        path = os.path.join(catalog_dir, filename)
-        if os.path.exists(path):
+        path = catalog_dir / filename
+        if path.exists():
             try:
                 with open(path, encoding="utf-8") as f:
                     items = json.load(f)
@@ -95,13 +103,15 @@ def load_existing_adif_catalog(output_dir: str) -> dict:
     return {}
 
 
-def _save_adif_sync_log(changes: dict, output_dir: str) -> str:
+def _save_adif_sync_log(changes: dict, catalog_dir=None) -> str:
     """Save a dated sync log and return its path."""
-    catalog_dir = os.path.join(output_dir, "_catalogo")
-    os.makedirs(catalog_dir, exist_ok=True)
+    if catalog_dir is None:
+        catalog_dir = ADIF_CATALOG_DIR
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
 
     today    = datetime.now().strftime("%Y%m%d")
-    log_path = os.path.join(catalog_dir, f"sync_{today}.json")
+    log_path = catalog_dir / f"sync_{today}.json"
 
     log = {
         "data":         datetime.now().isoformat()[:10],
@@ -296,12 +306,12 @@ def get_annex_download_url(session, csrf_token: str, csrf_header: str, annex_id)
         return None
 
 
-def download_pdf(session, url: str, dest_path: str) -> bool | None:
+def download_file(session, url: str, dest_path: str) -> bool | None:
     """
-    Download a PDF.
-    Returns True  → downloaded now
-            False → already existed (skipped)
-            None  → error
+    Descarrega un fitxer (PDF, bc3, doc, xls, dwg...).
+    Returns True  -> descarregat ara
+            False -> ja existia (saltat)
+            None  -> error
     """
     if os.path.exists(dest_path):
         return False
@@ -311,29 +321,46 @@ def download_pdf(session, url: str, dest_path: str) -> bool | None:
         resp.raise_for_status()
         content = resp.content
 
-        if not content.startswith(b"%PDF"):
+        if not content:
+            print(f"    [WARN] Contingut buit: {url}")
             return None
 
         os.makedirs(os.path.dirname(dest_path), exist_ok=True)
         with open(dest_path, "wb") as f:
             f.write(content)
+
+        ext = os.path.splitext(dest_path)[1].lower()
+        name = os.path.basename(dest_path)
+        if ext == ".pdf":
+            print(f"    [OK] PDF descarregat: {name}", flush=True)
+        else:
+            print(f"    [OK] Fitxer descarregat ({ext}): {name}", flush=True)
         return True
 
     except Exception as exc:
-        print(f"    ✗ Error descarregant: {exc}")
+        print(f"    [ERR] Error descarregant: {exc}")
         return None
 
 
 # ─── Main orchestration ───────────────────────────────────────────────────────
 
-def scrape_all(output_dir: str) -> None:
+def scrape_all(catalog_dir=None, downloads_dir=None) -> None:
     """
     Incremental sync for all ADIF NTE documents.
     Downloads only new documents and those whose estado has changed.
     """
+    if catalog_dir is None:
+        catalog_dir = ADIF_CATALOG_DIR
+    if downloads_dir is None:
+        downloads_dir = ADIF_DOWNLOADS_DIR
+    catalog_dir = Path(catalog_dir)
+    downloads_dir = Path(downloads_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
+    downloads_dir.mkdir(parents=True, exist_ok=True)
+
     today = datetime.now().isoformat()[:10]
 
-    print("Connectant amb ADIF Normativa Tècnica…")
+    print("Connectant amb ADIF Normativa Tècnica...")
     session, csrf_token, csrf_header = get_session_and_csrf()
 
     if not csrf_token:
@@ -341,13 +368,13 @@ def scrape_all(output_dir: str) -> None:
         return
 
     # ── Load existing catalog ─────────────────────────────────────────────────
-    print("\nCarregant catàleg existent…")
-    existing = load_existing_adif_catalog(output_dir)
+    print("\nCarregant catàleg existent...")
+    existing = load_existing_adif_catalog(catalog_dir)
     if not existing:
-        print("  (primer ús — catàleg buit)")
+        print("  (primer us -- cataleg buit)")
 
     # ── Fetch current API state ───────────────────────────────────────────────
-    print("\nObtenen llista de documents de l'API…")
+    print("\nObtenen llista de documents de l'API...")
     api_docs = get_all_documents(session, csrf_token, csrf_header)
 
     if not api_docs:
@@ -355,9 +382,7 @@ def scrape_all(output_dir: str) -> None:
         return
 
     # Save raw metadata immediately (for recovery)
-    catalog_dir = os.path.join(output_dir, "_catalogo")
-    os.makedirs(catalog_dir, exist_ok=True)
-    raw_path = os.path.join(catalog_dir, "catalogo_adif.json")
+    raw_path = catalog_dir / "catalogo_adif.json"
     with open(raw_path, "w", encoding="utf-8") as f:
         json.dump(api_docs, f, ensure_ascii=False, indent=2)
     print(f"  Metadades raw guardades: {raw_path}")
@@ -375,7 +400,7 @@ def scrape_all(output_dir: str) -> None:
                 merged["estado_anterior"] = old_estat
                 merged["data_canvi"]      = today
                 changes["actualitzats"].append(merged)
-                print(f"  ⚠ CANVI ESTAT: {doc['codigo']} — {old_estat} → {new_estat}")
+                print(f"  [WARN] CANVI ESTAT: {doc['codigo']} -- {old_estat} -> {new_estat}")
             else:
                 changes["sense_canvis"].append(existing[oid])
         else:
@@ -414,7 +439,7 @@ def scrape_all(output_dir: str) -> None:
         # Skip if all files already on disk
         existing_fitxers = doc.get("fitxers", [])
         if existing_fitxers and all(
-            f.get("fitxer_local") and os.path.exists(f["fitxer_local"])
+            f.get("fitxer_local") and (PROJECT_ROOT / f["fitxer_local"]).exists()
             for f in existing_fitxers
         ):
             print("ja existeix")
@@ -442,8 +467,8 @@ def scrape_all(output_dir: str) -> None:
         # Build destination folder
         cat, subcat     = parse_ubicacion(doc.get("ubicacion", ""))
         estat_folder    = "vigent" if "vigent" in doc["estado"].lower() else "derogat"
-        dest_folder     = os.path.join(output_dir, estat_folder, cat, subcat)
-        os.makedirs(dest_folder, exist_ok=True)
+        dest_folder     = downloads_dir / estat_folder / cat / subcat
+        dest_folder.mkdir(parents=True, exist_ok=True)
 
         for annex in annexes:
             # annex row: [annex_id, filename, content_type, ...]
@@ -464,18 +489,23 @@ def scrape_all(output_dir: str) -> None:
             safe_name = re.sub(r'[\\/:*?"<>|]', '_', annex_name)
             if not safe_name.lower().endswith(".pdf"):
                 safe_name += ".pdf"
-            dest_path = os.path.join(dest_folder, safe_name)
+            dest_path = dest_folder / safe_name
 
-            result = download_pdf(session, pdf_url, dest_path)
+            result = download_file(session, pdf_url, str(dest_path))
+            # Path relatiu respecte a PROJECT_ROOT per portabilitat
+            try:
+                rel_path = str(dest_path.relative_to(PROJECT_ROOT))
+            except ValueError:
+                rel_path = str(dest_path)
             doc["fitxers"].append({
                 "annex_id":    annex_id,
                 "nom":         annex_name,
-                "fitxer_local": dest_path,
+                "fitxer_local": rel_path,
                 "descarregat": result is True,
             })
 
             if result is True:
-                size_kb = os.path.getsize(dest_path) / 1024
+                size_kb = dest_path.stat().st_size / 1024
                 print(f"↓ {safe_name} ({size_kb:.0f}KB) ", end="")
                 downloaded_count += 1
             elif result is False:
@@ -496,7 +526,7 @@ def scrape_all(output_dir: str) -> None:
     for entry in changes["sense_canvis"]:
         if str(entry["object_id"]) not in to_download_ids:
             if "te_pdf" not in entry:
-                entry["te_pdf"] = bool(entry.get("fitxer_local"))
+                entry["te_pdf"] = bool(entry.get("fitxers"))
             final_catalog.append(entry)
 
     # Add new, changed, and missing-pdf entries (now enriched with fitxers / estat_descarga)
@@ -504,20 +534,20 @@ def scrape_all(output_dir: str) -> None:
         final_catalog.append(entry)
 
     # ── Save results catalog ──────────────────────────────────────────────────
-    results_json = os.path.join(catalog_dir, "catalogo_adif_complet.json")
+    results_json = catalog_dir / "catalogo_adif_complet.json"
     with open(results_json, "w", encoding="utf-8") as f:
         json.dump(final_catalog, f, ensure_ascii=False, indent=2)
 
     if final_catalog:
         fieldnames = list(dict.fromkeys(k for e in final_catalog for k in e))
-        results_csv = os.path.join(catalog_dir, "catalogo_adif_complet.csv")
+        results_csv = catalog_dir / "catalogo_adif_complet.csv"
         with open(results_csv, "w", encoding="utf-8-sig", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
             writer.writeheader()
             writer.writerows(final_catalog)
 
     # ── Save sync log ─────────────────────────────────────────────────────────
-    log_path = _save_adif_sync_log(changes, output_dir)
+    log_path = _save_adif_sync_log(changes, catalog_dir)
 
     # ── Summary ───────────────────────────────────────────────────────────────
     print(f"\n{'-' * 55}")
@@ -539,9 +569,9 @@ def scrape_all(output_dir: str) -> None:
 if __name__ == "__main__":
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-    out = sys.argv[1] if len(sys.argv) > 1 else OUTPUT_DIR
     print("=" * 55)
     print(" Scraper Normativa Tecnica ADIF (sincronitzacio incremental)")
-    print(f" Desti: {out}/")
+    print(f" Cataleg: {ADIF_CATALOG_DIR}")
+    print(f" Downloads: {ADIF_DOWNLOADS_DIR}")
     print("=" * 55)
-    scrape_all(out)
+    scrape_all()

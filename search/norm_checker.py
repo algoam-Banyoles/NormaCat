@@ -4,12 +4,22 @@ import json
 import os
 import re
 import sqlite3
+import sys
+import io
 from pathlib import Path
+
+# Proteccio global d'encoding per consoles Windows (cp1252)
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    sys.stdout = io.TextIOWrapper(
+        sys.stdout.buffer, encoding='utf-8', errors='replace'
+    )
+    sys.stderr = io.TextIOWrapper(
+        sys.stderr.buffer, encoding='utf-8', errors='replace'
+    )
 
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from env_utils import load_local_env
 from indexer.norm_indexer import CHROMA_PATH, DB_PATH, EMBEDDING_MODEL
@@ -253,7 +263,7 @@ def _load_new_catalog(path: str, font: str, target: dict) -> int:
             n += 1
             if (doc.get("estat") or "").upper() == "HISTORICA":
                 _HISTORICA_NORMS[codi] = doc
-        print(f"  \u2705 Loaded {n} entries from {font}")
+        print(f"  [OK] Loaded {n} entries from {font}")
         return n
     except Exception as exc:
         print(f"  [WARN] {font}: failed to load {path}: {exc}")
@@ -283,7 +293,7 @@ def _print_catalog_stats() -> None:
         + len(_MITMA_F_CATALOG)
         + len(_IC_CATALOG)
     )
-    print(f"\n\U0001f4da Normative catalog: {total} entries")
+    print(f"\n[CAT] Normative catalog: {total} entries")
     print(f"   - normativa_annexes.json: {annexes_n}")
     print(f"   - ADIF NTEs: {len(_ADIF_CATALOG)}")
     print(f"   - ISO: {len(_ISO_CATALOG)}")

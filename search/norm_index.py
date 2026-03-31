@@ -36,7 +36,10 @@ _PRIORITY = {"DEROGADA": 3, "VIGENT": 2, "REFERENCIA": 1, "PENDENT": 0}
 class NormIndex:
     """In-memory lookup index built from all downloaded normative catalogs."""
 
-    def __init__(self, base_dir: str) -> None:
+    def __init__(self, base_dir: str = None) -> None:
+        if base_dir is None:
+            from config import PROJECT_ROOT
+            base_dir = PROJECT_ROOT
         self._base_dir = os.path.abspath(base_dir)
         # canonical_key → entry dict
         self._index: dict[str, dict] = {}

@@ -38,17 +38,22 @@ else:
 import os
 import re
 import time
+from pathlib import Path
 
 from curl_cffi import requests
 from bs4 import BeautifulSoup
+
+from config import PROJECT_ROOT, CATALOGS_DIR
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
 BASE_URL   = "https://www.une.org"
 SEARCH_URL = f"{BASE_URL}/encuentra-tu-norma"
 
-OUTPUT_DIR   = "normativa_une"
-CATALOG_PATH = os.path.join(OUTPUT_DIR, "_catalogo", "catalogo_une.json")
+# Paths de sortida NormaCat
+UNE_CATALOG_DIR  = CATALOGS_DIR / "une"
+UNE_CATALOG_PATH = UNE_CATALOG_DIR / "catalogo_une.json"
+
 DELAY        = 1.5
 IMPERSONATE  = "chrome120"
 
@@ -171,95 +176,84 @@ def get_ics_display_names(session: requests.Session) -> dict[str, str]:
 
 def parse_results_from_html(html: str) -> list[dict]:
     """
-    Extract norm metadata.  Tries 3 strategies in order:
-    1. Individual result item divs/lis (most structured)
-    2. divResultados text split (original approach)
-    3. Full-page regex scan (last resort)
+    Extreu metadades de normes del HTML de resultats UNE.
+    Estructura HTML de cada resultat:
+      div.container.row-eq-height
+        p.blue.h2       -> referencia (link amb ?c=NXXXXXXX)
+        p               -> "Estado: Vigente / YYYY-MM-DD"
+        p.text-justify  -> descripcio real de la norma
+        p.text-justify.text-uppercase -> CTN (comite)
+    Fallback: regex scan si no es troben divs estructurats.
     """
     soup = BeautifulSoup(html, "html.parser")
     results: list[dict] = []
     seen: set[str] = set()
 
-    # --- Strategy 1: individual result elements ---
-    items = (
-        soup.find_all("div", class_=re.compile(r"resultado|result|norma", re.I))
-        or soup.find_all("li", class_=re.compile(r"resultado|result|norma", re.I))
-        or soup.find_all("article")
-    )
-    for item in items:
-        text  = item.get_text("\n", strip=True)
-        m_ref = UNE_REF_PAT.search(text)
-        if not m_ref:
-            continue
-        ref = m_ref.group(0).strip()
-        if ref in seen:
-            continue
-        seen.add(ref)
-        m_estat = re.search(r"Estado[:\s]+(Vigente|Anulada)", text, re.I)
-        m_data  = re.search(r"(\d{4}-\d{2}-\d{2})", text)
-        estat = ""
-        if m_estat:
-            estat = "VIGENT" if m_estat.group(1).lower() == "vigente" else "ANULADA"
-        lines      = [l.strip() for l in text.split("\n") if l.strip()]
-        descripcio = ""
-        ctn        = ""
-        for j, line in enumerate(lines):
-            if "estado" in line.lower() and j + 1 < len(lines):
-                candidate = lines[j + 1]
-                if not re.match(r"(UNE|CTN|Estado)", candidate, re.I):
-                    descripcio = candidate[:200]
-            if line.upper().startswith("CTN"):
-                ctn = line
-        results.append({
-            "referencia":      ref,
-            "estat":           estat,
-            "data_publicacio": m_data.group(1) if m_data else "",
-            "descripcio":      descripcio,
-            "ctn":             ctn,
-            "font":            "UNE scraping",
-        })
-    if results:
-        return results
-
-    # --- Strategy 2: divResultados text split (original) ---
+    # --- Estrategia 1: divs estructurats dins divResultados ---
     div_res = soup.find("div", id=re.compile("divResultados", re.I))
     if div_res:
-        text   = div_res.get_text("\n")
-        blocks = UNE_REF_PAT.split(text)
-        i = 1
-        while i < len(blocks) - 1:
-            ref     = blocks[i].strip()
-            content = blocks[i + 1] if i + 1 < len(blocks) else ""
-            if ref and ref not in seen:
-                seen.add(ref)
-                m_estat = re.search(r"Estado:\s*(Vigente|Anulada)", content)
-                m_data  = re.search(r"(\d{4}-\d{2}-\d{2})", content)
-                estat = ""
-                if m_estat:
-                    estat = "VIGENT" if m_estat.group(1) == "Vigente" else "ANULADA"
-                lines      = [l.strip() for l in content.split("\n") if l.strip()]
-                descripcio = ""
-                ctn        = ""
-                for j, line in enumerate(lines):
-                    if "Estado:" in line:
-                        if j + 1 < len(lines) and not lines[j + 1].startswith("CTN"):
-                            descripcio = lines[j + 1]
-                    if line.startswith("CTN"):
-                        ctn = line
-                        break
-                results.append({
-                    "referencia":      ref,
-                    "estat":           estat,
-                    "data_publicacio": m_data.group(1) if m_data else "",
-                    "descripcio":      descripcio[:200],
-                    "ctn":             ctn,
-                    "font":            "UNE scraping (div fallback)",
-                })
-            i += 2
+        items = div_res.find_all("div", class_="container row-eq-height", recursive=False)
+        for item in items:
+            ps = item.find_all("p")
+            if len(ps) < 2:
+                continue
+
+            # p[0]: referencia (dins d'un <a>)
+            ref_link = ps[0].find("a", class_="blue")
+            if not ref_link:
+                continue
+            ref = ref_link.get_text(strip=True)
+            if not ref or ref in seen:
+                continue
+            seen.add(ref)
+
+            # URL de la fitxa
+            href = (ref_link.get("href") or "").strip()
+            url = ""
+            if href:
+                url = href if href.startswith("http") else f"https://www.une.org{href.strip()}"
+
+            # p[1]: estat i data
+            estat_text = ps[1].get_text(strip=True) if len(ps) > 1 else ""
+            estat = ""
+            m_estat = re.search(r"(Vigente|Anulada)", estat_text, re.I)
+            if m_estat:
+                estat = "VIGENT" if m_estat.group(1).lower() == "vigente" else "ANULADA"
+            data_pub = ""
+            m_data = re.search(r"(\d{4}-\d{2}-\d{2})", estat_text)
+            if m_data:
+                data_pub = m_data.group(1)
+
+            # p[2]: descripcio (class text-justify, sense text-uppercase)
+            descripcio = ""
+            for p in ps[2:]:
+                cls = p.get("class", [])
+                if "text-justify" in cls and "text-uppercase" not in cls:
+                    descripcio = p.get_text(strip=True)[:200]
+                    break
+
+            # p[3] o ultim: CTN (class text-uppercase)
+            ctn = ""
+            for p in ps[2:]:
+                cls = p.get("class", [])
+                if "text-uppercase" in cls:
+                    ctn = p.get_text(strip=True)
+                    break
+
+            results.append({
+                "referencia":      ref,
+                "estat":           estat,
+                "data_publicacio": data_pub,
+                "descripcio":      descripcio,
+                "ctn":             ctn,
+                "url":             url,
+                "font":            "UNE scraping",
+            })
+
     if results:
         return results
 
-    # --- Strategy 3: full-page regex (last resort) ---
+    # --- Estrategia 2 (fallback): regex scan de tot el HTML ---
     refs = UNE_REF_PAT.findall(html)
     for ref in refs:
         ref = ref.strip()
@@ -271,6 +265,7 @@ def parse_results_from_html(html: str) -> list[dict]:
                 "data_publicacio": "",
                 "descripcio":      "",
                 "ctn":             "",
+                "url":             "",
                 "font":            "UNE scraping (regex fallback)",
             })
     return results
@@ -462,12 +457,15 @@ def run_diagnostic(session: requests.Session) -> bool:
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
-def main(output_dir: str = OUTPUT_DIR) -> None:
-    global CATALOG_PATH
-    if output_dir != OUTPUT_DIR:
-        CATALOG_PATH = os.path.join(output_dir, "_catalogo", "catalogo_une.json")
+def main(catalog_dir=None) -> None:
+    if catalog_dir is None:
+        catalog_dir = UNE_CATALOG_DIR
+    catalog_dir = Path(catalog_dir)
+    catalog_dir.mkdir(parents=True, exist_ok=True)
+    catalog_path = catalog_dir / "catalogo_une.json"
 
     print("=== UNE Catalog Builder (KQL) ===")
+    print(f"Cataleg: {catalog_path}")
     print("Iniciant sessio...")
 
     session = make_session()
@@ -557,12 +555,27 @@ def main(output_dir: str = OUTPUT_DIR) -> None:
             time.sleep(DELAY)
         print(f"  Successors trobats online: {found_online}/{n_lookups}")
 
+    # ── Merge amb cataleg existent ──
+    if catalog_path.exists():
+        try:
+            with open(catalog_path, encoding="utf-8") as f:
+                existing = json.load(f)
+            existing_by_ref = {e["referencia"]: e for e in existing if "referencia" in e}
+            print(f"\n[UNE] Cataleg existent: {len(existing_by_ref)} entrades")
+            # Afegir entrades existents que no s'han obtingut ara
+            for ref, entry in existing_by_ref.items():
+                if ref not in seen_refs:
+                    catalog.append(entry)
+                    seen_refs.add(ref)
+            print(f"[UNE] Despres de merge: {len(catalog)} entrades")
+        except Exception as exc:
+            print(f"[UNE] [WARN] No s'ha pogut carregar cataleg existent: {exc}")
+
     # ── Save ──
-    os.makedirs(os.path.dirname(CATALOG_PATH), exist_ok=True)
-    with open(CATALOG_PATH, "w", encoding="utf-8") as f:
+    with open(catalog_path, "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=2)
 
-    # ── Fix 5: final stats ──
+    # ── Estadistiques finals ──
     total    = len(catalog)
     vigents  = sum(1 for d in catalog if (d.get("estat") or "").upper() in ("VIGENT", "VIGENTE"))
     anulades = sum(1 for d in catalog if (d.get("estat") or "").upper() in ("ANULADA", "RETIRADA", "CANCELADA"))
@@ -574,9 +587,8 @@ def main(output_dir: str = OUTPUT_DIR) -> None:
     print(f"[UNE] Anulades: {anulades}")
     print(f"[UNE]   - Amb successor trobat: {amb_succ}")
     print(f"[UNE]   - Sense successor: {sense}")
-    print(f"[UNE] Cataleg guardat: {CATALOG_PATH}")
+    print(f"[UNE] Cataleg guardat: {catalog_path}")
 
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else OUTPUT_DIR
-    main(out)
+    main()

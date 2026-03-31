@@ -376,7 +376,7 @@ def scrape_all(output_dir: str) -> list:
             new_estat = web_doc["estat_legal"]
 
             if old_estat != new_estat:
-                print(f"  ⚠ CANVI ESTAT: {web_doc['titol'][:60]}")
+                print(f"  [WARN] CANVI ESTAT: {web_doc['titol'][:60]}")
                 print(f"    {old_estat} → {new_estat}")
 
                 updated = {**old, **web_doc}
