@@ -14,11 +14,13 @@
       "estat": "VIGENT",
       "font": "MITMA-F",
       "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-740",
-      "url_document": null,
+      "url_document": "https://www.boe.es/boe/dias/2005/01/15/pdfs/A01644-01644.pdf",
       "temes": [
         "ferroviari"
       ],
-      "observacions": "Desenvolupa la Llei 39/2003 del Sector Ferroviari"
+      "observacions": "Desenvolupa la Llei 39/2003 del Sector Ferroviari",
+      "path_local": "downloads\\mitma_ferroviari\\RD-2387-2004.pdf",
+      "pdf_descarregat": true
     },
     {
       "codi": "RD-354-2006",
@@ -27,11 +29,13 @@
       "estat": "VIGENT",
       "font": "MITMA-F",
       "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2006-5388",
-      "url_document": null,
+      "url_document": "https://www.boe.es/boe/dias/2006/03/25/pdfs/A11703-11703.pdf",
       "temes": [
         "ferroviari"
       ],
-      "observacions": ""
+      "observacions": "",
+      "path_local": "downloads\\mitma_ferroviari\\RD-354-2006.pdf",
+      "pdf_descarregat": true
     },
     {
       "codi": "RD-810-2007",
@@ -40,11 +44,13 @@
       "estat": "VIGENT",
       "font": "MITMA-F",
       "url_fitxa": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-12422",
-      "url_document": null,
+      "url_document": "https://www.boe.es/boe/dias/2007/06/23/pdfs/A27249-27249.pdf",
       "temes": [
         "ferroviari"
       ],
-      "observacions": ""
+      "observacions": "",
+      "path_local": "downloads\\mitma_ferroviari\\RD-810-2007.pdf",
+      "pdf_descarregat": true
     },
     {
       "codi": "RD-664-2015",
@@ -57,7 +63,8 @@
       "temes": [
         "ferroviari"
       ],
-      "observacions": ""
+      "observacions": "",
+      "url_no_disponible": true
     },
     {
       "codi": "LEI-39-2003",
@@ -66,11 +73,13 @@
       "estat": "VIGENT",
       "font": "MITMA-F",
       "url_fitxa": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-22239",
-      "url_document": null,
+      "url_document": "https://www.boe.es/boe/dias/2003/12/04/pdfs/A43413-43413.pdf",
       "temes": [
         "ferroviari"
       ],
-      "observacions": ""
+      "observacions": "",
+      "path_local": "downloads\\mitma_ferroviari\\LEI-39-2003.pdf",
+      "pdf_descarregat": true
     },
     {
       "codi": "RD-256-2021",
@@ -83,7 +92,8 @@
       "temes": [
         "ferroviari"
       ],
-      "observacions": ""
+      "observacions": "",
+      "url_no_disponible": true
     },
     {
       "codi": "OM-FOM-233-2006",
@@ -96,7 +106,8 @@
       "temes": [
         "ferroviari"
       ],
-      "observacions": ""
+      "observacions": "",
+      "url_no_disponible": true
     },
     {
       "codi": "RD-1247-1995",
@@ -109,7 +120,8 @@
       "temes": [
         "ferroviari"
       ],
-      "observacions": "Derogat per RD 2387/2004 i normativa ETI"
+      "observacions": "Derogat per RD 2387/2004 i normativa ETI",
+      "url_no_disponible": true
     }
   ]
 }

@@ -20,8 +20,10 @@ from __future__ import annotations
 import io
 import json
 import os
+import re
 import sys
 import time
+import unicodedata
 from pathlib import Path
 
 from config import PROJECT_ROOT, CATALOGS_DIR, DATA_DIR
@@ -40,8 +42,9 @@ from urllib3.util.retry import Retry
 
 API_BASE     = "https://boe.es/datosabiertos/api"
 BOE_BASE     = "https://www.boe.es"
-BOE_CATALOG_DIR  = CATALOGS_DIR / "boe"
-BOE_CATALOG_PATH = BOE_CATALOG_DIR / "catalogo_boe.json"
+BOE_CATALOG_DIR    = CATALOGS_DIR / "boe"
+BOE_CATALOG_PATH   = BOE_CATALOG_DIR / "catalogo_boe.json"
+BOE_DOWNLOADS_DIR  = PROJECT_ROOT / "downloads" / "boe"
 
 DELAY        = 1.0      # seconds between requests
 PAGE_SIZE    = 50
@@ -406,12 +409,91 @@ def merge_into_annexes(catalog: list[dict], annexes_path=None) -> None:
     print(f"  normativa_annexes.json actualitzat: +{added} entrades derogades (backup: {backup})")
 
 
+# ─── Descàrrega de PDFs ──────────────────────────────────────────────────────
+
+def _sanitize_filename(doc_id: str, text: str) -> str:
+    """Genera un nom de fitxer segur a partir del codi BOE i títol."""
+    if doc_id:
+        safe = doc_id
+    else:
+        normalized = unicodedata.normalize("NFKD", text or "document")
+        safe = normalized.encode("ascii", "ignore").decode("ascii")
+        safe = re.sub(r"[^a-zA-Z0-9\-]+", "_", safe)
+        safe = re.sub(r"_+", "_", safe).strip("_")
+        if len(safe) > 80:
+            safe = safe[:80].rstrip("_")
+    if not safe.lower().endswith(".pdf"):
+        safe += ".pdf"
+    return safe
+
+
+def _download_pdf(session: requests.Session, url: str, dest_path: Path) -> bool:
+    """Descarrega un fitxer PDF. Retorna True si s'ha descarregat correctament."""
+    if dest_path.exists():
+        return True   # ja descarregat
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        resp = session.get(url, timeout=60)
+        resp.raise_for_status()
+        if len(resp.content) < 100:
+            print(f"  [WARN] Fitxer massa petit: {dest_path.name}")
+            return False
+        with open(dest_path, "wb") as f:
+            f.write(resp.content)
+        size_kb = len(resp.content) // 1024
+        print(f"  ↓ {dest_path.name} ({size_kb} KB)")
+        return True
+    except Exception as exc:
+        print(f"  [ERROR] Descàrrega fallida {dest_path.name}: {exc}")
+        return False
+
+
+def download_catalog_pdfs(
+    session: requests.Session,
+    catalog: list[dict],
+    downloads_dir: Path,
+) -> int:
+    """Descarrega els PDFs de totes les entrades del catàleg amb url_pdf vàlida."""
+    downloads_dir = Path(downloads_dir)
+    downloaded = 0
+    skipped = 0
+    errors = 0
+
+    print(f"\n[4/4] Descarregant PDFs a {downloads_dir} ...")
+    for entry in catalog:
+        url_pdf = entry.get("url_pdf", "")
+        if not url_pdf or not url_pdf.startswith("http"):
+            continue
+
+        filename = _sanitize_filename(entry.get("id", ""), entry.get("text", ""))
+        dest_path = downloads_dir / filename
+
+        if dest_path.exists():
+            entry["fitxer_local"] = str(dest_path)
+            skipped += 1
+            continue
+
+        ok = _download_pdf(session, url_pdf, dest_path)
+        if ok:
+            entry["fitxer_local"] = str(dest_path)
+            downloaded += 1
+        else:
+            errors += 1
+        time.sleep(0.5)
+
+    print(f"  PDFs descarregats: {downloaded}  |  Ja existents: {skipped}  |  Errors: {errors}")
+    return downloaded
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
-def main(catalog_dir=None) -> None:
+def main(catalog_dir=None, downloads_dir=None) -> None:
     if catalog_dir is None:
         catalog_dir = BOE_CATALOG_DIR
+    if downloads_dir is None:
+        downloads_dir = BOE_DOWNLOADS_DIR
     catalog_dir = Path(catalog_dir)
+    downloads_dir = Path(downloads_dir)
     catalog_dir.mkdir(parents=True, exist_ok=True)
     catalog_path = catalog_dir / "catalogo_boe.json"
 
@@ -478,6 +560,11 @@ def main(catalog_dir=None) -> None:
 
     if enriched:
         print(f"  {enriched} entrades enriquides amb derogada_per")
+        _save_incremental(catalog, catalog_path)
+
+    # 4) Descàrrega de PDFs
+    dl_count = download_catalog_pdfs(session, catalog, downloads_dir)
+    if dl_count > 0:
         _save_incremental(catalog, catalog_path)
 
     # Summary table

@@ -23,8 +23,9 @@ from urllib3.util.retry import Retry
 from config import PROJECT_ROOT, CATALOGS_DIR
 
 # ─── Constants ────────────────────────────────────────────────────────────────
-CTE_CATALOG_DIR = CATALOGS_DIR / "cte"
-BASE_URL        = "https://www.codigotecnico.org"
+CTE_CATALOG_DIR   = CATALOGS_DIR / "cte"
+CTE_DOWNLOADS_DIR = PROJECT_ROOT / "downloads" / "cte"
+BASE_URL          = "https://www.codigotecnico.org"
 PDF_BASE     = BASE_URL + "/pdf/Documentos"
 
 # ─── Document catalog (static, verified pattern) ──────────────────────────────
@@ -248,13 +249,39 @@ def verify_documents(session: requests.Session, docs: list) -> list:
     return docs
 
 
+# ─── Descàrrega de PDFs ──────────────────────────────────────────────────────
+
+def _download_pdf(session: requests.Session, url: str, dest_path: Path) -> bool:
+    """Descarrega un fitxer PDF. Retorna True si s'ha descarregat correctament."""
+    if dest_path.exists():
+        return True   # ja descarregat
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        resp = session.get(url, timeout=60)
+        resp.raise_for_status()
+        if len(resp.content) < 100:
+            print(f"  [WARN] Fitxer massa petit: {dest_path.name}")
+            return False
+        with open(dest_path, "wb") as f:
+            f.write(resp.content)
+        size_kb = len(resp.content) // 1024
+        print(f"  ↓ {dest_path.name} ({size_kb} KB)")
+        return True
+    except Exception as exc:
+        print(f"  [ERROR] Descàrrega fallida {dest_path.name}: {exc}")
+        return False
+
+
 # ─── Catalog builder ──────────────────────────────────────────────────────────
 
-def build_catalog(catalog_dir=None) -> list:
+def build_catalog(catalog_dir=None, downloads_dir=None) -> list:
     """Build and save the CTE catalog. Returns list of document entries."""
     if catalog_dir is None:
         catalog_dir = CTE_CATALOG_DIR
+    if downloads_dir is None:
+        downloads_dir = CTE_DOWNLOADS_DIR
     catalog_dir = Path(catalog_dir)
+    downloads_dir = Path(downloads_dir)
     catalog_dir.mkdir(parents=True, exist_ok=True)
 
     session = _make_session()
@@ -281,6 +308,33 @@ def build_catalog(catalog_dir=None) -> list:
         }
         catalog_docs.append(entry)
 
+    # ── Descàrrega de PDFs ──────────────────────────────────────────────────
+    downloaded = 0
+    skipped = 0
+    errors = 0
+    print(f"\nDescarregant PDFs a {downloads_dir} ...")
+    for doc in catalog_docs:
+        url_pdf = doc.get("url_pdf", "")
+        if not url_pdf or not doc.get("url_ok", False):
+            continue
+
+        filename = doc["codi"] + ".pdf"
+        dest_path = downloads_dir / filename
+
+        if dest_path.exists():
+            doc["fitxer_local"] = str(dest_path)
+            skipped += 1
+            continue
+
+        ok = _download_pdf(session, url_pdf, dest_path)
+        if ok:
+            doc["fitxer_local"] = str(dest_path)
+            downloaded += 1
+        else:
+            errors += 1
+
+    print(f"  PDFs descarregats: {downloaded}  |  Ja existents: {skipped}  |  Errors: {errors}")
+
     catalog = {
         "_meta": {
             "font":            "Código Técnico de la Edificación — codigotecnico.org",
@@ -288,7 +342,8 @@ def build_catalog(catalog_dir=None) -> list:
             "total":           len(catalog_docs),
             "urls_ok":         sum(1 for d in catalog_docs if d["url_ok"]),
             "urls_fail":       sum(1 for d in catalog_docs if not d["url_ok"]),
-            "versio_scraper":  "1.0",
+            "pdfs_descarregats": downloaded + skipped,
+            "versio_scraper":  "1.1",
         },
         "documents": catalog_docs,
     }

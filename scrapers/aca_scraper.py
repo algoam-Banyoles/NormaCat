@@ -466,7 +466,7 @@ def download_pdf(url: str, dest_dir: str, filename: str,
 
 # ─── Main catalog builder ─────────────────────────────────────────────────────
 
-def build_catalog(catalog_dir=None, downloads_dir=None, download: bool = False) -> tuple[list[dict], dict]:
+def build_catalog(catalog_dir=None, downloads_dir=None, download: bool = True) -> tuple[list[dict], dict]:
     if catalog_dir is None:
         catalog_dir = ACA_CATALOG_DIR
     if downloads_dir is None:

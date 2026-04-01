@@ -13,8 +13,7 @@
     "derogada_per": "",
     "observacions": "Deroga la Llei 7/1993",
     "font": "Portal Juridic Catalunya",
-    "fetch_ok": true,
-    "pdf_descarregat": false
+    "fetch_ok": true
   },
   {
     "id": "pjcat-312160",
@@ -31,9 +30,9 @@
     "observacions": "Desenvolupa la Llei 7/1993 i el DL 2/2009",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://portaljuridic.gencat.cat/eli/es-ct/d/2003/11/18/293/dof/cat/pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-312160.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-312160.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-92770",
@@ -50,9 +49,9 @@
     "observacions": "Derogada pel Decret Legislatiu 2/2009",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://portaljuridic.gencat.cat/eli/es-ct/l/1993/09/30/7/dof/cat/pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-92770.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-92770.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-921467",
@@ -69,9 +68,9 @@
     "observacions": "Transposa Directiva (UE) 2019/1936. Deroga D-190/2016",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://portaljuridic.gencat.cat/eli/es-ct/d/2025/07/29/168/dof/cat/pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-921467.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-921467.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-673800",
@@ -88,9 +87,9 @@
     "observacions": "Derogat pel Decret 168/2025 des del 31.07.2025",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://portaljuridic.gencat.cat/eli/es-ct/d/2016/02/16/190/dof/cat/pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-673800.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-673800.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-824435",
@@ -107,9 +106,9 @@
     "observacions": "LCSP vigent. Transposa Directives 2014/23/UE i 2014/24/UE",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://www.boe.es/buscar/pdf/2017/BOE-A-2017-12902-consolidado.pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-824435.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-824435.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-641266",
@@ -126,9 +125,9 @@
     "observacions": "Parcialment vigent. Alguns articles derogats per la LCSP",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://www.boe.es/buscar/pdf/2001/BOE-A-2001-19995-consolidado.pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-641266.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-641266.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-630565",
@@ -145,9 +144,9 @@
     "observacions": "",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://portaljuridic.gencat.cat/eli/es-ct/l/2009/12/04/20/dof/cat/pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-630565.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-630565.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-597312",
@@ -163,8 +162,7 @@
     "derogada_per": "",
     "observacions": "",
     "font": "Portal Juridic Catalunya",
-    "fetch_ok": true,
-    "pdf_descarregat": false
+    "fetch_ok": true
   },
   {
     "id": "pjcat-672453",
@@ -181,9 +179,9 @@
     "observacions": "Deroga el D-135/1995",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://portaljuridic.gencat.cat/eli/es-ct/d/2023/11/28/209/dof/cat/pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-672453.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-672453.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-167320",
@@ -200,9 +198,9 @@
     "observacions": "Derogat per D-209/2023 des de l'01.03.2024",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://portaljuridic.gencat.cat/eli/es-ct/d/1995/03/24/135/dof/cat/pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-167320.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-167320.pdf",
+    "pdf_descarregat": true
   },
   {
     "id": "pjcat-295505",
@@ -219,8 +217,8 @@
     "observacions": "",
     "font": "Portal Juridic Catalunya",
     "fetch_ok": true,
-    "pdf_descarregat": true,
     "url_pdf": "https://www.boe.es/buscar/pdf/1997/BOE-A-1997-22614-consolidado.pdf",
-    "path_local": "normativa_pjcat/pdfs/pjcat-295505.pdf"
+    "path_local": "C:/Users/algoa/OneDrive/Escritorio/NormaCat/downloads/pjcat/pdfs/pjcat-295505.pdf",
+    "pdf_descarregat": true
   }
 ]

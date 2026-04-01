@@ -2,7 +2,7 @@
   "metadata": {
     "font": "Agència Catalana de l'Aigua",
     "url_base": "https://aca.gencat.cat",
-    "data_scraping": "2026-03-17",
+    "data_scraping": "2026-04-01",
     "total_documents": 145,
     "versio": "1.0"
   },
@@ -18,7 +18,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\cartografia-de-les-inundacions-del-temporal-gloria.pdf"
     },
     {
       "id": "els-peixos-als-embassaments-i-estanys-de-les-conques-interne",
@@ -33,7 +34,8 @@
         "preses"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\els-peixos-als-embassaments-i-estanys-de-les-conques-interne.pdf"
     },
     {
       "id": "aigua-i-canvi-climatic",
@@ -46,7 +48,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\aigua-i-canvi-climatic.pdf"
     },
     {
       "id": "pla-de-xoc-per-al-seguiment-de-limpacte-ambiental-al-besos-d",
@@ -59,7 +62,8 @@
       "any_publicacio": 2019,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\pla-de-xoc-per-al-seguiment-de-limpacte-ambiental-al-besos-d.pdf"
     },
     {
       "id": "prova-demostrativa-de-reutilitzacio-daigua-regenerada-a-lera",
@@ -72,7 +76,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\prova-demostrativa-de-reutilitzacio-daigua-regenerada-a-lera.pdf"
     },
     {
       "id": "fenomens-naturals-a-les-platges-escumes-i-mucilags",
@@ -85,7 +90,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\fenomens-naturals-a-les-platges-escumes-i-mucilags.pdf"
     },
     {
       "id": "fenomens-naturals-a-les-platges-les-meduses",
@@ -98,7 +104,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\fenomens-naturals-a-les-platges-les-meduses.pdf"
     },
     {
       "id": "guia-tecnica-alliberament-i-mesura-dels-cabals-de-mantenimen",
@@ -111,7 +118,8 @@
       "any_publicacio": 2023,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\guia-tecnica-alliberament-i-mesura-dels-cabals-de-mantenimen.pdf"
     },
     {
       "id": "estimacio-de-la-disponibilitat-de-pagament-i-costos-dimplant",
@@ -124,7 +132,8 @@
       "any_publicacio": 2008,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\estimacio-de-la-disponibilitat-de-pagament-i-costos-dimplant.pdf"
     },
     {
       "id": "validacio-biologica-del-regim-de-cabals-de-manteniment-en-de",
@@ -137,7 +146,8 @@
       "any_publicacio": 2006,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\validacio-biologica-del-regim-de-cabals-de-manteniment-en-de.pdf"
     },
     {
       "id": "pla-sectorial-de-cabals-de-manteniment-memoria-tecnica-2005",
@@ -150,7 +160,8 @@
       "any_publicacio": 2005,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\pla-sectorial-de-cabals-de-manteniment-memoria-tecnica-2005.pdf"
     },
     {
       "id": "fenomens-naturals-a-les-platges-proliferacions-de-fitoplanct",
@@ -163,7 +174,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\fenomens-naturals-a-les-platges-proliferacions-de-fitoplanct.pdf"
     },
     {
       "id": "fenomens-naturals-a-les-platges-restes-de-vegetals-marins",
@@ -176,7 +188,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\fenomens-naturals-a-les-platges-restes-de-vegetals-marins.pdf"
     },
     {
       "id": "els-peixos-de-catalunya",
@@ -189,7 +202,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\els-peixos-de-catalunya.pdf"
     },
     {
       "id": "deteccio-de-substancies-prioritaries-i-preferents-en-aigua-s",
@@ -202,7 +216,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\deteccio-de-substancies-prioritaries-i-preferents-en-aigua-s.pdf"
     },
     {
       "id": "la-gestio-dels-biosolids-a-catalunya",
@@ -215,7 +230,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\la-gestio-dels-biosolids-a-catalunya.pdf"
     },
     {
       "id": "ponencies-iv-jornada-tecnica-de-gestio-edar",
@@ -230,7 +246,8 @@
         "sanejament"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\ponencies-iv-jornada-tecnica-de-gestio-edar.pdf"
     },
     {
       "id": "estimacio-i-prognosi-de-la-demanda-daigua-a-catalunya-bases-",
@@ -243,7 +260,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\estimacio-i-prognosi-de-la-demanda-daigua-a-catalunya-bases-.pdf"
     },
     {
       "id": "estudi-per-al-foment-de-la-innovacio-lestalvi-i-la-reutilitz",
@@ -256,7 +274,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\estudi-per-al-foment-de-la-innovacio-lestalvi-i-la-reutilitz.pdf"
     },
     {
       "id": "informe-de-les-afeccions-piezometriques",
@@ -269,7 +288,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\informe-de-les-afeccions-piezometriques.pdf"
     },
     {
       "id": "informe-de-lestat-quantitatiu-de-les-masses-daigua-subterran",
@@ -282,7 +302,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\informe-de-lestat-quantitatiu-de-les-masses-daigua-subterran.pdf"
     },
     {
       "id": "estudis-i-informes-tecnics",
@@ -310,7 +331,8 @@
         "hidrologia"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\la-barrera-hidraulica-contra-la-intrusio-marina-i-la-recarre.pdf"
     },
     {
       "id": "clasificacion-de-la-calidad-de-las-aguas-de-bano-2025",
@@ -323,7 +345,8 @@
       "any_publicacio": 2025,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\clasificacion-de-la-calidad-de-las-aguas-de-bano-2025.pdf"
     },
     {
       "id": "classificacio-de-la-qualitat-de-les-aigues-de-bany-2024",
@@ -338,7 +361,8 @@
         "qualitat-aigues"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\classificacio-de-la-qualitat-de-les-aigues-de-bany-2024.pdf"
     },
     {
       "id": "normes-de-redaccio-de-projectes-estructura-i-continguts-maig",
@@ -351,7 +375,8 @@
       "any_publicacio": 2025,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\normes-de-redaccio-de-projectes-estructura-i-continguts-maig.pdf"
     },
     {
       "id": "normes-de-redaccio-de-la-documentacio-dobra-executada-maig-2",
@@ -364,7 +389,8 @@
       "any_publicacio": 2025,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\normes-de-redaccio-de-la-documentacio-dobra-executada-maig-2.pdf"
     },
     {
       "id": "model-de-dades-sig-complet-actualitzat-3022026",
@@ -377,7 +403,8 @@
       "any_publicacio": 2026,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\model-de-dades-sig-complet-actualitzat-3022026.zip"
     },
     {
       "id": "normes-de-disseny-corporatiu-de-projectes-dels-documents-a-l",
@@ -390,7 +417,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\normes-de-disseny-corporatiu-de-projectes-dels-documents-a-l.pdf"
     },
     {
       "id": "plantilles-de-portades-i-caixetins-per-al-disseny-de-project",
@@ -403,7 +431,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\plantilles-de-portades-i-caixetins-per-al-disseny-de-project.zip"
     },
     {
       "id": "projectes-de-gestio-conservacio-i-recuperacio-despais-fluvia",
@@ -416,7 +445,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\projectes-de-gestio-conservacio-i-recuperacio-despais-fluvia.pdf"
     },
     {
       "id": "pla-de-gestio-del-districte-de-conca-fluvial-de-catalunya-i-",
@@ -442,7 +472,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\directiva.pdf"
     },
     {
       "id": "1-validacio-de-la-xarxa-de-punts-de-referencia-dels-rius-de-",
@@ -455,7 +486,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\1-validacio-de-la-xarxa-de-punts-de-referencia-dels-rius-de-.pdf"
     },
     {
       "id": "2-regionalitzacio-i-tipificacio-del-sistema-fluvial-de-les-c",
@@ -470,7 +502,8 @@
         "dma"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\2-regionalitzacio-i-tipificacio-del-sistema-fluvial-de-les-c.pdf"
     },
     {
       "id": "3-analisi-de-viabilitat-i-proposta-dindicadors-fitobentonics",
@@ -485,7 +518,8 @@
         "qualitat-aigues"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\3-analisi-de-viabilitat-i-proposta-dindicadors-fitobentonics.pdf"
     },
     {
       "id": "4-desenvolupament-dun-index-dintegritat-biotica-ibicat-basat",
@@ -500,7 +534,8 @@
         "qualitat-aigues"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\4-desenvolupament-dun-index-dintegritat-biotica-ibicat-basat.pdf"
     },
     {
       "id": "5-ajust-de-lindex-dintegritat-biotica-ibicat-basat-en-lus-de",
@@ -515,7 +550,8 @@
         "qualitat-aigues"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\5-ajust-de-lindex-dintegritat-biotica-ibicat-basat-en-lus-de.pdf"
     },
     {
       "id": "6-desenvolupament-dun-index-integral-de-qualitat-ecologica-i",
@@ -530,7 +566,8 @@
         "qualitat-aigues"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\6-desenvolupament-dun-index-integral-de-qualitat-ecologica-i.pdf"
     },
     {
       "id": "7-caracteritzacio-regionalitzacio-i-elaboracio-deines-destab",
@@ -543,7 +580,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\7-caracteritzacio-regionalitzacio-i-elaboracio-deines-destab.pdf"
     },
     {
       "id": "8-avaluacio-de-lestat-ecologic-de-les-zones-humides-i-ajust-",
@@ -558,7 +596,8 @@
         "qualitat-aigues"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\8-avaluacio-de-lestat-ecologic-de-les-zones-humides-i-ajust-.pdf"
     },
     {
       "id": "9-caracteritzacio-i-propostes-destudi-dels-embassaments-cata",
@@ -573,7 +612,8 @@
         "preses"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\9-caracteritzacio-i-propostes-destudi-dels-embassaments-cata.pdf"
     },
     {
       "id": "gestio-del-risc-dinundacio",
@@ -601,7 +641,8 @@
         "sanejament"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\llistat-dactuacions-de-sanejament-en-alta-incloses-en-el-pgs.xlsx"
     },
     {
       "id": "programa-de-gestio-especific-dels-sistemes-publics-de-saneja",
@@ -616,7 +657,8 @@
         "sanejament"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\programa-de-gestio-especific-dels-sistemes-publics-de-saneja.pdf"
     },
     {
       "id": "documents-de-la-fase-dinformacio-publica",
@@ -629,7 +671,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\documents-de-la-fase-dinformacio-publica.zip"
     },
     {
       "id": "documents-fase-sollicitud-de-dictamens",
@@ -642,7 +685,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\documents-fase-sollicitud-de-dictamens.zip"
     },
     {
       "id": "pla-especial-de-sequera---versio-actualitzada-arran-de-les-m",
@@ -657,7 +701,8 @@
         "sequera"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\pla-especial-de-sequera---versio-actualitzada-arran-de-les-m.pdf"
     },
     {
       "id": "llistats-dels-annexos-3-4-i-5-del-pla-de-sequera",
@@ -672,7 +717,8 @@
         "sequera"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\llistats-dels-annexos-3-4-i-5-del-pla-de-sequera.xlsx"
     },
     {
       "id": "memoria-tecnica-pdf---832mb",
@@ -685,7 +731,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\memoria-tecnica-pdf---832mb.pdf"
     },
     {
       "id": "memoria-economica-pdf---150-mb",
@@ -698,7 +745,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\memoria-economica-pdf---150-mb.pdf"
     },
     {
       "id": "informe-de-sostenibilitat-ambiental-pdf---5mb",
@@ -711,7 +759,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\informe-de-sostenibilitat-ambiental-pdf---5mb.pdf"
     },
     {
       "id": "memoria-ambiental-pdf---151mb",
@@ -724,7 +773,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\memoria-ambiental-pdf---151mb.pdf"
     },
     {
       "id": "resolucio-de-lorgan-ambiental-pdf",
@@ -737,7 +787,8 @@
       "any_publicacio": null,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\resolucio-de-lorgan-ambiental-pdf.pdf"
     },
     {
       "id": "recomanacions-per-a-municipis-per-a-la-redaccio-de-plans-dem",
@@ -752,7 +803,8 @@
         "sequera"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\recomanacions-per-a-municipis-per-a-la-redaccio-de-plans-dem.pdf"
     },
     {
       "id": "recomanacions-per-a-la-redaccio-de-plans-demergencia-en-situ",
@@ -768,7 +820,8 @@
         "abastament"
       ],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\recomanacions-per-a-la-redaccio-de-plans-demergencia-en-situ.pdf"
     },
     {
       "id": "planificacio-daltres-ambit-hidrologics",
@@ -881,7 +934,8 @@
       "any_publicacio": 2006,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\acord-administratiu-entre-espanya-i-franca-sobre-la-gestio-d.pdf"
     },
     {
       "id": "reial-decret-9032010-de-9-de-juliol-davaluacio-i-gestio-de-r",
@@ -907,7 +961,8 @@
       "any_publicacio": 2013,
       "temes": [],
       "font": "ACA",
-      "observacions": ""
+      "observacions": "",
+      "url_local": "C:\\Users\\algoa\\OneDrive\\Escritorio\\NormaCat\\downloads\\aca\\pdfs\\decisio-de-la-comissio-2013480ue-de-20-de-setembre-de-2013-p.pdf"
     },
     {
       "id": "directiva-200760ce-del-parlament-europeu-i-del-consell-de-23",

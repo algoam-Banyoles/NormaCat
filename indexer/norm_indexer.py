@@ -15,21 +15,18 @@ from docx import Document
 from sentence_transformers import SentenceTransformer
 
 
-NORMATIVA_FOLDERS = [
-    "normativa_adif",
-    "normativa_dgc",
-    "normativa_industria",
-    "normativa_territori",
-    "normativa_aca",
-    "normativa_boe",
-    "normativa_cte",
-    "normativa_era",
-    "normativa_mitma_ferroviari",
-    "normativa_pjcat",
-    "normativa_une",
-]
-# NormaCat: arrel del projecte (un nivell amunt des de indexer/)
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Carpetes de descàrregues a indexar (PDFs/DOCX)
+DOWNLOADS_DIR = BASE_DIR / "downloads"
+NORMATIVA_FOLDERS = [
+    str(DOWNLOADS_DIR / name)
+    for name in [
+        "adif", "dgc", "industria", "rebt_rite",
+        "aca", "pjcat", "boe", "cte", "territori",
+        "mitma_ferroviari",
+    ]
+]
 DB_PATH = str(BASE_DIR / "db" / "normativa.db")
 CHROMA_PATH = str(BASE_DIR / "db" / "chroma_db")
 CHUNK_SIZE = 800
@@ -538,7 +535,7 @@ def _detect_title(text: str) -> str:
 
 
 def _load_norm_catalog() -> dict:
-    json_path = Path(__file__).resolve().parent / "data" / "normativa_annexes.json"
+    json_path = BASE_DIR / "data" / "normativa_annexes.json"
     derogada_aliases: set[str] = set()
     if not json_path.exists():
         return {"derogada_aliases": derogada_aliases}

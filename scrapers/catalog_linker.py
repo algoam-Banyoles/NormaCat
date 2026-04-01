@@ -98,6 +98,24 @@ SOURCES = {
         "code_fields": ["id", "codi"],
         "url_field": "url_pdf",
     },
+    "aca": {
+        "label": "ACA",
+        "catalog": str(CATALOGS_DIR / "aca" / "catalogo_aca.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "aca")],
+        "path_field": "url_local",
+        "id_field": "id",
+        "code_fields": ["id", "codi"],
+        "url_field": "url_document",
+    },
+    "mitma_ferroviari": {
+        "label": "MITMA Ferroviari",
+        "catalog": str(CATALOGS_DIR / "mitma_ferroviari" / "catalogo_mitma_ferroviari.json"),
+        "pdf_dirs": [str(PROJECT_ROOT / "downloads" / "mitma_ferroviari")],
+        "path_field": "path_local",
+        "id_field": "codi",
+        "code_fields": ["codi"],
+        "url_field": "url_document",
+    },
 }
 
 
