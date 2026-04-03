@@ -353,6 +353,7 @@ def evaluate_with_llm(provider: str = "gemini"):
     with open(DATASET_PATH, encoding="utf-8") as f:
         queries = json.load(f)
 
+    import sqlite3
     from search.hybrid_search import HybridSearcher
     from search.feedback import record_feedback
     from llm.llm_provider import LLMProvider
@@ -367,20 +368,40 @@ def evaluate_with_llm(provider: str = "gemini"):
     print(f"  Inicialitzant LLM ({provider})...")
     llm = LLMProvider(backend=provider)
 
+    # Carregar queries ja avaluades (per saltar-les)
+    already_evaluated = set()
+    try:
+        conn = sqlite3.connect(config.SQLITE_PATH)
+        for row in conn.execute("SELECT DISTINCT query FROM search_feedback"):
+            already_evaluated.add(row[0])
+        conn.close()
+    except Exception:
+        pass
+
+    # Carregar resultats previs si existeixen
     all_results = []
+    if RESULTS_PATH.exists():
+        try:
+            with open(RESULTS_PATH, encoding="utf-8") as f:
+                all_results = json.load(f)
+        except Exception:
+            pass
+
     total_feedback = 0
     total_relevant = 0
     total_irrelevant = 0
+    skipped = 0
 
-    print(f"\n  Avaluant {len(queries)} queries x top 5 resultats...")
-    print(f"  Estimacio: {len(queries) * 5 * DELAY_BETWEEN_CALLS / 60:.0f} minuts\n")
+    pending = [q for q in queries if q["text"] not in already_evaluated]
+    print(f"\n  Total queries: {len(queries)}, ja avaluades: {len(already_evaluated)}, pendents: {len(pending)}")
+    print(f"  Estimacio: {len(pending) * 5 * DELAY_BETWEEN_CALLS / 60:.0f} minuts\n")
 
-    for qi, q in enumerate(queries, 1):
+    for qi, q in enumerate(pending, 1):
         query_text = q["text"]
         tipologia = q["tipologia"]
         annex = q.get("annex", "")
 
-        print(f"  [{qi:3d}/{len(queries)}] {query_text[:60]}...", flush=True)
+        print(f"  [{qi:3d}/{len(pending)}] {query_text[:60]}...", flush=True)
 
         try:
             results = searcher.search(query_text, top_k=5)
