@@ -395,7 +395,7 @@ def index_document(filepath: str, collection, conn) -> bool:
 
     conn.commit()
     label = metadata.get("codi") or path.name
-    print(f"\u2713 {label} -> {len(chunks)} chunks, {len(articles)} articles")
+    print(f"  [OK] {label} -> {len(chunks)} chunks, {len(articles)} articles")
 
     _LAST_INDEX_RESULT = {
         "status": "indexed",
@@ -434,7 +434,7 @@ def index_folder(folder: str) -> dict:
                     article_total += int(_LAST_INDEX_RESULT.get("articles", 0))
                 elif _LAST_INDEX_RESULT.get("status") == "empty":
                     empty_docs += 1
-                    print(f"\u26a0 {path.name}: sense text extra\u00efble, om\u00e8s")
+                    print(f"  [WARN] {path.name}: sense text extraible, omes")
                 else:
                     skipped_docs += 1
             except Exception as exc:
@@ -579,6 +579,173 @@ def _norm(text: str) -> str:
     base = base.lower()
     base = re.sub(r"\s+", " ", base)
     return base.strip()
+
+
+# ── Classe NormIndexer per a cli.py ──────────────────────────────────────────
+
+class NormIndexer:
+    """Façana que encapsula l'indexació i la cerca semàntica."""
+
+    def __init__(
+        self,
+        chroma_path: str | None = None,
+        sqlite_path: str | None = None,
+        embedding_model: str | None = None,
+        chunk_size: int | None = None,
+        chunk_overlap: int | None = None,
+    ):
+        global CHUNK_SIZE, CHUNK_OVERLAP, EMBEDDING_MODEL, CHROMA_PATH, DB_PATH
+        if chroma_path:
+            CHROMA_PATH = chroma_path
+        if sqlite_path:
+            DB_PATH = sqlite_path
+        if embedding_model:
+            EMBEDDING_MODEL = embedding_model
+        if chunk_size:
+            CHUNK_SIZE = chunk_size
+        if chunk_overlap:
+            CHUNK_OVERLAP = chunk_overlap
+
+        self._client = chromadb.PersistentClient(path=CHROMA_PATH)
+        self._collection = self._client.get_or_create_collection(name="normativa")
+        self._conn = sqlite3.connect(DB_PATH)
+        self._conn.row_factory = sqlite3.Row
+        _init_db(self._conn)
+
+    # ── Indexació per catàleg JSON ────────────────────────────────────────────
+
+    def index_catalog(self, catalog_path: str, source: str = "") -> dict:
+        """Indexa els PDFs referenciats en un catàleg JSON."""
+        catalog_path = Path(catalog_path)
+        if not catalog_path.exists():
+            print(f"  [SKIP] Catàleg no trobat: {catalog_path}")
+            return {"indexed": 0, "skipped": 0, "errors": 0}
+
+        with open(catalog_path, encoding="utf-8") as fh:
+            data = json.load(fh)
+
+        # Extreure llista de documents (format varia per font)
+        if isinstance(data, list):
+            entries = data
+        elif isinstance(data, dict):
+            entries = (
+                data.get("documents")
+                or data.get("entries")
+                or data.get("normes")
+                or data.get("data")
+                or []
+            )
+            if not isinstance(entries, list):
+                entries = []
+        else:
+            entries = []
+
+        # Camps possibles on trobar el path local del PDF
+        path_fields = [
+            "fitxer_local", "path_local", "pdf_local", "url_local",
+        ]
+
+        indexed = 0
+        skipped = 0
+        errors = 0
+        empty = 0
+
+        for entry in entries:
+            # Trobar el path local del PDF
+            pdf_rel = ""
+            for pf in path_fields:
+                v = entry.get(pf) or ""
+                if v and v != "None":
+                    pdf_rel = v
+                    break
+
+            if not pdf_rel:
+                continue
+
+            # Construir path absolut
+            pdf_path = Path(pdf_rel)
+            if not pdf_path.is_absolute():
+                pdf_path = BASE_DIR / pdf_rel
+
+            if not pdf_path.exists():
+                continue
+            if pdf_path.suffix.lower() not in {".pdf", ".docx"}:
+                continue
+
+            try:
+                ok = index_document(str(pdf_path), self._collection, self._conn)
+                if ok:
+                    indexed += 1
+                elif _LAST_INDEX_RESULT.get("status") == "empty":
+                    empty += 1
+                else:
+                    skipped += 1
+            except Exception as exc:
+                errors += 1
+                self._conn.rollback()
+                print(f"  ERROR indexant {pdf_path.name}: {type(exc).__name__}: {exc}")
+
+        # Fallback: si el catàleg no tenia paths locals, indexa la carpeta downloads/<source>/
+        if indexed == 0 and skipped == 0 and errors == 0 and source:
+            folder = DOWNLOADS_DIR / source
+            if folder.is_dir():
+                pdf_files = list(folder.rglob("*.pdf")) + list(folder.rglob("*.docx"))
+                if pdf_files:
+                    print(f"  [{source}] Catàleg sense paths locals, indexant carpeta {folder.name}/ ({len(pdf_files)} fitxers)...")
+                    for pdf_path in sorted(pdf_files):
+                        try:
+                            ok = index_document(str(pdf_path), self._collection, self._conn)
+                            if ok:
+                                indexed += 1
+                            elif _LAST_INDEX_RESULT.get("status") == "empty":
+                                empty += 1
+                            else:
+                                skipped += 1
+                        except Exception as exc:
+                            errors += 1
+                            self._conn.rollback()
+                            print(f"  ERROR indexant {pdf_path.name}: {type(exc).__name__}: {exc}")
+
+        print(f"  [{source}] {indexed} indexats, {skipped} ja existents, "
+              f"{empty} sense text, {errors} errors")
+        return {"indexed": indexed, "skipped": skipped, "empty": empty, "errors": errors}
+
+    # ── Cerca semàntica ──────────────────────────────────────────────────────
+
+    def search(self, query: str, n_results: int = 5) -> list[dict]:
+        """Cerca semàntica contra ChromaDB. Retorna llista de resultats."""
+        model = _get_embedding_model()
+        query_embedding = model.encode([query], convert_to_numpy=True).tolist()
+
+        results = self._collection.query(
+            query_embeddings=query_embedding,
+            n_results=n_results,
+            include=["documents", "metadatas", "distances"],
+        )
+
+        output = []
+        docs = results.get("documents", [[]])[0]
+        metas = results.get("metadatas", [[]])[0]
+        dists = results.get("distances", [[]])[0]
+
+        for doc, meta, dist in zip(docs, metas, dists):
+            output.append({
+                "document": doc,
+                "metadata": {
+                    "source": meta.get("doc_codi", ""),
+                    "title": meta.get("doc_titol", ""),
+                    "reference": meta.get("doc_codi", ""),
+                    "page": meta.get("page", 0),
+                    "vigent": meta.get("vigent", 1),
+                },
+                "distance": dist,
+            })
+
+        return output
+
+    def close(self):
+        if self._conn:
+            self._conn.close()
 
 
 if __name__ == "__main__":
