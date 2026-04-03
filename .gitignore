@@ -12,3 +12,12 @@ venv/
 *.egg-info/
 dist/
 build/
+downloads/
+db/chroma_db/
+.claude/
+_diag_*.py
+_diag_*.html
+*.zip
+*.bak
+catalogs/*/sync_*.json
+tools/aenormas_assistant.html
