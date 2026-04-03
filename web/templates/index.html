@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NormaCat -- Cercador de Normativa Tecnica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>NormaCat</h1>
+        <p class="subtitle">Cercador de Normativa Tecnica per a Infraestructures</p>
+        <p class="stats-bar">
+            {{ "{:,}".format(stats.total_indexed) }} normes indexades &middot;
+            {{ stats.per_source|length }} fonts
+        </p>
+    </div>
+</header>
+
+<nav class="tabs">
+    <button class="tab active" data-tab="search">Cerca semantica</button>
+    <button class="tab" data-tab="lookup">Verifica codi</button>
+    <button class="tab" data-tab="analyze">Analitza text</button>
+    <button class="tab" data-tab="report">Informe PDF</button>
+    <button class="tab" data-tab="rag">Consulta IA</button>
+</nav>
+
+<main>
+
+    <!-- TAB 1: Cerca semantica -->
+    <section id="tab-search" class="tab-content active">
+        <div class="search-box">
+            <input type="text" id="search-query"
+                   placeholder="Descriu que busques... (ex: drenatge transversal en carreteres)"
+                   autofocus>
+            <div class="search-options">
+                <select id="search-source">
+                    <option value="">Totes les fonts</option>
+                    {% for key, label in source_labels.items() %}
+                    <option value="{{ key }}">{{ label }}</option>
+                    {% endfor %}
+                </select>
+                <select id="search-top">
+                    <option value="5">5 resultats</option>
+                    <option value="10" selected>10 resultats</option>
+                    <option value="20">20 resultats</option>
+                </select>
+                <button id="btn-search" onclick="doSearch()">Cerca</button>
+            </div>
+        </div>
+        <div id="search-status" class="status"></div>
+        <div id="search-results" class="results"></div>
+    </section>
+
+    <!-- TAB 2: Verifica codi -->
+    <section id="tab-lookup" class="tab-content">
+        <div class="search-box">
+            <input type="text" id="lookup-code"
+                   placeholder="Escriu un codi normatiu (ex: RD 1627/1997, UNE-EN 13108-1, EHE-08)">
+            <div class="search-options">
+                <button id="btn-lookup" onclick="doLookup()">Verifica</button>
+            </div>
+        </div>
+        <div id="lookup-status" class="status"></div>
+        <div id="lookup-result" class="results"></div>
+    </section>
+
+    <!-- TAB 3: Analitza text -->
+    <section id="tab-analyze" class="tab-content">
+        <div class="search-box">
+            <textarea id="analyze-text" rows="8"
+                      placeholder="Enganxa aqui un fragment del projecte amb referencies normatives...&#10;&#10;Exemple: D'acord amb el RD 1627/1997 i la norma UNE-EN 13108-1, els materials hauran de complir l'EHE-08 article 60..."></textarea>
+            <div class="search-options">
+                <button id="btn-analyze" onclick="doAnalyze()">Analitza referencies</button>
+            </div>
+        </div>
+        <div id="analyze-status" class="status"></div>
+        <div id="analyze-results" class="results"></div>
+    </section>
+
+    <!-- TAB 4: Informe de conformitat -->
+    <section id="tab-report" class="tab-content">
+        <div class="search-box">
+            <p class="box-description">
+                Puja el PDF de l'annex normatiu d'un projecte.
+                NormaCat extraura totes les referencies, verificara
+                la seva vigencia i generara un informe DOCX descarregable.
+            </p>
+            <div class="upload-area" id="upload-area">
+                <input type="file" id="report-file" accept=".pdf"
+                       onchange="updateFileName()">
+                <p id="file-label">Arrossega un PDF aqui o fes clic per seleccionar</p>
+            </div>
+            <div class="search-options">
+                <input type="text" id="report-project-name"
+                       placeholder="Nom del projecte (opcional)"
+                       style="flex:1; padding:0.5rem 0.75rem; border:1px solid var(--border); border-radius:var(--radius);">
+                <button onclick="doReport()">Genera informe</button>
+            </div>
+        </div>
+        <div id="report-status" class="status"></div>
+        <div id="report-results" class="results"></div>
+    </section>
+
+    <!-- TAB 5: Consulta RAG -->
+    <section id="tab-rag" class="tab-content">
+        <div class="search-box">
+            <p class="box-description">
+                Fes una pregunta sobre normativa tecnica en llenguatge natural.
+                NormaCat cercara als documents indexats i un LLM sintetitzara
+                la resposta citant les fonts.
+            </p>
+            <input type="text" id="rag-query"
+                   placeholder="Quins requisits de drenatge transversal s'apliquen a una carretera C-80?">
+            <div class="search-options">
+                <select id="rag-provider">
+                    <option value="">LLM per defecte</option>
+                    <option value="gemini">Gemini Flash</option>
+                    <option value="groq">Groq Llama</option>
+                    <option value="claude">Claude</option>
+                </select>
+                <select id="rag-source">
+                    <option value="">Totes les fonts</option>
+                    {% for key, label in source_labels.items() %}
+                    <option value="{{ key }}">{{ label }}</option>
+                    {% endfor %}
+                </select>
+                <button onclick="doRag()">Consulta</button>
+            </div>
+        </div>
+        <div id="rag-status" class="status"></div>
+        <div id="rag-answer" class="results"></div>
+        <div id="rag-sources" class="results"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>NormaCat v1.0 &middot; Servei de Supervisio de Projectes</p>
+</footer>
+
+<script>
+// Tab switching
+document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+    });
+});
+
+// Enter key
+document.getElementById('search-query').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doSearch();
+});
+document.getElementById('lookup-code').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doLookup();
+});
+
+// Cerca semantica
+async function doSearch() {
+    const query = document.getElementById('search-query').value.trim();
+    if (!query) return;
+
+    const source = document.getElementById('search-source').value;
+    const top = parseInt(document.getElementById('search-top').value);
+    const statusEl = document.getElementById('search-status');
+    const resultsEl = document.getElementById('search-results');
+
+    statusEl.textContent = 'Cercant...';
+    statusEl.className = 'status loading';
+    resultsEl.innerHTML = '';
+
+    try {
+        const resp = await fetch('/api/search', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({query, top, source})
+        });
+        const data = await resp.json();
+
+        if (data.error) {
+            statusEl.textContent = data.error;
+            statusEl.className = 'status error';
+            return;
+        }
+
+        statusEl.textContent = data.results.length + ' resultats en ' + data.elapsed + 's';
+        statusEl.className = 'status ok';
+
+        // Guardar resultats per feedback
+        window._lastSearchResults = data.results;
+        window._lastSearchQuery = data.query;
+
+        if (data.results.length === 0) {
+            resultsEl.innerHTML = '<p class="no-results">Cap resultat trobat. Prova amb altres termes.</p>';
+            return;
+        }
+
+        resultsEl.innerHTML = data.results.map((r, i) => `
+            <div class="result-card">
+                <div class="result-header">
+                    <span class="result-num">${i + 1}</span>
+                    <span class="result-score score-${r.score >= 70 ? 'high' : r.score >= 50 ? 'mid' : 'low'}">${r.score}%</span>
+                    <span class="result-source">${escHtml(r.source_label || r.source)}</span>
+                    ${r.methods ? r.methods.map(m => '<span class="result-method">' + (m === 'bm25' ? 'BM25' : 'SEM') + '</span>').join('') : ''}
+                    ${r.page ? `<span class="result-page">Pag. ${r.page}</span>` : ''}
+                </div>
+                <div class="result-title">${escHtml(r.codi || '')} ${escHtml(r.titol || '')}</div>
+                <div class="result-text">${escHtml(r.text)}</div>
+                <div class="result-feedback">
+                    <button class="fb-btn fb-up" onclick="sendFeedback(this, ${i}, true)" title="Rellevant">+</button>
+                    <button class="fb-btn fb-down" onclick="sendFeedback(this, ${i}, false)" title="No rellevant">-</button>
+                </div>
+            </div>
+        `).join('');
+
+    } catch (err) {
+        statusEl.textContent = 'Error de connexio: ' + err.message;
+        statusEl.className = 'status error';
+    }
+}
+
+// Lookup per codi
+async function doLookup() {
+    const code = document.getElementById('lookup-code').value.trim();
+    if (!code) return;
+
+    const statusEl = document.getElementById('lookup-status');
+    const resultEl = document.getElementById('lookup-result');
+
+    statusEl.textContent = 'Verificant...';
+    statusEl.className = 'status loading';
+    resultEl.innerHTML = '';
+
+    try {
+        const resp = await fetch('/api/lookup', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({code})
+        });
+        const data = await resp.json();
+
+        if (data.error) {
+            statusEl.textContent = data.error;
+            statusEl.className = 'status error';
+            return;
+        }
+
+        const r = data.result;
+        const status = r ? r.status : 'DESCONEGUT';
+        const statusClass = {
+            'VIGENT': 'vigent', 'DEROGADA': 'derogada',
+            'REFERENCIA': 'referencia', 'PENDENT': 'pendent'
+        }[status] || 'pendent';
+
+        statusEl.textContent = '';
+        statusEl.className = 'status';
+
+        resultEl.innerHTML = `
+            <div class="lookup-card ${statusClass}">
+                <div class="lookup-status-badge badge-${statusClass}">${status}</div>
+                <div class="lookup-code">${escHtml(code)}</div>
+                ${r && r.title ? `<div class="lookup-title">${escHtml(r.title)}</div>` : ''}
+                ${r && r.source ? `<div class="lookup-source">Font: ${escHtml(r.source)}</div>` : ''}
+                ${r && r.substituted_by ? `<div class="lookup-subst">Substituida per: ${escHtml(r.substituted_by)}</div>` : ''}
+                ${r && r.fuzzy ? `<div class="lookup-fuzzy">Coincidencia aproximada (fuzzy match)</div>` : ''}
+            </div>
+        `;
+
+    } catch (err) {
+        statusEl.textContent = 'Error: ' + err.message;
+        statusEl.className = 'status error';
+    }
+}
+
+// Analitza text
+async function doAnalyze() {
+    const text = document.getElementById('analyze-text').value.trim();
+    if (!text) return;
+
+    const statusEl = document.getElementById('analyze-status');
+    const resultsEl = document.getElementById('analyze-results');
+
+    statusEl.textContent = 'Analitzant...';
+    statusEl.className = 'status loading';
+    resultsEl.innerHTML = '';
+
+    try {
+        const resp = await fetch('/api/analyze', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({text})
+        });
+        const data = await resp.json();
+
+        if (data.error) {
+            statusEl.textContent = data.error;
+            statusEl.className = 'status error';
+            return;
+        }
+
+        statusEl.innerHTML =
+            data.total + ' referencies trobades: ' +
+            '<span class="badge-vigent">' + data.vigents + ' vigents</span> ' +
+            '<span class="badge-derogada">' + data.derogades + ' derogades</span> ' +
+            '<span class="badge-pendent">' + data.pendents + ' pendents</span>';
+        statusEl.className = 'status ok';
+
+        if (data.references.length === 0) {
+            resultsEl.innerHTML = '<p class="no-results">No s\'han trobat referencies normatives al text.</p>';
+            return;
+        }
+
+        resultsEl.innerHTML = `
+            <table class="ref-table">
+                <thead>
+                    <tr>
+                        <th>Referencia</th>
+                        <th>Estat</th>
+                        <th>Font</th>
+                        <th>Detall</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${data.references.map(r => `
+                        <tr class="ref-row ref-${r.status.toLowerCase()}">
+                            <td class="ref-code">${escHtml(r.raw)}</td>
+                            <td><span class="badge-${r.status === 'VIGENT' ? 'vigent' : r.status === 'DEROGADA' ? 'derogada' : 'pendent'}">${r.status}</span></td>
+                            <td>${escHtml(r.source || '\u2014')}</td>
+                            <td>
+                                ${r.title ? escHtml(r.title.substring(0, 80)) : '\u2014'}
+                                ${r.substituted_by ? '<br><small>\u2192 ' + escHtml(r.substituted_by) + '</small>' : ''}
+                                ${r.fuzzy ? ' <small>(fuzzy)</small>' : ''}
+                            </td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        `;
+
+    } catch (err) {
+        statusEl.textContent = 'Error: ' + err.message;
+        statusEl.className = 'status error';
+    }
+}
+
+// Informe PDF
+function updateFileName() {
+    const file = document.getElementById('report-file').files[0];
+    const label = document.getElementById('file-label');
+    if (file) {
+        label.textContent = file.name + ' (' + (file.size / 1024 / 1024).toFixed(1) + ' MB)';
+    }
+}
+
+async function doReport() {
+    const fileInput = document.getElementById('report-file');
+    const file = fileInput.files[0];
+    if (!file) {
+        alert('Cal seleccionar un fitxer PDF.');
+        return;
+    }
+
+    const projectName = document.getElementById('report-project-name').value.trim();
+    const statusEl = document.getElementById('report-status');
+    const resultsEl = document.getElementById('report-results');
+
+    statusEl.textContent = 'Analitzant PDF... (pot trigar uns segons)';
+    statusEl.className = 'status loading';
+    resultsEl.innerHTML = '';
+
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('project_name', projectName);
+
+    try {
+        const resp = await fetch('/api/report', {
+            method: 'POST',
+            body: formData
+        });
+        const data = await resp.json();
+
+        if (data.error) {
+            statusEl.textContent = data.error;
+            statusEl.className = 'status error';
+            return;
+        }
+
+        const s = data.stats;
+        statusEl.innerHTML =
+            'Analisi completa: ' + s.total + ' referencies &middot; ' +
+            '<span class="badge-vigent">' + s.vigent + ' vigents</span> ' +
+            '<span class="badge-derogada">' + s.derogada + ' derogades</span> ' +
+            '<span class="badge-pendent">' + s.pendent + ' pendents</span>';
+        statusEl.className = 'status ok';
+
+        let html = `
+            <div class="download-box">
+                <a href="/api/report/download/${data.report_filename}"
+                   class="download-btn" download>
+                    Descarrega l'informe DOCX
+                </a>
+            </div>
+        `;
+
+        if (data.references.length > 0) {
+            html += `
+                <table class="ref-table">
+                    <thead>
+                        <tr>
+                            <th>Referencia</th>
+                            <th>Estat</th>
+                            <th>Font</th>
+                            <th>Detall</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${data.references.map(r => `
+                            <tr class="ref-row ref-${r.status.toLowerCase().replace('no_trobada','pendent')}">
+                                <td class="ref-code">${escHtml(r.raw)}</td>
+                                <td><span class="badge-${r.status === 'VIGENT' ? 'vigent' : r.status === 'DEROGADA' ? 'derogada' : 'pendent'}">${r.status}</span></td>
+                                <td>${escHtml(r.source || '\u2014')}</td>
+                                <td>
+                                    ${r.title ? escHtml(r.title.substring(0, 80)) : '\u2014'}
+                                    ${r.substituted_by ? '<br><small>\u2192 ' + escHtml(r.substituted_by) + '</small>' : ''}
+                                </td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+        }
+
+        resultsEl.innerHTML = html;
+
+    } catch (err) {
+        statusEl.textContent = 'Error: ' + err.message;
+        statusEl.className = 'status error';
+    }
+}
+
+// Feedback
+async function sendFeedback(btn, index, relevant) {
+    const r = window._lastSearchResults[index];
+    const query = window._lastSearchQuery;
+    if (!r || !query) return;
+
+    try {
+        await fetch('/api/feedback', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                query: query,
+                doc_codi: r.codi || '',
+                doc_titol: r.titol || '',
+                source: r.source || '',
+                page: r.page || 0,
+                rank_position: index + 1,
+                score: r.score || 0,
+                relevant: relevant,
+                methods: (r.methods || []).join(','),
+                text_preview: (r.text || '').substring(0, 200),
+            })
+        });
+        const parent = btn.parentElement;
+        parent.querySelectorAll('.fb-btn').forEach(b => b.disabled = true);
+        btn.classList.add('fb-selected');
+    } catch (err) {
+        console.error('Feedback error:', err);
+    }
+}
+
+// Consulta RAG
+document.getElementById('rag-query').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doRag();
+});
+
+async function doRag() {
+    const query = document.getElementById('rag-query').value.trim();
+    if (!query) return;
+
+    const provider = document.getElementById('rag-provider').value;
+    const source = document.getElementById('rag-source').value;
+    const statusEl = document.getElementById('rag-status');
+    const answerEl = document.getElementById('rag-answer');
+    const sourcesEl = document.getElementById('rag-sources');
+
+    statusEl.textContent = 'Cercant fragments i consultant LLM... (10-30s)';
+    statusEl.className = 'status loading';
+    answerEl.innerHTML = '';
+    sourcesEl.innerHTML = '';
+
+    try {
+        const resp = await fetch('/api/rag', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({query, provider, source, top_k: 12})
+        });
+        const data = await resp.json();
+
+        if (data.error) {
+            statusEl.textContent = data.error;
+            statusEl.className = 'status error';
+            return;
+        }
+
+        statusEl.innerHTML =
+            'Resposta en ' + data.elapsed + 's &middot; ' +
+            data.chunks_used + ' fragments &middot; ' +
+            'Model: ' + escHtml(data.model || data.provider || '?') + ' &middot; ' +
+            data.tokens_in + '+' + data.tokens_out + ' tokens';
+        statusEl.className = 'status ok';
+
+        const formatted = data.answer
+            .replace(/\n\n/g, '</p><p>')
+            .replace(/\n/g, '<br>')
+            .replace(/\[Font:\s*([^\]]+)\]/g, '<span class="rag-cite">[Font: $1]</span>');
+
+        answerEl.innerHTML = '<div class="rag-answer-box"><p>' + formatted + '</p></div>';
+
+        if (data.sources && data.sources.length > 0) {
+            sourcesEl.innerHTML = `
+                <details class="rag-sources-details">
+                    <summary>${data.sources.length} fonts consultades (clic per expandir)</summary>
+                    <div class="rag-sources-list">
+                        ${data.sources.map((s, i) => `
+                            <div class="rag-source-item">
+                                <span class="result-num">${i+1}</span>
+                                <span class="result-score score-${s.score >= 70 ? 'high' : s.score >= 50 ? 'mid' : 'low'}">${s.score}%</span>
+                                <strong>${escHtml(s.codi)}</strong>
+                                ${s.titol ? ' &mdash; ' + escHtml(s.titol.substring(0, 60)) : ''}
+                                ${s.page ? ' <small>(pag. ' + s.page + ')</small>' : ''}
+                                <small class="result-source">${escHtml(s.source_label)}</small>
+                                <div class="rag-source-preview">${escHtml(s.text_preview)}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </details>
+            `;
+        }
+
+    } catch (err) {
+        statusEl.textContent = 'Error: ' + err.message;
+        statusEl.className = 'status error';
+    }
+}
+
+function escHtml(s) {
+    if (!s) return '';
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3479 @@
+{
+  "timestamp": "2026-04-03T17:45:05.260907",
+  "sources": {
+    "aca": {
+      "ACA-DOC-001": {
+        "status": "VIGENT",
+        "title": "Cartografia de les inundacions del temporal Glòria",
+        "substituted_by": ""
+      },
+      "ACA-DOC-002": {
+        "status": "VIGENT",
+        "title": "Els peixos als embassaments i estanys de les conques internes de Catalunya 2018",
+        "substituted_by": ""
+      },
+      "ACA-DOC-003": {
+        "status": "VIGENT",
+        "title": "Aigua i canvi climàtic",
+        "substituted_by": ""
+      },
+      "ACA-DOC-004": {
+        "status": "VIGENT",
+        "title": "Pla de xoc per al seguiment de l'impacte ambiental al Besòs (desembre de 2019)",
+        "substituted_by": ""
+      },
+      "ACA-DOC-005": {
+        "status": "VIGENT",
+        "title": "Prova demostrativa de reutilització d'aigua regenerada a l'ERA de Prat de Llobregat",
+        "substituted_by": ""
+      },
+      "ACA-DOC-006": {
+        "status": "VIGENT",
+        "title": "Fenòmens naturals a les platges: escumes i mucílags",
+        "substituted_by": ""
+      },
+      "ACA-DOC-007": {
+        "status": "VIGENT",
+        "title": "Fenòmens naturals a les platges: les meduses",
+        "substituted_by": ""
+      },
+      "ACA-DOC-008": {
+        "status": "VIGENT",
+        "title": "Guia tècnica: Alliberament i mesura dels cabals de manteniment (2023)",
+        "substituted_by": ""
+      },
+      "ACA-DOC-009": {
+        "status": "VIGENT",
+        "title": "Estimació de la disponibilitat de pagament i costos d'implantació de cabals ecològics al Ter superior (2008)",
+        "substituted_by": ""
+      },
+      "ACA-DOC-010": {
+        "status": "VIGENT",
+        "title": "Validació biològica del règim de cabals de manteniment en deu trams fluvials (2006)",
+        "substituted_by": ""
+      },
+      "ACA-DOC-011": {
+        "status": "VIGENT",
+        "title": "Pla sectorial de cabals de manteniment: Memòria tècnica (2005)",
+        "substituted_by": ""
+      },
+      "ACA-DOC-012": {
+        "status": "VIGENT",
+        "title": "Fenòmens naturals a les platges: proliferacions de fitoplàncton",
+        "substituted_by": ""
+      },
+      "ACA-DOC-013": {
+        "status": "VIGENT",
+        "title": "Fenòmens naturals a les platges: restes de vegetals marins",
+        "substituted_by": ""
+      },
+      "ACA-DOC-014": {
+        "status": "VIGENT",
+        "title": "Els peixos de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-DOC-015": {
+        "status": "VIGENT",
+        "title": "Detecció de substàncies prioritàries i preferents en aigua, sediments i peixos als rius de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-DOC-016": {
+        "status": "VIGENT",
+        "title": "La Gestió dels Biosòlids a Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-DOC-017": {
+        "status": "VIGENT",
+        "title": "Ponències IV jornada tècnica de gestió EDAR",
+        "substituted_by": ""
+      },
+      "ACA-DOC-018": {
+        "status": "VIGENT",
+        "title": "Estimació i prognosi de la demanda d'aigua a Catalunya. Bases tècniques",
+        "substituted_by": ""
+      },
+      "ACA-DOC-019": {
+        "status": "VIGENT",
+        "title": "Estudi per al foment de la innovació, l'estalvi i la reutilització aplicats a l'ús de l'aigua a les indústries de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-DOC-020": {
+        "status": "VIGENT",
+        "title": "Informe de les afeccions piezomètriques",
+        "substituted_by": ""
+      },
+      "ACA-DOC-021": {
+        "status": "VIGENT",
+        "title": "Informe de l'estat quantitatiu de les masses d'aigua subterrànies",
+        "substituted_by": ""
+      },
+      "ACA-DOC-022": {
+        "status": "VIGENT",
+        "title": "Estudis i informes tècnics",
+        "substituted_by": ""
+      },
+      "ACA-DOC-023": {
+        "status": "VIGENT",
+        "title": "La barrera hidràulica contra la intrusió marina i la recàrrega artificial",
+        "substituted_by": ""
+      },
+      "ACA-DOC-024": {
+        "status": "VIGENT",
+        "title": "Clasificación de la calidad de las aguas de baño 2025",
+        "substituted_by": ""
+      },
+      "ACA-DOC-025": {
+        "status": "VIGENT",
+        "title": "Classificació de la qualitat de les aigües de bany 2024",
+        "substituted_by": ""
+      },
+      "ACA-DOC-026": {
+        "status": "VIGENT",
+        "title": "Normes de redacció de projectes: estructura i continguts. Maig 2025",
+        "substituted_by": ""
+      },
+      "ACA-DOC-027": {
+        "status": "VIGENT",
+        "title": "Normes de redacció de la documentació d’obra executada. Maig 2025",
+        "substituted_by": ""
+      },
+      "ACA-DOC-028": {
+        "status": "VIGENT",
+        "title": "Model de dades SIG complet (Actualitzat: 3/02/2026)",
+        "substituted_by": ""
+      },
+      "ACA-DOC-029": {
+        "status": "VIGENT",
+        "title": "Normes de disseny corporatiu de projectes dels documents a lliurar",
+        "substituted_by": ""
+      },
+      "ACA-DOC-030": {
+        "status": "VIGENT",
+        "title": "Plantilles de portades i caixetins per al disseny de projectes",
+        "substituted_by": ""
+      },
+      "ACA-DOC-031": {
+        "status": "VIGENT",
+        "title": "Projectes de gestió, conservació i recuperació d’espais fluvials",
+        "substituted_by": ""
+      },
+      "ACA-PLA-001": {
+        "status": "VIGENT",
+        "title": "Pla de gestió del districte de conca fluvial de Catalunya i el seu Programa de mesures",
+        "substituted_by": ""
+      },
+      "ACA-PLA-002": {
+        "status": "VIGENT",
+        "title": "Directiva",
+        "substituted_by": ""
+      },
+      "ACA-PLA-003": {
+        "status": "VIGENT",
+        "title": "1. Validació de la xarxa de punts de referència dels rius de Catalunya.",
+        "substituted_by": ""
+      },
+      "ACA-PLA-004": {
+        "status": "VIGENT",
+        "title": "2. Regionalització i tipificació del sistema fluvial de les conques internes de Catalunya per a la futura implantació de la Directiva marc de l'aigua (2000/60/CE).",
+        "substituted_by": ""
+      },
+      "ACA-PLA-005": {
+        "status": "VIGENT",
+        "title": "3. Anàlisi de viabilitat i proposta d'indicadors fitobentònics de la qualitat de l'aigua per als cursos fluvials de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-PLA-006": {
+        "status": "VIGENT",
+        "title": "4. Desenvolupament d'un índex d'integritat biòtica (IBICAT) basat en l'ús dels peixos com a indicadors de la qualitat ambiental dels rius a Catalunya.",
+        "substituted_by": ""
+      },
+      "ACA-PLA-007": {
+        "status": "VIGENT",
+        "title": "5. Ajust de l'índex d'integritat biòtica (IBICAT) basat en l'ús dels peixos com a indicadors de la qualitat ambiental als rius de Catalunya (any 2010).",
+        "substituted_by": ""
+      },
+      "ACA-PLA-008": {
+        "status": "VIGENT",
+        "title": "6. Desenvolupament d'un índex integral de qualitat ecològica i regionalització ambiental dels sistemes lacustres de Catalunya.",
+        "substituted_by": ""
+      },
+      "ACA-PLA-009": {
+        "status": "VIGENT",
+        "title": "7. Caracterització, regionalització i elaboració d'eines d'establiment de l'estat ecològic de les zones humides de Catalunya.",
+        "substituted_by": ""
+      },
+      "ACA-PLA-010": {
+        "status": "VIGENT",
+        "title": "8. Avaluació de l'estat ecològic de les zones humides i ajust dels indicadors de qualitat. Índexs QAELS, ECELS i EQAT.",
+        "substituted_by": ""
+      },
+      "ACA-PLA-011": {
+        "status": "VIGENT",
+        "title": "9. Caracterització i propostes d'estudi dels embassaments catalans segons la Directiva 2000/60/CE del Parlament Europeu.",
+        "substituted_by": ""
+      },
+      "ACA-PLA-012": {
+        "status": "VIGENT",
+        "title": "Gestió del risc d'inundació",
+        "substituted_by": ""
+      },
+      "ACA-PLA-013": {
+        "status": "VIGENT",
+        "title": "Llistat d'actuacions de sanejament en alta incloses en el PGSAC 2022-2033",
+        "substituted_by": ""
+      },
+      "ACA-PLA-014": {
+        "status": "VIGENT",
+        "title": "Programa de gestió específic dels sistemes públics de sanejament en alta de Catalunya 2022-2033 (PGSAC 2022-2033)",
+        "substituted_by": ""
+      },
+      "ACA-PLA-015": {
+        "status": "VIGENT",
+        "title": "Documents de la fase d'informació pública",
+        "substituted_by": ""
+      },
+      "ACA-PLA-016": {
+        "status": "VIGENT",
+        "title": "Documents fase sol·licitud de dictàmens",
+        "substituted_by": ""
+      },
+      "ACA-PLA-017": {
+        "status": "VIGENT",
+        "title": "Pla especial de sequera - Versió actualitzada arran de les modificacions dels Acords de Govern 16/1/2024 del Pla especial d’actuació en situació d’alerta i eventual sequera (PES), aprovat mitjançant l",
+        "substituted_by": ""
+      },
+      "ACA-PLA-018": {
+        "status": "VIGENT",
+        "title": "Llistats dels annexos 3, 4 i 5 del Pla de sequera",
+        "substituted_by": ""
+      },
+      "ACA-PLA-019": {
+        "status": "VIGENT",
+        "title": "Memòria tècnica (pdf - 8,32MB)",
+        "substituted_by": ""
+      },
+      "ACA-PLA-020": {
+        "status": "VIGENT",
+        "title": "Memòria econòmica (pdf - 1,50 MB)",
+        "substituted_by": ""
+      },
+      "ACA-PLA-021": {
+        "status": "VIGENT",
+        "title": "Informe de sostenibilitat ambiental (pdf - 5MB)",
+        "substituted_by": ""
+      },
+      "ACA-PLA-022": {
+        "status": "VIGENT",
+        "title": "Memòria ambiental (pdf - 1,51MB)",
+        "substituted_by": ""
+      },
+      "ACA-PLA-023": {
+        "status": "VIGENT",
+        "title": "Resolució de l’òrgan ambiental (pdf)",
+        "substituted_by": ""
+      },
+      "ACA-PLA-024": {
+        "status": "VIGENT",
+        "title": "Recomanacions per a municipis per a la redacció de Plans d'emergència en situació de sequera - 2020",
+        "substituted_by": ""
+      },
+      "ACA-PLA-025": {
+        "status": "VIGENT",
+        "title": "Recomanacions per a la redacció de Plans d'emergència en situació de sequera per a ens gestors d'abastament d'aigua en alta - 2020",
+        "substituted_by": ""
+      },
+      "ACA-PLA-026": {
+        "status": "VIGENT",
+        "title": "Planificació d'altres àmbit hidrològics",
+        "substituted_by": ""
+      },
+      "ACA-NOR-001": {
+        "status": "VIGENT",
+        "title": "Decret legislatiu 3/2003, de 4 de novembre pel qual s’aprova el text refós de la legislació en matèria d’aigües de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-NOR-002": {
+        "status": "VIGENT",
+        "title": "DECRET LLEI 7/2024, de 2 de juliol, pel qual s'adopten mesures urgents en matèries de finançament dels sistemes públics de sanejament i de regeneració d'aigües residuals, i de serveis socials.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-003": {
+        "status": "VIGENT",
+        "title": "Reial decret legislatiu 1/2001, de 20 de juliol, pel qual s’aprova el text refós de la Llei d’aigües",
+        "substituted_by": ""
+      },
+      "ACA-NOR-004": {
+        "status": "VIGENT",
+        "title": "Reial decret 849/1986, d’11 d’abril pel qual s’aprova el reglament del domini públic hidràulic.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-005": {
+        "status": "VIGENT",
+        "title": "Reial decret 817/2015, d’11 de setembre, per la qual s’estableixen els criteris de seguiment i avaluació de l’estat de les aigües superficials i les normes de qualitat ambiental",
+        "substituted_by": ""
+      },
+      "ACA-NOR-006": {
+        "status": "VIGENT",
+        "title": "Ordre AAA/1760/2016, de 28 d’octubre, per la qual es regula l’estructura informàtica del Registre d’aigües i de la Base Central de l’Aigua",
+        "substituted_by": ""
+      },
+      "ACA-NOR-007": {
+        "status": "VIGENT",
+        "title": "Acord administratiu entre Espanya i França sobre la gestió de l’aigua signat a Toulouse el 15 de febrer de 2006",
+        "substituted_by": ""
+      },
+      "ACA-NOR-008": {
+        "status": "VIGENT",
+        "title": "Reial decret 903/2010, de 9 de juliol, d'avaluació i gestió de riscos d'inundació",
+        "substituted_by": ""
+      },
+      "ACA-NOR-009": {
+        "status": "VIGENT",
+        "title": "Decisió de la Comissió 2013/480/UE, de 20 de setembre de 2013, per la qual es fixen, de conformitat amb la directiva 2000/60/CE, del parlament Europeu i del consell, els valors de les classificacions ",
+        "substituted_by": ""
+      },
+      "ACA-NOR-010": {
+        "status": "VIGENT",
+        "title": "Directiva 2007/60/CE del Parlament Europeu i del Consell, de 23 d'octubre de 2007, relativa a l'avaluació i gestió dels riscos d'inundació.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-011": {
+        "status": "VIGENT",
+        "title": "Acord GOV/80/2019, de 4 de juny, pel qual s’aprova el Programa de seguiment i control del Districte de conca fluvial de Catalunya per al període 2019–2024",
+        "substituted_by": ""
+      },
+      "ACA-NOR-012": {
+        "status": "VIGENT",
+        "title": "ACORD GOV/51/2023, de 14 de març, pel qual s'aprova el Programa de mesures de l'àmbit hidrològic del Pla de gestió del risc d'inundació del districte de conca fluvial de Catalunya per al període 2022-",
+        "substituted_by": ""
+      },
+      "ACA-NOR-013": {
+        "status": "VIGENT",
+        "title": "Resolució MAH/2465/2006, de 13 de juliol, pel qual es fa públic l’Acord de Govern de 4 de juliol de 2006, pel qual s’aprova el Pla sectorial dels cabals de manteniment de les conques internes de Catal",
+        "substituted_by": ""
+      },
+      "ACA-NOR-014": {
+        "status": "VIGENT",
+        "title": "Acord GOV/1/2020, de 8 de gener, pel qual s’aprova el Pla especial d’actuació en situació d’alerta i eventual sequera",
+        "substituted_by": ""
+      },
+      "ACA-NOR-015": {
+        "status": "VIGENT",
+        "title": "Acord Gov/191/2023, de 19 de setembre, pel qual es modifica puntualment el Pla especial d’actuació en situació d’alerta i eventual sequera, aprovat per Acord GOV/1/2020, de 8 de gener.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-016": {
+        "status": "VIGENT",
+        "title": "Acord Gov/17/2024, de 16 de gener, pel qual s’estableix el règim de cabals mínims circulants en situació d’emergència per sequera en determinats trams fluvials del districte de conca fluvial de Catalu",
+        "substituted_by": ""
+      },
+      "ACA-NOR-017": {
+        "status": "VIGENT",
+        "title": "Acord Gov/18/2024, de 16 de gener, pel qual s'introdueix una modificació puntual al Pla especial d'actuació en situació d'alerta i eventual sequera, aprovat per l'Acord GOV/1/2020, de 8 de gener",
+        "substituted_by": ""
+      },
+      "ACA-NOR-018": {
+        "status": "VIGENT",
+        "title": "Decret Llei 1/2023, de 28 de febrer, pel qual s'estableixen mesures extraordinàries i urgents per fer front a la situació de sequera excepcional en l'àmbit del districte de conca fluvial de Catalunya.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-019": {
+        "status": "VIGENT",
+        "title": "Acord Gov/63/2023, de 21 de març, pel qual s'aprova el Programa de gestió específic dels sistemes públics de sanejament en alta de Catalunya 2022-2033, i es declaren d'interès prioritari de la General",
+        "substituted_by": ""
+      },
+      "ACA-NOR-020": {
+        "status": "VIGENT",
+        "title": "DECRET 91/2023, de 16 de maig, pel qual s'aprova el Pla de gestió del districte de conca fluvial de Catalunya per al període 2022-2027",
+        "substituted_by": ""
+      },
+      "ACA-NOR-021": {
+        "status": "VIGENT",
+        "title": "ACORD GOV/108/2023, de 16 de maig, pel qual s'aprova el Programa de mesures del Pla de gestió del districte de conca fluvial de Catalunya per al període 2022-2027",
+        "substituted_by": ""
+      },
+      "ACA-NOR-022": {
+        "status": "VIGENT",
+        "title": "Reial decret 690/2023, de 18 de juliol, pel qual s'aprova el Pla de gestió del districte de conca fluvial de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-NOR-024": {
+        "status": "VIGENT",
+        "title": "ACORD GOV/191/2024, de 27 d'agost, pel qual s'aprova l'Estratègia de la gestió de l'aigua i es determinen les mesures i actuacions per assolir la seguretat hídrica.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-025": {
+        "status": "VIGENT",
+        "title": "RESOLUCIÓ TER/3938/2024, de 6 de novembre, per la qual es fa públic l'Acord del Consell d'Administració de l'Agència Catalana de l'Aigua pel qual s'aprova el Programa de seguiment i control del distri",
+        "substituted_by": ""
+      },
+      "ACA-NOR-026": {
+        "status": "VIGENT",
+        "title": "Decret 380/2006, de 10 d’octubre, pel qual s’aprova el reglament de la planificació hidrològica.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-027": {
+        "status": "VIGENT",
+        "title": "DECRET 28/2022, de 15 de febrer, pel qual es delimita l'àmbit territorial del Districte de Conca Hidrogràfica o Fluvial de Catalunya.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-029": {
+        "status": "VIGENT",
+        "title": "DECRET LLEI 4/2024, de 16 d'abril, pel qual s'adopten mesures urgents per pal·liar els efectes de la sequera en l'àmbit del districte de conca fluvial de Catalunya.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-030": {
+        "status": "VIGENT",
+        "title": "Reial Decret 35/2023, de 24 de gener, pel qual s'aprova la revisió dels plans hidrològics de les demarcacions hidrogràfiques del Cantàbric Occidental, Guadalquivir, Ceuta, Melilla, Segura i Xúquer, i ",
+        "substituted_by": ""
+      },
+      "ACA-NOR-031": {
+        "status": "VIGENT",
+        "title": "Ordre MAM/698/2007, de 21 de març, pel qual s’aproven els plans especials en situació d’alerta i eventual sequera en els àmbits dels plans hidrològics de les conques intercomunitàries",
+        "substituted_by": ""
+      },
+      "ACA-NOR-032": {
+        "status": "VIGENT",
+        "title": "Reial decret 907/2007, de 6 de juliol, pel qual s’aprova el Reglament de la planificació hidrològica",
+        "substituted_by": ""
+      },
+      "ACA-NOR-033": {
+        "status": "VIGENT",
+        "title": "Ordre ARM/2656/2008, de 10 de setembre, per la qual s’aprova la instrucció de la planificació hidrològica",
+        "substituted_by": ""
+      },
+      "ACA-NOR-035": {
+        "status": "VIGENT",
+        "title": "Llei 10/2001, de 5 de juliol, del Pla hidrològic nacional",
+        "substituted_by": ""
+      },
+      "ACA-NOR-036": {
+        "status": "VIGENT",
+        "title": "Reial Decret 198/2015, de 23 de març, pel qual es desplega l'article 112 bis del text refós de la Llei d'Aigües i es regula el cànon per utilització de les aigües continentals per a la producció d'ene",
+        "substituted_by": ""
+      },
+      "ACA-NOR-037": {
+        "status": "VIGENT",
+        "title": "Reial decret Llei 11/1995, de 28 de desembre, pel qual s’estableixen les normes aplicables al tractament de les aigües residuals urbanes",
+        "substituted_by": ""
+      },
+      "ACA-NOR-038": {
+        "status": "VIGENT",
+        "title": "Reial decret 509/1996, de 15 de març de desplegament del Reial decret llei 11/1995, de 28 de desembre",
+        "substituted_by": ""
+      },
+      "ACA-NOR-039": {
+        "status": "VIGENT",
+        "title": "Reial decret 1620/2007, de 7 de desembre, pel qual s’estableix el règim jurídic de la reutilització de les aigües depurades",
+        "substituted_by": ""
+      },
+      "ACA-NOR-040": {
+        "status": "VIGENT",
+        "title": "Ordre MAM/985/2006, de 23 de març, per la qual es desenvolupa el règim jurídic de les entitats col·laboradores de l’administració hidràulica en matèria de control i vigilància de la qualitat de les ai",
+        "substituted_by": ""
+      },
+      "ACA-NOR-041": {
+        "status": "VIGENT",
+        "title": "Ordre ARM/1312/2009, de 20 de maig, per la qual es regulen els sistemes per a realitzar el control efectiu dels volums d’aigua utilitzats pels aprofitaments d’aigua del domini públic hidràulic, dels r",
+        "substituted_by": ""
+      },
+      "ACA-NOR-042": {
+        "status": "VIGENT",
+        "title": "Ordre AAA/2056/2014, de 27 d’octubre, pel qual s’aproven els models oficials de sol·licitud i declaració d’abocament",
+        "substituted_by": ""
+      },
+      "ACA-NOR-043": {
+        "status": "VIGENT",
+        "title": "Ordre APM/130/2018, de 25 de gener, per la qual es determinen les especificacions tècniques pel enviament de la informació al Cens Nacional d'Abocaments.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-044": {
+        "status": "VIGENT",
+        "title": "Decret 130/2003, de 13 de maig, pel qual s’aprova el Reglament dels serveis públics de sanejament",
+        "substituted_by": ""
+      },
+      "ACA-NOR-045": {
+        "status": "VIGENT",
+        "title": "Ordre MAH/122/2004, de 13 d’abril, per la qual s’aproven els models de declaració d’abocament",
+        "substituted_by": ""
+      },
+      "ACA-NOR-046": {
+        "status": "VIGENT",
+        "title": "Resolució MAH/285/2007, de 7 de febrer, per la qual es dona publicitat a l’Acord del Consell d’Administració de l’Agència Catalana de l’Aigua d’1 d’abril de 2004, de fixació de criteris en relació amb",
+        "substituted_by": ""
+      },
+      "ACA-NOR-047": {
+        "status": "VIGENT",
+        "title": "Reial decret 670/2013, de 6 de setembre, pel qual es modifica el Reglament del Domini Públic Hidràulic aprovat pel Reial decret 849/1986, d'11 d'abril, en matèria de registre d'aigües i criteris de va",
+        "substituted_by": ""
+      },
+      "ACA-NOR-048": {
+        "status": "VIGENT",
+        "title": "RESOLUCIÓ ACC/1771/2024, de 13 de maig, per la qual es revisa la declaració de les zones sensibles del districte de conca fluvial de Catalunya i de les zones costaneres",
+        "substituted_by": ""
+      },
+      "ACA-NOR-049": {
+        "status": "VIGENT",
+        "title": "RESOLUCIÓ TER/4244/2024, de 23 de novembre, de la Direcció de l'Agència Catalana de l'Aigua, per la qual s'aprova l'Inventari de sistemes públics de sanejament que han d'elaborar plans integrals de ge",
+        "substituted_by": ""
+      },
+      "ACA-NOR-050": {
+        "status": "VIGENT",
+        "title": "Reial decret 1310/1990, de 29 d’octubre, pel qual es regula la utilització dels llots de depuradora al sector agrari",
+        "substituted_by": ""
+      },
+      "ACA-NOR-051": {
+        "status": "VIGENT",
+        "title": "Acord GOV/13/2015, de 3 de febrer, pel qual es revisen i amplien les zones vulnerables a la contaminació per nitrats procedents de fonts agràries",
+        "substituted_by": ""
+      },
+      "ACA-NOR-052": {
+        "status": "VIGENT",
+        "title": "Decret 153/2019, de 3 de juliol, de gestió de la fertilització del sòl i de les dejeccions ramaderes i d'aprovació del programa d'actuació a les zones vulnerables en relació amb la contaminació per ni",
+        "substituted_by": ""
+      },
+      "ACA-NOR-053": {
+        "status": "VIGENT",
+        "title": "ORDRE TES/80/2021, de 9 d'abril, per la qual es revisen les zones vulnerables en relació amb la contaminació per nitrats procedents de fonts agràries i s'apliquen les mesures del programa d'actuació a",
+        "substituted_by": ""
+      },
+      "ACA-NOR-054": {
+        "status": "VIGENT",
+        "title": "Reial Decret 47/2022, de 18 de gener, sobre protecció de les aigües contra la contaminació difosa produïda pels nitrats procedents de fonts agràries.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-055": {
+        "status": "VIGENT",
+        "title": "Resolució de 9 de maig de 2022, de la Dirección General del Agua, per la que es publiquen els mapes de les aigües afectades por la contaminació difusa",
+        "substituted_by": ""
+      },
+      "ACA-NOR-056": {
+        "status": "VIGENT",
+        "title": "Reial decret 1514/2009, de 2 d’octubre, pel qual es regula la protecció de els aigües subterrànies contra la contaminació i el deteriorament",
+        "substituted_by": ""
+      },
+      "ACA-NOR-057": {
+        "status": "VIGENT",
+        "title": "Edicte de 31 d'octubre de 2000, pel qual es dóna publicitat a l'Acord de 5 d'octubre de 2000, pel qual s'estableix, a l'empara de l'article 53 de la Llei 29/1985, de 2 d'agost, d'aigües, el règim d'ex",
+        "substituted_by": ""
+      },
+      "ACA-NOR-058": {
+        "status": "VIGENT",
+        "title": "Edicte de 14 de gener de 2003, pel qual es dóna publicitat a l'Acord de 12 de desembre de 2002",
+        "substituted_by": ""
+      },
+      "ACA-NOR-059": {
+        "status": "VIGENT",
+        "title": "EDICTE de 26 de setembre de 2003",
+        "substituted_by": ""
+      },
+      "ACA-NOR-060": {
+        "status": "VIGENT",
+        "title": "Edicte de 3 de març de 2004, pel qual es dóna publicitat a l'Acord de 26 de febrer de 2004 del Consell d'Administració de l'Agència Catalana de l'Aigua",
+        "substituted_by": ""
+      },
+      "ACA-NOR-061": {
+        "status": "VIGENT",
+        "title": "Edicte de 10 de desembre de 2004, pel qual es dóna publicitat a l'Acord de 2 de desembre de 2004 del Consell d'Administració de l'Agència Catalana de l'Aigua",
+        "substituted_by": ""
+      },
+      "ACA-NOR-062": {
+        "status": "VIGENT",
+        "title": "Edicte de 10 d'octubre de 2006, pel qual es dóna publicitat a l'Acord de 14 de setembre de 2006 del Consell d'Administració de l'Agència Catalana de l'Aigua",
+        "substituted_by": ""
+      },
+      "ACA-NOR-063": {
+        "status": "VIGENT",
+        "title": "Edicte de 28 de desembre de 2006, pel qual es dóna publicitat a l'Acord d'11 de desembre de 2006 del Consell d'Administració de l'Agència Catalana de l'Aigua, pel qual s'aprova el Pla d'ordenació d'ex",
+        "substituted_by": ""
+      },
+      "ACA-NOR-064": {
+        "status": "VIGENT",
+        "title": "Resolució de 31 de gener de 1995, de la Secretaria d’Estat d’interior, per la qual es disposa la publicació de l’Acord del Consell de Ministres pel qual s’aprova la Directriu Bàsica de planificació de",
+        "substituted_by": ""
+      },
+      "ACA-NOR-065": {
+        "status": "VIGENT",
+        "title": "Ordre TES/341/2013, de 16 de desembre, per la qual es crea i s’organitza el registre des seguretat de preses i embassaments",
+        "substituted_by": ""
+      },
+      "ACA-NOR-066": {
+        "status": "VIGENT",
+        "title": "Resolució TES/2543/2014, de 3 de novembre, per la qual es classifiquen els embassaments i els trams de riu del districte de conca fluvial de Catalunya a efectes de navegació i s’estableixen limitacion",
+        "substituted_by": ""
+      },
+      "ACA-NOR-067": {
+        "status": "VIGENT",
+        "title": "Reial Decret 264/2021, de 13 d'abril, pel que s'aproven les normes tècniques de seguretat per a preses i els seus embassaments",
+        "substituted_by": ""
+      },
+      "ACA-NOR-068": {
+        "status": "VIGENT",
+        "title": "Orden TED/225/2025, de 24 de febrero, por la que se establecen los procedimientos administrativos derivados de las normas técnicas de seguridad para las presas y sus embalses aprobadas por el Real Dec",
+        "substituted_by": ""
+      },
+      "ACA-NOR-069": {
+        "status": "VIGENT",
+        "title": "Reial Decret 3/2023, de 10 de gener, pel que s'estableixen els criteris tècnico-sanitaris de la qualitat de l'aigua de consum, el seu control i subministrament",
+        "substituted_by": ""
+      },
+      "ACA-NOR-070": {
+        "status": "VIGENT",
+        "title": "DIRECTIVA (UE) 2020/2184 DEL PARLAMENT EUROPEU I DEL CONSELL de 16 de desembre de 2020 relativa a la qualitat de les aigües destinades al consum humà",
+        "substituted_by": ""
+      },
+      "ACA-NOR-071": {
+        "status": "VIGENT",
+        "title": "Reial decret 26/2023, de 17 de gener, pel qual s'aprova la revisió i actualització dels plans de gestió del risc d'inundació de les demarcacions hidrogràfiques del Cantàbric Occidental, Guadalquivir, ",
+        "substituted_by": ""
+      },
+      "ACA-NOR-072": {
+        "status": "VIGENT",
+        "title": "Reial decret 903/2010, de 9 de juliol, d’avaluació i gestió dels riscos d’inundació",
+        "substituted_by": ""
+      },
+      "ACA-NOR-073": {
+        "status": "VIGENT",
+        "title": "Acord GOV/118/2017, d’1 d’agost, pel qual s’aprova el Programa de mesures de l’àmbit hidrològic del Pla de gestió del risc d’inundació del districte de conca fluvial de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-NOR-074": {
+        "status": "VIGENT",
+        "title": "Decret 95/2000, de 22 de febrer, pel qual s’estableixen les normes sanitàries aplicables a piscines d’ús públic",
+        "substituted_by": ""
+      },
+      "ACA-NOR-075": {
+        "status": "VIGENT",
+        "title": "Llei 3/2009, del 10 de març, de regularització i millora d’urbanitzacions amb dèficits urbanístics",
+        "substituted_by": ""
+      },
+      "ACA-NOR-076": {
+        "status": "VIGENT",
+        "title": "Llei 20/2009, de 4 de desembre, de prevenció i control ambiental de les activitats",
+        "substituted_by": ""
+      },
+      "ACA-NOR-077": {
+        "status": "VIGENT",
+        "title": "Decret legislatiu 1/2010, de 3 d’agost pel qual s’aprova el text refós de la Llei d’urbanisme",
+        "substituted_by": ""
+      },
+      "ACA-NOR-078": {
+        "status": "VIGENT",
+        "title": "Decret 60/2015, de 28 d’abril, sobre entitats col·laboradores en matèria de medi ambient",
+        "substituted_by": ""
+      },
+      "ACA-NOR-079": {
+        "status": "VIGENT",
+        "title": "Llei 8/2020, del 30 de juliol, de protecció i ordenació del litoral.",
+        "substituted_by": ""
+      },
+      "ACA-NOR-080": {
+        "status": "VIGENT",
+        "title": "Llei 7/2020, del 2 de juliol, de l'Agència de la Natura de Catalunya",
+        "substituted_by": ""
+      },
+      "ACA-NOR-081": {
+        "status": "VIGENT",
+        "title": "Llei 16/2017, de l'1 d'agost, del canvi climàtic",
+        "substituted_by": ""
+      },
+      "ACA-NOR-082": {
+        "status": "VIGENT",
+        "title": "Llei 22/1988, de 28 de juliol, de Costes",
+        "substituted_by": ""
+      },
+      "ACA-NOR-083": {
+        "status": "VIGENT",
+        "title": "Llei 26/2007, de 23 d’octubre, de responsabilitat ambiental",
+        "substituted_by": ""
+      },
+      "ACA-NOR-084": {
+        "status": "VIGENT",
+        "title": "Llei 21/2013, de 9 de desembre d’avaluació ambiental",
+        "substituted_by": ""
+      },
+      "ACA-NOR-085": {
+        "status": "VIGENT",
+        "title": "Reial decret legislatiu 2/2011, de 5 de setembre, pel qual s’aprova el text refós de la Llei de Ports de l’estat i de la marina mercant",
+        "substituted_by": ""
+      },
+      "ACA-NOR-086": {
+        "status": "VIGENT",
+        "title": "Reial decret 515/2013, de 5 de juliol, pel qual es regulen els criteris i el procediment per determinar i repercutir les responsabilitats per incompliment del Dret de la Unió Europea",
+        "substituted_by": ""
+      },
+      "ACA-NOR-087": {
+        "status": "VIGENT",
+        "title": "Llei 7/2021, de 20 de maig, sobre canvi climàtic i transició energètica",
+        "substituted_by": ""
+      },
+      "ACA-NOR-088": {
+        "status": "VIGENT",
+        "title": "Reial decret 646/2020, de 7 de juliol, pel qual es regula l'eliminació de residus mitjançant dipòsit en abocador",
+        "substituted_by": ""
+      },
+      "ACA-NOR-089": {
+        "status": "VIGENT",
+        "title": "Reial decret 2090/2008, de 22 de desembre, pel qual s’aprova el Reglament de desplegament parcial de la Llei 26/2007, de 23 d’octubre, de responsabilitat mediambiental",
+        "substituted_by": ""
+      },
+      "ACA-NOR-090": {
+        "status": "VIGENT",
+        "title": "Reial decret 876/2014, de 10 d’octubre, pel qual s’aprova el Reglament general de costes",
+        "substituted_by": ""
+      },
+      "ACA-NOR-091": {
+        "status": "VIGENT",
+        "title": "Llei 27/2006, de 18 de juliol, per la que es regulen els drets d’accés a la informació, de participació pública i d’accés a la justícia en matèria de medi ambient.",
+        "substituted_by": ""
+      }
+    },
+    "adif": {},
+    "boe": {
+      "9/2017": {
+        "status": "VIGENT",
+        "title": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, d",
+        "substituted_by": ""
+      },
+      "3/2011": {
+        "status": "DEROGADA",
+        "title": "Real Decreto Legislativo 3/2011, de 14 de noviembre, por el que se aprueba el texto refundido de la Ley de Contratos del Sector Público.",
+        "substituted_by": ""
+      },
+      "1098/2001": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1098/2001, de 12 de octubre, por el que se aprueba el Reglamento general de la Ley de Contratos de las Administraciones Públicas.",
+        "substituted_by": ""
+      },
+      "14/2019": {
+        "status": "VIGENT",
+        "title": "Real Decreto-ley 14/2019, de 31 de octubre, por el que se adoptan medidas urgentes por razones de seguridad pública en materia de administración digital, contratación del sector público y telecomunica",
+        "substituted_by": ""
+      },
+      "HFP/1499/2021": {
+        "status": "VIGENT",
+        "title": "Orden HFP/1499/2021, de 28 de diciembre, por la que se publican los límites de los distintos tipos de contratos a efectos de la contratación del sector público a partir del 1 de enero de 2022.",
+        "substituted_by": ""
+      },
+      "HAC/1272/2019": {
+        "status": "VIGENT",
+        "title": "Orden HAC/1272/2019, de 16 de diciembre, por la que se publican los límites de los distintos tipos de contratos a efectos de la contratación del sector público a partir del 1 de enero de 2020.",
+        "substituted_by": ""
+      },
+      "BOE-A-2018-10994": {
+        "status": "VIGENT",
+        "title": "Resolución de 25 de julio de 2018, de la Intervención General de la Administración del Estado, por la que se publica el Acuerdo del Consejo de Ministros de 20 de julio de 2018, por el que se da aplica",
+        "substituted_by": ""
+      },
+      "BOE-A-2018-10655": {
+        "status": "VIGENT",
+        "title": "Resolución de 20 de julio de 2018, de la Presidencia del Tribunal de Cuentas, por la que se publica el Acuerdo del Pleno de 28 de junio de 2018, por el que se aprueba la sustitución de la Instrucción ",
+        "substituted_by": ""
+      },
+      "BOE-A-2018-9585": {
+        "status": "VIGENT",
+        "title": "Resolución de 3 de julio de 2018, de la Presidencia del Tribunal de Cuentas, por la que se publica el Acuerdo del Pleno de 28 de junio de 2018, por el que se aprueba la instrucción relativa a la remis",
+        "substituted_by": ""
+      },
+      "BOE-A-2016-12115": {
+        "status": "VIGENT",
+        "title": "Resolución de 19 de diciembre de 2016, de la Dirección General del Patrimonio del Estado, por la que se publica el Acuerdo del Consejo de Ministros de 16 de diciembre de 2016, por el que se instruye a",
+        "substituted_by": ""
+      },
+      "BOE-A-2015-14287": {
+        "status": "VIGENT",
+        "title": "Resolución de 23 de diciembre de 2015, de la Presidencia del Tribunal de Cuentas, por la que se publica el Acuerdo del Pleno de 22 de diciembre de 2015, por el que se aprueba la Instrucción relativa a",
+        "substituted_by": ""
+      },
+      "24/2011": {
+        "status": "VIGENT",
+        "title": "Ley 24/2011, de 1 de agosto, de contratos del sector público en los ámbitos de la defensa y de la seguridad.",
+        "substituted_by": ""
+      },
+      "817/2009": {
+        "status": "VIGENT",
+        "title": "Real Decreto 817/2009, de 8 de mayo, por el que se desarrolla parcialmente la Ley 30/2007, de 30 de octubre, de Contratos del Sector Público.",
+        "substituted_by": ""
+      },
+      "899/2025": {
+        "status": "VIGENT",
+        "title": "Real Decreto 899/2025, de 9 de octubre, por el que se aprueba el Reglamento General de Carreteras.",
+        "substituted_by": ""
+      },
+      "205/2025": {
+        "status": "VIGENT",
+        "title": "Real Decreto 205/2025, de 18 de marzo, por el que se establecen los criterios para la determinación de los gravámenes, de sus exenciones y reducciones, y su aplicación a los vehículos por la utilizaci",
+        "substituted_by": ""
+      },
+      "23/2022": {
+        "status": "VIGENT",
+        "title": "Ley Foral 23/2022, de 1 de julio, reguladora del canon de uso de las carreteras de Navarra.",
+        "substituted_by": ""
+      },
+      "183/2022": {
+        "status": "VIGENT",
+        "title": "Real Decreto 183/2022, de 8 de marzo, por el que se regula la interoperabilidad de los sistemas de telepeaje en las carreteras españolas.",
+        "substituted_by": ""
+      },
+      "37/2015": {
+        "status": "VIGENT",
+        "title": "Ley 37/2015, de 29 de septiembre, de carreteras.",
+        "substituted_by": ""
+      },
+      "8/2013": {
+        "status": "VIGENT",
+        "title": "Ley 8/2013, de 28 de junio, de carreteras de Galicia.",
+        "substituted_by": ""
+      },
+      "FOM/1649/2012": {
+        "status": "VIGENT",
+        "title": "Orden FOM/1649/2012, de 19 de julio, por la que se regula el procedimiento de acreditación y certificación de aptitud de auditores de seguridad viaria de la Red de Carreteras del Estado.",
+        "substituted_by": ""
+      },
+      "2/1989": {
+        "status": "VIGENT",
+        "title": "Ley 2/1989, de 30 de mayo, reguladora del Plan General de Carreteras del País Vasco.",
+        "substituted_by": ""
+      },
+      "345/2011": {
+        "status": "VIGENT",
+        "title": "Real Decreto 345/2011, de 11 de marzo, sobre gestión de la seguridad de las infraestructuras viarias en la Red de Carreteras del Estado.",
+        "substituted_by": ""
+      },
+      "2/2008": {
+        "status": "VIGENT",
+        "title": "Ley 2/2008, de 21 de abril, de carreteras de la Comunidad Autónoma de la Región de Murcia.",
+        "substituted_by": ""
+      },
+      "2/2009": {
+        "status": "VIGENT",
+        "title": "Decreto Legislativo 2/2009, de 25 de agosto, por el que se aprueba el Texto refundido de la Ley de carreteras.",
+        "substituted_by": ""
+      },
+      "10/2008": {
+        "status": "VIGENT",
+        "title": "Ley 10/2008, de 9 de diciembre, de carreteras de Castilla y León.",
+        "substituted_by": ""
+      },
+      "5/2007": {
+        "status": "VIGENT",
+        "title": "Ley Foral 5/2007, de 23 de marzo, de Carreteras de Navarra.",
+        "substituted_by": ""
+      },
+      "8/2006": {
+        "status": "VIGENT",
+        "title": "Ley 8/2006, de 13 de noviembre, de Carreteras.",
+        "substituted_by": ""
+      },
+      "635/2006": {
+        "status": "VIGENT",
+        "title": "Real Decreto 635/2006, de 26 de mayo, sobre requisitos mínimos de seguridad en los túneles de carreteras del Estado.",
+        "substituted_by": ""
+      },
+      "1231/2003": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1231/2003, de 26 de septiembre, por el que se modifica la nomenclatura y el catálogo de las autopistas y autovías de la Red de Carreteras del Estado.",
+        "substituted_by": ""
+      },
+      "16/2001": {
+        "status": "VIGENT",
+        "title": "Ley 16/2001, de 14 de diciembre, de Atribución de Competencias a los Consejos Insulares en Materia de Carreteras y Caminos.",
+        "substituted_by": ""
+      },
+      "8/2001": {
+        "status": "VIGENT",
+        "title": "Ley 8/2001, de 12 de julio, de Carreteras de Andalucía.",
+        "substituted_by": ""
+      },
+      "8/1998": {
+        "status": "VIGENT",
+        "title": "Ley 8/1998, de 17 de diciembre, de Carreteras de Aragón.",
+        "substituted_by": ""
+      },
+      "BOE-A-1998-1457": {
+        "status": "VIGENT",
+        "title": "Orden de 16 de diciembre de 1997 por la que se regulan los accesos a las carreteras del Estado, las vías de servicio y la construcción de instalaciones de servicios.",
+        "substituted_by": ""
+      },
+      "5/1996": {
+        "status": "VIGENT",
+        "title": "Ley 5/1996, de 17 de diciembre, de Carreteras de Cantabria.",
+        "substituted_by": ""
+      },
+      "7/1995": {
+        "status": "VIGENT",
+        "title": "Ley 7/1995, de 27 de abril, de Carreteras de Extremadura.",
+        "substituted_by": ""
+      },
+      "1812/1994": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1812/1994, de 2 de septiembre, por el que se aprueba el Reglamento General de Carreteras.",
+        "substituted_by": ""
+      },
+      "1772/1994": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1772/1994, de 5 de agosto, por el que se adecuan determinados procedimientos administrativos en materia de transportes y carreteras a la Ley 30/1992, de 26 de noviembre, de Régimen Jurídi",
+        "substituted_by": ""
+      },
+      "9/1991": {
+        "status": "VIGENT",
+        "title": "Ley 9/1991, de 8 de mayo, de carreteras de Canarias.",
+        "substituted_by": ""
+      },
+      "3/1991": {
+        "status": "VIGENT",
+        "title": "Ley 3/1991, de 7 de marzo, de Carreteras de la Comunidad de Madrid.",
+        "substituted_by": ""
+      },
+      "6/1991": {
+        "status": "VIGENT",
+        "title": "Ley 6/1991, de 27 de marzo, de carreteras de la Comunidad Valenciana.",
+        "substituted_by": ""
+      },
+      "2/1991": {
+        "status": "VIGENT",
+        "title": "Ley 2/1991, de 7 de marzo, de Carreteras de la Comunidad Autónoma de La Rioja.",
+        "substituted_by": ""
+      },
+      "9/1990": {
+        "status": "VIGENT",
+        "title": "Ley 9/1990, de 28 de diciembre, de Carreteras y Caminos de Castilla-La Mancha.",
+        "substituted_by": ""
+      },
+      "5/1990": {
+        "status": "VIGENT",
+        "title": "Ley 5/1990, de 24 de mayo, de Carreteras de la Comunidad Autónoma de las Islas Baleares.",
+        "substituted_by": ""
+      }
+    },
+    "cte": {
+      "CTE-PARTE-I": {
+        "status": "VIGENT",
+        "title": "CTE Parte I — Disposiciones generales",
+        "substituted_by": ""
+      },
+      "CTE-DB-SE": {
+        "status": "VIGENT",
+        "title": "DB-SE Seguridad Estructural",
+        "substituted_by": ""
+      },
+      "CTE-DB-SE-AE": {
+        "status": "VIGENT",
+        "title": "DB-SE-AE Seguridad Estructural — Acciones en la Edificación",
+        "substituted_by": ""
+      },
+      "CTE-DB-SE-C": {
+        "status": "VIGENT",
+        "title": "DB-SE-C Seguridad Estructural — Cimientos",
+        "substituted_by": ""
+      },
+      "CTE-DB-SE-A": {
+        "status": "VIGENT",
+        "title": "DB-SE-A Seguridad Estructural — Acero",
+        "substituted_by": ""
+      },
+      "CTE-DB-SE-F": {
+        "status": "VIGENT",
+        "title": "DB-SE-F Seguridad Estructural — Fábrica",
+        "substituted_by": ""
+      },
+      "CTE-DB-SE-M": {
+        "status": "VIGENT",
+        "title": "DB-SE-M Seguridad Estructural — Madera",
+        "substituted_by": ""
+      },
+      "CTE-DB-SI": {
+        "status": "VIGENT",
+        "title": "DB-SI Seguridad en caso de Incendio",
+        "substituted_by": ""
+      },
+      "CTE-DB-SUA": {
+        "status": "VIGENT",
+        "title": "DB-SUA Seguridad de Utilización y Accesibilidad",
+        "substituted_by": ""
+      },
+      "CTE-DB-HE": {
+        "status": "VIGENT",
+        "title": "DB-HE Ahorro de Energía",
+        "substituted_by": ""
+      },
+      "CTE-DB-HS": {
+        "status": "VIGENT",
+        "title": "DB-HS Salubridad",
+        "substituted_by": ""
+      },
+      "CTE-DB-HR": {
+        "status": "VIGENT",
+        "title": "DB-HR Protección frente al Ruido",
+        "substituted_by": ""
+      }
+    },
+    "dgc": {
+      "Ley 9/2017, de 8 de noviembre,": {
+        "status": "VIGENT",
+        "title": "Ley 9/2017, de 8 de noviembre,",
+        "substituted_by": ""
+      },
+      "Orden Circular 31/2012": {
+        "status": "VIGENT",
+        "title": "Orden Circular 31/2012",
+        "substituted_by": ""
+      },
+      "Real Decreto 1359/2011,": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1359/2011,",
+        "substituted_by": ""
+      },
+      "Real Decreto 300/2011,": {
+        "status": "VIGENT",
+        "title": "Real Decreto 300/2011,",
+        "substituted_by": ""
+      },
+      "Real Decreto 817/2009,": {
+        "status": "VIGENT",
+        "title": "Real Decreto 817/2009,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio, de 4 de mayo de 2007": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio, de 4 de mayo de 2007",
+        "substituted_by": ""
+      },
+      "Ley 32/2006, de 18 de octubre": {
+        "status": "VIGENT",
+        "title": "Ley 32/2006, de 18 de octubre",
+        "substituted_by": ""
+      },
+      "Real Decreto 1109/2007, de 24 de agosto": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1109/2007, de 24 de agosto",
+        "substituted_by": ""
+      },
+      "Real Decreto 1109/2007,": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1109/2007,",
+        "substituted_by": ""
+      },
+      "Corrección de errores del Real Decreto 1109/2007, de 24 de agosto,": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 1109/2007, de 24 de agosto,",
+        "substituted_by": ""
+      },
+      "Real Decreto 327/2009, de 13 de marzo": {
+        "status": "VIGENT",
+        "title": "Real Decreto 327/2009, de 13 de marzo",
+        "substituted_by": ""
+      },
+      "Real Decreto 1098/2001, de 12 de octubre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1098/2001, de 12 de octubre",
+        "substituted_by": ""
+      },
+      "Corrección de errores del Real Decreto 1098/2001, de 12 de octubre": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 1098/2001, de 12 de octubre",
+        "substituted_by": ""
+      },
+      "Corrección de errores y erratas del Real Decreto 1098/2001, de 12 de octubre": {
+        "status": "VIGENT",
+        "title": "Corrección de errores y erratas del Real Decreto 1098/2001, de 12 de octubre",
+        "substituted_by": ""
+      },
+      "Real Decreto 773/2015, de 28 de agosto": {
+        "status": "VIGENT",
+        "title": "Real Decreto 773/2015, de 28 de agosto",
+        "substituted_by": ""
+      },
+      "Decreto 3854/70, de 31 de diciembre,": {
+        "status": "VIGENT",
+        "title": "Decreto 3854/70, de 31 de diciembre,",
+        "substituted_by": ""
+      },
+      "Real Decreto 899/2025, de 9 de octubre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 899/2025, de 9 de octubre",
+        "substituted_by": ""
+      },
+      "Ley 37/2015,": {
+        "status": "VIGENT",
+        "title": "Ley 37/2015,",
+        "substituted_by": ""
+      },
+      "Orden Circular 14/2003, de 8 de octubre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 14/2003, de 8 de octubre",
+        "substituted_by": ""
+      },
+      "Real Decreto 1231/2003, de 26 de septiembre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1231/2003, de 26 de septiembre",
+        "substituted_by": ""
+      },
+      "Corrección de erratas y error del Real Decreto 1231/2003, de 26 de septiembre": {
+        "status": "VIGENT",
+        "title": "Corrección de erratas y error del Real Decreto 1231/2003, de 26 de septiembre",
+        "substituted_by": ""
+      },
+      "Corrección de errores del Real Decreto 1231/2003, de 26 de septiembre": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 1231/2003, de 26 de septiembre",
+        "substituted_by": ""
+      },
+      "Orden FOM/2873/2007, de 24 de septiembre": {
+        "status": "VIGENT",
+        "title": "Orden FOM/2873/2007, de 24 de septiembre",
+        "substituted_by": ""
+      },
+      "Orden, de 16 de diciembre de 1997, del Ministerio de Fomento": {
+        "status": "VIGENT",
+        "title": "Orden, de 16 de diciembre de 1997, del Ministerio de Fomento",
+        "substituted_by": ""
+      },
+      "Orden de 13 septiembre 2001 de modificación parcial de la Orden de 16 de diciembre de 1997": {
+        "status": "VIGENT",
+        "title": "Orden de 13 septiembre 2001 de modificación parcial de la Orden de 16 de diciembre de 1997",
+        "substituted_by": ""
+      },
+      "Orden FOM/392/2006, de 14 de febrero, de modificación parcial de la Orden de 16 de diciembre de 1997": {
+        "status": "VIGENT",
+        "title": "Orden FOM/392/2006, de 14 de febrero, de modificación parcial de la Orden de 16 de diciembre de 1997",
+        "substituted_by": ""
+      },
+      "Orden FOM/1740/2006, de 24 de mayo, por la que se modifica la Orden del Ministerio de Fomento de 16 ": {
+        "status": "VIGENT",
+        "title": "Orden FOM/1740/2006, de 24 de mayo, por la que se modifica la Orden del Ministerio de Fomento de 16 de diciembre de 1997",
+        "substituted_by": ""
+      },
+      "Orden TMA/277/2023, de 21 de marzo, por la que se modifica la Orden de 16 de diciembre de 1997": {
+        "status": "VIGENT",
+        "title": "Orden TMA/277/2023, de 21 de marzo, por la que se modifica la Orden de 16 de diciembre de 1997",
+        "substituted_by": ""
+      },
+      "Orden TMA/1160/2021, de 8 de octubre": {
+        "status": "VIGENT",
+        "title": "Orden TMA/1160/2021, de 8 de octubre",
+        "substituted_by": ""
+      },
+      "Orden TMA/338/2023, de 29 de marzo": {
+        "status": "VIGENT",
+        "title": "Orden TMA/338/2023, de 29 de marzo",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 4/2023,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 4/2023,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 2/2025,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 2/2025,",
+        "substituted_by": ""
+      },
+      "Orden Circular 1/2025": {
+        "status": "VIGENT",
+        "title": "Orden Circular 1/2025",
+        "substituted_by": ""
+      },
+      "Orden Circular 5/2024,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 5/2024,",
+        "substituted_by": ""
+      },
+      "Orden Circular 1/2026": {
+        "status": "VIGENT",
+        "title": "Orden Circular 1/2026",
+        "substituted_by": ""
+      },
+      "Real Decreto 465/2025, de 10 de junio,": {
+        "status": "VIGENT",
+        "title": "Real Decreto 465/2025, de 10 de junio,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 2/2023, de 27 de abril": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 2/2023, de 27 de abril",
+        "substituted_by": ""
+      },
+      "Orden Circular 1/2022,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 1/2022,",
+        "substituted_by": ""
+      },
+      "Orden Circular 2/2019,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 2/2019,",
+        "substituted_by": ""
+      },
+      "Instrucciones para la mejora de la vialidad invernal en las carreteras de la red del Estado para la ": {
+        "status": "VIGENT",
+        "title": "Instrucciones para la mejora de la vialidad invernal en las carreteras de la red del Estado para la campaña 2017/2018, 31 de julio de 2017.",
+        "substituted_by": ""
+      },
+      "Nota de servicio 1/2016": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 1/2016",
+        "substituted_by": ""
+      },
+      "Orden Circular 2/2020": {
+        "status": "DEROGADA",
+        "title": "Orden Circular 2/2020",
+        "substituted_by": ""
+      },
+      "Orden Circular 1/2020": {
+        "status": "DEROGADA",
+        "title": "Orden Circular 1/2020",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2018,": {
+        "status": "DEROGADA",
+        "title": "Nota de Servicio 1/2018,",
+        "substituted_by": ""
+      },
+      "Orden FOM/3426/2005, de 27 de octubre": {
+        "status": "DEROGADA",
+        "title": "Orden FOM/3426/2005, de 27 de octubre",
+        "substituted_by": ""
+      },
+      "Orden, de 23 de julio de 2001, del Ministerio de Fomento": {
+        "status": "DEROGADA",
+        "title": "Orden, de 23 de julio de 2001, del Ministerio de Fomento",
+        "substituted_by": ""
+      },
+      "Real Decreto 1812/1994, de 2 de septiembre,": {
+        "status": "DEROGADA",
+        "title": "Real Decreto 1812/1994, de 2 de septiembre,",
+        "substituted_by": ""
+      },
+      "Nota de servicio 1/2022, de 21 de julio,": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 1/2022, de 21 de julio,",
+        "substituted_by": ""
+      },
+      "Ley 21/2013, de 9 de diciembre": {
+        "status": "VIGENT",
+        "title": "Ley 21/2013, de 9 de diciembre",
+        "substituted_by": ""
+      },
+      "Real Decreto 105/2008, de 1 de febrero": {
+        "status": "VIGENT",
+        "title": "Real Decreto 105/2008, de 1 de febrero",
+        "substituted_by": ""
+      },
+      "Manual para la Redacción de los Informes de los Programas de Vigilancia y Seguimiento Ambiental en C": {
+        "status": "REFERENCIA",
+        "title": "Manual para la Redacción de los Informes de los Programas de Vigilancia y Seguimiento Ambiental en Carreteras",
+        "substituted_by": ""
+      },
+      "Guías metodológicas para la elaboración de estudios de impacto ambiental": {
+        "status": "DEROGADA",
+        "title": "Guías metodológicas para la elaboración de estudios de impacto ambiental",
+        "substituted_by": ""
+      },
+      "Nota de servicio 2/2021,": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 2/2021,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 3/2017,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 3/2017,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 4/2017,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 4/2017,",
+        "substituted_by": ""
+      },
+      "Orden Circular 12/2003,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 12/2003,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 7/2001,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 7/2001,",
+        "substituted_by": ""
+      },
+      "Resolución de 5 de marzo de 1999,": {
+        "status": "VIGENT",
+        "title": "Resolución de 5 de marzo de 1999,",
+        "substituted_by": ""
+      },
+      "Real Decreto 1627/1997, de 24 de octubre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1627/1997, de 24 de octubre",
+        "substituted_by": ""
+      },
+      "Real Decreto 39/1997, de 17 de enero": {
+        "status": "VIGENT",
+        "title": "Real Decreto 39/1997, de 17 de enero",
+        "substituted_by": ""
+      },
+      "Real Decreto 604/2006, de 19 de mayo": {
+        "status": "VIGENT",
+        "title": "Real Decreto 604/2006, de 19 de mayo",
+        "substituted_by": ""
+      },
+      "Real Decreto 337/2010, de 19 de marzo": {
+        "status": "VIGENT",
+        "title": "Real Decreto 337/2010, de 19 de marzo",
+        "substituted_by": ""
+      },
+      "Recomendaciones para la elaboración de los estudios de seguridad y salud en las obras de carretera": {
+        "status": "REFERENCIA",
+        "title": "Recomendaciones para la elaboración de los estudios de seguridad y salud en las obras de carretera",
+        "substituted_by": ""
+      },
+      "Orden Circular OC 2/2025": {
+        "status": "VIGENT",
+        "title": "Orden Circular OC 2/2025",
+        "substituted_by": ""
+      },
+      "Adenda 1:": {
+        "status": "VIGENT",
+        "title": "Adenda 1:",
+        "substituted_by": ""
+      },
+      "Adenda 2:": {
+        "status": "VIGENT",
+        "title": "Adenda 2:",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 02/2024 SGCyGA": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 02/2024 SGCyGA",
+        "substituted_by": ""
+      },
+      "Nota de servicio 1/2023": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 1/2023",
+        "substituted_by": ""
+      },
+      "Orden FOM/1649/2012,": {
+        "status": "VIGENT",
+        "title": "Orden FOM/1649/2012,",
+        "substituted_by": ""
+      },
+      "Orden FOM/943/2019,": {
+        "status": "VIGENT",
+        "title": "Orden FOM/943/2019,",
+        "substituted_by": ""
+      },
+      "Orden Circular 30/2012,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 30/2012,",
+        "substituted_by": ""
+      },
+      "Orden Circular 39/2017": {
+        "status": "VIGENT",
+        "title": "Orden Circular 39/2017",
+        "substituted_by": ""
+      },
+      "Nota de servicio 1/2011,": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 1/2011,",
+        "substituted_by": ""
+      },
+      "Real Decreto 345/2011,": {
+        "status": "VIGENT",
+        "title": "Real Decreto 345/2011,",
+        "substituted_by": ""
+      },
+      "Real Decreto 61/2022": {
+        "status": "VIGENT",
+        "title": "Real Decreto 61/2022",
+        "substituted_by": ""
+      },
+      "Resolución de 1 de febrero de 2022,": {
+        "status": "VIGENT",
+        "title": "Resolución de 1 de febrero de 2022,",
+        "substituted_by": ""
+      },
+      "Recomendaciones para la mejora de la Seguridad Vial en entornos interurbanos.": {
+        "status": "REFERENCIA",
+        "title": "Recomendaciones para la mejora de la Seguridad Vial en entornos interurbanos.",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2025 de la Subdirección General de Proyectos y Obras": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2025 de la Subdirección General de Proyectos y Obras",
+        "substituted_by": ""
+      },
+      "Nota de servicio 04/2024": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 04/2024",
+        "substituted_by": ""
+      },
+      "Nota de servicio 03/2024": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 03/2024",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 01/24 SGPyO": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 01/24 SGPyO",
+        "substituted_by": ""
+      },
+      "Orden Circular 5/2023.": {
+        "status": "VIGENT",
+        "title": "Orden Circular 5/2023.",
+        "substituted_by": ""
+      },
+      "Herramienta Excel: Registro de riesgos (Orden Circular 5/2023)": {
+        "status": "VIGENT",
+        "title": "Herramienta Excel: Registro de riesgos (Orden Circular 5/2023)",
+        "substituted_by": ""
+      },
+      "Orden circular 4/2023.": {
+        "status": "VIGENT",
+        "title": "Orden circular 4/2023.",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2019": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2019",
+        "substituted_by": ""
+      },
+      "Orden Circular 41/2017,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 41/2017,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2015": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2015",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 9/2014": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 9/2014",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 8/2014": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 8/2014",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 5/2014,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 5/2014,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 3/2014,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 3/2014,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2014": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2014",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2013,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2013,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 5/2012,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 5/2012,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 2/2012,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 2/2012,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 4/2011,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 4/2011,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 2/2011": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 2/2011",
+        "substituted_by": ""
+      },
+      "Orden FOM/3317/2010,": {
+        "status": "VIGENT",
+        "title": "Orden FOM/3317/2010,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 4/2010,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 4/2010,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2010,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2010,",
+        "substituted_by": ""
+      },
+      "Orden Circular 22/07,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 22/07,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2007,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2007,",
+        "substituted_by": ""
+      },
+      "Orden Circular 7/2001,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 7/2001,",
+        "substituted_by": ""
+      },
+      "Órdenes Circulares, de 7 de marzo de 1994 y de 4 de noviembre de 1996,": {
+        "status": "VIGENT",
+        "title": "Órdenes Circulares, de 7 de marzo de 1994 y de 4 de noviembre de 1996,",
+        "substituted_by": ""
+      },
+      "Metodología para la evaluación de proyectos de inversión en carreteras, publicada en 1980": {
+        "status": "VIGENT",
+        "title": "Metodología para la evaluación de proyectos de inversión en carreteras, publicada en 1980",
+        "substituted_by": ""
+      },
+      "Recomendaciones para la evaluación económica, coste-beneficio, de estudios y proyectos de carreteras": {
+        "status": "REFERENCIA",
+        "title": "Recomendaciones para la evaluación económica, coste-beneficio, de estudios y proyectos de carreteras",
+        "substituted_by": ""
+      },
+      "Carreteras Urbanas. Recomendaciones para su planeamiento y proyecto. Documento Resumen. Dirección Ge": {
+        "status": "REFERENCIA",
+        "title": "Carreteras Urbanas. Recomendaciones para su planeamiento y proyecto. Documento Resumen. Dirección General de Carreteras 1993.",
+        "substituted_by": ""
+      },
+      "Carreteras Urbanas. Recomendaciones para su planeamiento y proyecto. Dirección General de Carreteras": {
+        "status": "REFERENCIA",
+        "title": "Carreteras Urbanas. Recomendaciones para su planeamiento y proyecto. Dirección General de Carreteras 1992.",
+        "substituted_by": ""
+      },
+      "Orden Circular 2/2022": {
+        "status": "DEROGADA",
+        "title": "Orden Circular 2/2022",
+        "substituted_by": ""
+      },
+      "Archivo BC3 con la actualización de la base de precios de referencia de la Dirección General de Carr": {
+        "status": "DEROGADA",
+        "title": "Archivo BC3 con la actualización de la base de precios de referencia de la Dirección General de Carreteras.",
+        "substituted_by": ""
+      },
+      "Orden Circular 37/2016,": {
+        "status": "DEROGADA",
+        "title": "Orden Circular 37/2016,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 2/2010,": {
+        "status": "DEROGADA",
+        "title": "Nota de Servicio 2/2010,",
+        "substituted_by": ""
+      },
+      "Orden Circular 1/2021,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 1/2021,",
+        "substituted_by": ""
+      },
+      "Norma 3.1- IC “Trazado” de la Instrucción de Carreteras": {
+        "status": "VIGENT",
+        "title": "Norma 3.1- IC “Trazado” de la Instrucción de Carreteras",
+        "substituted_by": ""
+      },
+      "Orden Circular 32/12,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 32/12,",
+        "substituted_by": ""
+      },
+      "Nota técnica 04/2020,": {
+        "status": "VIGENT",
+        "title": "Nota técnica 04/2020,",
+        "substituted_by": ""
+      },
+      "Norma 5.2-IC sobre drenaje superficial": {
+        "status": "VIGENT",
+        "title": "Norma 5.2-IC sobre drenaje superficial",
+        "substituted_by": ""
+      },
+      "Orden FOM/298/2016, de 15 de febrero": {
+        "status": "VIGENT",
+        "title": "Orden FOM/298/2016, de 15 de febrero",
+        "substituted_by": ""
+      },
+      "Corrección de errores de la Orden FOM/298/2016,": {
+        "status": "VIGENT",
+        "title": "Corrección de errores de la Orden FOM/298/2016,",
+        "substituted_by": ""
+      },
+      "Orden FOM/185/2017,": {
+        "status": "VIGENT",
+        "title": "Orden FOM/185/2017,",
+        "substituted_by": ""
+      },
+      "Resolución de 26 de marzo de 2018,": {
+        "status": "VIGENT",
+        "title": "Resolución de 26 de marzo de 2018,",
+        "substituted_by": ""
+      },
+      "Orden Circular 17/2003": {
+        "status": "VIGENT",
+        "title": "Orden Circular 17/2003",
+        "substituted_by": ""
+      },
+      "Máximas lluvias diarias en la España peninsular. Dirección General de Carreteras, 1999. Contiene pro": {
+        "status": "VIGENT",
+        "title": "Máximas lluvias diarias en la España peninsular. Dirección General de Carreteras, 1999. Contiene programa informático y mapa a escala 1:800.000.",
+        "substituted_by": ""
+      },
+      "Mapa de cálculo de máximas precipitaciones diarias en la España peninsular, 1997": {
+        "status": "VIGENT",
+        "title": "Mapa de cálculo de máximas precipitaciones diarias en la España peninsular, 1997",
+        "substituted_by": ""
+      },
+      "Cálculo hidrometeorológico de caudales máximos en pequeñas cuencas naturales": {
+        "status": "REFERENCIA",
+        "title": "Cálculo hidrometeorológico de caudales máximos en pequeñas cuencas naturales",
+        "substituted_by": ""
+      },
+      "Control de la erosión fluvial en puentes, septiembre de 1988": {
+        "status": "DEROGADA",
+        "title": "Control de la erosión fluvial en puentes, septiembre de 1988",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto de cimentaciones en obras de carretera con EC-7. Bases del proyecto geotécnico": {
+        "status": "VIGENT",
+        "title": "Guía para el proyecto de cimentaciones en obras de carretera con EC-7. Bases del proyecto geotécnico, junio de 2019",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto de cimentaciones en obras de carretera con EC-7. Cimentaciones superficiales, ": {
+        "status": "VIGENT",
+        "title": "Guía para el proyecto de cimentaciones en obras de carretera con EC-7. Cimentaciones superficiales, junio de 2019",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 3/2012, de 27 de noviembre de 2012": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 3/2012, de 27 de noviembre de 2012",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto de cimentaciones en obras de carretera con EC-7: Ejemplos de aplicación de cim": {
+        "status": "REFERENCIA",
+        "title": "Guía para el proyecto de cimentaciones en obras de carretera con EC-7: Ejemplos de aplicación de cimentaciones superficiales, 2022",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto y la ejecución de muros de escollera en obras de carretera, agosto de 2006.": {
+        "status": "REFERENCIA",
+        "title": "Guía para el proyecto y la ejecución de muros de escollera en obras de carretera, agosto de 2006.",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto y la ejecución de micropilotes en obras de carretera. Dirección General de Car": {
+        "status": "REFERENCIA",
+        "title": "Guía para el proyecto y la ejecución de micropilotes en obras de carretera. Dirección General de Carreteras, octubre de 2005.",
+        "substituted_by": ""
+      },
+      "Guía para el diseño y la ejecución de anclajes al terreno en obras de carretera. Dirección General d": {
+        "status": "REFERENCIA",
+        "title": "Guía para el diseño y la ejecución de anclajes al terreno en obras de carretera. Dirección General de Carreteras, 2ª edición revisada, junio de 2003.",
+        "substituted_by": ""
+      },
+      "Guía de cimentaciones en obras de carreteras": {
+        "status": "DEROGADA",
+        "title": "Guía de cimentaciones en obras de carreteras",
+        "substituted_by": ""
+      },
+      "Tipología de muros de carretera. Dirección General de Carreteras, 2º edición revisada, julio de 2002": {
+        "status": "DEROGADA",
+        "title": "Tipología de muros de carretera. Dirección General de Carreteras, 2º edición revisada, julio de 2002.",
+        "substituted_by": ""
+      },
+      "Protección contra desprendimientos de rocas": {
+        "status": "DEROGADA",
+        "title": "Protección contra desprendimientos de rocas",
+        "substituted_by": ""
+      },
+      "Terraplenes y pedraplenes,": {
+        "status": "DEROGADA",
+        "title": "Terraplenes y pedraplenes,",
+        "substituted_by": ""
+      },
+      "Manual para el proyecto y ejecución de estructuras de suelo reforzado": {
+        "status": "DEROGADA",
+        "title": "Manual para el proyecto y ejecución de estructuras de suelo reforzado",
+        "substituted_by": ""
+      },
+      "Sistematización de los medios de compactación y su control, diciembre de 1987": {
+        "status": "DEROGADA",
+        "title": "Sistematización de los medios de compactación y su control, diciembre de 1987",
+        "substituted_by": ""
+      },
+      "Desmontes": {
+        "status": "DEROGADA",
+        "title": "Desmontes",
+        "substituted_by": ""
+      },
+      "Guía para el cálculo de aisladores elastoméricos de bajo amortiguamiento en zona sísmica, 2025": {
+        "status": "VIGENT",
+        "title": "Guía para el cálculo de aisladores elastoméricos de bajo amortiguamiento en zona sísmica, 2025",
+        "substituted_by": ""
+      },
+      "Guía para el cálculo de apoyos elastoméricos": {
+        "status": "VIGENT",
+        "title": "Guía para el cálculo de apoyos elastoméricos",
+        "substituted_by": ""
+      },
+      "Nota de servicio 3/2023,": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 3/2023,",
+        "substituted_by": ""
+      },
+      "Guía para las especificaciones técnicas del hormigón, 2022": {
+        "status": "VIGENT",
+        "title": "Guía para las especificaciones técnicas del hormigón, 2022",
+        "substituted_by": ""
+      },
+      "Guía para las especificaciones técnicas de las armaduras, 2022": {
+        "status": "VIGENT",
+        "title": "Guía para las especificaciones técnicas de las armaduras, 2022",
+        "substituted_by": ""
+      },
+      "Guía para las especificaciones técnicas del acero estructural, 2022": {
+        "status": "VIGENT",
+        "title": "Guía para las especificaciones técnicas del acero estructural, 2022",
+        "substituted_by": ""
+      },
+      "Guía para la determinación de recubrimientos en estructuras de hormigón, 2022": {
+        "status": "VIGENT",
+        "title": "Guía para la determinación de recubrimientos en estructuras de hormigón, 2022",
+        "substituted_by": ""
+      },
+      "Guía para la determinación de longitudes de anclaje y solape de armaduras pasivas, 2022": {
+        "status": "VIGENT",
+        "title": "Guía para la determinación de longitudes de anclaje y solape de armaduras pasivas, 2022",
+        "substituted_by": ""
+      },
+      "Orden Circular 2/2021,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 2/2021,",
+        "substituted_by": ""
+      },
+      "Orden FOM/3818/2007,": {
+        "status": "VIGENT",
+        "title": "Orden FOM/3818/2007,",
+        "substituted_by": ""
+      },
+      "Nota de servicio, de 9 de marzo de 2007,": {
+        "status": "VIGENT",
+        "title": "Nota de servicio, de 9 de marzo de 2007,",
+        "substituted_by": ""
+      },
+      "Nota de servicio 3/2007,": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 3/2007,",
+        "substituted_by": ""
+      },
+      "Orden Circular 11/2002,": {
+        "status": "VIGENT",
+        "title": "Orden Circular 11/2002,",
+        "substituted_by": ""
+      },
+      "Nota de servicio 4/2001,": {
+        "status": "VIGENT",
+        "title": "Nota de servicio 4/2001,",
+        "substituted_by": ""
+      },
+      "Recomendaciones para la realización de pruebas de carga de recepción en puentes de carreteras. Direc": {
+        "status": "VIGENT",
+        "title": "Recomendaciones para la realización de pruebas de carga de recepción en puentes de carreteras. Dirección General de Carreteras, 1999.",
+        "substituted_by": ""
+      },
+      "Nota de servicio sobre actuaciones y operaciones en obras de paso dentro de los contratos de conserv": {
+        "status": "VIGENT",
+        "title": "Nota de servicio sobre actuaciones y operaciones en obras de paso dentro de los contratos de conservación. (Enero 1995).",
+        "substituted_by": ""
+      },
+      "Nota de Servicio de la Subdirección General de Construcción, de 28 de julio de 1992": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio de la Subdirección General de Construcción, de 28 de julio de 1992",
+        "substituted_by": ""
+      },
+      "Guía para el cálculo de aisladores elastoméricos de bajo amortiguamiento en zona sísmica": {
+        "status": "REFERENCIA",
+        "title": "Guía para el cálculo de aisladores elastoméricos de bajo amortiguamiento en zona sísmica",
+        "substituted_by": ""
+      },
+      "Guía para el cálculo de apoyos elastoméricos.": {
+        "status": "REFERENCIA",
+        "title": "Guía para el cálculo de apoyos elastoméricos.",
+        "substituted_by": ""
+      },
+      "Guía para la realización de inspecciones principales de obras de paso en la Red de Carreteras del Es": {
+        "status": "REFERENCIA",
+        "title": "Guía para la realización de inspecciones principales de obras de paso en la Red de Carreteras del Estado. Dirección General de Carreteras, abril de 2012.",
+        "substituted_by": ""
+      },
+      "Guía de inspecciones básicas de obras de paso. Dirección General de Carreteras, diciembre de 2009.": {
+        "status": "REFERENCIA",
+        "title": "Guía de inspecciones básicas de obras de paso. Dirección General de Carreteras, diciembre de 2009.",
+        "substituted_by": ""
+      },
+      "Guía para la realización del inventario de obras de paso": {
+        "status": "REFERENCIA",
+        "title": "Guía para la realización del inventario de obras de paso",
+        "substituted_by": ""
+      },
+      "Obras de paso de nueva construcción. Conceptos generales. Dirección General de Carreteras, mayo de 2": {
+        "status": "REFERENCIA",
+        "title": "Obras de paso de nueva construcción. Conceptos generales. Dirección General de Carreteras, mayo de 2000.",
+        "substituted_by": ""
+      },
+      "Instrucción sobre las acciones a considerar en el proyecto de puentes de carretera (IAP-11)": {
+        "status": "DEROGADA",
+        "title": "Instrucción sobre las acciones a considerar en el proyecto de puentes de carretera (IAP-11)",
+        "substituted_by": ""
+      },
+      "Norma de construcción sismorresistente: puentes (NCSP-07),": {
+        "status": "DEROGADA",
+        "title": "Norma de construcción sismorresistente: puentes (NCSP-07),",
+        "substituted_by": ""
+      },
+      "Norma de construcción sismorresistente: parte general y edificación (NCSE-02),": {
+        "status": "DEROGADA",
+        "title": "Norma de construcción sismorresistente: parte general y edificación (NCSE-02),",
+        "substituted_by": ""
+      },
+      "Manual de aplicación de las Recomendaciones RPM - RPX / 95.": {
+        "status": "DEROGADA",
+        "title": "Manual de aplicación de las Recomendaciones RPM - RPX / 95.",
+        "substituted_by": ""
+      },
+      "Guía para la concepción de puentes integrales en carreteras.": {
+        "status": "DEROGADA",
+        "title": "Guía para la concepción de puentes integrales en carreteras.",
+        "substituted_by": ""
+      },
+      "Recomendaciones para el proyecto de puentes mixtos para carreteras (RPX-95).": {
+        "status": "DEROGADA",
+        "title": "Recomendaciones para el proyecto de puentes mixtos para carreteras (RPX-95).",
+        "substituted_by": ""
+      },
+      "Nota técnica sobre aparatos de apoyo para puentes de carretera, Dirección General de Carreteras, 199": {
+        "status": "DEROGADA",
+        "title": "Nota técnica sobre aparatos de apoyo para puentes de carretera, Dirección General de Carreteras, 1995.",
+        "substituted_by": ""
+      },
+      "Orden Circular 33/2013 sobre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 33/2013 sobre",
+        "substituted_by": ""
+      },
+      "Resolución 30 de mayo de 2012,": {
+        "status": "VIGENT",
+        "title": "Resolución 30 de mayo de 2012,",
+        "substituted_by": ""
+      },
+      "Orden Circular 27/2008": {
+        "status": "VIGENT",
+        "title": "Orden Circular 27/2008",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 3/2006, de 18 de julio,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 3/2006, de 18 de julio,",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 2/2006, de 23 de junio,": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 2/2006, de 23 de junio,",
+        "substituted_by": ""
+      },
+      "Real Decreto 635/2006, de 26 de mayo,": {
+        "status": "VIGENT",
+        "title": "Real Decreto 635/2006, de 26 de mayo,",
+        "substituted_by": ""
+      },
+      "Corrección de errores del Real Decreto 635/2006, de 26 de mayo,": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 635/2006, de 26 de mayo,",
+        "substituted_by": ""
+      },
+      "Orden Circular OC 3/2024": {
+        "status": "VIGENT",
+        "title": "Orden Circular OC 3/2024",
+        "substituted_by": ""
+      },
+      "Orden Circular OC 1/2023": {
+        "status": "VIGENT",
+        "title": "Orden Circular OC 1/2023",
+        "substituted_by": ""
+      },
+      "Nota Técnica 01/2022": {
+        "status": "VIGENT",
+        "title": "Nota Técnica 01/2022",
+        "substituted_by": ""
+      },
+      "Nota Técnica 03/2020": {
+        "status": "VIGENT",
+        "title": "Nota Técnica 03/2020",
+        "substituted_by": ""
+      },
+      "Nota Técnica 02/2020": {
+        "status": "VIGENT",
+        "title": "Nota Técnica 02/2020",
+        "substituted_by": ""
+      },
+      "Nota Técnica 01/2020": {
+        "status": "VIGENT",
+        "title": "Nota Técnica 01/2020",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 5/2006, de 22 de septiembre de 2006": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 5/2006, de 22 de septiembre de 2006",
+        "substituted_by": ""
+      },
+      "Norma 6.1-IC “Secciones de firme”, de la Instrucción de Carreteras": {
+        "status": "VIGENT",
+        "title": "Norma 6.1-IC “Secciones de firme”, de la Instrucción de Carreteras",
+        "substituted_by": ""
+      },
+      "Orden Circular OC 2/2023": {
+        "status": "VIGENT",
+        "title": "Orden Circular OC 2/2023",
+        "substituted_by": ""
+      },
+      "Sellado de grietas en pavimentos bituminosos": {
+        "status": "VIGENT",
+        "title": "Sellado de grietas en pavimentos bituminosos",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 3/2011, de 4 de octubre": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 3/2011, de 4 de octubre",
+        "substituted_by": ""
+      },
+      "Nota técnica refundida, de 20 de abril de 2009": {
+        "status": "VIGENT",
+        "title": "Nota técnica refundida, de 20 de abril de 2009",
+        "substituted_by": ""
+      },
+      "Norma 6.3-IC. “Rehabilitación de firmes”, de la Instrucción de Carreteras": {
+        "status": "VIGENT",
+        "title": "Norma 6.3-IC. “Rehabilitación de firmes”, de la Instrucción de Carreteras",
+        "substituted_by": ""
+      },
+      "Corrección de erratas de la Orden FOM/3459/2003, de 28 de noviembre,": {
+        "status": "VIGENT",
+        "title": "Corrección de erratas de la Orden FOM/3459/2003, de 28 de noviembre,",
+        "substituted_by": ""
+      },
+      "Recepción de obras de carreteras que incluyan firmes y pavimentos (OC 20/2006)": {
+        "status": "VIGENT",
+        "title": "Recepción de obras de carreteras que incluyan firmes y pavimentos (OC 20/2006)",
+        "substituted_by": ""
+      },
+      "Nota Servicio 1/2017": {
+        "status": "VIGENT",
+        "title": "Nota Servicio 1/2017",
+        "substituted_by": ""
+      },
+      "Guía para la actualización del inventario de firmes de la Red de Carreteras del Estado Dirección Gen": {
+        "status": "REFERENCIA",
+        "title": "Guía para la actualización del inventario de firmes de la Red de Carreteras del Estado Dirección General de Carreteras, septiembre 2011",
+        "substituted_by": ""
+      },
+      "Guía para el replanteo de las obras de conservación de firmes Dirección General de Carreteras - Subd": {
+        "status": "REFERENCIA",
+        "title": "Guía para el replanteo de las obras de conservación de firmes Dirección General de Carreteras - Subdirección de Conservación y Explotación, junio 1998",
+        "substituted_by": ""
+      },
+      "Orden de 12 de marzo de 1976": {
+        "status": "DEROGADA",
+        "title": "Orden de 12 de marzo de 1976",
+        "substituted_by": ""
+      },
+      "Orden de 22 de abril de 1964": {
+        "status": "DEROGADA",
+        "title": "Orden de 22 de abril de 1964",
+        "substituted_by": ""
+      },
+      "Orden de 21 de marzo de 1963": {
+        "status": "DEROGADA",
+        "title": "Orden de 21 de marzo de 1963",
+        "substituted_by": ""
+      },
+      "Catálogo de destinos del sistema de señalización turística homologada en las carreteras del Estado": {
+        "status": "VIGENT",
+        "title": "Catálogo de destinos del sistema de señalización turística homologada en las carreteras del Estado",
+        "substituted_by": ""
+      },
+      "Orden Circular 3/2025": {
+        "status": "VIGENT",
+        "title": "Orden Circular 3/2025",
+        "substituted_by": ""
+      },
+      "Señalización vertical en formato dxf": {
+        "status": "VIGENT",
+        "title": "Señalización vertical en formato dxf",
+        "substituted_by": ""
+      },
+      "Orden Circular OC 2/2024, de 3 de junio,": {
+        "status": "VIGENT",
+        "title": "Orden Circular OC 2/2024, de 3 de junio,",
+        "substituted_by": ""
+      },
+      "Real Decreto 929/2020, de 27 de octubre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 929/2020, de 27 de octubre",
+        "substituted_by": ""
+      },
+      "Orden Circular 38/2016": {
+        "status": "VIGENT",
+        "title": "Orden Circular 38/2016",
+        "substituted_by": ""
+      },
+      "Manual del sistema de señalización turística homologada de la Red de Carreteras del Estado": {
+        "status": "VIGENT",
+        "title": "Manual del sistema de señalización turística homologada de la Red de Carreteras del Estado",
+        "substituted_by": ""
+      },
+      "Norma 8.1-IC Señalización vertical, de la Instrucción de carreteras": {
+        "status": "VIGENT",
+        "title": "Norma 8.1-IC Señalización vertical, de la Instrucción de carreteras",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 4/2014": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 4/2014",
+        "substituted_by": ""
+      },
+      "Resolución de 1 de junio de 2009, de la Dirección General de Tráfico": {
+        "status": "VIGENT",
+        "title": "Resolución de 1 de junio de 2009, de la Dirección General de Tráfico",
+        "substituted_by": ""
+      },
+      "Normas de señalización circunstancial en Paneles de Señalización Variable": {
+        "status": "VIGENT",
+        "title": "Normas de señalización circunstancial en Paneles de Señalización Variable",
+        "substituted_by": ""
+      },
+      "Resolución de 1 de junio de 2009": {
+        "status": "VIGENT",
+        "title": "Resolución de 1 de junio de 2009",
+        "substituted_by": ""
+      },
+      "Resolución de 16 de junio de 2009": {
+        "status": "VIGENT",
+        "title": "Resolución de 16 de junio de 2009",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2008": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2008",
+        "substituted_by": ""
+      },
+      "Catálogo de nombres primarios y secundarios": {
+        "status": "VIGENT",
+        "title": "Catálogo de nombres primarios y secundarios",
+        "substituted_by": ""
+      },
+      "Real Decreto 334/1982, de 12 de febrero": {
+        "status": "VIGENT",
+        "title": "Real Decreto 334/1982, de 12 de febrero",
+        "substituted_by": ""
+      },
+      "Real Decreto 2296/1981, de 3 de agosto": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2296/1981, de 3 de agosto",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 2/2007, de 15 de febrero": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 2/2007, de 15 de febrero",
+        "substituted_by": ""
+      },
+      "Nota Técnica sobre los criterios para la redacción de los proyectos de marcas viales, de 30 de junio": {
+        "status": "VIGENT",
+        "title": "Nota Técnica sobre los criterios para la redacción de los proyectos de marcas viales, de 30 de junio de 1998",
+        "substituted_by": ""
+      },
+      "Norma 8.2- IC sobre marcas viales": {
+        "status": "VIGENT",
+        "title": "Norma 8.2- IC sobre marcas viales",
+        "substituted_by": ""
+      },
+      "Orden Circular 16/2003, de 20 de noviembre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 16/2003, de 20 de noviembre",
+        "substituted_by": ""
+      },
+      "Orden Circular 15/2003, de 13 de octubre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 15/2003, de 13 de octubre",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 5/2001, de 27 de abril": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 5/2001, de 27 de abril",
+        "substituted_by": ""
+      },
+      "Manual de ejemplos de señalización de obras fijas": {
+        "status": "VIGENT",
+        "title": "Manual de ejemplos de señalización de obras fijas",
+        "substituted_by": ""
+      },
+      "Señalización móvil de obras": {
+        "status": "VIGENT",
+        "title": "Señalización móvil de obras",
+        "substituted_by": ""
+      },
+      "Instrucción 8.3-IC sobre señalización, balizamiento, defensa, limpieza y terminación de obras fijas ": {
+        "status": "VIGENT",
+        "title": "Instrucción 8.3-IC sobre señalización, balizamiento, defensa, limpieza y terminación de obras fijas fuera de poblado",
+        "substituted_by": ""
+      },
+      "Orden Circular 6/2023, de 21 de diciembre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 6/2023, de 21 de diciembre",
+        "substituted_by": ""
+      },
+      "Orden Circular 3/2023, de 24 de mayo": {
+        "status": "VIGENT",
+        "title": "Orden Circular 3/2023, de 24 de mayo",
+        "substituted_by": ""
+      },
+      "Nota de Servicio 1/2021, de 15 de junio de 2021": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio 1/2021, de 15 de junio de 2021",
+        "substituted_by": ""
+      },
+      "Orden Circular 309/90 C y E, de 15 de enero": {
+        "status": "VIGENT",
+        "title": "Orden Circular 309/90 C y E, de 15 de enero",
+        "substituted_by": ""
+      },
+      "Nota técnica 01/2024": {
+        "status": "VIGENT",
+        "title": "Nota técnica 01/2024",
+        "substituted_by": ""
+      },
+      "Orden Circular 35/2014, de 19 de mayo de 2014": {
+        "status": "VIGENT",
+        "title": "Orden Circular 35/2014, de 19 de mayo de 2014",
+        "substituted_by": ""
+      },
+      "Orden FOM/3053/2008, de 23 de septiembre": {
+        "status": "VIGENT",
+        "title": "Orden FOM/3053/2008, de 23 de septiembre",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto y ejecución de obras de señalización horizontal": {
+        "status": "REFERENCIA",
+        "title": "Guía para el proyecto y ejecución de obras de señalización horizontal",
+        "substituted_by": ""
+      },
+      "Orden de 2 de agosto de 2001": {
+        "status": "DEROGADA",
+        "title": "Orden de 2 de agosto de 2001",
+        "substituted_by": ""
+      },
+      "Señales verticales de circulación. Tomo I": {
+        "status": "DEROGADA",
+        "title": "Señales verticales de circulación. Tomo I",
+        "substituted_by": ""
+      },
+      "Señales verticales de circulación. Tomo II": {
+        "status": "DEROGADA",
+        "title": "Señales verticales de circulación. Tomo II",
+        "substituted_by": ""
+      },
+      "Orden Circular 36/2015, de 24 de febrero": {
+        "status": "VIGENT",
+        "title": "Orden Circular 36/2015, de 24 de febrero",
+        "substituted_by": ""
+      },
+      "Real Decreto 1890/2008, de 14 de noviembre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1890/2008, de 14 de noviembre",
+        "substituted_by": ""
+      },
+      "Instrucciones Técnicas Complementarias EA – 01 a EA – 07": {
+        "status": "VIGENT",
+        "title": "Instrucciones Técnicas Complementarias EA – 01 a EA – 07",
+        "substituted_by": ""
+      },
+      "Requerimientos técnicos e instrucciones para la redacción de proyectos de alumbrado de carreteras a ": {
+        "status": "REFERENCIA",
+        "title": "Requerimientos técnicos e instrucciones para la redacción de proyectos de alumbrado de carreteras a cielo abierto de la dirección general de carreteras, noviembre 2023.",
+        "substituted_by": ""
+      },
+      "Nota técnica 2/2025, sobre estudios abreviados de verificación de objetivos de calidad acústica en e": {
+        "status": "VIGENT",
+        "title": "Nota técnica 2/2025, sobre estudios abreviados de verificación de objetivos de calidad acústica en el entorno de las carreteras del Estado basados en mediciones de campo",
+        "substituted_by": ""
+      },
+      "Nota técnica 1/2025, de 11 de junio, sobre ensayos en obra de sistemas de apantallamiento acústico": {
+        "status": "VIGENT",
+        "title": "Nota técnica 1/2025, de 11 de junio, sobre ensayos en obra de sistemas de apantallamiento acústico",
+        "substituted_by": ""
+      },
+      "Real Decreto 1367/2007, de 19 de octubre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1367/2007, de 19 de octubre",
+        "substituted_by": ""
+      },
+      "Real Decreto 1038/2012, de 6 de julio": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1038/2012, de 6 de julio",
+        "substituted_by": ""
+      },
+      "Real Decreto 1513/2005 de 16 de diciembre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1513/2005 de 16 de diciembre",
+        "substituted_by": ""
+      },
+      "Real Decreto 1513/2005, de 16 de diciembre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1513/2005, de 16 de diciembre",
+        "substituted_by": ""
+      },
+      "Orden PCI/1319/2018, de 7 de diciembre": {
+        "status": "VIGENT",
+        "title": "Orden PCI/1319/2018, de 7 de diciembre",
+        "substituted_by": ""
+      },
+      "Orden PCM/542/2021, de 31 de mayo": {
+        "status": "VIGENT",
+        "title": "Orden PCM/542/2021, de 31 de mayo",
+        "substituted_by": ""
+      },
+      "Orden PCM/80/2022, de 7 de febrero": {
+        "status": "VIGENT",
+        "title": "Orden PCM/80/2022, de 7 de febrero",
+        "substituted_by": ""
+      },
+      "Ley 37/2003, de 17 de noviembre": {
+        "status": "VIGENT",
+        "title": "Ley 37/2003, de 17 de noviembre",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto y ejecución de obras de apantallamiento acústico en carreteras, junio de 2024": {
+        "status": "REFERENCIA",
+        "title": "Guía para el proyecto y ejecución de obras de apantallamiento acústico en carreteras, junio de 2024",
+        "substituted_by": ""
+      },
+      "Reducción del ruido en el entorno de las carreteras": {
+        "status": "REFERENCIA",
+        "title": "Reducción del ruido en el entorno de las carreteras",
+        "substituted_by": ""
+      },
+      "Instrucción MOV 12/2022": {
+        "status": "VIGENT",
+        "title": "Instrucción MOV 12/2022",
+        "substituted_by": ""
+      },
+      "Orden circular 4 /2021, de 30 de noviembre": {
+        "status": "VIGENT",
+        "title": "Orden circular 4 /2021, de 30 de noviembre",
+        "substituted_by": ""
+      },
+      "Orden Circular complementaria de la OC 320/94 CyE, de 15 febrero de 1996": {
+        "status": "VIGENT",
+        "title": "Orden Circular complementaria de la OC 320/94 CyE, de 15 febrero de 1996",
+        "substituted_by": ""
+      },
+      "Orden Circular 320/94 CyE, de 21 de octubre, sobre áreas de servicio": {
+        "status": "VIGENT",
+        "title": "Orden Circular 320/94 CyE, de 21 de octubre, sobre áreas de servicio",
+        "substituted_by": ""
+      },
+      "Orden Circular 1/2024, de 26 de enero": {
+        "status": "VIGENT",
+        "title": "Orden Circular 1/2024, de 26 de enero",
+        "substituted_by": ""
+      },
+      "Orden Circular 3/2022, de 13 de diciembre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 3/2022, de 13 de diciembre",
+        "substituted_by": ""
+      },
+      "Orden Circular 3/2019, de 18 de diciembre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 3/2019, de 18 de diciembre",
+        "substituted_by": ""
+      },
+      "Orden FOM/2523/2014, de 12 de diciembre": {
+        "status": "VIGENT",
+        "title": "Orden FOM/2523/2014, de 12 de diciembre",
+        "substituted_by": ""
+      },
+      "Corrección de errores de la Orden FOM/2523/2014, de 12 de diciembre": {
+        "status": "VIGENT",
+        "title": "Corrección de errores de la Orden FOM/2523/2014, de 12 de diciembre",
+        "substituted_by": ""
+      },
+      "Orden FOM/510/2018, de 8 de mayo": {
+        "status": "VIGENT",
+        "title": "Orden FOM/510/2018, de 8 de mayo",
+        "substituted_by": ""
+      },
+      "Orden Circular 21bis/2009": {
+        "status": "VIGENT",
+        "title": "Orden Circular 21bis/2009",
+        "substituted_by": ""
+      },
+      "Orden Circular 21/2007": {
+        "status": "VIGENT",
+        "title": "Orden Circular 21/2007",
+        "substituted_by": ""
+      },
+      "Pliego de Prescripciones Técnicas Generales para Obras de Conservación de Carreteras": {
+        "status": "VIGENT",
+        "title": "Pliego de Prescripciones Técnicas Generales para Obras de Conservación de Carreteras",
+        "substituted_by": ""
+      },
+      "Pliego de Prescripciones Técnicas Generales para obras de carreteras y puentes de la Dirección Gener": {
+        "status": "VIGENT",
+        "title": "Pliego de Prescripciones Técnicas Generales para obras de carreteras y puentes de la Dirección General de Carreteras (PG-3)",
+        "substituted_by": ""
+      },
+      "Orden de 28 de septiembre de 1989": {
+        "status": "VIGENT",
+        "title": "Orden de 28 de septiembre de 1989",
+        "substituted_by": ""
+      },
+      "Orden FOM/475/2002, de 13 febrero": {
+        "status": "VIGENT",
+        "title": "Orden FOM/475/2002, de 13 febrero",
+        "substituted_by": ""
+      },
+      "Orden FOM/1382/2002, de 16 mayo": {
+        "status": "VIGENT",
+        "title": "Orden FOM/1382/2002, de 16 mayo",
+        "substituted_by": ""
+      },
+      "Corrección de erratas de la Orden FOM/1382/2002, de 16 de mayo": {
+        "status": "VIGENT",
+        "title": "Corrección de erratas de la Orden FOM/1382/2002, de 16 de mayo",
+        "substituted_by": ""
+      },
+      "Pliego de Prescripciones Técnicas Generales para obras de carreteras y puentes (PG-3)": {
+        "status": "REFERENCIA",
+        "title": "Pliego de Prescripciones Técnicas Generales para obras de carreteras y puentes (PG-3)",
+        "substituted_by": ""
+      },
+      "Órdenes Ministeriales de aprobación de artículos": {
+        "status": "REFERENCIA",
+        "title": "Órdenes Ministeriales de aprobación de artículos",
+        "substituted_by": ""
+      },
+      "Introducción y generalidades": {
+        "status": "REFERENCIA",
+        "title": "Introducción y generalidades",
+        "substituted_by": ""
+      },
+      "Materiales básicos": {
+        "status": "REFERENCIA",
+        "title": "Materiales básicos",
+        "substituted_by": ""
+      },
+      "Explanaciones": {
+        "status": "REFERENCIA",
+        "title": "Explanaciones",
+        "substituted_by": ""
+      },
+      "Drenaje Punto": {
+        "status": "REFERENCIA",
+        "title": "Drenaje Punto",
+        "substituted_by": ""
+      },
+      "Firmes y pavimentos": {
+        "status": "REFERENCIA",
+        "title": "Firmes y pavimentos",
+        "substituted_by": ""
+      },
+      "Puentes y estructuras": {
+        "status": "REFERENCIA",
+        "title": "Puentes y estructuras",
+        "substituted_by": ""
+      },
+      "Señalización, balizamiento y sistemas de contención de vehículos": {
+        "status": "REFERENCIA",
+        "title": "Señalización, balizamiento y sistemas de contención de vehículos",
+        "substituted_by": ""
+      },
+      "Varios": {
+        "status": "REFERENCIA",
+        "title": "Varios",
+        "substituted_by": ""
+      },
+      "Orden Circular 4/2024, de 22 de noviembre": {
+        "status": "VIGENT",
+        "title": "Orden Circular 4/2024, de 22 de noviembre",
+        "substituted_by": ""
+      },
+      "Nota de Servicio, de 20 de diciembre de 2003": {
+        "status": "VIGENT",
+        "title": "Nota de Servicio, de 20 de diciembre de 2003",
+        "substituted_by": ""
+      },
+      "Libro de la calidad, 1996": {
+        "status": "REFERENCIA",
+        "title": "Libro de la calidad, 1996",
+        "substituted_by": ""
+      },
+      "Real Decreto 320/2024, de 26 de marzo": {
+        "status": "VIGENT",
+        "title": "Real Decreto 320/2024, de 26 de marzo",
+        "substituted_by": ""
+      },
+      "Real Decreto 470/2021, de 29 de junio": {
+        "status": "VIGENT",
+        "title": "Real Decreto 470/2021, de 29 de junio",
+        "substituted_by": ""
+      },
+      "Corrección de errores del Real Decreto 470/2021, de 29 de junio": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 470/2021, de 29 de junio",
+        "substituted_by": ""
+      },
+      "Resolución de 6 de abril de 2017, de la Dirección General de Industria y de la Pequeña y Mediana Emp": {
+        "status": "VIGENT",
+        "title": "Resolución de 6 de abril de 2017, de la Dirección General de Industria y de la Pequeña y Mediana Empresa",
+        "substituted_by": ""
+      },
+      "Real Decreto 256/2016, de 10 de junio": {
+        "status": "VIGENT",
+        "title": "Real Decreto 256/2016, de 10 de junio",
+        "substituted_by": ""
+      },
+      "Corrección de errores del Real Decreto 256/2016, de 10 de junio": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 256/2016, de 10 de junio",
+        "substituted_by": ""
+      },
+      "Real Decreto 842/2013, de 31 de octubre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 842/2013, de 31 de octubre",
+        "substituted_by": ""
+      },
+      "Resolución de 19 de agosto de 2013, de la Dirección General de Industria y de la Pequeña y Mediana E": {
+        "status": "VIGENT",
+        "title": "Resolución de 19 de agosto de 2013, de la Dirección General de Industria y de la Pequeña y Mediana Empresa",
+        "substituted_by": ""
+      },
+      "Corrección de errores de la Resolución de 19 de agosto de 2013": {
+        "status": "VIGENT",
+        "title": "Corrección de errores de la Resolución de 19 de agosto de 2013",
+        "substituted_by": ""
+      },
+      "Resolución de 4 de marzo de 2011, de la Dirección General de Industria": {
+        "status": "VIGENT",
+        "title": "Resolución de 4 de marzo de 2011, de la Dirección General de Industria",
+        "substituted_by": ""
+      },
+      "Real Decreto 605/2006, de 19 de mayo": {
+        "status": "VIGENT",
+        "title": "Real Decreto 605/2006, de 19 de mayo",
+        "substituted_by": ""
+      },
+      "Real Decreto 1313/1988, de 28 de octubre": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1313/1988, de 28 de octubre",
+        "substituted_by": ""
+      },
+      "Orden PRE/3796/2006, de 11 de diciembre": {
+        "status": "VIGENT",
+        "title": "Orden PRE/3796/2006, de 11 de diciembre",
+        "substituted_by": ""
+      },
+      "Instrucción de Hormigón Estructural. EHE-08 (RD 1247/2008)": {
+        "status": "DEROGADA",
+        "title": "Instrucción de Hormigón Estructural. EHE-08 (RD 1247/2008)",
+        "substituted_by": ""
+      },
+      "EAE. Instrucción de Acero Estructural": {
+        "status": "DEROGADA",
+        "title": "EAE. Instrucción de Acero Estructural",
+        "substituted_by": ""
+      },
+      "Inventario de la Red de Carreteras del Estado. Catálogo de la RCE a 31 de diciembre de 2008": {
+        "status": "VIGENT",
+        "title": "Inventario de la Red de Carreteras del Estado. Catálogo de la RCE a 31 de diciembre de 2008",
+        "substituted_by": ""
+      },
+      "Inventario de características geométricas y de equipamiento. 01- Manual síntesis": {
+        "status": "VIGENT",
+        "title": "Inventario de características geométricas y de equipamiento. 01- Manual síntesis",
+        "substituted_by": ""
+      },
+      "Inventario de características geométricas y de equipamiento. 02- Manual de criterios": {
+        "status": "VIGENT",
+        "title": "Inventario de características geométricas y de equipamiento. 02- Manual de criterios",
+        "substituted_by": ""
+      },
+      "Inventario de características geométricas y de equipamiento. 03- Manual de usuario": {
+        "status": "VIGENT",
+        "title": "Inventario de características geométricas y de equipamiento. 03- Manual de usuario",
+        "substituted_by": ""
+      },
+      "Inventario de características geométricas y de equipamiento. 04- Manual de variables": {
+        "status": "VIGENT",
+        "title": "Inventario de características geométricas y de equipamiento. 04- Manual de variables",
+        "substituted_by": ""
+      },
+      "Inventario de características geométricas y de equipamiento. 05- Manual de informática": {
+        "status": "VIGENT",
+        "title": "Inventario de características geométricas y de equipamiento. 05- Manual de informática",
+        "substituted_by": ""
+      },
+      "Inventario de características geométricas y de equipamiento. 06- Manual de incidencias en edición de": {
+        "status": "VIGENT",
+        "title": "Inventario de características geométricas y de equipamiento. 06- Manual de incidencias en edición de datos",
+        "substituted_by": ""
+      },
+      "Orden Circular 1/2019, de 18 de marzo": {
+        "status": "VIGENT",
+        "title": "Orden Circular 1/2019, de 18 de marzo",
+        "substituted_by": ""
+      },
+      "Eurocódigo 0: Bases de cálculo de estructuras y Anejo A2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 0: Bases de cálculo de estructuras y Anejo A2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 1: Acciones en estructuras. Parte 1-1": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 1: Acciones en estructuras. Parte 1-1",
+        "substituted_by": ""
+      },
+      "Eurocódigo 1: Acciones en estructuras. Parte 1-3": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 1: Acciones en estructuras. Parte 1-3",
+        "substituted_by": ""
+      },
+      "Eurocódigo 1: Acciones en estructuras. Parte 1-4": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 1: Acciones en estructuras. Parte 1-4",
+        "substituted_by": ""
+      },
+      "Eurocódigo 1: Acciones en estructuras. Parte 1-5": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 1: Acciones en estructuras. Parte 1-5",
+        "substituted_by": ""
+      },
+      "Eurocódigo 1: Acciones en estructuras. Parte 1-6": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 1: Acciones en estructuras. Parte 1-6",
+        "substituted_by": ""
+      },
+      "Eurocódigo 1: Acciones en estructuras Parte 1-7": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 1: Acciones en estructuras Parte 1-7",
+        "substituted_by": ""
+      },
+      "Eurocódigo 1: Acciones en estructuras. Parte 2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 1: Acciones en estructuras. Parte 2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 2: Proyecto de estructuras de hormigón. Parte 1-1": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 2: Proyecto de estructuras de hormigón. Parte 1-1",
+        "substituted_by": ""
+      },
+      "Eurocódigo 2: Proyecto de estructuras de hormigón. Parte 2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 2: Proyecto de estructuras de hormigón. Parte 2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-1": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-1",
+        "substituted_by": ""
+      },
+      "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-5": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-5",
+        "substituted_by": ""
+      },
+      "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-8": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-8",
+        "substituted_by": ""
+      },
+      "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-9": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-9",
+        "substituted_by": ""
+      },
+      "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-10": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 3: Proyecto de estructuras de acero. Parte 1-10",
+        "substituted_by": ""
+      },
+      "Eurocódigo 3: Proyecto de estructuras de acero. Parte 2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 3: Proyecto de estructuras de acero. Parte 2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 4: Proyecto de estructuras mixtas de acero y hormigón. Parte 1-1": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 4: Proyecto de estructuras mixtas de acero y hormigón. Parte 1-1",
+        "substituted_by": ""
+      },
+      "Eurocódigo 4: Proyecto de estructuras mixtas de acero y hormigón. Parte 2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 4: Proyecto de estructuras mixtas de acero y hormigón. Parte 2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 5: Proyecto de estructuras de madera. Parte 1-1": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 5: Proyecto de estructuras de madera. Parte 1-1",
+        "substituted_by": ""
+      },
+      "Eurocódigo 5: Proyecto de estructuras de madera. Parte 2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 5: Proyecto de estructuras de madera. Parte 2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 7: Proyecto Geotécnico. Parte 1": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 7: Proyecto Geotécnico. Parte 1",
+        "substituted_by": ""
+      },
+      "Eurocódigo 7: Proyecto Geotécnico. Parte 2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 7: Proyecto Geotécnico. Parte 2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 8: Proyecto de estructuras sismorresistentes. Parte 1": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 8: Proyecto de estructuras sismorresistentes. Parte 1",
+        "substituted_by": ""
+      },
+      "Eurocódigo 8: Proyecto de estructuras sismorresistentes. Parte 2": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 8: Proyecto de estructuras sismorresistentes. Parte 2",
+        "substituted_by": ""
+      },
+      "Eurocódigo 8: Proyecto de estructuras sismorresistentes. Parte 5": {
+        "status": "VIGENT",
+        "title": "Eurocódigo 8: Proyecto de estructuras sismorresistentes. Parte 5",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto frente a fatiga de puentes metálicos y mixtos de carretera, agosto 2019": {
+        "status": "REFERENCIA",
+        "title": "Guía para el proyecto frente a fatiga de puentes metálicos y mixtos de carretera, agosto 2019",
+        "substituted_by": ""
+      },
+      "Guía para el proyecto sísmico de puentes de carretera, agosto 2019": {
+        "status": "REFERENCIA",
+        "title": "Guía para el proyecto sísmico de puentes de carretera, agosto 2019",
+        "substituted_by": ""
+      },
+      "Conceptos y dimensiones fundamentales de la Guía de recomendaciones para el diseño de infraestructur": {
+        "status": "REFERENCIA",
+        "title": "Conceptos y dimensiones fundamentales de la Guía de recomendaciones para el diseño de infraestructura ciclista, julio 2024",
+        "substituted_by": ""
+      },
+      "Guía de recomendaciones para el diseño de infraestructura ciclista, 2023": {
+        "status": "REFERENCIA",
+        "title": "Guía de recomendaciones para el diseño de infraestructura ciclista, 2023",
+        "substituted_by": ""
+      }
+    },
+    "era": {
+      "ETI-INF-HS": {
+        "status": "VIGENT",
+        "title": "ETI Infraestructura - Alta Velocitat",
+        "substituted_by": ""
+      },
+      "ETI-INF-CC": {
+        "status": "VIGENT",
+        "title": "ETI Infraestructura - Xarxa Convencional",
+        "substituted_by": ""
+      },
+      "ETI-ENE": {
+        "status": "VIGENT",
+        "title": "ETI Energia",
+        "substituted_by": ""
+      },
+      "ETI-CCS": {
+        "status": "VIGENT",
+        "title": "ETI Control-Comandament i Senyalització",
+        "substituted_by": ""
+      },
+      "ETI-WAG": {
+        "status": "VIGENT",
+        "title": "ETI Material Rodant - Vagons",
+        "substituted_by": ""
+      },
+      "ETI-LOC-PAS": {
+        "status": "VIGENT",
+        "title": "ETI Material Rodant - Locomotores i Tren Passatgers",
+        "substituted_by": ""
+      },
+      "ETI-NOI": {
+        "status": "VIGENT",
+        "title": "ETI Persones amb Mobilitat Reduïda",
+        "substituted_by": ""
+      },
+      "ETI-OPE": {
+        "status": "VIGENT",
+        "title": "ETI Explotació i Gestió del Trànsit",
+        "substituted_by": ""
+      },
+      "ETI-TAF": {
+        "status": "VIGENT",
+        "title": "ETI Aplicacions Telemàtiques Mercaderies",
+        "substituted_by": ""
+      },
+      "ETI-TAP": {
+        "status": "VIGENT",
+        "title": "ETI Aplicacions Telemàtiques Passatgers",
+        "substituted_by": ""
+      },
+      "ETI-SRT": {
+        "status": "VIGENT",
+        "title": "ETI Seguretat en Túnels Ferroviaris",
+        "substituted_by": ""
+      },
+      "ETI-RAM-STR": {
+        "status": "VIGENT",
+        "title": "EN 50126 RAMS - Especificació i Demostració",
+        "substituted_by": ""
+      },
+      "ETI-SW-SEC": {
+        "status": "VIGENT",
+        "title": "EN 50128 Software per a sistemes ferroviaris",
+        "substituted_by": ""
+      },
+      "ETI-SEC-SIS": {
+        "status": "VIGENT",
+        "title": "EN 50129 Aprovació seguretat sistemes electrònics",
+        "substituted_by": ""
+      }
+    },
+    "eurlex": {
+      "Reg-305/2011": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 305/2011 — Condicions harmonitzades per a la comercialització de productes de construcció (CPR)",
+        "substituted_by": ""
+      },
+      "Dir-2014/24/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/24/UE — Contractació pública",
+        "substituted_by": ""
+      },
+      "Dir-2014/25/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/25/UE — Contractació sectors especials (aigua, energia, transports)",
+        "substituted_by": ""
+      },
+      "Dir-2014/23/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/23/UE — Adjudicació de contractes de concessió",
+        "substituted_by": ""
+      },
+      "Dir-2011/92/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2011/92/UE — Avaluació d'impacte ambiental (AIA) de projectes",
+        "substituted_by": ""
+      },
+      "Dir-2014/52/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/52/UE — Modificació de la Directiva AIA 2011/92/UE",
+        "substituted_by": ""
+      },
+      "Dir-2001/42/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2001/42/CE — Avaluació ambiental estratègica (AAE) de plans i programes",
+        "substituted_by": ""
+      },
+      "Dir-2000/60/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2000/60/CE — Marc comunitari d'actuació en política d'aigües (DMA)",
+        "substituted_by": ""
+      },
+      "Dir-2008/98/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2008/98/CE — Marc de residus",
+        "substituted_by": ""
+      },
+      "Dir-2002/49/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2002/49/CE — Avaluació i gestió del soroll ambiental",
+        "substituted_by": ""
+      },
+      "Dir-2009/147/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2009/147/CE — Conservació d'aus silvestres",
+        "substituted_by": ""
+      },
+      "Dir-92/43/CEE": {
+        "status": "VIGENT",
+        "title": "Directiva 92/43/CEE — Conservació d'hàbitats naturals (Natura 2000)",
+        "substituted_by": ""
+      },
+      "Dir-2016/797/UE": {
+        "status": "VIGENT",
+        "title": "Directiva (UE) 2016/797 — Interoperabilitat del sistema ferroviari",
+        "substituted_by": ""
+      },
+      "Dir-2016/798/UE": {
+        "status": "VIGENT",
+        "title": "Directiva (UE) 2016/798 — Seguretat ferroviària",
+        "substituted_by": ""
+      },
+      "Reg-2016/796/UE": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 2016/796 — Agència Ferroviària Europea (ERA)",
+        "substituted_by": ""
+      },
+      "Reg-1299/2014": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 1299/2014 — ETI Infraestructura",
+        "substituted_by": ""
+      },
+      "Reg-1301/2014": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 1301/2014 — ETI Energia",
+        "substituted_by": ""
+      },
+      "Reg-2016/919": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 2016/919 — ETI Control-Comandament i Senyalització (CCS)",
+        "substituted_by": ""
+      },
+      "Reg-1300/2014": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 1300/2014 — ETI Accessibilitat PMR",
+        "substituted_by": ""
+      },
+      "Reg-1303/2014": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 1303/2014 — ETI Seguretat en túnels ferroviaris (SRT)",
+        "substituted_by": ""
+      },
+      "Dir-2006/42/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2006/42/CE — Maquinària",
+        "substituted_by": ""
+      },
+      "Dir-2014/35/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/35/UE — Baixa tensió (LVD)",
+        "substituted_by": ""
+      },
+      "Dir-2014/30/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/30/UE — Compatibilitat electromagnètica (EMC)",
+        "substituted_by": ""
+      },
+      "Dir-2014/34/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/34/UE — Equips ATEX (atmosferes explosives)",
+        "substituted_by": ""
+      },
+      "Dir-2014/33/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/33/UE — Ascensors i components de seguretat",
+        "substituted_by": ""
+      },
+      "Dir-2019/882/UE": {
+        "status": "VIGENT",
+        "title": "Directiva (UE) 2019/882 — Requisits d'accessibilitat de productes i serveis (EAA)",
+        "substituted_by": ""
+      },
+      "Dir-2014/68/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2014/68/UE — Equips a pressió (PED)",
+        "substituted_by": ""
+      },
+      "Dir-2010/31/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2010/31/UE — Eficiència energètica dels edificis (EPBD)",
+        "substituted_by": ""
+      },
+      "Dir-2012/27/UE": {
+        "status": "VIGENT",
+        "title": "Directiva 2012/27/UE — Eficiència energètica",
+        "substituted_by": ""
+      },
+      "Dir-2004/54/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2004/54/CE — Requisits mínims de seguretat per a túnels de la xarxa viària transeuropea",
+        "substituted_by": ""
+      },
+      "Dir-2008/96/CE": {
+        "status": "VIGENT",
+        "title": "Directiva 2008/96/CE — Gestió de la seguretat de les infraestructures viàries",
+        "substituted_by": ""
+      },
+      "Dir-2019/1936/UE": {
+        "status": "VIGENT",
+        "title": "Directiva (UE) 2019/1936 — Modificació Dir 2008/96/CE gestió seguretat viària",
+        "substituted_by": ""
+      },
+      "Reg-2024/1991": {
+        "status": "VIGENT",
+        "title": "Reglament (UE) 2024/1991 — Restauració de la natura",
+        "substituted_by": ""
+      },
+      "Dir-11/2021": {
+        "status": "VIGENT",
+        "title": "Ley 11/2021, de 9 de julio, de medidas de prevención y lucha contra el fraude fiscal, de transposición de laDirectiva(UE) 2016/1164, del Consejo, de 12 de julio de 2016, por la que se establecen norma",
+        "substituted_by": ""
+      },
+      "Dir-24/2021": {
+        "status": "VIGENT",
+        "title": "Real Decreto-ley 24/2021, de 2 de noviembre, de transposición dedirectivasde la Unión Europea en las materias de bonos garantizados, distribución transfronteriza de organismos de inversión colectiva, ",
+        "substituted_by": ""
+      },
+      "Dir-7/2021": {
+        "status": "VIGENT",
+        "title": "Real Decreto-ley 7/2021, de 27 de abril, de transposición dedirectivasde la Unión Europea en las materias de competencia, prevención del blanqueo de capitales, entidades de crédito, telecomunicaciones",
+        "substituted_by": ""
+      },
+      "Reg-561/2006": {
+        "status": "VIGENT",
+        "title": "Regulation (EC) No 561/2006 of the European Parliament and of the Council of  15 March 2006  on the harmonisation of certain social legislation relating to road transport and amending Council Regulati",
+        "substituted_by": ""
+      },
+      "CELEX-32009L0045": {
+        "status": "VIGENT",
+        "title": "Directive 2009/45/EC of the European Parliament and of the Council of 6 May 2009 on safety rules and standards for passenger ships (Recast) (Text with EEA relevance )",
+        "substituted_by": ""
+      },
+      "CELEX-31999L0062": {
+        "status": "VIGENT",
+        "title": "Directive 1999/62/EC of the European Parliament and of the Council of 17 June 1999 on the charging of heavy goods vehicles for the use of certain infrastructures",
+        "substituted_by": ""
+      },
+      "Dir-2021/1187": {
+        "status": "VIGENT",
+        "title": "Directive (EU) 2021/1187 of the European Parliament and of the Council of 7 July 2021 on streamlining measures for advancing the realisation of the trans-European transport network (TEN-T)",
+        "substituted_by": ""
+      },
+      "Reg-2024/1679": {
+        "status": "VIGENT",
+        "title": "Regulation (EU) 2024/1679 of the European Parliament and of the Council of 13 June 2024 on Union guidelines for the development of the trans-European transport network, amending Regulations (EU) 2021/",
+        "substituted_by": ""
+      },
+      "Reg-2021/1153": {
+        "status": "VIGENT",
+        "title": "Regulation (EU) 2021/1153 of the European Parliament and of the Council of 7 July 2021 establishing the Connecting Europe Facility and repealing Regulations (EU) No 1316/2013 and (EU) No 283/2014 (Tex",
+        "substituted_by": ""
+      },
+      "Reg-1893/2006": {
+        "status": "VIGENT",
+        "title": "Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Revision 2 and amending Council R",
+        "substituted_by": ""
+      },
+      "CELEX-32014L0045": {
+        "status": "VIGENT",
+        "title": "Directive 2014/45/EU of the European Parliament and of the Council of 3 April 2014 on periodic roadworthiness tests for motor vehicles and their trailers and repealing Directive 2009/40/EC  Text with ",
+        "substituted_by": ""
+      }
+    },
+    "industria": {
+      "BOE-A-1968-1536": {
+        "status": "VIGENT",
+        "title": "Decreto 3151/1968, de 28 de noviembre",
+        "substituted_by": ""
+      },
+      "BOE-A-1985-12768": {
+        "status": "VIGENT",
+        "title": "Ley 17/1985, de 1 de julio, sobre objetos fabricados con metales preciosos",
+        "substituted_by": ""
+      },
+      "BOE-A-1986-26182": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2028/1986, de 6 de junio",
+        "substituted_by": ""
+      },
+      "BOE-A-1988-13898": {
+        "status": "VIGENT",
+        "title": "Orden de 18 de mayo de 1988",
+        "substituted_by": ""
+      },
+      "BOE-A-1988-6186": {
+        "status": "VIGENT",
+        "title": "Real Decreto 197/1988, de 22 de febrero, por el que se aprueba el Reglamento de la Ley de objetos fabricados con metales preciosos",
+        "substituted_by": ""
+      },
+      "BOE-A-1992-17363": {
+        "status": "VIGENT",
+        "title": "Ley 21/1992 de 16 de julio,",
+        "substituted_by": ""
+      },
+      "BOE-A-1994-25194": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2042/1994, de 14 de octubre,",
+        "substituted_by": ""
+      },
+      "BOE-A-1995-2122": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2085/1994, de 20 de octubre",
+        "substituted_by": ""
+      },
+      "BOE-A-1996-23616": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2102/1996 de 20 de septiembre",
+        "substituted_by": ""
+      },
+      "BOE-A-1996-2468": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2200/1995, de 28 de diciembre,",
+        "substituted_by": ""
+      },
+      "BOE-A-1996-3449": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2201/1995, de 28 de diciembre",
+        "substituted_by": ""
+      },
+      "BOE-A-1996-5208": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 2200/1995,",
+        "substituted_by": ""
+      },
+      "BOE-A-1997-22316": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1427/1997, de 15 de septiembre",
+        "substituted_by": ""
+      },
+      "BOE-A-1997-5789": {
+        "status": "VIGENT",
+        "title": "Real Decreto 251/1997, de 21 de febrero de 1987,",
+        "substituted_by": ""
+      },
+      "BOE-A-1997-9026": {
+        "status": "VIGENT",
+        "title": "Real Decreto 411/1997, de 21 de marzo,",
+        "substituted_by": ""
+      },
+      "BOE-A-1998-15742": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1357/1998, de 26 de junio,",
+        "substituted_by": ""
+      },
+      "BOE-A-1998-19183": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1562/1998, de 17 de julio",
+        "substituted_by": ""
+      },
+      "BOE-A-1999-1826": {
+        "status": "VIGENT",
+        "title": "Real Decreto 2822/1998, de 23 de diciembre,",
+        "substituted_by": ""
+      },
+      "BOE-A-1999-20723": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1523/1999, de 1 de octubre",
+        "substituted_by": ""
+      },
+      "BOE-A-2000-11837": {
+        "status": "VIGENT",
+        "title": "Real Decreto-Ley 7/2000, de 23 de junio,",
+        "substituted_by": ""
+      },
+      "BOE-A-2000-4221": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 1523/1999, de 1 de octubre",
+        "substituted_by": ""
+      },
+      "BOE-A-2000-5011": {
+        "status": "VIGENT",
+        "title": "Real Decreto 237/2000, de 18 de febrero",
+        "substituted_by": ""
+      },
+      "BOE-A-2002-13450": {
+        "status": "VIGENT",
+        "title": "Real Decreto 596/2002, de 28 de junio",
+        "substituted_by": ""
+      },
+      "BOE-A-2005-3242": {
+        "status": "VIGENT",
+        "title": "Real Decreto 208/2005, de 25 de febrero,",
+        "substituted_by": ""
+      },
+      "BOE-A-2005-6793": {
+        "status": "VIGENT",
+        "title": "Real Decreto 365/2005, de 8 de abril",
+        "substituted_by": ""
+      },
+      "BOE-A-2006-11051": {
+        "status": "VIGENT",
+        "title": "Real Decreto 711/2006, de 9 de junio,",
+        "substituted_by": ""
+      },
+      "BOE-A-2006-15237": {
+        "status": "VIGENT",
+        "title": "Real Decreto 888/2006, de 21 de julio,",
+        "substituted_by": ""
+      },
+      "BOE-A-2006-22585": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1416/2006, de 1 de diciembre",
+        "substituted_by": ""
+      },
+      "BOE-A-2008-14914": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1432/2008, de 29 de agosto",
+        "substituted_by": ""
+      },
+      "BOE-A-2008-18634": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1890/2008, de 14 de noviembre",
+        "substituted_by": ""
+      },
+      "BOE-A-2008-2387": {
+        "status": "VIGENT",
+        "title": "Real Decreto 106/2008, de 1 de febrero,",
+        "substituted_by": ""
+      },
+      "BOE-A-2008-5269": {
+        "status": "VIGENT",
+        "title": "Real Decreto 223/2008, de 15 de febrero",
+        "substituted_by": ""
+      },
+      "BOE-A-2008-5378": {
+        "status": "VIGENT",
+        "title": "Real Decreto 224/2008, de 15 de febrero,",
+        "substituted_by": ""
+      },
+      "BOE-A-2009-20725": {
+        "status": "VIGENT",
+        "title": "Ley 25/2009, de 22 de diciembre,",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-11154": {
+        "status": "VIGENT",
+        "title": "Real Decreto 866/2010, de 2 de julio",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-12618": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1000/2010, de 5 de agosto,",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-13429": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 560/2010, de 7 de mayo",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-5547": {
+        "status": "VIGENT",
+        "title": "Real Decreto 338/2010, de 19 de marzo,",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-8189": {
+        "status": "VIGENT",
+        "title": "Real Decreto 559/2010, de 7 de mayo,",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-8190": {
+        "status": "VIGENT",
+        "title": "Real Decreto 560/2010, de 7 de mayo",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-9716": {
+        "status": "VIGENT",
+        "title": "Corrección de errores del Real Decreto 560/2010, de 7 de mayo",
+        "substituted_by": ""
+      },
+      "BOE-A-2010-9994": {
+        "status": "VIGENT",
+        "title": "Real Decreto 750/2010, de 4 de junio",
+        "substituted_by": ""
+      },
+      "BOE-A-2011-398": {
+        "status": "VIGENT",
+        "title": "Real Decreto 1715/2010, de 17 de diciembre,",
+        "substituted_by": ""
+      },
+      "BOE-A-2012-3165": {
+        "status": "VIGENT",
+        "title": "Real Decreto 455/2012, de 5 de marzo",
+        "substituted_by": ""
+      },
+      "BOE-A-2013-12887": {
+        "status": "VIGENT",
+        "title": "Ley 19/2013, de 9 de diciembre",
+        "substituted_by": ""
+      },
+      "BOE-A-2013-12888": {
+        "status": "VIGENT",
+        "title": "Ley 20/2013, de 9 de diciembre,",
+        "substituted_by": ""
+      },
+      "BOE-A-2013-3808": {
+        "status": "VIGENT",
+        "title": "Orden IET/562/2013, de 8 de abril,",
+        "substituted_by": ""
+      },
+      "BOE-A-2016-11738": {
+        "status": "VIGENT",
+        "title": "Real Decreto 639/2016, de 9 de diciembre",
+        "substituted_by": ""
+      },
+      "BOE-A-2016-3539": {
+        "status": "VIGENT",
+        "title": "Real Decreto 144/2016, de 8 de abril",
+        "substituted_by": ""
+      },
+      "BOE-A-2017-12841": {
+        "status": "VIGENT",
+        "title": "Real Decreto 920/2017, de 23 de octubre",
+        "substituted_by": ""
+      },
+      "BOE-A-2017-1935": {
+        "status": "VIGENT",
+        "title": "Real Decreto 125/2017, de 24 de febrero,",
+        "substituted_by": ""
+      },
+      "BOE-A-2017-8755": {
+        "status": "VIGENT",
+        "title": "Real Decreto 656/2017, de 23 de junio",
+        "substituted_by": ""
+      },
+      "BOE-A-2017-9188": {
+        "status": "VIGENT",
+        "title": "Real Decreto 706/2017, de 7 de julio",
+        "substituted_by": ""
+      },
+      "BOE-A-2018-15796": {
+        "status": "VIGENT",
+        "title": "Orden ICT/1212/2018, de 12 de noviembre",
+        "substituted_by": ""
+      },
+      "BOE-A-2020-12767": {
+        "status": "VIGENT",
+        "title": "Real Decreto 885/2020, de 6 de octubre",
+        "substituted_by": ""
+      },
+      "BOE-A-2020-6472": {
+        "status": "VIGENT",
+        "title": "Real Decreto 542/2020, de 26 de mayo,",
+        "substituted_by": ""
+      },
+      "BOE-A-2021-7034": {
+        "status": "VIGENT",
+        "title": "Resolución de 17 de abril de 2021,",
+        "substituted_by": ""
+      },
+      "BOE-A-2022-14968": {
+        "status": "VIGENT",
+        "title": "Real Decreto 750/2022, de 13 de septiembre,",
+        "substituted_by": ""
+      },
+      "BOE-A-2022-17040": {
+        "status": "VIGENT",
+        "title": "Real Decreto-ley 18/2022, de 18 de octubre",
+        "substituted_by": ""
+      },
+      "BOE-A-2023-7056": {
+        "status": "VIGENT",
+        "title": "Real Decreto 145/2023, de 28 de febrero,",
+        "substituted_by": ""
+      },
+      "BOE-A-2025-17507": {
+        "status": "VIGENT",
+        "title": "Real Decreto 770/2025, de 2 de septiembre,",
+        "substituted_by": ""
+      },
+      "BOE-T-2005-4665": {
+        "status": "VIGENT",
+        "title": "Pleno. Sentencia 33/2005, de 17 de febrero de 2005.",
+        "substituted_by": ""
+      }
+    },
+    "iso": {},
+    "mitma_ferroviari": {
+      "RD-2387-2004": {
+        "status": "VIGENT",
+        "title": "Reglament del Sector Ferroviari",
+        "substituted_by": ""
+      },
+      "RD-354-2006": {
+        "status": "VIGENT",
+        "title": "RD 354/2006 condicions tècniques de seguretat ferroviària",
+        "substituted_by": ""
+      },
+      "RD-810-2007": {
+        "status": "VIGENT",
+        "title": "RD 810/2007 circulació ferroviària",
+        "substituted_by": ""
+      },
+      "RD-664-2015": {
+        "status": "VIGENT",
+        "title": "RD 664/2015 certificats de seguretat ferroviaris",
+        "substituted_by": ""
+      },
+      "LEI-39-2003": {
+        "status": "VIGENT",
+        "title": "Llei 39/2003 del Sector Ferroviari",
+        "substituted_by": ""
+      },
+      "RD-256-2021": {
+        "status": "VIGENT",
+        "title": "RD 256/2021 condicions tècniques ADIF",
+        "substituted_by": ""
+      },
+      "OM-FOM-233-2006": {
+        "status": "VIGENT",
+        "title": "Ordre FOM/233/2006 requisits tècnics ferroviaris",
+        "substituted_by": ""
+      },
+      "RD-1247-1995": {
+        "status": "DEROGADA",
+        "title": "RD 1247/1995 normes tècniques ferroviàries (RENFE)",
+        "substituted_by": ""
+      }
+    },
+    "pjcat": {
+      "DL-2/2009": {
+        "status": "VIGENT",
+        "title": "Decret Legislatiu 2/2009, de 25 d'agost, Text refos de la Llei de carreteres",
+        "substituted_by": ""
+      },
+      "D-293/2003": {
+        "status": "VIGENT",
+        "title": "Decret 293/2003, de 18 de novembre, Reglament general de carreteres",
+        "substituted_by": ""
+      },
+      "L-7/1993": {
+        "status": "DEROGADA",
+        "title": "Llei 7/1993, de 30 de setembre, de carreteres",
+        "substituted_by": "DL-2/2009"
+      },
+      "D-168/2025": {
+        "status": "VIGENT",
+        "title": "Decret 168/2025, de 29 de juliol, de gestio de la seguretat viaria en les infraestructures viaries de la Generalitat de Catalunya",
+        "substituted_by": ""
+      },
+      "D-190/2016": {
+        "status": "DEROGADA",
+        "title": "Decret 190/2016, de 16 de febrer, de gestio de la seguretat viaria en les infraestructures viaries de la Generalitat de Catalunya",
+        "substituted_by": "D-168/2025"
+      },
+      "L-9/2017": {
+        "status": "VIGENT",
+        "title": "Llei 9/2017, de 8 de novembre, de Contractes del Sector Public",
+        "substituted_by": ""
+      },
+      "RD-1098/2001": {
+        "status": "VIGENT",
+        "title": "Reial Decret 1098/2001, de 12 d'octubre, Reglament general de contractes de les administracions publiques",
+        "substituted_by": ""
+      },
+      "L-20/2009": {
+        "status": "VIGENT",
+        "title": "Llei 20/2009, de 4 de desembre, de prevencio i control ambiental de les activitats",
+        "substituted_by": ""
+      },
+      "DL-1/2010": {
+        "status": "VIGENT",
+        "title": "Decret Legislatiu 1/2010, de 3 d'agost, Text refos de la Llei d'urbanisme",
+        "substituted_by": ""
+      },
+      "D-209/2023": {
+        "status": "VIGENT",
+        "title": "Decret 209/2023, de 28 de novembre, pel qual s'aprova el Codi d'accessibilitat de Catalunya",
+        "substituted_by": ""
+      },
+      "D-135/1995": {
+        "status": "DEROGADA",
+        "title": "Decret 135/1995, de 24 de marc, de desplegament de la Llei 20/1991, de promocio de l'accessibilitat i de supressio de barreres arquitectoniques",
+        "substituted_by": "D-209/2023"
+      },
+      "RD-1627/1997": {
+        "status": "VIGENT",
+        "title": "Reial Decret 1627/1997, de 24 d'octubre, disposicions minimes de seguretat i salut en obres de construccio",
+        "substituted_by": ""
+      }
+    },
+    "territori": {
+      "D-168/2025": {
+        "status": "VIGENT",
+        "title": "Decret 168/2025, de 29 de juliol, de gestio de la seguretat viaria en les infraestructures viaries de la Generalitat de Catalunya",
+        "substituted_by": "D-190/2016"
+      },
+      "D-190/2016": {
+        "status": "DEROGADA",
+        "title": "Decret 190/2016, de 16 de febrer, de gestio de la seguretat viaria en les infraestructures viaries de la Generalitat de Catalunya",
+        "substituted_by": "D-168/2025"
+      },
+      "DGIM/1/2025": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIM/1/2025 sobre la cartografia de detall de Catalunya en format estandard per a actuacions BIM d'infraestructures",
+        "substituted_by": ""
+      },
+      "DGIM/1/2023": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIM/1/2023 sobre la codificacio dels estudis i projectes d'infraestructures impulsats per la Direccio General d'Infraestructures de Mobilitat",
+        "substituted_by": ""
+      },
+      "DGIM/3/2018": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIM/3/2018 sobre la gestio d'incidencies per despreniments i esllavissades",
+        "substituted_by": ""
+      },
+      "DGIM/01/2018": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIM/01/2018 sobre la senyalitzacio d'orientacio en rutes cicloturistiques i vies ciclistes",
+        "substituted_by": ""
+      },
+      "DGIM/03/2017": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIM/03/2017 sobre criteris d'abalisament de les obres a la xarxa de carreteres de la Generalitat de Catalunya",
+        "substituted_by": ""
+      },
+      "DGIM/2/2017": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIM/2/2017 sobre l'inventari digital general d'elements funcionals de la xarxa de carreteres",
+        "substituted_by": ""
+      },
+      "DGIMT/1/2016": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIMT/1/2016 sobre el disseny i la implantacio de separadors de fluxos de transit en carreteres convencionals de calcada unica",
+        "substituted_by": ""
+      },
+      "DGIM/1/2019": {
+        "status": "VIGENT",
+        "title": "Instruccio DGIM/1/2019 sobre l'establiment de carreteres convencionals de doble sentit de circulacio en calcada unica",
+        "substituted_by": ""
+      },
+      "Circular 1/2013 DGIMT": {
+        "status": "VIGENT",
+        "title": "Circular 1/2013 sobre les condicions tecniques i criteris d'implantacio de la senyalitzacio d'accessos i d'activitats amb acces a la xarxa de carreteres convencionals",
+        "substituted_by": ""
+      },
+      "Circular 1/12 DGC": {
+        "status": "VIGENT",
+        "title": "Circular 1/12 de la Direccio General de Carreteres per a l'aplicacio de l'Estudi basic de seguretat i salut en contractes d'obres o serveis de conservacio",
+        "substituted_by": ""
+      },
+      "Circular 1/2010": {
+        "status": "VIGENT",
+        "title": "Circular 1/2010, de 16 de novembre de 2010, sobre criteris d'aplicacio de barreres de seguretat metalliques en la xarxa de carreteres de la Generalitat de Catalunya",
+        "substituted_by": ""
+      },
+      "Circular 1/2009": {
+        "status": "VIGENT",
+        "title": "Circular 1/2009, de 15 de maig de 2009, sobre l'adaptacio a les normes europees harmonitzades en materia de mescles bituminoses en calent",
+        "substituted_by": ""
+      },
+      "Circular 3/2005": {
+        "status": "VIGENT",
+        "title": "Circular 3/2005 sobre les especificacions tecniques per l'equipament de tunels d'obres de carretera",
+        "substituted_by": ""
+      },
+      "Circular 2/2005": {
+        "status": "VIGENT",
+        "title": "Circular 2/2005 sobre les condicions d'implantacio d'elements reductors de la velocitat en travesseres urbanes",
+        "substituted_by": ""
+      }
+    },
+    "une": {}
+  },
+  "total_entries": 690
+}

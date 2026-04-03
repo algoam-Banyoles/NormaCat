@@ -1,0 +1,700 @@
+[
+  {
+    "text": "contingut minim projecte constructiu obra publica",
+    "tipologia": "G",
+    "annex": "A01",
+    "expected_sources": [
+      "pjcat",
+      "boe"
+    ],
+    "expected_terms": [
+      "LCSP",
+      "231",
+      "projecte"
+    ]
+  },
+  {
+    "text": "requisits ordre d'estudi i antecedents administratius",
+    "tipologia": "G",
+    "annex": "A01",
+    "expected_sources": [
+      "pjcat"
+    ],
+    "expected_terms": [
+      "LOP",
+      "3/2007"
+    ]
+  },
+  {
+    "text": "pla de control de qualitat obra civil",
+    "tipologia": "G",
+    "annex": "A02",
+    "expected_sources": [
+      "territori",
+      "pjcat"
+    ],
+    "expected_terms": [
+      "qualitat",
+      "control",
+      "assaig"
+    ]
+  },
+  {
+    "text": "gestio de residus de construccio i demolicio",
+    "tipologia": "G",
+    "annex": "A02",
+    "expected_sources": [
+      "boe",
+      "pjcat"
+    ],
+    "expected_terms": [
+      "residus",
+      "residuos",
+      "7/2022"
+    ]
+  },
+  {
+    "text": "avaluacio impacte ambiental projectes infraestructures",
+    "tipologia": "G",
+    "annex": "A02",
+    "expected_sources": [
+      "pjcat",
+      "eurlex",
+      "boe"
+    ],
+    "expected_terms": [
+      "impacte",
+      "impacto",
+      "ambiental"
+    ]
+  },
+  {
+    "text": "parametres de tracat carretera C-80",
+    "tipologia": "C",
+    "annex": "A03",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "tracat",
+      "trazado",
+      "3.1-IC"
+    ]
+  },
+  {
+    "text": "radi minim en planta per a velocitat de projecte 80 km/h",
+    "tipologia": "C",
+    "annex": "A03",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "radi",
+      "radio",
+      "planta"
+    ]
+  },
+  {
+    "text": "galib ferroviari FGC ample metric",
+    "tipologia": "F",
+    "annex": "A03",
+    "expected_sources": [
+      "adif"
+    ],
+    "expected_terms": [
+      "galib",
+      "galibo",
+      "metric"
+    ]
+  },
+  {
+    "text": "seccio transversal tipus carretera convencional",
+    "tipologia": "C",
+    "annex": "A03",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "seccio",
+      "seccion",
+      "transversal"
+    ]
+  },
+  {
+    "text": "classificacio del sol urbanisme Catalunya",
+    "tipologia": "G",
+    "annex": "A04",
+    "expected_sources": [
+      "pjcat",
+      "territori"
+    ],
+    "expected_terms": [
+      "urbanisme",
+      "urbanismo",
+      "sol"
+    ]
+  },
+  {
+    "text": "norma 3.1-IC tracat instruccio de carreteres",
+    "tipologia": "C",
+    "annex": "A05",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "3.1-IC",
+      "trazado"
+    ]
+  },
+  {
+    "text": "pendents longitudinals maximes en rampes",
+    "tipologia": "C",
+    "annex": "A05",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "pendent",
+      "pendiente",
+      "rampa"
+    ]
+  },
+  {
+    "text": "amplada minima plataforma tramvia",
+    "tipologia": "T",
+    "annex": "A05",
+    "expected_sources": [
+      "territori",
+      "dgc"
+    ],
+    "expected_terms": [
+      "tramvia",
+      "tranvia",
+      "amplada"
+    ]
+  },
+  {
+    "text": "amplada minima carril bici segregat",
+    "tipologia": "B",
+    "annex": "A05",
+    "expected_sources": [
+      "territori",
+      "dgc"
+    ],
+    "expected_terms": [
+      "carril",
+      "bici",
+      "amplada"
+    ]
+  },
+  {
+    "text": "mescles bituminoses capa de rodadura",
+    "tipologia": "C",
+    "annex": "A06",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "mezcla",
+      "bituminosa",
+      "rodadura",
+      "542"
+    ]
+  },
+  {
+    "text": "article 542 PG-3 mescla bituminosa tipus AC",
+    "tipologia": "C",
+    "annex": "A06",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "542",
+      "AC",
+      "PG-3"
+    ]
+  },
+  {
+    "text": "esplanada i ferm en carreteres categories de transit",
+    "tipologia": "C",
+    "annex": "A06",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "esplanada",
+      "explanada",
+      "6.1-IC"
+    ]
+  },
+  {
+    "text": "reg d'imprimacio i reg d'adherencia ferms",
+    "tipologia": "C",
+    "annex": "A06",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "riego",
+      "imprimacion",
+      "adherencia"
+    ]
+  },
+  {
+    "text": "drenatge transversal carreteres periode de retorn",
+    "tipologia": "C",
+    "annex": "A07",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "drenaje",
+      "transversal",
+      "5.2-IC"
+    ]
+  },
+  {
+    "text": "drenatge longitudinal cunetes i col.lectors",
+    "tipologia": "C",
+    "annex": "A07",
+    "expected_sources": [
+      "dgc",
+      "aca"
+    ],
+    "expected_terms": [
+      "drenaje",
+      "cuneta",
+      "colector"
+    ]
+  },
+  {
+    "text": "dimensionament hidraulic obres de fabrica",
+    "tipologia": "C",
+    "annex": "A07",
+    "expected_sources": [
+      "dgc",
+      "aca"
+    ],
+    "expected_terms": [
+      "hidraulico",
+      "obra",
+      "fabrica"
+    ]
+  },
+  {
+    "text": "catenaria i electrificacio ferroviaria",
+    "tipologia": "F",
+    "annex": "A08",
+    "expected_sources": [
+      "adif"
+    ],
+    "expected_terms": [
+      "catenaria",
+      "electrificacion"
+    ]
+  },
+  {
+    "text": "senyalitzacio ferroviaria ERTMS i enclavaments",
+    "tipologia": "F",
+    "annex": "A08",
+    "expected_sources": [
+      "adif",
+      "eurlex"
+    ],
+    "expected_terms": [
+      "ERTMS",
+      "enclavamiento",
+      "senalizacion"
+    ]
+  },
+  {
+    "text": "superestructura de via balast i travesses",
+    "tipologia": "F",
+    "annex": "A08",
+    "expected_sources": [
+      "adif"
+    ],
+    "expected_terms": [
+      "via",
+      "balasto",
+      "traviesa"
+    ]
+  },
+  {
+    "text": "instal.lacio electrica baixa tensio REBT",
+    "tipologia": "G",
+    "annex": "A09",
+    "expected_sources": [
+      "industria",
+      "boe"
+    ],
+    "expected_terms": [
+      "REBT",
+      "842/2002",
+      "baja tension"
+    ]
+  },
+  {
+    "text": "climatitzacio i ventilacio RITE edificis",
+    "tipologia": "G",
+    "annex": "A09",
+    "expected_sources": [
+      "industria",
+      "boe"
+    ],
+    "expected_terms": [
+      "RITE",
+      "1027/2007",
+      "ventilacion"
+    ]
+  },
+  {
+    "text": "proteccio contra incendis en aparcaments soterrats",
+    "tipologia": "P",
+    "annex": "A09",
+    "expected_sources": [
+      "industria",
+      "cte",
+      "boe"
+    ],
+    "expected_terms": [
+      "incendios",
+      "aparcamiento",
+      "RIPCI"
+    ]
+  },
+  {
+    "text": "enllumenat public carrers i vials eficiencia energetica",
+    "tipologia": "C",
+    "annex": "A09",
+    "expected_sources": [
+      "industria",
+      "boe"
+    ],
+    "expected_terms": [
+      "alumbrado",
+      "iluminacion",
+      "eficiencia"
+    ]
+  },
+  {
+    "text": "senyalitzacio horitzontal viaria marcas viales",
+    "tipologia": "C",
+    "annex": "A10",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "marcas viales",
+      "8.2-IC",
+      "horizontal"
+    ]
+  },
+  {
+    "text": "senyalitzacio vertical carreteres norma 8.1-IC",
+    "tipologia": "C",
+    "annex": "A10",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "8.1-IC",
+      "senalizacion",
+      "vertical"
+    ]
+  },
+  {
+    "text": "senyalitzacio d'obres en carreteres 8.3-IC",
+    "tipologia": "C",
+    "annex": "A10",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "8.3-IC",
+      "obras",
+      "senalizacion"
+    ]
+  },
+  {
+    "text": "abalisament viari balises i captafars",
+    "tipologia": "C",
+    "annex": "A10",
+    "expected_sources": [
+      "territori",
+      "dgc"
+    ],
+    "expected_terms": [
+      "balizamiento",
+      "captafaro"
+    ]
+  },
+  {
+    "text": "accessibilitat persones mobilitat reduida estacions",
+    "tipologia": "M",
+    "annex": "A11",
+    "expected_sources": [
+      "pjcat",
+      "boe",
+      "eurlex"
+    ],
+    "expected_terms": [
+      "accessibilitat",
+      "accesibilidad",
+      "209/2023"
+    ]
+  },
+  {
+    "text": "codi accessibilitat Catalunya Decret 209/2023",
+    "tipologia": "G",
+    "annex": "A11",
+    "expected_sources": [
+      "pjcat"
+    ],
+    "expected_terms": [
+      "209/2023",
+      "accessibilitat"
+    ]
+  },
+  {
+    "text": "connexio xarxa electrica subministrament",
+    "tipologia": "G",
+    "annex": "A12",
+    "expected_sources": [
+      "industria"
+    ],
+    "expected_terms": [
+      "electrica",
+      "suministro"
+    ]
+  },
+  {
+    "text": "reposicio serveis afectats xarxes existents",
+    "tipologia": "G",
+    "annex": "A13",
+    "expected_sources": [
+      "pjcat",
+      "boe"
+    ],
+    "expected_terms": [
+      "serveis",
+      "servicios",
+      "afectados"
+    ]
+  },
+  {
+    "text": "codi estructural formigo armat RD 470/2021",
+    "tipologia": "G",
+    "annex": "A15",
+    "expected_sources": [
+      "boe",
+      "dgc"
+    ],
+    "expected_terms": [
+      "estructural",
+      "470/2021",
+      "hormigon"
+    ]
+  },
+  {
+    "text": "accions en ponts de carretera IAP-11",
+    "tipologia": "C",
+    "annex": "A15",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "IAP",
+      "puente",
+      "acciones"
+    ]
+  },
+  {
+    "text": "fonamentacions profundes pilotatge",
+    "tipologia": "G",
+    "annex": "A15",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "cimentacion",
+      "pilote",
+      "profunda"
+    ]
+  },
+  {
+    "text": "murs de contencio empenta de terres",
+    "tipologia": "G",
+    "annex": "A15",
+    "expected_sources": [
+      "dgc"
+    ],
+    "expected_terms": [
+      "muro",
+      "contencion",
+      "empuje"
+    ]
+  },
+  {
+    "text": "estudi seguretat i salut en obres de construccio",
+    "tipologia": "G",
+    "annex": "",
+    "expected_sources": [
+      "boe",
+      "pjcat"
+    ],
+    "expected_terms": [
+      "1627/1997",
+      "seguridad",
+      "salud"
+    ]
+  },
+  {
+    "text": "coordinacio seguretat en fase de projecte i execucio",
+    "tipologia": "G",
+    "annex": "",
+    "expected_sources": [
+      "boe"
+    ],
+    "expected_terms": [
+      "coordinador",
+      "seguridad"
+    ]
+  },
+  {
+    "text": "plec prescripcions tecniques particulars LCSP",
+    "tipologia": "G",
+    "annex": "",
+    "expected_sources": [
+      "pjcat",
+      "boe"
+    ],
+    "expected_terms": [
+      "pliego",
+      "prescripciones",
+      "9/2017"
+    ]
+  },
+  {
+    "text": "directiva avaluacio impacte ambiental projectes UE",
+    "tipologia": "G",
+    "annex": "",
+    "expected_sources": [
+      "eurlex"
+    ],
+    "expected_terms": [
+      "2011/92",
+      "impacto",
+      "ambiental"
+    ]
+  },
+  {
+    "text": "reglament productes construccio marcatge CE",
+    "tipologia": "G",
+    "annex": "",
+    "expected_sources": [
+      "eurlex"
+    ],
+    "expected_terms": [
+      "305/2011",
+      "productos",
+      "construccion"
+    ]
+  },
+  {
+    "text": "directiva interoperabilitat sistema ferroviari",
+    "tipologia": "F",
+    "annex": "",
+    "expected_sources": [
+      "eurlex",
+      "era"
+    ],
+    "expected_terms": [
+      "2016/797",
+      "interoperabilidad"
+    ]
+  },
+  {
+    "text": "seguretat en tunels viaris directiva europea",
+    "tipologia": "C",
+    "annex": "",
+    "expected_sources": [
+      "eurlex",
+      "dgc"
+    ],
+    "expected_terms": [
+      "2004/54",
+      "tunel",
+      "seguridad"
+    ]
+  },
+  {
+    "text": "estacio d'autobusos marquesina i zona d'espera",
+    "tipologia": "A",
+    "annex": "",
+    "expected_sources": [
+      "territori",
+      "pjcat"
+    ],
+    "expected_terms": [
+      "estacio",
+      "autobus",
+      "marquesina"
+    ]
+  },
+  {
+    "text": "parc de vehicles cotxeres ventilacio i incendis",
+    "tipologia": "P",
+    "annex": "",
+    "expected_sources": [
+      "cte",
+      "industria"
+    ],
+    "expected_terms": [
+      "ventilacion",
+      "incendios",
+      "aparcamiento"
+    ]
+  },
+  {
+    "text": "via verda carril bici senyalitzacio ciclista",
+    "tipologia": "B",
+    "annex": "",
+    "expected_sources": [
+      "territori",
+      "dgc"
+    ],
+    "expected_terms": [
+      "ciclista",
+      "bici",
+      "senalizacion"
+    ]
+  },
+  {
+    "text": "plataforma tramvia segregada galib vehicle",
+    "tipologia": "T",
+    "annex": "",
+    "expected_sources": [
+      "territori"
+    ],
+    "expected_terms": [
+      "tramvia",
+      "plataforma",
+      "galib"
+    ]
+  },
+  {
+    "text": "ventilacio tunel metro sistema d'extraccio de fums",
+    "tipologia": "M",
+    "annex": "",
+    "expected_sources": [
+      "adif",
+      "industria"
+    ],
+    "expected_terms": [
+      "ventilacion",
+      "tunel",
+      "humos"
+    ]
+  }
+]

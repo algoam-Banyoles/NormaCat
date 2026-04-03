@@ -13,10 +13,17 @@ Us:
     python cli.py search "drenatge transversal carreteres" --top 5
 """
 import argparse
+import io
 import json
 import os
 import sys
 import time
+
+# Forçar UTF-8 a Windows
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+os.environ["PYTHONIOENCODING"] = "utf-8"
 
 # Assegurar que NormaCat root esta al path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -236,6 +243,10 @@ def main():
     p_search.add_argument("--provider", default=None,
                           help="Proveidur LLM per reformular consulta")
 
+    # build-fts
+    subparsers.add_parser("build-fts",
+                          help="Construeix index FTS5 per a cerca hibrida BM25")
+
     args = parser.parse_args()
 
     if args.command == "scrape":
@@ -244,6 +255,12 @@ def main():
         cmd_index(args)
     elif args.command == "search":
         cmd_search(args)
+    elif args.command == "build-fts":
+        from search.hybrid_search import build_fts_index
+        _log("Construint index FTS5 (BM25)...")
+        t0 = time.time()
+        count = build_fts_index(config.SQLITE_PATH)
+        _log(f"FTS5 construit: {count:,} chunks en {time.time()-t0:.1f}s")
     else:
         parser.print_help()
 

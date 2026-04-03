@@ -6,6 +6,8 @@ import os
 import re
 import signal
 import sqlite3
+import subprocess
+import sys
 import threading
 import unicodedata
 from datetime import datetime
@@ -82,7 +84,7 @@ _MODEL: SentenceTransformer | None = None
 _LAST_INDEX_RESULT: dict = {}
 
 
-PDF_TIMEOUT = 120  # segons màxim per extreure text d'un PDF
+PDF_TIMEOUT = 60  # segons màxim per extreure text d'un PDF
 MAX_PDF_SIZE_MB = 30  # saltar PDFs més grans (pengen MuPDF)
 
 
@@ -270,24 +272,32 @@ def _upsert_in_batches(
 
 
 def _extract_with_timeout(filepath: str, timeout: int = PDF_TIMEOUT) -> list[dict]:
-    """Extreu text amb timeout per evitar penjar-se en PDFs problemàtics."""
-    result = []
-    error = []
-
-    def _worker():
-        try:
-            result.extend(extract_text_from_file(filepath))
-        except Exception as exc:
-            error.append(exc)
-
-    t = threading.Thread(target=_worker, daemon=True)
-    t.start()
-    t.join(timeout=timeout)
-    if t.is_alive():
-        raise TimeoutError(f"Extracció de text supera {timeout}s")
-    if error:
-        raise error[0]
-    return result
+    """Extreu text amb timeout real via subprocess (MuPDF bloqueja el GIL)."""
+    import subprocess, tempfile
+    script = (
+        "import json, sys, io, fitz\n"
+        "sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')\n"
+        "doc = fitz.open(sys.argv[1])\n"
+        "pages = []\n"
+        "for i, page in enumerate(doc, 1):\n"
+        "    pages.append({'text': page.get_text() or '', 'page': i})\n"
+        "doc.close()\n"
+        "print(json.dumps(pages, ensure_ascii=False))\n"
+    )
+    try:
+        result = subprocess.run(
+            [sys.executable, "-c", script, str(filepath)],
+            capture_output=True, text=True, timeout=timeout,
+            encoding="utf-8", errors="replace",
+        )
+        if result.returncode != 0:
+            raise RuntimeError(f"subprocess error: {result.stderr[:200]}")
+        pages = json.loads(result.stdout)
+        return pages
+    except subprocess.TimeoutExpired:
+        raise TimeoutError(f"Extraccio de text supera {timeout}s: {Path(filepath).name}")
+    except json.JSONDecodeError:
+        raise RuntimeError(f"JSON invalid de subprocess per {Path(filepath).name}")
 
 
 def index_document(filepath: str, collection, conn) -> bool:
