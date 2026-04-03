@@ -48,6 +48,7 @@ class NormIndex:
             "ANNEXES": 0, "DGC": 0, "ADIF": 0, "ISO": 0, "UNE": 0,
             "BOE": 0, "INDUSTRIA": 0, "PJCAT": 0, "TERRITORI": 0,
             "ACA": 0, "CTE": 0, "ERA": 0, "MITMA_F": 0,
+            "EURLEX": 0,
         }
         self._load_all()
 
@@ -599,6 +600,7 @@ class NormIndex:
             "ANNEXES": 0, "DGC": 0, "ADIF": 0, "ISO": 0, "UNE": 0,
             "BOE": 0, "INDUSTRIA": 0, "PJCAT": 0, "TERRITORI": 0,
             "ACA": 0, "CTE": 0, "ERA": 0, "MITMA_F": 0,
+            "EURLEX": 0,
         }
         self._load_annexes()
         self._load_adif()
@@ -613,6 +615,7 @@ class NormIndex:
         self._load_cte()
         self._load_era()
         self._load_mitma_ferroviari()
+        self._load_wrapped("EURLEX", "normativa_eurlex", "catalogo_eurlex.json")
 
     # ─── Public API ───────────────────────────────────────────────────────────
 

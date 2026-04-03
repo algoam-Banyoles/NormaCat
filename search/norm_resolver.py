@@ -80,6 +80,12 @@ _RE_DIRECTIVA = re.compile(
     re.IGNORECASE,
 )
 
+# EU Regulations (format: Reglament/o (UE) number/year)
+_RE_REGLAMENT_UE = re.compile(
+    r"\bReglament(?:o)?\s+\(?UE\)?\s+(?:n[úu]m\.?\s*)?(\d+)\s*/\s*(\d{4})\b",
+    re.IGNORECASE,
+)
+
 # NTE codes — e.g. NTE-EHV-012, NTE EHV 012, NTE-EHV012
 _RE_NTE = re.compile(
     r"\bNTE[- ]?([A-Z]{2,4})[- ]?(\d{2,3})\b",
@@ -210,6 +216,17 @@ def resolve(raw_text: str) -> dict | None:
     if m:
         return {
             "type": "DIRECTIVA",
+            "number": m.group(1),
+            "year": m.group(2),
+            "suffix": None,
+            "raw": raw_text,
+        }
+
+    # ── 6b. EU Regulation ─────────────────────────────────────────────────────
+    m = _RE_REGLAMENT_UE.search(text)
+    if m:
+        return {
+            "type": "REGLAMENT_UE",
             "number": m.group(1),
             "year": m.group(2),
             "suffix": None,

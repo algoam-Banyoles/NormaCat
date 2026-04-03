@@ -40,6 +40,7 @@ _SCRAPER_MAP = {
     "cte":              ("scrapers.cte_scraper",         "main"),
     "dgc":              ("scrapers.norm_scraper",        "main"),
     "era":              ("scrapers.era_scraper",         "main"),
+    "eurlex":           ("scrapers.eurlex_scraper",      "main"),
     "industria":        ("scrapers.industria_scraper",   "main"),
     "iso":              ("scrapers.iso_catalog",         "main"),
     "pjcat":            ("scrapers.pjcat_scraper",       "main"),

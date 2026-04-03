@@ -4,7 +4,9 @@ import hashlib
 import json
 import os
 import re
+import signal
 import sqlite3
+import threading
 import unicodedata
 from datetime import datetime
 from pathlib import Path
@@ -24,7 +26,7 @@ NORMATIVA_FOLDERS = [
     for name in [
         "adif", "dgc", "industria", "rebt_rite",
         "aca", "pjcat", "boe", "cte", "territori",
-        "mitma_ferroviari",
+        "mitma_ferroviari", "eurlex",
     ]
 ]
 DB_PATH = str(BASE_DIR / "db" / "normativa.db")
@@ -78,6 +80,10 @@ ARTICLE_SCAN_RE = re.compile(
 
 _MODEL: SentenceTransformer | None = None
 _LAST_INDEX_RESULT: dict = {}
+
+
+PDF_TIMEOUT = 120  # segons màxim per extreure text d'un PDF
+MAX_PDF_SIZE_MB = 30  # saltar PDFs més grans (pengen MuPDF)
 
 
 def extract_text_from_file(filepath: str) -> list[dict]:
@@ -263,6 +269,27 @@ def _upsert_in_batches(
     return upserted
 
 
+def _extract_with_timeout(filepath: str, timeout: int = PDF_TIMEOUT) -> list[dict]:
+    """Extreu text amb timeout per evitar penjar-se en PDFs problemàtics."""
+    result = []
+    error = []
+
+    def _worker():
+        try:
+            result.extend(extract_text_from_file(filepath))
+        except Exception as exc:
+            error.append(exc)
+
+    t = threading.Thread(target=_worker, daemon=True)
+    t.start()
+    t.join(timeout=timeout)
+    if t.is_alive():
+        raise TimeoutError(f"Extracció de text supera {timeout}s")
+    if error:
+        raise error[0]
+    return result
+
+
 def index_document(filepath: str, collection, conn) -> bool:
     global _LAST_INDEX_RESULT
 
@@ -274,6 +301,13 @@ def index_document(filepath: str, collection, conn) -> bool:
         "SELECT id, file_hash FROM documents WHERE filename = ?",
         (filename,),
     ).fetchone()
+
+    # Saltar PDFs massa grans que pengen MuPDF
+    file_size_mb = path.stat().st_size / (1024 * 1024)
+    if file_size_mb > MAX_PDF_SIZE_MB:
+        _LAST_INDEX_RESULT = {"status": "skipped_large", "filename": filename, "chunks": 0, "articles": 0}
+        print(f"  [SKIP] {path.name} ({file_size_mb:.0f} MB > {MAX_PDF_SIZE_MB} MB)")
+        return False
 
     if row and row[1] == file_hash:
         _LAST_INDEX_RESULT = {
@@ -287,7 +321,7 @@ def index_document(filepath: str, collection, conn) -> bool:
     if row:
         _delete_existing_document(conn, collection, row[0])
 
-    pages = extract_text_from_file(filepath)
+    pages = _extract_with_timeout(filepath)
     full_text = "\n\n".join(page.get("text", "") for page in pages)
     metadata = detect_document_metadata(path.name, full_text)
     chunks = chunk_text(pages, CHUNK_SIZE, CHUNK_OVERLAP)

@@ -34,6 +34,7 @@ SOURCES = {
     "cte":              {"label": "CTE",              "catalog": "catalogs/cte/catalogo_cte.json"},
     "dgc":              {"label": "DGC",              "catalog": "catalogs/dgc/catalogo_completo.json"},
     "era":              {"label": "ERA/CENELEC",      "catalog": "catalogs/era/catalogo_era.json"},
+    "eurlex":           {"label": "EUR-Lex UE",      "catalog": "catalogs/eurlex/catalogo_eurlex.json"},
     "industria":        {"label": "Indústria",        "catalog": "catalogs/industria/catalogo_industria.json"},
     "iso":              {"label": "ISO",              "catalog": "catalogs/iso/catalogo_iso.json"},
     "mitma_ferroviari": {"label": "MITMA Ferroviari", "catalog": "catalogs/mitma_ferroviari/catalogo_mitma_ferroviari.json"},

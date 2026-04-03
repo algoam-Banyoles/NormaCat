@@ -1,0 +1,739 @@
+{
+  "metadata": {
+    "font": "EUR-Lex (Diari Oficial de la UE)",
+    "url_base": "https://eur-lex.europa.eu",
+    "data_scraping": "2026-04-03",
+    "total_documents": 44,
+    "versio": "1.0",
+    "idioma_pdf": "ES (castellà); fallback EN",
+    "nota": "Legislació UE aplicable a infraestructures de mobilitat"
+  },
+  "documents": [
+    {
+      "celex": "32011R0305",
+      "codi": "Reg-305/2011",
+      "titol": "Reglament (UE) 305/2011 — Condicions harmonitzades per a la comercialització de productes de construcció (CPR)",
+      "tipus": "Reglament",
+      "any_publicacio": 2011,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "construcció",
+        "productes",
+        "marcatge_CE"
+      ],
+      "observacions": "Reglament de Productes de Construcció. Obligatori marcatge CE.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32011R0305",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32011R0305",
+      "fitxer_local": "downloads/eurlex/Reg-305_2011.pdf"
+    },
+    {
+      "celex": "32014L0024",
+      "codi": "Dir-2014/24/UE",
+      "titol": "Directiva 2014/24/UE — Contractació pública",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "contractes",
+        "licitació"
+      ],
+      "observacions": "Transposada per Llei 9/2017 (LCSP).",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0024",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0024",
+      "fitxer_local": "downloads/eurlex/Dir-2014_24_UE.pdf"
+    },
+    {
+      "celex": "32014L0025",
+      "codi": "Dir-2014/25/UE",
+      "titol": "Directiva 2014/25/UE — Contractació sectors especials (aigua, energia, transports)",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "contractes",
+        "sectors_especials",
+        "transport"
+      ],
+      "observacions": "Sectors especials incloent transport.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0025",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0025",
+      "fitxer_local": "downloads/eurlex/Dir-2014_25_UE.pdf"
+    },
+    {
+      "celex": "32014L0023",
+      "codi": "Dir-2014/23/UE",
+      "titol": "Directiva 2014/23/UE — Adjudicació de contractes de concessió",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "contractes",
+        "concessions"
+      ],
+      "observacions": "Concessions d'obres i serveis.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0023",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0023",
+      "fitxer_local": "downloads/eurlex/Dir-2014_23_UE.pdf"
+    },
+    {
+      "celex": "32011L0092",
+      "codi": "Dir-2011/92/UE",
+      "titol": "Directiva 2011/92/UE — Avaluació d'impacte ambiental (AIA) de projectes",
+      "tipus": "Directiva",
+      "any_publicacio": 2011,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "AIA"
+      ],
+      "observacions": "Codificació. Modificada per Dir 2014/52/UE.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32011L0092",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32011L0092",
+      "fitxer_local": "downloads/eurlex/Dir-2011_92_UE.pdf"
+    },
+    {
+      "celex": "32014L0052",
+      "codi": "Dir-2014/52/UE",
+      "titol": "Directiva 2014/52/UE — Modificació de la Directiva AIA 2011/92/UE",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "AIA"
+      ],
+      "observacions": "Modifica la Dir 2011/92/UE.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0052",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0052",
+      "fitxer_local": "downloads/eurlex/Dir-2014_52_UE.pdf"
+    },
+    {
+      "celex": "32001L0042",
+      "codi": "Dir-2001/42/CE",
+      "titol": "Directiva 2001/42/CE — Avaluació ambiental estratègica (AAE) de plans i programes",
+      "tipus": "Directiva",
+      "any_publicacio": 2001,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "AAE"
+      ],
+      "observacions": "Avaluació ambiental estratègica.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32001L0042",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32001L0042",
+      "fitxer_local": "downloads/eurlex/Dir-2001_42_CE.pdf"
+    },
+    {
+      "celex": "32000L0060",
+      "codi": "Dir-2000/60/CE",
+      "titol": "Directiva 2000/60/CE — Marc comunitari d'actuació en política d'aigües (DMA)",
+      "tipus": "Directiva",
+      "any_publicacio": 2000,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "aigües"
+      ],
+      "observacions": "Directiva Marc de l'Aigua.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32000L0060",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32000L0060",
+      "fitxer_local": null
+    },
+    {
+      "celex": "32008L0098",
+      "codi": "Dir-2008/98/CE",
+      "titol": "Directiva 2008/98/CE — Marc de residus",
+      "tipus": "Directiva",
+      "any_publicacio": 2008,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "residus"
+      ],
+      "observacions": "Jerarquia de residus. Transposada per Llei 7/2022.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32008L0098",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32008L0098",
+      "fitxer_local": "downloads/eurlex/Dir-2008_98_CE.pdf"
+    },
+    {
+      "celex": "32002L0049",
+      "codi": "Dir-2002/49/CE",
+      "titol": "Directiva 2002/49/CE — Avaluació i gestió del soroll ambiental",
+      "tipus": "Directiva",
+      "any_publicacio": 2002,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "soroll"
+      ],
+      "observacions": "Mapes estratègics de soroll.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32002L0049",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32002L0049",
+      "fitxer_local": "downloads/eurlex/Dir-2002_49_CE.pdf"
+    },
+    {
+      "celex": "32009L0147",
+      "codi": "Dir-2009/147/CE",
+      "titol": "Directiva 2009/147/CE — Conservació d'aus silvestres",
+      "tipus": "Directiva",
+      "any_publicacio": 2009,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "biodiversitat"
+      ],
+      "observacions": "Directiva d'Aus. Codificació de Dir 79/409/CEE.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32009L0147",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32009L0147",
+      "fitxer_local": "downloads/eurlex/Dir-2009_147_CE.pdf"
+    },
+    {
+      "celex": "31992L0043",
+      "codi": "Dir-92/43/CEE",
+      "titol": "Directiva 92/43/CEE — Conservació d'hàbitats naturals (Natura 2000)",
+      "tipus": "Directiva",
+      "any_publicacio": 1992,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "biodiversitat"
+      ],
+      "observacions": "Directiva Hàbitats. Xarxa Natura 2000.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:31992L0043",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:31992L0043",
+      "fitxer_local": "downloads/eurlex/Dir-92_43_CEE.pdf"
+    },
+    {
+      "celex": "32016L0797",
+      "codi": "Dir-2016/797/UE",
+      "titol": "Directiva (UE) 2016/797 — Interoperabilitat del sistema ferroviari",
+      "tipus": "Directiva",
+      "any_publicacio": 2016,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "interoperabilitat"
+      ],
+      "observacions": "4t paquet ferroviari. Pilar tècnic.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32016L0797",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32016L0797",
+      "fitxer_local": "downloads/eurlex/Dir-2016_797_UE.pdf"
+    },
+    {
+      "celex": "32016L0798",
+      "codi": "Dir-2016/798/UE",
+      "titol": "Directiva (UE) 2016/798 — Seguretat ferroviària",
+      "tipus": "Directiva",
+      "any_publicacio": 2016,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "seguretat"
+      ],
+      "observacions": "4t paquet ferroviari.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32016L0798",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32016L0798",
+      "fitxer_local": "downloads/eurlex/Dir-2016_798_UE.pdf"
+    },
+    {
+      "celex": "32016R0796",
+      "codi": "Reg-2016/796/UE",
+      "titol": "Reglament (UE) 2016/796 — Agència Ferroviària Europea (ERA)",
+      "tipus": "Reglament",
+      "any_publicacio": 2016,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "ERA"
+      ],
+      "observacions": "Estableix l'ERA.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32016R0796",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32016R0796",
+      "fitxer_local": "downloads/eurlex/Reg-2016_796_UE.pdf"
+    },
+    {
+      "celex": "32014R1299",
+      "codi": "Reg-1299/2014",
+      "titol": "Reglament (UE) 1299/2014 — ETI Infraestructura",
+      "tipus": "Reglament",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "ETI",
+        "infraestructura"
+      ],
+      "observacions": "Especificació tècnica interoperabilitat infra.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014R1299",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014R1299",
+      "fitxer_local": "downloads/eurlex/Reg-1299_2014.pdf"
+    },
+    {
+      "celex": "32014R1301",
+      "codi": "Reg-1301/2014",
+      "titol": "Reglament (UE) 1301/2014 — ETI Energia",
+      "tipus": "Reglament",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "ETI",
+        "energia"
+      ],
+      "observacions": "ETI subsistema energia.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014R1301",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014R1301",
+      "fitxer_local": "downloads/eurlex/Reg-1301_2014.pdf"
+    },
+    {
+      "celex": "32016R0919",
+      "codi": "Reg-2016/919",
+      "titol": "Reglament (UE) 2016/919 — ETI Control-Comandament i Senyalització (CCS)",
+      "tipus": "Reglament",
+      "any_publicacio": 2016,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "ETI",
+        "senyalització",
+        "ERTMS"
+      ],
+      "observacions": "ETI CCS. ERTMS/ETCS.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32016R0919",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32016R0919",
+      "fitxer_local": "downloads/eurlex/Reg-2016_919.pdf"
+    },
+    {
+      "celex": "32014R1300",
+      "codi": "Reg-1300/2014",
+      "titol": "Reglament (UE) 1300/2014 — ETI Accessibilitat PMR",
+      "tipus": "Reglament",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "ETI",
+        "accessibilitat"
+      ],
+      "observacions": "Persones amb mobilitat reduïda.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014R1300",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014R1300",
+      "fitxer_local": "downloads/eurlex/Reg-1300_2014.pdf"
+    },
+    {
+      "celex": "32014R1303",
+      "codi": "Reg-1303/2014",
+      "titol": "Reglament (UE) 1303/2014 — ETI Seguretat en túnels ferroviaris (SRT)",
+      "tipus": "Reglament",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ferroviari",
+        "ETI",
+        "túnels",
+        "seguretat"
+      ],
+      "observacions": "Seguretat túnels.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014R1303",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014R1303",
+      "fitxer_local": "downloads/eurlex/Reg-1303_2014.pdf"
+    },
+    {
+      "celex": "32006L0042",
+      "codi": "Dir-2006/42/CE",
+      "titol": "Directiva 2006/42/CE — Maquinària",
+      "tipus": "Directiva",
+      "any_publicacio": 2006,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "maquinària",
+        "seguretat_industrial",
+        "marcatge_CE"
+      ],
+      "observacions": "Directiva Maquinària. Marcatge CE.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32006L0042",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32006L0042",
+      "fitxer_local": "downloads/eurlex/Dir-2006_42_CE.pdf"
+    },
+    {
+      "celex": "32014L0035",
+      "codi": "Dir-2014/35/UE",
+      "titol": "Directiva 2014/35/UE — Baixa tensió (LVD)",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "elèctric",
+        "baixa_tensió",
+        "marcatge_CE"
+      ],
+      "observacions": "Material elèctric de baixa tensió.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0035",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0035",
+      "fitxer_local": "downloads/eurlex/Dir-2014_35_UE.pdf"
+    },
+    {
+      "celex": "32014L0030",
+      "codi": "Dir-2014/30/UE",
+      "titol": "Directiva 2014/30/UE — Compatibilitat electromagnètica (EMC)",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "elèctric",
+        "EMC",
+        "marcatge_CE"
+      ],
+      "observacions": "Compatibilitat electromagnètica.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0030",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0030",
+      "fitxer_local": "downloads/eurlex/Dir-2014_30_UE.pdf"
+    },
+    {
+      "celex": "32014L0034",
+      "codi": "Dir-2014/34/UE",
+      "titol": "Directiva 2014/34/UE — Equips ATEX (atmosferes explosives)",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "seguretat_industrial",
+        "ATEX"
+      ],
+      "observacions": "Equips per a atmosferes explosives.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0034",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0034",
+      "fitxer_local": "downloads/eurlex/Dir-2014_34_UE.pdf"
+    },
+    {
+      "celex": "32014L0033",
+      "codi": "Dir-2014/33/UE",
+      "titol": "Directiva 2014/33/UE — Ascensors i components de seguretat",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "ascensors",
+        "marcatge_CE"
+      ],
+      "observacions": "Transposada per RD 355/2024.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0033",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0033",
+      "fitxer_local": "downloads/eurlex/Dir-2014_33_UE.pdf"
+    },
+    {
+      "celex": "32019L0882",
+      "codi": "Dir-2019/882/UE",
+      "titol": "Directiva (UE) 2019/882 — Requisits d'accessibilitat de productes i serveis (EAA)",
+      "tipus": "Directiva",
+      "any_publicacio": 2019,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "accessibilitat"
+      ],
+      "observacions": "European Accessibility Act. Transposició: RDL 11/2023.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32019L0882",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32019L0882",
+      "fitxer_local": "downloads/eurlex/Dir-2019_882_UE.pdf"
+    },
+    {
+      "celex": "32014L0068",
+      "codi": "Dir-2014/68/UE",
+      "titol": "Directiva 2014/68/UE — Equips a pressió (PED)",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "seguretat_industrial",
+        "pressió"
+      ],
+      "observacions": "Equips a pressió. Transposada per RD 809/2021.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0068",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0068",
+      "fitxer_local": "downloads/eurlex/Dir-2014_68_UE.pdf"
+    },
+    {
+      "celex": "32010L0031",
+      "codi": "Dir-2010/31/UE",
+      "titol": "Directiva 2010/31/UE — Eficiència energètica dels edificis (EPBD)",
+      "tipus": "Directiva",
+      "any_publicacio": 2010,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "energia",
+        "edificació"
+      ],
+      "observacions": "Edificis de consum quasi nul (nZEB). Modificada per Dir 2024/1275.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32010L0031",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32010L0031",
+      "fitxer_local": "downloads/eurlex/Dir-2010_31_UE.pdf"
+    },
+    {
+      "celex": "32012L0027",
+      "codi": "Dir-2012/27/UE",
+      "titol": "Directiva 2012/27/UE — Eficiència energètica",
+      "tipus": "Directiva",
+      "any_publicacio": 2012,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "energia"
+      ],
+      "observacions": "Marc general eficiència energètica.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32012L0027",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32012L0027",
+      "fitxer_local": "downloads/eurlex/Dir-2012_27_UE.pdf"
+    },
+    {
+      "celex": "32004L0054",
+      "codi": "Dir-2004/54/CE",
+      "titol": "Directiva 2004/54/CE — Requisits mínims de seguretat per a túnels de la xarxa viària transeuropea",
+      "tipus": "Directiva",
+      "any_publicacio": 2004,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "carreteres",
+        "túnels",
+        "seguretat"
+      ],
+      "observacions": "Túnels > 500m a TEN-T. Transposada per RD 635/2006.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32004L0054",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32004L0054",
+      "fitxer_local": "downloads/eurlex/Dir-2004_54_CE.pdf"
+    },
+    {
+      "celex": "32008L0096",
+      "codi": "Dir-2008/96/CE",
+      "titol": "Directiva 2008/96/CE — Gestió de la seguretat de les infraestructures viàries",
+      "tipus": "Directiva",
+      "any_publicacio": 2008,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "carreteres",
+        "seguretat_viària"
+      ],
+      "observacions": "Auditories i inspeccions de seguretat viària. Modificada per Dir 2019/1936.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32008L0096",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32008L0096",
+      "fitxer_local": "downloads/eurlex/Dir-2008_96_CE.pdf"
+    },
+    {
+      "celex": "32019L1936",
+      "codi": "Dir-2019/1936/UE",
+      "titol": "Directiva (UE) 2019/1936 — Modificació Dir 2008/96/CE gestió seguretat viària",
+      "tipus": "Directiva",
+      "any_publicacio": 2019,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "carreteres",
+        "seguretat_viària"
+      ],
+      "observacions": "Amplia abast més enllà de TEN-T.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32019L1936",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32019L1936",
+      "fitxer_local": "downloads/eurlex/Dir-2019_1936_UE.pdf"
+    },
+    {
+      "celex": "32024R1991",
+      "codi": "Reg-2024/1991",
+      "titol": "Reglament (UE) 2024/1991 — Restauració de la natura",
+      "tipus": "Reglament",
+      "any_publicacio": 2024,
+      "estat": "VIGENT",
+      "font": "EUR-Lex",
+      "temes": [
+        "medi_ambient",
+        "biodiversitat"
+      ],
+      "observacions": "Nature Restoration Law. Vigor juny 2024.",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32024R1991",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32024R1991",
+      "fitxer_local": "downloads/eurlex/Reg-2024_1991.pdf"
+    },
+    {
+      "celex": "72016L1164",
+      "codi": "Dir-11/2021",
+      "titol": "Ley 11/2021, de 9 de julio, de medidas de prevención y lucha contra el fraude fiscal, de transposición de laDirectiva(UE) 2016/1164, del Consejo, de 12 de julio de 2016, por la que se establecen normas contra las prácticas de elusión fiscal que inciden directamente en el funcionamiento del mercado i",
+      "tipus": "Directiva",
+      "any_publicacio": 2016,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'infraestructuras transporte directiva'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:72016L1164",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:72016L1164",
+      "fitxer_local": null
+    },
+    {
+      "celex": "72019L2162",
+      "codi": "Dir-24/2021",
+      "titol": "Real Decreto-ley 24/2021, de 2 de noviembre, de transposición dedirectivasde la Unión Europea en las materias de bonos garantizados, distribución transfronteriza de organismos de inversión colectiva, datos abiertos y reutilización de la información del sector público, ejercicio de derechos de autor ",
+      "tipus": "Directiva",
+      "any_publicacio": 2019,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'infraestructuras transporte directiva'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:72019L2162",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:72019L2162",
+      "fitxer_local": null
+    },
+    {
+      "celex": "72019L2177",
+      "codi": "Dir-7/2021",
+      "titol": "Real Decreto-ley 7/2021, de 27 de abril, de transposición dedirectivasde la Unión Europea en las materias de competencia, prevención del blanqueo de capitales, entidades de crédito, telecomunicaciones, medidas tributarias, prevención y reparación de daños medioambientales, desplazamiento de trabajad",
+      "tipus": "Directiva",
+      "any_publicacio": 2019,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'infraestructuras transporte directiva'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:72019L2177",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:72019L2177",
+      "fitxer_local": null
+    },
+    {
+      "celex": "32006R0561",
+      "codi": "Reg-561/2006",
+      "titol": "Regulation (EC) No 561/2006 of the European Parliament and of the Council of  15 March 2006  on the harmonisation of certain social legislation relating to road transport and amending Council Regulations (EEC) No 3821/85 and (EC) No 2135/98 and repealing Council Regulation (EEC) No 3820/85   (Text w",
+      "tipus": "Reglament",
+      "any_publicacio": 2006,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32006R0561",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32006R0561",
+      "fitxer_local": null
+    },
+    {
+      "celex": "32009L0045",
+      "codi": "CELEX-32009L0045",
+      "titol": "Directive 2009/45/EC of the European Parliament and of the Council of 6 May 2009 on safety rules and standards for passenger ships (Recast) (Text with EEA relevance )",
+      "tipus": "Directiva",
+      "any_publicacio": 2009,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32009L0045",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32009L0045",
+      "fitxer_local": "downloads/eurlex/CELEX-32009L0045.pdf"
+    },
+    {
+      "celex": "31999L0062",
+      "codi": "CELEX-31999L0062",
+      "titol": "Directive 1999/62/EC of the European Parliament and of the Council of 17 June 1999 on the charging of heavy goods vehicles for the use of certain infrastructures",
+      "tipus": "Directiva",
+      "any_publicacio": 1999,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:31999L0062",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:31999L0062",
+      "fitxer_local": "downloads/eurlex/CELEX-31999L0062.pdf"
+    },
+    {
+      "celex": "32021L1187",
+      "codi": "Dir-2021/1187",
+      "titol": "Directive (EU) 2021/1187 of the European Parliament and of the Council of 7 July 2021 on streamlining measures for advancing the realisation of the trans-European transport network (TEN-T)",
+      "tipus": "Directiva",
+      "any_publicacio": 2021,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32021L1187",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32021L1187",
+      "fitxer_local": "downloads/eurlex/Dir-2021_1187.pdf"
+    },
+    {
+      "celex": "32024R1679",
+      "codi": "Reg-2024/1679",
+      "titol": "Regulation (EU) 2024/1679 of the European Parliament and of the Council of 13 June 2024 on Union guidelines for the development of the trans-European transport network, amending Regulations (EU) 2021/1153 and (EU) No 913/2010 and repealing Regulation (EU) No 1315/2013 (Text with EEA relevance)",
+      "tipus": "Reglament",
+      "any_publicacio": 2024,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32024R1679",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32024R1679",
+      "fitxer_local": "downloads/eurlex/Reg-2024_1679.pdf"
+    },
+    {
+      "celex": "32021R1153",
+      "codi": "Reg-2021/1153",
+      "titol": "Regulation (EU) 2021/1153 of the European Parliament and of the Council of 7 July 2021 establishing the Connecting Europe Facility and repealing Regulations (EU) No 1316/2013 and (EU) No 283/2014 (Text with EEA relevance)",
+      "tipus": "Reglament",
+      "any_publicacio": 2021,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32021R1153",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32021R1153",
+      "fitxer_local": "downloads/eurlex/Reg-2021_1153.pdf"
+    },
+    {
+      "celex": "32006R1893",
+      "codi": "Reg-1893/2006",
+      "titol": "Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Revision 2 and amending Council Regulation (EEC) No 3037/90 as well as certain EC Regulations on specific statistical domains Text wi",
+      "tipus": "Reglament",
+      "any_publicacio": 2006,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32006R1893",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32006R1893",
+      "fitxer_local": "downloads/eurlex/Reg-1893_2006.pdf"
+    },
+    {
+      "celex": "32014L0045",
+      "codi": "CELEX-32014L0045",
+      "titol": "Directive 2014/45/EU of the European Parliament and of the Council of 3 April 2014 on periodic roadworthiness tests for motor vehicles and their trailers and repealing Directive 2009/40/EC  Text with EEA relevance",
+      "tipus": "Directiva",
+      "any_publicacio": 2014,
+      "estat": "VIGENT",
+      "font": "EUR-Lex (cerca)",
+      "temes": [],
+      "observacions": "Trobat via cerca: 'seguridad túneles carreteras reglamento'",
+      "url_fitxa": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32014L0045",
+      "url_pdf": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32014L0045",
+      "fitxer_local": "downloads/eurlex/CELEX-32014L0045.pdf"
+    }
+  ]
+}
