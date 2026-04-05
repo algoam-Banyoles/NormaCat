@@ -30,6 +30,7 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 
 from search.query_expansion import expand_for_bm25
+from search.tipologia import get_source_multiplier
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -151,6 +152,16 @@ class HybridSearcher:
     RRF_K = 60
     MAX_PER_SOURCE = 4
 
+    # Limits especifics per font (override de MAX_PER_SOURCE)
+    SOURCE_LIMITS = {
+        "pjcat": 1,       # 31.7% rellevant — lleis generiques, molt soroll
+        "iso": 1,         # Nomes metadades
+        "une": 1,         # Nomes metadades
+        "aca": 1,         # 28.1% rellevant — jornades i proves generiques
+        "adif": 2,        # 40.7% rellevant pero 39% del corpus -> domina
+        "rebt_rite": 2,   # 54.2% pero poc volum, limitar per diversitat
+    }
+
     def __init__(self, sqlite_path: str, chroma_path: str,
                  embedding_model: str = "paraphrase-multilingual-MiniLM-L12-v2",
                  model_instance=None):
@@ -200,8 +211,8 @@ class HybridSearcher:
             self._reranker = Reranker()
         return self._reranker
 
-    def _cache_key(self, query, top_k, source_filter):
-        raw = f"{query}|{top_k}|{source_filter}"
+    def _cache_key(self, query, top_k, source_filter, tipologia=""):
+        raw = f"{query}|{top_k}|{source_filter}|{tipologia}"
         return hashlib.md5(raw.encode()).hexdigest()
 
     def search_bm25(self, query: str, top_k: int = 30) -> list[dict]:
@@ -282,20 +293,28 @@ class HybridSearcher:
 
         results = []
         for text, meta, dist in zip(docs, metas, dists):
+            meta = meta or {}
+            # Assegurar que source existeix (pot faltar en metadades)
+            if not meta.get("source") and meta.get("doc_codi"):
+                codi = meta["doc_codi"].lower()
+                if "meta_" in codi:
+                    parts = codi.split("_")
+                    if len(parts) >= 2:
+                        meta["source"] = parts[1]
             results.append({
                 "document": text,
-                "metadata": meta or {},
+                "metadata": meta,
                 "distance": float(dist),
             })
 
         return results
 
     def search(self, query: str, top_k: int = 10,
-               source_filter: str = "") -> list[dict]:
+               source_filter: str = "", tipologia: str = "") -> list[dict]:
         """Cerca hibrida: BM25 + Semantica -> fusio RRF."""
 
         # Cache check
-        ck = self._cache_key(query, top_k, source_filter)
+        ck = self._cache_key(query, top_k, source_filter, tipologia)
         if ck in self._cache:
             ts, cached = self._cache[ck]
             if _time.time() - ts < self._cache_ttl:
@@ -385,10 +404,18 @@ class HybridSearcher:
             ]):
                 item["score"] *= 0.6
 
-        # 4. Ordenar
+        # 4. Boost per tipologia de projecte
+        if tipologia:
+            for key, item in scores.items():
+                r = item["result"]
+                source = (r.get("metadata", {}).get("source") or "").lower()
+                multiplier = get_source_multiplier(tipologia, source, query)
+                item["score"] *= multiplier
+
+        # 5. Ordenar
         ranked = sorted(scores.values(), key=lambda x: -x["score"])
 
-        # 5. Diversitat de fonts
+        # 6. Diversitat de fonts
         source_counts = {}
         final = []
 
@@ -401,7 +428,8 @@ class HybridSearcher:
                 continue
 
             source_counts[source] = source_counts.get(source, 0) + 1
-            if source_counts[source] > self.MAX_PER_SOURCE:
+            max_for_source = self.SOURCE_LIMITS.get(source, self.MAX_PER_SOURCE)
+            if source_counts[source] > max_for_source:
                 continue
 
             max_score = ranked[0]["score"] if ranked else 1

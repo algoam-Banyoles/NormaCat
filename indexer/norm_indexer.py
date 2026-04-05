@@ -391,12 +391,19 @@ def index_document(filepath: str, collection, conn) -> bool:
     chunks = [chunks[i] for i in valid_indices]
     embeddings = embeddings[valid_indices]
 
+    # Detectar source del path (downloads/<source>/...)
+    _source = ""
+    _m = re.search(r"downloads[/\\](\w+)[/\\]", str(path))
+    if _m:
+        _source = _m.group(1)
+
     chroma_ids = [f"doc_{doc_id}_chunk_{chunk['chunk_index']}" for chunk in chunks]
     metadatas = [
         {
             "doc_id": doc_id,
             "doc_codi": metadata.get("codi") or "",
             "doc_titol": metadata.get("titol") or path.name,
+            "source": _source,
             "page": int(chunk.get("page", 0) or 0),
             "chunk_index": int(chunk["chunk_index"]),
             "vigent": int(metadata.get("vigent", 1)),

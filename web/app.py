@@ -89,7 +89,11 @@ def index():
     idx = _get_norm_index()
     stats = idx.stats()
     source_labels = {k: v["label"] for k, v in config.SOURCES.items()}
-    return render_template("index.html", stats=stats, source_labels=source_labels)
+    from search.tipologia import get_tipologies_list
+    tipologies = get_tipologies_list()
+    return render_template("index.html", stats=stats,
+                           source_labels=source_labels,
+                           tipologies=tipologies)
 
 
 @app.route("/api/search", methods=["POST"])
@@ -99,6 +103,7 @@ def api_search():
     query = (data.get("query") or "").strip()
     top = min(int(data.get("top", 10)), 50)
     source_filter = (data.get("source") or "").strip()
+    tipologia = (data.get("tipologia") or "").strip().upper()
 
     if not query:
         return jsonify({"error": "Cal especificar una consulta.", "results": []})
@@ -106,7 +111,8 @@ def api_search():
     t0 = time.time()
     try:
         searcher = _get_hybrid_searcher()
-        raw = searcher.search(query, top_k=top, source_filter=source_filter)
+        raw = searcher.search(query, top_k=top, source_filter=source_filter,
+                              tipologia=tipologia)
     except Exception as exc:
         return jsonify({"error": f"Error de cerca: {exc}", "results": []})
 
@@ -303,6 +309,7 @@ def api_rag():
     query = (data.get("query") or "").strip()
     provider = (data.get("provider") or "").strip() or None
     source_filter = (data.get("source") or "").strip()
+    tipologia = (data.get("tipologia") or "").strip().upper()
     top_k = min(int(data.get("top_k", 12)), 20)
 
     if not query:

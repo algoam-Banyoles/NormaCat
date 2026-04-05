@@ -1,0 +1,7600 @@
+[
+  {
+    "query": "contingut minim projecte constructiu obra publica",
+    "tipologia": "G",
+    "annex": "A01",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 84.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 55.5,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 14.6,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "boe",
+        "doc_codi": "Llei 9/2017",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "requisits ordre d'estudi i antecedents administratius",
+    "tipologia": "G",
+    "annex": "A01",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "boe",
+        "doc_codi": "Llei 9/2017",
+        "llm_score": 1,
+        "search_score": 18.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "boe",
+        "doc_codi": "Llei 9/2017",
+        "llm_score": 1,
+        "search_score": 5.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "boe",
+        "doc_codi": "Llei 9/2017",
+        "llm_score": 1,
+        "search_score": 2.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "boe",
+        "doc_codi": "RD 1098/2001",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "pla de control de qualitat obra civil",
+    "tipologia": "G",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 93.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 18.1,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "boe",
+        "doc_codi": "Llei 9/2017",
+        "llm_score": 1,
+        "search_score": 15.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 223/2008",
+        "llm_score": 3,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "gestio de residus de construccio i demolicio",
+    "tipologia": "G",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "305/2011",
+        "llm_score": 3,
+        "search_score": 98.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 84.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 60.5,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "boe",
+        "doc_codi": "RD 817/2009",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "avaluacio impacte ambiental projectes infraestructures",
+    "tipologia": "G",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/2009",
+        "llm_score": 3,
+        "search_score": 80.1,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 67.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 29.3,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "parametres de tracat carretera C-80",
+    "tipologia": "C",
+    "annex": "A03",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 47.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "boe",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 1,
+        "search_score": 35.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 1,
+        "search_score": 35.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "radi minim en planta per a velocitat de projecte 80 km/h",
+    "tipologia": "C",
+    "annex": "A03",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 92.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "industria",
+        "doc_codi": "RD 223/2008",
+        "llm_score": 0,
+        "search_score": 79.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 12.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "galib ferroviari FGC ample metric",
+    "tipologia": "F",
+    "annex": "A03",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 74.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 63.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "1372/2010",
+        "llm_score": 1,
+        "search_score": 48.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "seccio transversal tipus carretera convencional",
+    "tipologia": "C",
+    "annex": "A03",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 91.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "boe",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 1,
+        "search_score": 79.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "classificacio del sol urbanisme Catalunya",
+    "tipologia": "G",
+    "annex": "A04",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "RD 1341/2007",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "RD 1341/2007",
+        "llm_score": 0,
+        "search_score": 99.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "RD 1341/2007",
+        "llm_score": 0,
+        "search_score": 97.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "RD 1341/2007",
+        "llm_score": 0,
+        "search_score": 97.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "norma 3.1-IC tracat instruccio de carreteres",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 98.1,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "1/2019",
+        "llm_score": 1,
+        "search_score": 56.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "1/2019",
+        "llm_score": 2,
+        "search_score": 50.2,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "1/2019",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "pendents longitudinals maximes en rampes",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 61/2022",
+        "llm_score": 3,
+        "search_score": 14.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 8.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 6.9,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "amplada minima plataforma tramvia",
+    "tipologia": "T",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 69.2,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 62.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 3.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "amplada minima carril bici segregat",
+    "tipologia": "B",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 57.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 39.8,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 5.3,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "mescles bituminoses capa de rodadura",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 27.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 16.1,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 6.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "article 542 PG-3 mescla bituminosa tipus AC",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "CIRCULAR",
+        "llm_score": 3,
+        "search_score": 92.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "CIRCULAR",
+        "llm_score": 3,
+        "search_score": 83.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 1,
+        "search_score": 65.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "esplanada i ferm en carreteres categories de transit",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "1/2016",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 38.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 38.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 3.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "reg d'imprimacio i reg d'adherencia ferms",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 20.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 15.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 13.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "drenatge transversal carreteres periode de retorn",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 93.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "DE",
+        "llm_score": 0,
+        "search_score": 19.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "DE",
+        "llm_score": 0,
+        "search_score": 17.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "drenatge longitudinal cunetes i col.lectors",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 97.6,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 57.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 45.9,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Llei 13/1989",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "dimensionament hidraulic obres de fabrica",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 78.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 29.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 8.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "catenaria i electrificacio ferroviaria",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 99.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 30.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 3.4,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 223/2008",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "senyalitzacio ferroviaria ERTMS i enclavaments",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "5/2023",
+        "llm_score": 3,
+        "search_score": 70.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 57.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 1,
+        "search_score": 48.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "superestructura de via balast i travesses",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 80.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 77.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 71.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "instal.lacio electrica baixa tensio REBT",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 38.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 34.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 5.9,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "climatitzacio i ventilacio RITE edificis",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "rebt_rite",
+        "doc_codi": "RD 1027/2007",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 22.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 12.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 10.1,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "proteccio contra incendis en aparcaments soterrats",
+    "tipologia": "P",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 1,
+        "search_score": 71.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 1,
+        "search_score": 41.4,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 1,
+        "search_score": 1.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "enllumenat public carrers i vials eficiencia energetica",
+    "tipologia": "C",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "industria",
+        "doc_codi": "Llei 18/2022",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "industria",
+        "doc_codi": "Llei 18/2022",
+        "llm_score": 3,
+        "search_score": 88.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "industria",
+        "doc_codi": "RD 1890/2008",
+        "llm_score": 3,
+        "search_score": 82.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "industria",
+        "doc_codi": "Llei 18/2022",
+        "llm_score": 3,
+        "search_score": 81.1,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "RD 1098/2001",
+        "llm_score": 3,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "senyalitzacio horitzontal viaria marcas viales",
+    "tipologia": "C",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 510/2018",
+        "llm_score": 3,
+        "search_score": 95.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 88.8,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "Ordre 891/2004",
+        "llm_score": 2,
+        "search_score": 68.8,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "senyalitzacio vertical carreteres norma 8.1-IC",
+    "tipologia": "C",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "03/2017",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 82.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 72.9,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 67.6,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "senyalitzacio d'obres en carreteres 8.3-IC",
+    "tipologia": "C",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "03/2017",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 30.2,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 2,
+        "search_score": 23.9,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 19.4,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "1/2019",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "abalisament viari balises i captafars",
+    "tipologia": "C",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "03/2017",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "03/2017",
+        "llm_score": 3,
+        "search_score": 65.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "accessibilitat persones mobilitat reduida estacions",
+    "tipologia": "M",
+    "annex": "A11",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "1372/2010",
+        "llm_score": 3,
+        "search_score": 50.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 2,
+        "search_score": 24.8,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 2.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "codi accessibilitat Catalunya Decret 209/2023",
+    "tipologia": "G",
+    "annex": "A11",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "02/2022",
+        "llm_score": 0,
+        "search_score": 1.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "02/2022",
+        "llm_score": 0,
+        "search_score": 1.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.6,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "connexio xarxa electrica subministrament",
+    "tipologia": "G",
+    "annex": "A12",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 55.7,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 25.5,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 20.2,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "reposicio serveis afectats xarxes existents",
+    "tipologia": "G",
+    "annex": "A13",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 2.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "codi estructural formigo armat RD 470/2021",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 470/2021",
+        "llm_score": 3,
+        "search_score": 37.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 25.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 5.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "accions en ponts de carretera IAP-11",
+    "tipologia": "C",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 99.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 68.7,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 22.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "fonamentacions profundes pilotatge",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 1382/2002",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 1382/2002",
+        "llm_score": 3,
+        "search_score": 11.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 8.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 6.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "Ordre 1382/2002",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "murs de contencio empenta de terres",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Decret 190/2016",
+        "llm_score": 1,
+        "search_score": 87.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 64.5,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 37.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "estudi seguretat i salut en obres de construccio",
+    "tipologia": "G",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "RD 1627/1997",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 96.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 79.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "boe",
+        "doc_codi": "RD 899/2025",
+        "llm_score": 3,
+        "search_score": 49.1,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "RD 1627/1997",
+        "llm_score": 3,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "coordinacio seguretat en fase de projecte i execucio",
+    "tipologia": "G",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 78.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 29.1,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "plec prescripcions tecniques particulars LCSP",
+    "tipologia": "G",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 91.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 91.2,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 46.5,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "directiva avaluacio impacte ambiental projectes UE",
+    "tipologia": "G",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/2009",
+        "llm_score": 2,
+        "search_score": 94.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 26.1,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 21.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "reglament productes construccio marcatge CE",
+    "tipologia": "G",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 99.3,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 69.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "Ordre 510/2018",
+        "llm_score": 3,
+        "search_score": 49.7,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "directiva interoperabilitat sistema ferroviari",
+    "tipologia": "F",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "9/2018",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "Llei 39/2003",
+        "llm_score": 3,
+        "search_score": 77.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "eurlex",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 58.0,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "eurlex",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 18.5,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "eurlex",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "seguretat en tunels viaris directiva europea",
+    "tipologia": "C",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 94.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 87.4,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 85.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Decret 190/2016",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "estacio d'autobusos marquesina i zona d'espera",
+    "tipologia": "A",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 51.4,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 41.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 9.2,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 224/2008",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "parc de vehicles cotxeres ventilacio i incendis",
+    "tipologia": "P",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "industria",
+        "doc_codi": "RD 2822/1998",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 773/2015",
+        "llm_score": 0,
+        "search_score": 42.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "boe",
+        "doc_codi": "RD 1098/2001",
+        "llm_score": 0,
+        "search_score": 23.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 1098/2001",
+        "llm_score": 0,
+        "search_score": 23.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "via verda carril bici senyalitzacio ciclista",
+    "tipologia": "B",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "01/2018",
+        "llm_score": 3,
+        "search_score": 93.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 88.8,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 87.6,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "plataforma tramvia segregada galib vehicle",
+    "tipologia": "T",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "1372/2010",
+        "llm_score": 0,
+        "search_score": 64.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 0,
+        "search_score": 11.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 1,
+        "search_score": 3.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "ventilacio tunel metro sistema d'extraccio de fums",
+    "tipologia": "M",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "boe",
+        "doc_codi": "RD 635/2006",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 81.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "boe",
+        "doc_codi": "RD 635/2006",
+        "llm_score": 2,
+        "search_score": 74.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "industria",
+        "doc_codi": "RD 1427/1997",
+        "llm_score": 0,
+        "search_score": 46.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "distancia de visibilitat de parada en carreteres",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "boe",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "DE",
+        "llm_score": 2,
+        "search_score": 56.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 36.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "peralts maxims en corbes de carreteres convencionals",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "1/2016",
+        "llm_score": 0,
+        "search_score": 61.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "1/2016",
+        "llm_score": 0,
+        "search_score": 47.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "1/2016",
+        "llm_score": 1,
+        "search_score": 27.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "1/2019",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "acords verticals parabola de transicio rasant",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 89.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 86.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 82.4,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "velocitat de projecte i velocitat especifica norma 3.1-IC",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 65.4,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 3.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "numero de carrils en funcio del nivell de servei IMD",
+    "tipologia": "C",
+    "annex": "A03",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "Llei 13/1989",
+        "llm_score": 2,
+        "search_score": 76.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 69.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "carrers de servei i vials laterals en autovies",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 85.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 53.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 53.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "interseccions rotondes dimensionament geometric",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 48.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 36.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "Circular",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "rampes i pendents longitudinals maxims vies urbanes",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 81.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 42.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 40.6,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 223/2008",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "bermes i vorals amplada minima per categoria",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Decret 190/2016",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 17.6,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 1.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 1.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "coordinacio planta-alcat consistencia del tracat",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 88.7,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 2,
+        "search_score": 13.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 6.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "categories de transit pesat norma 6.1-IC seccions de ferm",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 32.6,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 28.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 28.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "zahorra artificial base granular prescripcions PG-3",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 2,
+        "search_score": 98.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 0,
+        "search_score": 17.1,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 0,
+        "search_score": 15.6,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "sol estabilitzat amb ciment suelocemento article 512",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 83.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 2,
+        "search_score": 74.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 2.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "paviment de formigo llosa continua juntes",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 39.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 1,
+        "search_score": 32.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 12.8,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "mescla bituminosa drenant capa de rodadura PA",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 25.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 15.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 13.1,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "betum modificat amb polimers PMB caracteristiques",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 15.9,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 2,
+        "search_score": 15.2,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 13.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "deflexions i capacitat portant del ferm viga benkelman",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 3,
+        "search_score": 93.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 3,
+        "search_score": 84.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.1,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "textura superficial i resistencia al lliscament SRT",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 52.3,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 22.2,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 13.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "periode de retorn per a obres de drenatge transversal 5.2-IC",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 28.6,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 28.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 16.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "cunetes triangulars i trapezoidals dimensionament",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 90.6,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 79.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 63.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "tubs de formigo armat diametre minim obres de drenatge",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 30.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 3.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "estudi hidrologic conca vessant metode racional",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 94.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 298/2016",
+        "llm_score": 2,
+        "search_score": 47.2,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 3.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "cabal de disseny inundabilitat zones urbanes ACA",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "1/2016",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 81.3,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 67.7,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 40.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "col.lectors i xarxa de sanejament pluvials",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 96.1,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 89.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 85.5,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "drenatge subterrani drens i lamines impermeabilitzants",
+    "tipologia": "C",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 76.1,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 48.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 25.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "sobrecarrega d'us en ponts de carretera IAP-11",
+    "tipologia": "C",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 98.7,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 92.9,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 29.3,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "armat minim en pilars i bigues formigo codi estructural",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 94.1,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 68.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 7.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "control de fissuracio obertura maxima de fissura",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 57.4,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 30.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 8.1,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "resistencia caracteristica formigo fck exposicio ambiental",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 54.1,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 31.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 15.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "recubriment minim armadures durabilitat formigo",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "Ordre 698/2023",
+        "llm_score": 3,
+        "search_score": 76.3,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 41.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 34.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "pretesat per post-tensio perdues de tensio ancoratges",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 68.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 7.2,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 1.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "60076-3",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "unions soldades en estructures metal.liques CTE DB-SE-A",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 77.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 62.4,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "accio sismica NCSE-02 acceleracio basica",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "RD 637/2007",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 637/2007",
+        "llm_score": 3,
+        "search_score": 89.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "RD 637/2007",
+        "llm_score": 2,
+        "search_score": 76.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 637/2007",
+        "llm_score": 1,
+        "search_score": 9.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "proves de carrega estatica en ponts acabats",
+    "tipologia": "C",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 95.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 46.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 5.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "juntes de dilatacio aparells de recolzament neopre",
+    "tipologia": "C",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 12.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 4.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 1.6,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "assaigs SPT i CPTU per a fonamentacions profundes",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 3317/2010",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 3317/2010",
+        "llm_score": 3,
+        "search_score": 99.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Llei 9/2017",
+        "llm_score": 3,
+        "search_score": 63.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 7.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "capacitat portant del terreny tensio admissible fonaments",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 79.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 36.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 0,
+        "search_score": 31.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "estabilitat de talussos factor de seguretat minim",
+    "tipologia": "C",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 54.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 54.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "boe",
+        "doc_codi": "RD 1812/1994",
+        "llm_score": 0,
+        "search_score": 1.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "murs pantalla i murs de contencio carregues de terres",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Decret 190/2016",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 96.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 52.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 32.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "millora del terreny columnes de grava jet grouting",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 95.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Llei 9/2017",
+        "llm_score": 2,
+        "search_score": 77.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 65.2,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "classificacio de sols per a terraplens aprofitament",
+    "tipologia": "C",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "RD 1341/2007",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 73.6,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Decret 190/2016",
+        "llm_score": 0,
+        "search_score": 38.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 7.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "NTE ADIF superestructura de via balast travesses",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 90.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 89.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 40.9,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "tensio de catenaria regulacio automatica compensadors",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 75.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 9.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 8.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "sistema ERTMS nivell 2 especificacions tecniques",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 73.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 55.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 9.4,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "andanes accessibles alcada i separacio amb via",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 41.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 18.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 5.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "DE",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "passarel.les i passos inferiors en estacions ferroviaries",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 53.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 22.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 19.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "desviaments i aparells de via ferroviaria",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 87.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 86.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 57.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "proteccio electrica subestacions de traccio",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 69.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 67.8,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 28.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "telecomunicacions ferroviaries fibra optica GSM-R",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 49.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 15.9,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "tancaments i limits de propietat via ferroviaria",
+    "tipologia": "F",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 97.9,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 9.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 0,
+        "search_score": 0.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "drenatge de plataforma ferroviaria cunetes i baixants",
+    "tipologia": "F",
+    "annex": "A07",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "Llei 39/2003",
+        "llm_score": 2,
+        "search_score": 92.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 80.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "Llei 39/2003",
+        "llm_score": 3,
+        "search_score": 66.6,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "3/2017",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "quadres electrics distribucio ITC-BT-17 quadre general",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 55.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 14.5,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 9.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "posada a terra instal.lacions electriques resistencia",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 25.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 10.2,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 6.8,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "canalitzacions electriques safates i tubs protectors",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 96.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 27.5,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 4.9,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 706/2017",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "proteccio contra contactes directes i indirectes",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 3,
+        "search_score": 95.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 77.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 77.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "06/2012",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "grup electrogen emergencia potencia calcul",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 83.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 70.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 31.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "10",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "linies subterranies mitja tensio cables XLPE",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 2.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "sectors d'incendi en edificis CTE DB-SI superficie maxima",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 84.3,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 78.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 74.6,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "resistencia al foc d'elements estructurals R-120",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "cte",
+        "doc_codi": "RD 314/2006",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 75.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 13.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 12.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "recorreguts d'evacuacio longitud maxima sortides",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 86.2,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 2,
+        "search_score": 80.0,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 73.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "RIPCI instal.lacions proteccio contra incendis RD 513/2017",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 3,
+        "search_score": 77.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 3,
+        "search_score": 49.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 3,
+        "search_score": 47.1,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "deteccio d'incendis centraleta analogica llacos",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 72.4,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 11.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 11.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "hidrants exteriors xarxa contra incendis cabal minim",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "industria",
+        "doc_codi": "RD 2085/1994",
+        "llm_score": 2,
+        "search_score": 63.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 1,
+        "search_score": 24.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "industria",
+        "doc_codi": "RD 2085/1994",
+        "llm_score": 2,
+        "search_score": 19.2,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "seguretat contra incendis tunels ferroviaris ETI SRT",
+    "tipologia": "F",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 92.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "Ordre 135/2023",
+        "llm_score": 3,
+        "search_score": 89.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "eurlex",
+        "doc_codi": "1303/2014",
+        "llm_score": 2,
+        "search_score": 71.2,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "evacuacio i autoproteccio establiments publics",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 68.7,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 21.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 1.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "regulacio tramvies Catalunya normativa autonomica",
+    "tipologia": "T",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 53.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 2,
+        "search_score": 43.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 4.6,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "senyalitzacio semaforica prioritat tramvia",
+    "tipologia": "T",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 79.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 1,
+        "search_score": 48.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 17.6,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "catenaria tramviaria tensio i sistema de suspensio",
+    "tipologia": "T",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "1372/2010",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 90.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 87.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 34.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "seccio transversal plataforma tramviaria en zona urbana",
+    "tipologia": "T",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 85.2,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "Llei 39/2003",
+        "llm_score": 1,
+        "search_score": 61.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "Llei 39/2003",
+        "llm_score": 1,
+        "search_score": 58.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "Ordre 135/2023",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "accessibilitat parades de tramvia persones PMR",
+    "tipologia": "T",
+    "annex": "A11",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "1372/2010",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 46.4,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 34.9,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 33.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 224/2008",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "superestructura via tramvia carril Phoenix embegut",
+    "tipologia": "T",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 1,
+        "search_score": 91.1,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 28.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 929/2020",
+        "llm_score": 0,
+        "search_score": 12.1,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "soroll i vibracions tramvia en zona residencial",
+    "tipologia": "T",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 1,
+        "search_score": 4.2,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 2,
+        "search_score": 2.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 2,
+        "search_score": 1.2,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "creuament tramvia amb transit rodat semafors",
+    "tipologia": "T",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 69.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 51.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 46.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "RD 1513/2005",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "ventilacio forcada aparcament soterrat deteccio CO",
+    "tipologia": "P",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 54.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "cte",
+        "doc_codi": "RD 314/2006",
+        "llm_score": 1,
+        "search_score": 27.4,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 21.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "rampes acces aparcament pendent maxima amplada minima",
+    "tipologia": "P",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "Llei 13/1989",
+        "llm_score": 0,
+        "search_score": 96.9,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Llei 13/1989",
+        "llm_score": 1,
+        "search_score": 67.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 51.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "places aparcament reserves PMR accessibilitat",
+    "tipologia": "P",
+    "annex": "A11",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 22.9,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 3.1,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "estructura aparcament soterrat carregues sobrecarrega us",
+    "tipologia": "P",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "cte",
+        "doc_codi": "RD 314/2006",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 3317/2010",
+        "llm_score": 2,
+        "search_score": 98.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 1,
+        "search_score": 88.1,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 63.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "impermeabilitzacio coberta aparcament soterrat",
+    "tipologia": "P",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "cte",
+        "doc_codi": "RD 314/2006",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 298/2016",
+        "llm_score": 1,
+        "search_score": 99.0,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 0,
+        "search_score": 63.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "Ordre 3317/2010",
+        "llm_score": 1,
+        "search_score": 34.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "instal.lacio electrica aparcament classificacio zona REBT",
+    "tipologia": "P",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "boe",
+        "doc_codi": "RD 817/2009",
+        "llm_score": 0,
+        "search_score": 79.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 46.3,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 1,
+        "search_score": 41.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "Ordre 298/2016",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "recarrega vehicles electrics punts aparcament directiva",
+    "tipologia": "P",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 16.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 1,
+        "search_score": 12.1,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "rebt_rite",
+        "doc_codi": "RD 842/2002",
+        "llm_score": 3,
+        "search_score": 0.7,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 2028/1986",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "disseny terminal autobusos interurba darsenes",
+    "tipologia": "A",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "1/2016",
+        "llm_score": 1,
+        "search_score": 68.6,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "1/2016",
+        "llm_score": 0,
+        "search_score": 26.4,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 7.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 2822/1998",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "accessibilitat parades bus plataforma reservada",
+    "tipologia": "A",
+    "annex": "A11",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 86.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 7.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "industria",
+        "doc_codi": "RD 2822/1998",
+        "llm_score": 1,
+        "search_score": 0.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 2822/1998",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "intercanviador modal transport public connexions",
+    "tipologia": "A",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 25.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 5.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 0.4,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "5/2014",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "carril bus segregat senyalitzacio prioritat semaforica",
+    "tipologia": "A",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 90.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 80.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 0,
+        "search_score": 0.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 2822/1998",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "marquesina parada bus mobiliari urba normativa",
+    "tipologia": "A",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 52.9,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 25.7,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 8.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "disseny vies ciclistes segregades amplada radis minims",
+    "tipologia": "B",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "01/2018",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "01/2018",
+        "llm_score": 2,
+        "search_score": 49.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "01/2018",
+        "llm_score": 2,
+        "search_score": 47.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "01/2018",
+        "llm_score": 1,
+        "search_score": 47.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "senyalitzacio ciclista pictogrames i marques viaries",
+    "tipologia": "B",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "03/2017",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 98.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 98.6,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 17.8,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "interseccions carril bici amb calcada solucions tipus",
+    "tipologia": "B",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 59.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 52.7,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "enllumenat vies ciclistes nivells il.luminacio",
+    "tipologia": "B",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "industria",
+        "doc_codi": "RD 1890/2008",
+        "llm_score": 1,
+        "search_score": 74.4,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "industria",
+        "doc_codi": "RD 1890/2008",
+        "llm_score": 2,
+        "search_score": 70.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 16.9,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "aparcament bicicletes segur cobert places minimes",
+    "tipologia": "B",
+    "annex": "",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 89.5,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 57.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 29.1,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "ventilacio mecanica tunels metro extraccio de fums",
+    "tipologia": "M",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "boe",
+        "doc_codi": "RD 635/2006",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "cte",
+        "doc_codi": "RD 314/2006",
+        "llm_score": 0,
+        "search_score": 87.1,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 1027/2007",
+        "llm_score": 0,
+        "search_score": 46.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 8.9,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "cte",
+        "doc_codi": "RD 314/2006",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "portes d'andana sistemes de proteccio viatgers metro",
+    "tipologia": "M",
+    "annex": "A08",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 53.1,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 36.2,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 36.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "accessibilitat estacions metro ascensors escales mecaniques",
+    "tipologia": "M",
+    "annex": "A11",
+    "results": [
+      {
+        "rank": 1,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 18.4,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 9.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 8.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "impermeabilitzacio tunel metro llosa drenant",
+    "tipologia": "M",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "Llei 39/2003",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 54.7,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "instal.lacions contra incendis en estacions subterranies",
+    "tipologia": "M",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 0,
+        "search_score": 91.4,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 0,
+        "search_score": 84.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 80.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "mesures correctores impacte acustic en fase d'obra",
+    "tipologia": "G",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 86.1,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 11.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "gestio de terres excavacio reutilitzacio valoritzacio",
+    "tipologia": "G",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "boe",
+        "doc_codi": "RD 817/2009",
+        "llm_score": 1,
+        "search_score": 89.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 11.4,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 3.1,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "permeabilitat ecologica passos de fauna pas inferior",
+    "tipologia": "C",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 54.9,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 15.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "restauracio vegetal revegetacio talussos hidrosembra",
+    "tipologia": "C",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 64.8,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 3.8,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "contaminacio aigues subterranies mesures preventives",
+    "tipologia": "G",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/2009",
+        "llm_score": 3,
+        "search_score": 94.3,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 87.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 41.5,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "industria",
+        "doc_codi": "RD 656/2017",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "EHE-08 instruccio formigo estructural esta vigent",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "Ordre 475/2002",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 11.2,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 9.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 6.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "RD 57/2005 ascensors normativa actual vigent",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 13/2014",
+        "llm_score": 1,
+        "search_score": 33.3,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "eurlex",
+        "doc_codi": "765/2008",
+        "llm_score": 0,
+        "search_score": 15.4,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.3,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "norma UNE-EN 779 filtres aire classificacio vigent",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "pjcat",
+        "doc_codi": "Llei 20/1991",
+        "llm_score": 0,
+        "search_score": 71.8,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 23.7,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 22.2,
+        "relevant": false
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "reglament aparells a pressio RD 2060/2008 vigencia",
+    "tipologia": "G",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "industria",
+        "doc_codi": "RD 560/2010",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "industria",
+        "doc_codi": "RD 560/2010",
+        "llm_score": 2,
+        "search_score": 71.9,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "industria",
+        "doc_codi": "RD 560/2010",
+        "llm_score": 3,
+        "search_score": 69.5,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "industria",
+        "doc_codi": "RD 656/2017",
+        "llm_score": 2,
+        "search_score": 57.4,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 0,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "ordre MAM/304/2002 residus construccio demolicio estat",
+    "tipologia": "G",
+    "annex": "A02",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "aca",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 87.6,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 70.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 13.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "instruccion de carreteras 3.1-IC trazado",
+    "tipologia": "C",
+    "annex": "A05",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 94.7,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 92.3,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "de",
+        "llm_score": 3,
+        "search_score": 79.8,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "Llei 39/2003",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "proteccion contra incendios aparcamientos subterraneos",
+    "tipologia": "P",
+    "annex": "A09",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 1,
+        "search_score": 39.5,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 2,
+        "search_score": 33.2,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 2,
+        "search_score": 2.5,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "rebt_rite",
+        "doc_codi": "RD 513/2017",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "codigo estructural hormigon armado recubrimientos",
+    "tipologia": "G",
+    "annex": "A15",
+    "results": [
+      {
+        "rank": 1,
+        "source": "dgc",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 59.7,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 56.6,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 2,
+        "search_score": 31.6,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "query": "senalizacion horizontal marcas viales retrorreflexion",
+    "tipologia": "C",
+    "annex": "A10",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "02/2022",
+        "llm_score": 1,
+        "search_score": 100.0,
+        "relevant": false
+      },
+      {
+        "rank": 2,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 1,
+        "search_score": 87.9,
+        "relevant": false
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 1,
+        "search_score": 54.0,
+        "relevant": false
+      },
+      {
+        "rank": 4,
+        "source": "pjcat",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "territori",
+        "doc_codi": "Decret 168/2025",
+        "llm_score": 2,
+        "search_score": 0.0,
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "query": "pliego prescripciones tecnicas generales PG-3 aridos",
+    "tipologia": "C",
+    "annex": "A06",
+    "results": [
+      {
+        "rank": 1,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 100.0,
+        "relevant": true
+      },
+      {
+        "rank": 2,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 3,
+        "search_score": 80.0,
+        "relevant": true
+      },
+      {
+        "rank": 3,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 69.1,
+        "relevant": true
+      },
+      {
+        "rank": 4,
+        "source": "dgc",
+        "doc_codi": "Ordre 2523/2014",
+        "llm_score": 3,
+        "search_score": 17.0,
+        "relevant": true
+      },
+      {
+        "rank": 5,
+        "source": "adif",
+        "doc_codi": "",
+        "llm_score": 1,
+        "search_score": 0.0,
+        "relevant": false
+      }
+    ]
+  }
+]

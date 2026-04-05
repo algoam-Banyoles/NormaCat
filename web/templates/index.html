@@ -36,6 +36,12 @@
                    placeholder="Descriu que busques... (ex: drenatge transversal en carreteres)"
                    autofocus>
             <div class="search-options">
+                <select id="search-tipologia">
+                    <option value="">Qualsevol tipologia</option>
+                    {% for t in tipologies %}
+                    <option value="{{ t.code }}">{{ t.code }} -- {{ t.nom }}</option>
+                    {% endfor %}
+                </select>
                 <select id="search-source">
                     <option value="">Totes les fonts</option>
                     {% for key, label in source_labels.items() %}
@@ -94,6 +100,12 @@
                 <p id="file-label">Arrossega un PDF aqui o fes clic per seleccionar</p>
             </div>
             <div class="search-options">
+                <select id="report-tipologia">
+                    <option value="">Qualsevol tipologia</option>
+                    {% for t in tipologies %}
+                    <option value="{{ t.code }}">{{ t.code }} -- {{ t.nom }}</option>
+                    {% endfor %}
+                </select>
                 <input type="text" id="report-project-name"
                        placeholder="Nom del projecte (opcional)"
                        style="flex:1; padding:0.5rem 0.75rem; border:1px solid var(--border); border-radius:var(--radius);">
@@ -115,6 +127,12 @@
             <input type="text" id="rag-query"
                    placeholder="Quins requisits de drenatge transversal s'apliquen a una carretera C-80?">
             <div class="search-options">
+                <select id="rag-tipologia">
+                    <option value="">Qualsevol tipologia</option>
+                    {% for t in tipologies %}
+                    <option value="{{ t.code }}">{{ t.code }} -- {{ t.nom }}</option>
+                    {% endfor %}
+                </select>
                 <select id="rag-provider">
                     <option value="">LLM per defecte</option>
                     <option value="gemini">Gemini Flash</option>
@@ -166,6 +184,7 @@ async function doSearch() {
     if (!query) return;
 
     const source = document.getElementById('search-source').value;
+    const tipologia = document.getElementById('search-tipologia').value;
     const top = parseInt(document.getElementById('search-top').value);
     const statusEl = document.getElementById('search-status');
     const resultsEl = document.getElementById('search-results');
@@ -178,7 +197,7 @@ async function doSearch() {
         const resp = await fetch('/api/search', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({query, top, source})
+            body: JSON.stringify({query, top, source, tipologia})
         });
         const data = await resp.json();
 
@@ -376,6 +395,7 @@ async function doReport() {
     const formData = new FormData();
     formData.append('file', file);
     formData.append('project_name', projectName);
+    formData.append('tipologia', document.getElementById('report-tipologia').value);
 
     try {
         const resp = await fetch('/api/report', {
@@ -485,6 +505,7 @@ async function doRag() {
 
     const provider = document.getElementById('rag-provider').value;
     const source = document.getElementById('rag-source').value;
+    const tipologia = document.getElementById('rag-tipologia').value;
     const statusEl = document.getElementById('rag-status');
     const answerEl = document.getElementById('rag-answer');
     const sourcesEl = document.getElementById('rag-sources');
@@ -498,7 +519,7 @@ async function doRag() {
         const resp = await fetch('/api/rag', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({query, provider, source, top_k: 12})
+            body: JSON.stringify({query, provider, source, tipologia, top_k: 12})
         });
         const data = await resp.json();
 

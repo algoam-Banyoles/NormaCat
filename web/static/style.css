@@ -272,6 +272,8 @@ footer { text-align: center; padding: 2rem 1rem; font-size: 0.8rem; color: var(-
 .fb-btn.fb-selected.fb-up { opacity: 1; background: var(--vigent-bg); border-color: var(--vigent); }
 .fb-btn.fb-selected.fb-down { opacity: 1; background: var(--derogada-bg); border-color: var(--derogada); }
 
+#search-tipologia, #rag-tipologia, #report-tipologia { border: 2px solid var(--primary); font-weight: 600; background: var(--primary-light); }
+
 .result-method { font-size: 0.7rem; padding: 0.1rem 0.35rem; border-radius: 3px; background: #f3f4f6; color: #888; font-weight: 600; }
 
 @media (max-width: 640px) {
